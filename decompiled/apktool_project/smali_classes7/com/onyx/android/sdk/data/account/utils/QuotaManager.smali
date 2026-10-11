@@ -80,142 +80,19 @@
 
 # virtual methods
 .method public final getAudioRecordQuota()J
-    .locals 3
+    .locals 2
 
-    sget-object p0, Lcom/onyx/android/sdk/data/account/AccountDataBundle;->INSTANCE:Lcom/onyx/android/sdk/data/account/AccountDataBundle;
+    const-wide/32 v0, 0x3b9aca00
 
-    invoke-virtual {p0}, Lcom/onyx/android/sdk/data/account/AccountDataBundle;->getOnyxAccount()Lcom/onyx/android/sdk/data/account/model/OnyxAccountModel;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Lcom/onyx/android/sdk/data/account/model/OnyxAccountModel;->getAccountQuota()Lcom/onyx/android/sdk/data/account/bean/AccountQuota;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    sget-object v0, Lcom/onyx/android/sdk/data/account/bean/AccountQuotas;->INSTANCE:Lcom/onyx/android/sdk/data/account/bean/AccountQuotas;
-
-    const-string v1, "audioRecord"
-
-    const-string v2, "normalAudioRecord"
-
-    invoke-virtual {v0, p0, v1, v2}, Lcom/onyx/android/sdk/data/account/bean/AccountQuotas;->getAccountQuotaSubItem(Lcom/onyx/android/sdk/data/account/bean/AccountQuota;Ljava/lang/String;Ljava/lang/String;)Lcom/onyx/android/sdk/data/account/bean/AccountQuotaSubItem;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Lcom/onyx/android/sdk/data/account/bean/AccountQuotaSubItem;->getTotalQuota()J
-
-    move-result-wide v0
-
-    sget-object p0, Lcom/onyx/android/sdk/base/utils/DateTimeUtil;->INSTANCE:Lcom/onyx/android/sdk/base/utils/DateTimeUtil;
-
-    invoke-virtual {p0, v0, v1}, Lcom/onyx/android/sdk/base/utils/DateTimeUtil;->minuteToMs(J)J
-
-    move-result-wide v0
-
-    goto :goto_1
-
-    :cond_1
-    const-wide/16 v0, -0x1
-
-    :goto_1
     return-wide v0
 .end method
 
 .method public final getNoteCreateQuota(Z)J
-    .locals 4
+    .locals 2
 
-    sget-object p0, Lcom/onyx/android/sdk/data/account/AccountDataBundle;->INSTANCE:Lcom/onyx/android/sdk/data/account/AccountDataBundle;
-
-    invoke-virtual {p0}, Lcom/onyx/android/sdk/data/account/AccountDataBundle;->getOnyxAccount()Lcom/onyx/android/sdk/data/account/model/OnyxAccountModel;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Lcom/onyx/android/sdk/data/account/model/OnyxAccountModel;->getAccountQuota()Lcom/onyx/android/sdk/data/account/bean/AccountQuota;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    sget-object v0, Lcom/onyx/android/sdk/data/account/bean/AccountQuotas;->INSTANCE:Lcom/onyx/android/sdk/data/account/bean/AccountQuotas;
-
-    const-string v1, "notebook"
-
-    const-string v2, "normalNotebook"
-
-    invoke-virtual {v0, p0, v1, v2}, Lcom/onyx/android/sdk/data/account/bean/AccountQuotas;->getAccountQuotaSubItem(Lcom/onyx/android/sdk/data/account/bean/AccountQuota;Ljava/lang/String;Ljava/lang/String;)Lcom/onyx/android/sdk/data/account/bean/AccountQuotaSubItem;
-
-    move-result-object p0
-
-    const-wide/16 v0, -0x1
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Lcom/onyx/android/sdk/data/account/bean/AccountQuotaSubItem;->getTotalQuota()J
-
-    move-result-wide v2
-
-    goto :goto_1
-
-    :cond_1
-    move-wide v2, v0
-
-    :goto_1
-    if-nez p1, :cond_2
-
-    const-wide/16 p0, 0x0
-
-    cmp-long p0, v2, p0
-
-    if-gez p0, :cond_2
+    const-wide/32 v0, 0x3b9aca00
 
     return-wide v0
-
-    :cond_2
-    sget-object p0, Lcom/onyx/android/sdk/base/utils/ResManager;->INSTANCE:Lcom/onyx/android/sdk/base/utils/ResManager;
-
-    sget p1, Lcom/onyx/android/sdk/data/R$integer;->note_quota_min:I
-
-    invoke-virtual {p0, p1}, Lcom/onyx/android/sdk/base/utils/ResManager;->getLong(I)J
-
-    move-result-wide p0
-
-    sget-object v0, Lcom/onyx/android/sdk/base/utils/MathUtils;->INSTANCE:Lcom/onyx/android/sdk/base/utils/MathUtils;
-
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v1
-
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p0
-
-    invoke-virtual {v0, v1, p0}, Lcom/onyx/android/sdk/base/utils/MathUtils;->atLeast(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Number;
-
-    invoke-virtual {p0}, Ljava/lang/Number;->longValue()J
-
-    move-result-wide p0
-
-    return-wide p0
 .end method
 
 .method public final getRegisterGuideQuota()J

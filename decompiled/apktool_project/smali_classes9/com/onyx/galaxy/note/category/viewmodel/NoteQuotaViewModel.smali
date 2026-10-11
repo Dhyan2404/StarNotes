@@ -228,110 +228,15 @@
 
 # virtual methods
 .method public final checkGuideRegister(Landroid/content/Context;)Z
-    .locals 11
+    .locals 1
     .param p1    # Landroid/content/Context;
         .annotation build Lorg/jetbrains/annotations/NotNull;
         .end annotation
     .end param
 
-    const-string v0, "context"
+    const/4 v0, 0x0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget-object v0, Lcom/onyx/android/sdk/data/account/AccountDataBundle;->INSTANCE:Lcom/onyx/android/sdk/data/account/AccountDataBundle;
-
-    invoke-virtual {v0}, Lcom/onyx/android/sdk/data/account/AccountDataBundle;->isAlreadyLogin()Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    return v1
-
-    :cond_0
-    new-instance v0, Lcom/onyx/android/sdk/data/utils/BooleanOption;
-
-    sget-object v2, Lcom/onyx/android/sdk/data/utils/MMKVUtils;->INSTANCE:Lcom/onyx/android/sdk/data/utils/MMKVUtils;
-
-    invoke-virtual {v2}, Lcom/onyx/android/sdk/data/utils/MMKVUtils;->get()Lcom/tencent/mmkv/MMKV;
-
-    move-result-object v3
-
-    const-string v4, "HAS_SHOW_REGISTER_GUIDE"
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x4
-
-    const/4 v7, 0x0
-
-    move-object v2, v0
-
-    invoke-direct/range {v2 .. v7}, Lcom/onyx/android/sdk/data/utils/BooleanOption;-><init>(Lcom/tencent/mmkv/MMKV;Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    invoke-virtual {v0}, Lcom/onyx/android/sdk/data/utils/BooleanOption;->get()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    return v1
-
-    :cond_1
-    sget-object v2, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->INSTANCE:Lcom/onyx/android/sdk/data/account/utils/QuotaManager;
-
-    invoke-virtual {v2}, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->getRegisterGuideQuota()J
-
-    move-result-wide v3
-
-    const-wide/16 v5, 0x0
-
-    cmp-long v5, v3, v5
-
-    if-gtz v5, :cond_2
-
-    return v1
-
-    :cond_2
-    invoke-virtual {p0}, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel;->getConsumedNoteQuota()I
-
-    move-result p0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x1
-
-    invoke-static {v2, v1, v6, v5}, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->getNoteCreateQuota$default(Lcom/onyx/android/sdk/data/account/utils/QuotaManager;ZILjava/lang/Object;)J
-
-    move-result-wide v7
-
-    int-to-long v9, p0
-
-    cmp-long p0, v3, v9
-
-    if-gtz p0, :cond_3
-
-    cmp-long p0, v9, v7
-
-    if-gez p0, :cond_3
-
-    move v1, v6
-
-    :cond_3
-    if-eqz v1, :cond_4
-
-    invoke-virtual {v0, v6}, Lcom/onyx/android/sdk/data/utils/BooleanOption;->put(Z)V
-
-    new-instance p0, Lcom/onyx/galaxy/note/category/view/dialog/DialogNoteCountRegisterGuide;
-
-    invoke-direct {p0, p1}, Lcom/onyx/galaxy/note/category/view/dialog/DialogNoteCountRegisterGuide;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {p0}, Landroid/app/Dialog;->show()V
-
-    :cond_4
-    return v1
+    return v0
 .end method
 
 .method public final checkIn()V
@@ -424,36 +329,15 @@
 .end method
 
 .method public final checkNoteQuotaUsedOut(Landroid/view/View;)Z
-    .locals 4
+    .locals 1
     .param p1    # Landroid/view/View;
         .annotation build Lorg/jetbrains/annotations/NotNull;
         .end annotation
     .end param
 
-    const-string v0, "parentView"
+    const/4 v0, 0x1
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel;->getLeftNoteQuota()J
-
-    move-result-wide v0
-
-    const-wide/16 v2, 0x0
-
-    cmp-long v0, v0, v2
-
-    if-lez v0, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    invoke-virtual {p0, p1}, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel;->showNoteQuotaNotEnoughDialog(Landroid/view/View;)V
-
-    const/4 p0, 0x0
-
-    return p0
+    return v0
 .end method
 
 .method public final f(Ljava/lang/String;Ljava/lang/String;)V
@@ -535,27 +419,9 @@
 .end method
 
 .method public final getLeftNoteQuota()J
-    .locals 4
+    .locals 2
 
-    sget-object v0, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->INSTANCE:Lcom/onyx/android/sdk/data/account/utils/QuotaManager;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    invoke-static {v0, v3, v1, v2}, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->getNoteCreateQuota$default(Lcom/onyx/android/sdk/data/account/utils/QuotaManager;ZILjava/lang/Object;)J
-
-    move-result-wide v0
-
-    invoke-virtual {p0}, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel;->getConsumedNoteQuota()I
-
-    move-result p0
-
-    int-to-long v2, p0
-
-    sub-long/2addr v0, v2
+    const-wide/32 v0, 0x3b9aca00
 
     return-wide v0
 .end method
@@ -643,106 +509,11 @@
 .end method
 
 .method public final showJoinVipDialog(Landroid/view/View;)V
-    .locals 12
+    .locals 0
     .param p1    # Landroid/view/View;
         .annotation build Lorg/jetbrains/annotations/NotNull;
         .end annotation
     .end param
-
-    const-string v0, "parentView"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "joinVipWithNotebookNoneQuota"
-
-    invoke-static {v0}, Lcom/onyx/android/sdk/data/common/data/MessageTemplateKt;->isMessageExpired(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    sget-object p0, Lcom/onyx/android/sdk/base/utils/ToastUtils;->INSTANCE:Lcom/onyx/android/sdk/base/utils/ToastUtils;
-
-    sget p1, Lcom/onyx/galaxy/note/R$string;->quota_note_used_out:I
-
-    const/4 v0, 0x2
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, p1, v2, v0, v1}, Lcom/onyx/android/sdk/base/utils/ToastUtils;->show$default(Lcom/onyx/android/sdk/base/utils/ToastUtils;IZILjava/lang/Object;)V
-
-    return-void
-
-    :cond_0
-    invoke-virtual {p0}, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel;->getConsumedNoteQuota()I
-
-    move-result v1
-
-    const-string v2, "title"
-
-    invoke-static {v0, v2}, Lcom/onyx/android/sdk/data/common/data/MessageTemplateKt;->getMessageTemplate(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    const-string v2, "content1"
-
-    invoke-static {v0, v2}, Lcom/onyx/android/sdk/data/common/data/MessageTemplateKt;->getMessageTemplate(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string v7, "${usedQuota}"
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x4
-
-    const/4 v11, 0x0
-
-    invoke-static/range {v6 .. v11}, Lkotlin/text/StringsKt;->replace$default(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string v1, "button1"
-
-    invoke-static {v0, v1}, Lcom/onyx/android/sdk/data/common/data/MessageTemplateKt;->getMessageTemplate(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v1, "button2"
-
-    invoke-static {v0, v1}, Lcom/onyx/android/sdk/data/common/data/MessageTemplateKt;->getMessageTemplate(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    new-instance v0, Lcom/onyx/galaxy/note/ui/dialog/QuotaNotEnoughPopup;
-
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v4
-
-    const-string v1, "getContext(...)"
-
-    invoke-static {v4, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    move-object v3, v0
-
-    invoke-direct/range {v3 .. v8}, Lcom/onyx/galaxy/note/ui/dialog/QuotaNotEnoughPopup;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v1, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel$showJoinVipDialog$1;
-
-    invoke-direct {v1, p0}, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel$showJoinVipDialog$1;-><init>(Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel;)V
-
-    invoke-virtual {v0, v1}, Lcom/onyx/galaxy/note/ui/dialog/QuotaNotEnoughPopup;->onPositive(Lkotlin/jvm/functions/Function1;)Lcom/onyx/galaxy/note/ui/dialog/QuotaNotEnoughPopup;
-
-    move-result-object p0
-
-    invoke-static {p0, p1}, Lcom/onyx/android/sdk/base/extension/PopupExtKt;->showFullScreen(Landroid/widget/PopupWindow;Landroid/view/View;)Landroid/widget/PopupWindow;
 
     return-void
 .end method
@@ -904,48 +675,11 @@
 .end method
 
 .method public final showNoteQuotaNotEnoughDialog(Landroid/view/View;)V
-    .locals 5
+    .locals 0
     .param p1    # Landroid/view/View;
         .annotation build Lorg/jetbrains/annotations/NotNull;
         .end annotation
     .end param
-
-    const-string v0, "parentView"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget-object p1, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->INSTANCE:Lcom/onyx/android/sdk/data/account/utils/QuotaManager;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->getNoteCreateQuota(Z)J
-
-    move-result-wide v1
-
-    const-wide/16 v3, 0x0
-
-    cmp-long p1, v1, v3
-
-    if-gez p1, :cond_0
-
-    sget-object p0, Lcom/onyx/android/sdk/base/utils/ToastUtils;->INSTANCE:Lcom/onyx/android/sdk/base/utils/ToastUtils;
-
-    sget p1, Lcom/onyx/galaxy/note/R$string;->quota_no_note_quota_info:I
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, p1, v0, v1, v2}, Lcom/onyx/android/sdk/base/utils/ToastUtils;->show$default(Lcom/onyx/android/sdk/base/utils/ToastUtils;IZILjava/lang/Object;)V
-
-    return-void
-
-    :cond_0
-    const-string p1, "joinVipBeforeCreateNote"
-
-    const-string v0, "homepage_add_note_popups"
-
-    invoke-virtual {p0, p1, v0}, Lcom/onyx/galaxy/note/category/viewmodel/NoteQuotaViewModel;->f(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
