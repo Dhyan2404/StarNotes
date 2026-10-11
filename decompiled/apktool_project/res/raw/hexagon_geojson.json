@@ -1,0 +1,103 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              87.0,
+              0.0
+            ],
+            [
+              173.0,
+              50.0
+            ]
+          ],
+          [
+            [
+              173.0,
+              50.0
+            ],
+            [
+              173.0,
+              150.0
+            ]
+          ],
+          [
+            [
+              173.0,
+              150.0
+            ],
+            [
+              87.0,
+              200.0
+            ]
+          ],
+          [
+            [
+              87.0,
+              200.0
+            ],
+            [
+              0.0,
+              150.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              150.0
+            ],
+            [
+              0.0,
+              50.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              50.0
+            ],
+            [
+              87.0,
+              0.0
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "roundCorner": true,
+          "width": 2.0
+        },
+        "subType": "",
+        "underContent": false
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "createAttr": {
+      "selectionPointIndex": 1,
+      "selectionPointType": "SCALE"
+    },
+    "radius": 0.0,
+    "selectionPointType": "DRAG",
+    "subType": "",
+    "useFixedRatio": true,
+    "underContent": false
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "hexagon",
+  "version": 4
+}

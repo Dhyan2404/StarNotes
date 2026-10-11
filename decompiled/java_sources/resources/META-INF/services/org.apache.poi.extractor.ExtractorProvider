@@ -1,0 +1,3 @@
+org.apache.poi.ooxml.extractor.POIXMLExtractorFactory
+org.apache.poi.extractor.ole2.OLE2ScratchpadExtractorFactory
+org.apache.poi.extractor.MainExtractorFactory

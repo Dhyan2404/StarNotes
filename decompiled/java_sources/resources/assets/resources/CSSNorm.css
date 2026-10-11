@@ -1,0 +1,323 @@
+html, address,blockquote, body, dd, div, dl, dt, fieldset, form, frame, frameset, h1, h2, h3, h4, h5, h6, noframes, ol, p, ul,center,content,dir, hr, menu, pre,nav,section,article,footer ,coverpage{
+    display: block
+}
+
+li {
+    display: list-item
+}
+
+aside,header,figcaption,hgroup {
+    display: block;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+semantics > mrow {
+    display: none;
+}
+
+head,stylesheet {
+    display: none;
+}
+
+title {
+    display: none;
+}
+
+link {
+    display: none;
+}
+
+head {
+    display: none;
+}
+
+
+
+table {
+    display: table
+}
+
+tr {
+    display: table-row
+}
+
+thead {
+    display: table-header-group
+}
+
+tbody {
+    display: table-row-group
+}
+
+tfoot {
+    display: table-footer-group
+}
+
+col {
+    display: table-column
+}
+
+colgroup {
+    display: table-column-group
+}
+
+td, th {
+    display: table-cell;
+}
+
+caption {
+    display: table-caption
+}
+
+th {
+    font-weight: bolder;
+    text-align: center
+}
+
+caption {
+    text-align: center
+}
+
+XViewport{
+    xmargin:25px 25px 25px 25px;
+}
+
+body {
+    margin: 8px;
+    line-height: 1.4664em;
+}
+
+h1 {
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-block-start:0.83em;
+    margin-block-end:0.83em;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin-block-start:1em;
+    margin-block-end:1em;
+}
+
+h4 {
+    margin-block-start:1.33em;
+    margin-block-end:1.33em;
+}
+
+p,menu {
+    margin-block-start:1em;
+    margin-block-end:1em;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin-block-start:1.67em;
+    margin-block-end:1.67em;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin-block-start:2.33em;
+    margin-block-end:2.33em;
+}
+
+h1, h2, h3, h4, h5, h6, b,strong {
+    font-weight: bolder
+}
+
+blockquote {
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+
+pre, tt, code,kbd, samp {
+    font-family: monospace
+}
+
+pre {
+    white-space: pre
+}
+
+button, textarea,input, object,select {
+    display: inline-block;
+}
+
+big {
+    font-size: 1.17em
+}
+
+small, sub, sup {
+    font-size: .83em
+}
+
+sub {
+    vertical-align: sub
+}
+
+sup {
+    vertical-align: super
+}
+
+table {
+    border-spacing: 2px;
+}
+
+thead, tbody,tfoot {
+    vertical-align: middle
+}
+
+tr, td, th {
+    vertical-align: inherit
+}
+
+s, strike, del {
+    text-decoration: line-through
+}
+
+br {
+    display: inline;
+    white-space: pre;
+}
+
+ol, ul, dir,menu, dd {
+    padding-inline-start: 40px;
+}
+
+ol {
+    list-style-type: decimal
+}
+ul{
+    list-style-type: disc;
+}
+
+ol ul, ul ol,ul ul, ol ol {
+    margin-inline-start: 0;
+    padding-inline-start: 40px;
+}
+
+u, ins {
+    text-decoration: underline
+}
+
+br:before {
+    content: "A"
+}
+
+center {
+    text-align: center
+}
+
+abbr, acronym {
+    letter-spacing: 0.1em
+}
+
+:link, :visited {
+    text-decoration: underline
+}
+
+:focus {
+    outline: thin dotted invert
+}
+
+BDO[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: bidi-override
+}
+
+BDO[DIR="rtl"] {
+    direction: rtl;
+    unicode-bidi: bidi-override
+}
+
+*[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: embed
+}
+
+*[DIR=\"rtl\"]{
+    direction: rtl; unicode-bidi: embed
+ }
+
+a[href]{
+    color: blue;
+    text-decoration: underline;
+ }
+
+ hr{
+   display: block;
+   border-style: inset;
+   border-width: 1px;
+   margin-block-start: 0.5em;
+   margin-block-end: 0.5em;
+   margin-inline-start: auto;
+   margin-inline-end: auto;
+ }
+
+ ul{
+   margin-left: 0;
+ }
+
+ rp {
+     display: none;
+ }
+
+ rt {
+    font-size: 60%;
+ }
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-top: 0.35em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-bottom: 0.625em;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+
+xmp {
+    display: block;
+    white-space: pre;
+    margin: 1em 0px;
+}
+
+title-info,category,phrase{
+    display: block;
+}
+
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+iframe{
+    display: block;
+}

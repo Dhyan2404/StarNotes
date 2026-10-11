@@ -1,0 +1,120 @@
+{
+  "loginConfigMap": {
+    "CN": {
+      "loginPrimaryType": "phone",
+      "timeout": 60,
+      "hasPhoneLaw": true
+    }
+  },
+  "deviceConfigMap": {
+    "huawei": {
+      "permissions": [
+        {
+          "module": "login",
+          "subModule": "huawei",
+          "permission": {
+            "read": true,
+            "write": true
+          }
+        }
+      ]
+    },
+    "google": {
+      "permissions": [
+        {
+          "module": "login",
+          "subModule": "google",
+          "permission": {
+            "read": true,
+            "write": true
+          }
+        }
+      ]
+    }
+  },
+  "channelAuthMap": {
+    "huawei": [
+      "huawei",
+      "phone",
+      "email",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "xiaomi": [
+      "phone",
+      "email",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "starnote": [
+      "phone",
+      "email",
+      "huawei",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "lenovo": [
+      "phone",
+      "email",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "samsung": [
+      "phone",
+      "email",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "honor": [
+      "phone",
+      "email",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "oppo": [
+      "phone",
+      "email",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "vivo": [
+      "phone",
+      "email",
+      "wechatQrCode",
+      "wechatApp",
+      "account"
+    ],
+    "google": [
+      "email",
+      "google",
+      "microsoft",
+      "account"
+    ]
+  },
+  "statistChannels": [
+    "onyx",
+    "huawei",
+    "xiaomi",
+    "starnote",
+    "lenovo",
+    "samsung",
+    "honor",
+    "oppo",
+    "vivo"
+  ],
+  "channelsFeatureMap": {
+    "byd": {
+      "stylusType": "STYLUS_BYD"
+    },
+    "huawei": {
+      "supportPaymentTheme": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+package com.sunia.commonv2.auth;
+
+/* loaded from: classes10.dex */
+public enum HWRDeviceIdType {
+    WLAN_MAC(0),
+    ETH_MAC(1),
+    ANDROID_ID(2),
+    SERIAL_NO(3),
+    BOOT_SERIAL_NO(4);
+
+    int value;
+
+    HWRDeviceIdType(int i) {
+        this.value = i;
+    }
+
+    public int getValue() {
+        return this.value;
+    }
+}

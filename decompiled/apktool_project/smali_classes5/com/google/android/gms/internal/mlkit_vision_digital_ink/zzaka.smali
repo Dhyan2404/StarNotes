@@ -1,0 +1,538 @@
+.class public abstract Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+.super Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajg;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/Set;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajg<",
+        "TE;>;",
+        "Ljava/util/Set<",
+        "TE;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private transient zza:Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajg;-><init>()V
+
+    return-void
+.end method
+
+.method private static varargs zza(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 13
+
+    if-eqz p0, :cond_7
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    if-eq p0, v1, :cond_6
+
+    invoke-static {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zzd(I)I
+
+    move-result v2
+
+    new-array v6, v2, [Ljava/lang/Object;
+
+    add-int/lit8 v7, v2, -0x1
+
+    move v3, v0
+
+    move v5, v3
+
+    move v8, v5
+
+    :goto_0
+    if-ge v3, p0, :cond_2
+
+    aget-object v4, p1, v3
+
+    invoke-static {v4, v3}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalj;->zza(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
+
+    move-result v9
+
+    invoke-static {v9}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajd;->zza(I)I
+
+    move-result v10
+
+    :goto_1
+    and-int v11, v10, v7
+
+    aget-object v12, v6, v11
+
+    if-nez v12, :cond_0
+
+    add-int/lit8 v10, v8, 0x1
+
+    aput-object v4, p1, v8
+
+    aput-object v4, v6, v11
+
+    add-int/2addr v5, v9
+
+    move v8, v10
+
+    goto :goto_2
+
+    :cond_0
+    invoke-virtual {v12, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-nez v11, :cond_1
+
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_2
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v3, 0x0
+
+    invoke-static {p1, v8, p0, v3}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
+
+    if-ne v8, v1, :cond_3
+
+    aget-object p0, p1, v0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance p1, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;
+
+    invoke-direct {p1, p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;-><init>(Ljava/lang/Object;)V
+
+    return-object p1
+
+    :cond_3
+    div-int/lit8 v2, v2, 0x2
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zzd(I)I
+
+    move-result p0
+
+    if-ge p0, v2, :cond_4
+
+    invoke-static {v8, p1}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_4
+    array-length p0, p1
+
+    shr-int/lit8 v0, p0, 0x1
+
+    shr-int/lit8 p0, p0, 0x2
+
+    add-int/2addr v0, p0
+
+    if-ge v8, v0, :cond_5
+
+    invoke-static {p1, v8}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    :cond_5
+    move-object v4, p1
+
+    new-instance p0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;
+
+    move-object v3, p0
+
+    invoke-direct/range {v3 .. v8}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;-><init>([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+
+    return-object p0
+
+    :cond_6
+    aget-object p0, p1, v0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance p1, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;
+
+    invoke-direct {p1, p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;-><init>(Ljava/lang/Object;)V
+
+    return-object p1
+
+    :cond_7
+    sget-object p0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;->zza:Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;
+
+    return-object p0
+.end method
+
+.method public static zzd(I)I
+    .locals 5
+
+    const/4 v0, 0x2
+
+    invoke-static {p0, v0}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    const v0, 0x2ccccccc
+
+    if-ge p0, v0, :cond_1
+
+    add-int/lit8 v0, p0, -0x1
+
+    invoke-static {v0}, Ljava/lang/Integer;->highestOneBit(I)I
+
+    move-result v0
+
+    :goto_0
+    add-int/2addr v0, v0
+
+    int-to-double v1, v0
+
+    const-wide v3, 0x3fe6666666666666L    # 0.7
+
+    mul-double/2addr v1, v3
+
+    int-to-double v3, p0
+
+    cmpg-double v1, v1, v3
+
+    if-gez v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    return v0
+
+    :cond_1
+    const/high16 v0, 0x40000000    # 2.0f
+
+    if-ge p0, v0, :cond_2
+
+    const/4 p0, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    const/4 p0, 0x0
+
+    :goto_1
+    const-string v1, "collection too large"
+
+    invoke-static {p0, v1}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzagg;->zzf(ZLjava/lang/Object;)V
+
+    return v0
+.end method
+
+.method public static synthetic zzf(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static zzg(Ljava/util/Collection;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 2
+
+    instance-of v0, p0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    if-eqz v0, :cond_0
+
+    instance-of v0, p0, Ljava/util/SortedSet;
+
+    if-nez v0, :cond_0
+
+    move-object v0, p0
+
+    check-cast v0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajg;->zzm()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    return-object v0
+
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    array-length v0, p0
+
+    invoke-static {v0, p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static zzh([Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 2
+
+    array-length v0, p0
+
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_0
+
+    invoke-virtual {p0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/Object;
+
+    invoke-static {v0, p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    aget-object p0, p0, v0
+
+    new-instance v0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;-><init>(Ljava/lang/Object;)V
+
+    return-object v0
+
+    :cond_1
+    sget-object p0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;->zza:Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;
+
+    return-object p0
+.end method
+
+.method public static zzi()Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 1
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;->zza:Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalr;
+
+    return-object v0
+.end method
+
+.method public static zzo(Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalv;-><init>(Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method public static zzp(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 0
+
+    const-string p0, "file"
+
+    const-string p1, "asset"
+
+    filled-new-array {p0, p1}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    const/4 p1, 0x2
+
+    invoke-static {p1, p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static varargs zzq(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+    .locals 4
+    .annotation runtime Ljava/lang/SafeVarargs;
+    .end annotation
+
+    array-length v0, p6
+
+    add-int/lit8 v1, v0, 0x6
+
+    new-array v2, v1, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p0, v2, v3
+
+    const/4 p0, 0x1
+
+    aput-object p1, v2, p0
+
+    const/4 p0, 0x2
+
+    aput-object p2, v2, p0
+
+    const/4 p0, 0x3
+
+    aput-object p3, v2, p0
+
+    const/4 p0, 0x4
+
+    aput-object p4, v2, p0
+
+    const/4 p0, 0x5
+
+    aput-object p5, v2, p0
+
+    const/4 p0, 0x6
+
+    invoke-static {p6, v3, v2, p0, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    invoke-static {v1, v2}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza(I[Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+
+    if-ne p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    instance-of v0, p1, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zzr()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    move-object v0, p1
+
+    check-cast v0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zzr()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->hashCode()I
+
+    move-result v0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_1
+    invoke-static {p0, p1}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalu;->zzb(Ljava/util/Set;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public hashCode()I
+    .locals 0
+
+    invoke-static {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalu;->zza(Ljava/util/Set;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bridge synthetic iterator()Ljava/util/Iterator;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zzl()Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalx;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public zze()Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajg;->toArray()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;->zzg([Ljava/lang/Object;)Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public zzk()Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza:Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zze()Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzaka;->zza:Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzajm;
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public abstract zzl()Lcom/google/android/gms/internal/mlkit_vision_digital_ink/zzalx;
+.end method
+
+.method public zzr()Z
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
+.end method

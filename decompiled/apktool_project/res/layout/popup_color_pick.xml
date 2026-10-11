@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_common_popup_bg" android:paddingBottom="@dimen/dp_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintTabLayoutView android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabGravity="center" app:tabIndicatorAnimationMode="elastic" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="@dimen/dp_2" app:tabMaxWidth="@dimen/dp_120" app:tabMinWidth="@dimen/dp_100" app:tabMode="scrollable" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" app:tabUnboundedRipple="false" style="@style/tabLayoutStyle">
+        <com.google.android.material.tabs.TabItem android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_title_color" />
+        <com.google.android.material.tabs.TabItem android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_title_color_set" />
+    </com.onyx.android.sdk.theme.widgets.TintTabLayoutView>
+    <com.onyx.android.sdk.theme.widgets.TintView style="@style/dividerStyle" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.onyx.galaxy.note.ui.colorpicker.view.ColorPickView android:id="@id/colorPickView" android:paddingTop="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.onyx.android.sdk.theme.widgets.TintRecycleView android:id="@id/rv_color_set" android:paddingTop="@dimen/dp_12" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="@id/colorPickView" app:layout_constraintTop_toTopOf="@id/colorPickView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

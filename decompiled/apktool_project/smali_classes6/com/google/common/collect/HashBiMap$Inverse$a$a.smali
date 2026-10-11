@@ -1,0 +1,202 @@
+.class public Lcom/google/common/collect/HashBiMap$Inverse$a$a;
+.super Lcom/sunia/HTREnginev2/z3;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/common/collect/HashBiMap$Inverse$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/sunia/HTREnginev2/z3<",
+        "TV;TK;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public e:Lcom/google/common/collect/HashBiMap$BiEntry;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/collect/HashBiMap$BiEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic f:Lcom/google/common/collect/HashBiMap$Inverse$a;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/common/collect/HashBiMap$Inverse$a;Lcom/google/common/collect/HashBiMap$BiEntry;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/HashBiMap$BiEntry<",
+            "TK;TV;>;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->f:Lcom/google/common/collect/HashBiMap$Inverse$a;
+
+    invoke-direct {p0}, Lcom/sunia/HTREnginev2/z3;-><init>()V
+
+    iput-object p2, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getKey()Ljava/lang/Object;
+    .locals 0
+    .annotation runtime Lcom/sunia/HTREnginev2/xvk;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TV;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    iget-object p0, p0, Lcom/google/common/collect/ImmutableEntry;->value:Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public getValue()Ljava/lang/Object;
+    .locals 0
+    .annotation runtime Lcom/sunia/HTREnginev2/xvk;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TK;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    iget-object p0, p0, Lcom/google/common/collect/ImmutableEntry;->key:Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/sunia/HTREnginev2/xvk;
+        .end annotation
+    .end param
+    .annotation runtime Lcom/sunia/HTREnginev2/xvk;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TK;)TK;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    iget-object v0, v0, Lcom/google/common/collect/ImmutableEntry;->key:Ljava/lang/Object;
+
+    invoke-static {p1}, Lcom/sunia/HTREnginev2/pfh;->d(Ljava/lang/Object;)I
+
+    move-result v1
+
+    iget-object v2, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    iget v2, v2, Lcom/google/common/collect/HashBiMap$BiEntry;->keyHash:I
+
+    if-ne v1, v2, :cond_0
+
+    invoke-static {p1, v0}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    return-object p1
+
+    :cond_0
+    iget-object v2, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->f:Lcom/google/common/collect/HashBiMap$Inverse$a;
+
+    iget-object v2, v2, Lcom/google/common/collect/HashBiMap$Inverse$a;->j:Lcom/google/common/collect/HashBiMap$Inverse;
+
+    iget-object v2, v2, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
+
+    invoke-static {v2, p1, v1}, Lcom/google/common/collect/HashBiMap;->access$300(Lcom/google/common/collect/HashBiMap;Ljava/lang/Object;I)Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    move-result-object v2
+
+    if-nez v2, :cond_1
+
+    const/4 v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_0
+    const-string v3, "value already present: %s"
+
+    invoke-static {v2, v3, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
+
+    iget-object v2, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->f:Lcom/google/common/collect/HashBiMap$Inverse$a;
+
+    iget-object v2, v2, Lcom/google/common/collect/HashBiMap$Inverse$a;->j:Lcom/google/common/collect/HashBiMap$Inverse;
+
+    iget-object v2, v2, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
+
+    iget-object v3, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    invoke-static {v2, v3}, Lcom/google/common/collect/HashBiMap;->access$200(Lcom/google/common/collect/HashBiMap;Lcom/google/common/collect/HashBiMap$BiEntry;)V
+
+    new-instance v2, Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    iget-object v3, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    iget-object v4, v3, Lcom/google/common/collect/ImmutableEntry;->value:Ljava/lang/Object;
+
+    iget v3, v3, Lcom/google/common/collect/HashBiMap$BiEntry;->valueHash:I
+
+    invoke-direct {v2, p1, v1, v4, v3}, Lcom/google/common/collect/HashBiMap$BiEntry;-><init>(Ljava/lang/Object;ILjava/lang/Object;I)V
+
+    iput-object v2, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->e:Lcom/google/common/collect/HashBiMap$BiEntry;
+
+    iget-object p1, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->f:Lcom/google/common/collect/HashBiMap$Inverse$a;
+
+    iget-object p1, p1, Lcom/google/common/collect/HashBiMap$Inverse$a;->j:Lcom/google/common/collect/HashBiMap$Inverse;
+
+    iget-object p1, p1, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
+
+    const/4 v1, 0x0
+
+    invoke-static {p1, v2, v1}, Lcom/google/common/collect/HashBiMap;->access$500(Lcom/google/common/collect/HashBiMap;Lcom/google/common/collect/HashBiMap$BiEntry;Lcom/google/common/collect/HashBiMap$BiEntry;)V
+
+    iget-object p0, p0, Lcom/google/common/collect/HashBiMap$Inverse$a$a;->f:Lcom/google/common/collect/HashBiMap$Inverse$a;
+
+    iget-object p1, p0, Lcom/google/common/collect/HashBiMap$Inverse$a;->j:Lcom/google/common/collect/HashBiMap$Inverse;
+
+    iget-object p1, p1, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
+
+    invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->access$100(Lcom/google/common/collect/HashBiMap;)I
+
+    move-result p1
+
+    iput p1, p0, Lcom/google/common/collect/HashBiMap$b;->g:I
+
+    return-object v0
+.end method

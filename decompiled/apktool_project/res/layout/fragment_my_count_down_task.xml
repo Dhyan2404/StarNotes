@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:orientation="vertical" android:tag="layout/fragment_my_count_down_task_0" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="@dimen/counter_setting_popup_min_height" android:minHeight="@dimen/counter_setting_popup_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.galaxy.note.ui.view.ThemeRecyclerView android:id="@id/rv_task" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/dp_16" app:layout_constraintBottom_toTopOf="@id/tv_add" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_add" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/add" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/popup_counter_stroke_btn_style" />
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

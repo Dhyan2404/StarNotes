@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 120.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "b8df742de0b54544936173aa326a9d94",
+      "3db25d0da4e4453da0146b0b5c6cce52",
+      "8b2835d4ff694e7783a3f3eb74cd335d",
+      "4ef3addd82ed4f7b9db694687ea4b82b",
+      "7b4dae445bbb49eda9ed7e4bb24cb581"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_school_timetable_chinese",
+    "type": 20013,
+    "uniqueId": "20013",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_school_timetable_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_school_timetable_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "b8df742de0b54544936173aa326a9d94",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_school_timetable_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_school_timetable_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "3db25d0da4e4453da0146b0b5c6cce52",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_school_timetable_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_school_timetable_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "8b2835d4ff694e7783a3f3eb74cd335d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_school_timetable_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_school_timetable_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "4ef3addd82ed4f7b9db694687ea4b82b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_school_timetable_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_school_timetable_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "7b4dae445bbb49eda9ed7e4bb24cb581",
+      "updatedAt": 0
+    }
+  ]
+}

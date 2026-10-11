@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/sp_10" android:ellipsize="middle" android:gravity="center" android:id="@id/tv" android:background="@drawable/shape_tags_bg" android:layout_width="wrap_content" android:layout_height="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_4" android:maxLines="1" android:maxEms="@integer/note_grid_list_tag_ellipsize" android:layout_marginEnd="@dimen/dp_4" android:paddingHorizontal="@dimen/dp_6"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

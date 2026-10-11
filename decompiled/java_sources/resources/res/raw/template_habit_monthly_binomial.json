@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "LIFE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "d57eb2ceebb345efb515ced6cc44418f",
+      "9224e0e1a41f4ef999afc518ab92eb59",
+      "8596eac8ebfd4ef3a278ea69f8ef7222",
+      "4e4003401d8c4d48bb2e3bed659da698",
+      "02a5a9c62d334a39b4f2c0a1a6135a89"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_habit_monthly_binomial",
+    "type": 50006,
+    "uniqueId": "50006",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_binomial",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_binomial_thumbnail",
+      "type": 0,
+      "uniqueId": "d57eb2ceebb345efb515ced6cc44418f",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_binomial",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_binomial_thumbnail",
+      "type": 0,
+      "uniqueId": "9224e0e1a41f4ef999afc518ab92eb59",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_binomial",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_binomial_thumbnail",
+      "type": 0,
+      "uniqueId": "8596eac8ebfd4ef3a278ea69f8ef7222",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_binomial",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_binomial_thumbnail",
+      "type": 0,
+      "uniqueId": "4e4003401d8c4d48bb2e3bed659da698",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_binomial",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_binomial_thumbnail",
+      "type": 0,
+      "uniqueId": "02a5a9c62d334a39b4f2c0a1a6135a89",
+      "updatedAt": 0
+    }
+  ]
+}

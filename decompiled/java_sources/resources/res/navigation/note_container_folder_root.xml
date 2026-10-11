@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/note_folder_root"
+    app:startDestination="@+id/fragment_note_folder_root">
+    <fragment
+        android:label="FragmentNoteFolderRoot"
+        android:name="com.onyx.galaxy.note.category.p044ui.FragmentNoteFolderRoot"
+        android:id="@+id/fragment_note_folder_root"/>
+</navigation>

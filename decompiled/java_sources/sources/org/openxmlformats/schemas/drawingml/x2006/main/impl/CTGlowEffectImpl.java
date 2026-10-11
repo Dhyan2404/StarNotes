@@ -1,0 +1,382 @@
+package org.openxmlformats.schemas.drawingml.x2006.main.impl;
+
+import javax.xml.namespace.QName;
+import org.apache.poi.xssf.usermodel.XSSFRelation;
+import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.SimpleValue;
+import org.apache.xmlbeans.impl.values.TypeStore;
+import org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTHslColor;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTPresetColor;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTSRgbColor;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTScRgbColor;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTSchemeColor;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTSystemColor;
+import org.openxmlformats.schemas.drawingml.x2006.main.STPositiveCoordinate;
+
+/* loaded from: classes14.dex */
+public class CTGlowEffectImpl extends XmlComplexContentImpl implements CTGlowEffect {
+    private static final QName[] PROPERTY_QNAME = {new QName(XSSFRelation.NS_DRAWINGML, "scrgbClr"), new QName(XSSFRelation.NS_DRAWINGML, "srgbClr"), new QName(XSSFRelation.NS_DRAWINGML, "hslClr"), new QName(XSSFRelation.NS_DRAWINGML, "sysClr"), new QName(XSSFRelation.NS_DRAWINGML, "schemeClr"), new QName(XSSFRelation.NS_DRAWINGML, "prstClr"), new QName("", "rad")};
+    private static final long serialVersionUID = 1;
+
+    public CTGlowEffectImpl(SchemaType schemaType) {
+        super(schemaType);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTHslColor addNewHslClr() {
+        CTHslColor cTHslColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTHslColor = (CTHslColor) get_store().add_element_user(PROPERTY_QNAME[2]);
+        }
+        return cTHslColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTPresetColor addNewPrstClr() {
+        CTPresetColor cTPresetColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTPresetColor = (CTPresetColor) get_store().add_element_user(PROPERTY_QNAME[5]);
+        }
+        return cTPresetColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTSchemeColor addNewSchemeClr() {
+        CTSchemeColor cTSchemeColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTSchemeColor = (CTSchemeColor) get_store().add_element_user(PROPERTY_QNAME[4]);
+        }
+        return cTSchemeColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTScRgbColor addNewScrgbClr() {
+        CTScRgbColor cTScRgbColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTScRgbColor = (CTScRgbColor) get_store().add_element_user(PROPERTY_QNAME[0]);
+        }
+        return cTScRgbColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTSRgbColor addNewSrgbClr() {
+        CTSRgbColor cTSRgbColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTSRgbColor = (CTSRgbColor) get_store().add_element_user(PROPERTY_QNAME[1]);
+        }
+        return cTSRgbColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTSystemColor addNewSysClr() {
+        CTSystemColor cTSystemColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTSystemColor = (CTSystemColor) get_store().add_element_user(PROPERTY_QNAME[3]);
+        }
+        return cTSystemColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTHslColor getHslClr() {
+        CTHslColor cTHslColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTHslColor = (CTHslColor) get_store().find_element_user(PROPERTY_QNAME[2], 0);
+            if (cTHslColor == null) {
+                cTHslColor = null;
+            }
+        }
+        return cTHslColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTPresetColor getPrstClr() {
+        CTPresetColor cTPresetColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTPresetColor = (CTPresetColor) get_store().find_element_user(PROPERTY_QNAME[5], 0);
+            if (cTPresetColor == null) {
+                cTPresetColor = null;
+            }
+        }
+        return cTPresetColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public long getRad() {
+        long longValue;
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            SimpleValue simpleValue = (SimpleValue) typeStore.find_attribute_user(qNameArr[6]);
+            if (simpleValue == null) {
+                simpleValue = (SimpleValue) get_default_attribute_value(qNameArr[6]);
+            }
+            longValue = simpleValue == null ? 0L : simpleValue.getLongValue();
+        }
+        return longValue;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTSchemeColor getSchemeClr() {
+        CTSchemeColor cTSchemeColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTSchemeColor = (CTSchemeColor) get_store().find_element_user(PROPERTY_QNAME[4], 0);
+            if (cTSchemeColor == null) {
+                cTSchemeColor = null;
+            }
+        }
+        return cTSchemeColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTScRgbColor getScrgbClr() {
+        CTScRgbColor cTScRgbColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTScRgbColor = (CTScRgbColor) get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            if (cTScRgbColor == null) {
+                cTScRgbColor = null;
+            }
+        }
+        return cTScRgbColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTSRgbColor getSrgbClr() {
+        CTSRgbColor cTSRgbColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTSRgbColor = (CTSRgbColor) get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            if (cTSRgbColor == null) {
+                cTSRgbColor = null;
+            }
+        }
+        return cTSRgbColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public CTSystemColor getSysClr() {
+        CTSystemColor cTSystemColor;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTSystemColor = (CTSystemColor) get_store().find_element_user(PROPERTY_QNAME[3], 0);
+            if (cTSystemColor == null) {
+                cTSystemColor = null;
+            }
+        }
+        return cTSystemColor;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public boolean isSetHslClr() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = get_store().count_elements(PROPERTY_QNAME[2]) != 0;
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public boolean isSetPrstClr() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = get_store().count_elements(PROPERTY_QNAME[5]) != 0;
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public boolean isSetRad() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = get_store().find_attribute_user(PROPERTY_QNAME[6]) != null;
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public boolean isSetSchemeClr() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = get_store().count_elements(PROPERTY_QNAME[4]) != 0;
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public boolean isSetScrgbClr() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = get_store().count_elements(PROPERTY_QNAME[0]) != 0;
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public boolean isSetSrgbClr() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = true;
+            if (get_store().count_elements(PROPERTY_QNAME[1]) == 0) {
+                z = false;
+            }
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public boolean isSetSysClr() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = get_store().count_elements(PROPERTY_QNAME[3]) != 0;
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void setHslClr(CTHslColor cTHslColor) {
+        generatedSetterHelperImpl(cTHslColor, PROPERTY_QNAME[2], 0, (short) 1);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void setPrstClr(CTPresetColor cTPresetColor) {
+        generatedSetterHelperImpl(cTPresetColor, PROPERTY_QNAME[5], 0, (short) 1);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void setRad(long j) {
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            SimpleValue simpleValue = (SimpleValue) typeStore.find_attribute_user(qNameArr[6]);
+            if (simpleValue == null) {
+                simpleValue = (SimpleValue) get_store().add_attribute_user(qNameArr[6]);
+            }
+            simpleValue.setLongValue(j);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void setSchemeClr(CTSchemeColor cTSchemeColor) {
+        generatedSetterHelperImpl(cTSchemeColor, PROPERTY_QNAME[4], 0, (short) 1);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void setScrgbClr(CTScRgbColor cTScRgbColor) {
+        generatedSetterHelperImpl(cTScRgbColor, PROPERTY_QNAME[0], 0, (short) 1);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void setSrgbClr(CTSRgbColor cTSRgbColor) {
+        generatedSetterHelperImpl(cTSRgbColor, PROPERTY_QNAME[1], 0, (short) 1);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void setSysClr(CTSystemColor cTSystemColor) {
+        generatedSetterHelperImpl(cTSystemColor, PROPERTY_QNAME[3], 0, (short) 1);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void unsetHslClr() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_element(PROPERTY_QNAME[2], 0);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void unsetPrstClr() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_element(PROPERTY_QNAME[5], 0);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void unsetRad() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_attribute(PROPERTY_QNAME[6]);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void unsetSchemeClr() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_element(PROPERTY_QNAME[4], 0);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void unsetScrgbClr() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_element(PROPERTY_QNAME[0], 0);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void unsetSrgbClr() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_element(PROPERTY_QNAME[1], 0);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void unsetSysClr() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_element(PROPERTY_QNAME[3], 0);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public STPositiveCoordinate xgetRad() {
+        STPositiveCoordinate sTPositiveCoordinate;
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            sTPositiveCoordinate = (STPositiveCoordinate) typeStore.find_attribute_user(qNameArr[6]);
+            if (sTPositiveCoordinate == null) {
+                sTPositiveCoordinate = (STPositiveCoordinate) get_default_attribute_value(qNameArr[6]);
+            }
+        }
+        return sTPositiveCoordinate;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.main.CTGlowEffect
+    public void xsetRad(STPositiveCoordinate sTPositiveCoordinate) {
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            STPositiveCoordinate sTPositiveCoordinate2 = (STPositiveCoordinate) typeStore.find_attribute_user(qNameArr[6]);
+            if (sTPositiveCoordinate2 == null) {
+                sTPositiveCoordinate2 = (STPositiveCoordinate) get_store().add_attribute_user(qNameArr[6]);
+            }
+            sTPositiveCoordinate2.set(sTPositiveCoordinate);
+        }
+    }
+}

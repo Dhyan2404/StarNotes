@@ -1,0 +1,14 @@
+package com.tencent.cos.xml.model.tag;
+
+import java.util.List;
+
+/* loaded from: classes10.dex */
+public class CompleteMultipartUpload {
+    public List<Part> parts;
+
+    /* loaded from: classes10.dex */
+    public static class Part {
+        public String eTag;
+        public int partNumber;
+    }
+}

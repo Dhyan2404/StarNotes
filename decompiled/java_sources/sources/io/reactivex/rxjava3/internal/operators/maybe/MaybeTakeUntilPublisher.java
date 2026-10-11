@@ -1,0 +1,134 @@
+package io.reactivex.rxjava3.internal.operators.maybe;
+
+import com.sunia.HTREnginev2.AbstractC13470a4;
+import io.reactivex.rxjava3.core.FlowableSubscriber;
+import io.reactivex.rxjava3.core.MaybeObserver;
+import io.reactivex.rxjava3.core.MaybeSource;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.internal.disposables.DisposableHelper;
+import io.reactivex.rxjava3.internal.subscriptions.SubscriptionHelper;
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import java.util.concurrent.atomic.AtomicReference;
+import org.reactivestreams.Publisher;
+import org.reactivestreams.Subscription;
+
+/* loaded from: classes10.dex */
+public final class MaybeTakeUntilPublisher<T, U> extends AbstractC13470a4<T, T> {
+
+    /* renamed from: e */
+    public final Publisher<U> f96172e;
+
+    /* loaded from: classes10.dex */
+    public static final class TakeUntilMainMaybeObserver<T, U> extends AtomicReference<Disposable> implements MaybeObserver<T>, Disposable {
+        private static final long serialVersionUID = -2187421758664251153L;
+        final MaybeObserver<? super T> downstream;
+        final TakeUntilOtherMaybeObserver<U> other = new TakeUntilOtherMaybeObserver<>(this);
+
+        /* loaded from: classes10.dex */
+        public static final class TakeUntilOtherMaybeObserver<U> extends AtomicReference<Subscription> implements FlowableSubscriber<U> {
+            private static final long serialVersionUID = -1266041316834525931L;
+            final TakeUntilMainMaybeObserver<?, U> parent;
+
+            public TakeUntilOtherMaybeObserver(TakeUntilMainMaybeObserver<?, U> parent) {
+                this.parent = parent;
+            }
+
+            @Override // org.reactivestreams.Subscriber
+            public void onComplete() {
+                this.parent.otherComplete();
+            }
+
+            @Override // org.reactivestreams.Subscriber
+            public void onError(Throwable e) {
+                this.parent.otherError(e);
+            }
+
+            @Override // org.reactivestreams.Subscriber
+            public void onNext(Object value) {
+                SubscriptionHelper.cancel(this);
+                this.parent.otherComplete();
+            }
+
+            @Override // io.reactivex.rxjava3.core.FlowableSubscriber
+            public void onSubscribe(Subscription s) {
+                SubscriptionHelper.setOnce(this, s, Long.MAX_VALUE);
+            }
+        }
+
+        public TakeUntilMainMaybeObserver(MaybeObserver<? super T> downstream) {
+            this.downstream = downstream;
+        }
+
+        @Override // io.reactivex.rxjava3.disposables.Disposable
+        public void dispose() {
+            DisposableHelper.dispose(this);
+            SubscriptionHelper.cancel(this.other);
+        }
+
+        @Override // io.reactivex.rxjava3.disposables.Disposable
+        public boolean isDisposed() {
+            return DisposableHelper.isDisposed(get());
+        }
+
+        @Override // io.reactivex.rxjava3.core.MaybeObserver, io.reactivex.rxjava3.core.CompletableObserver
+        public void onComplete() {
+            SubscriptionHelper.cancel(this.other);
+            DisposableHelper disposableHelper = DisposableHelper.DISPOSED;
+            if (getAndSet(disposableHelper) != disposableHelper) {
+                this.downstream.onComplete();
+            }
+        }
+
+        @Override // io.reactivex.rxjava3.core.MaybeObserver, io.reactivex.rxjava3.core.SingleObserver
+        public void onError(Throwable e) {
+            SubscriptionHelper.cancel(this.other);
+            DisposableHelper disposableHelper = DisposableHelper.DISPOSED;
+            if (getAndSet(disposableHelper) != disposableHelper) {
+                this.downstream.onError(e);
+            } else {
+                RxJavaPlugins.onError(e);
+            }
+        }
+
+        @Override // io.reactivex.rxjava3.core.MaybeObserver, io.reactivex.rxjava3.core.SingleObserver
+        public void onSubscribe(Disposable d) {
+            DisposableHelper.setOnce(this, d);
+        }
+
+        @Override // io.reactivex.rxjava3.core.MaybeObserver, io.reactivex.rxjava3.core.SingleObserver
+        public void onSuccess(T value) {
+            SubscriptionHelper.cancel(this.other);
+            DisposableHelper disposableHelper = DisposableHelper.DISPOSED;
+            if (getAndSet(disposableHelper) != disposableHelper) {
+                this.downstream.onSuccess(value);
+            }
+        }
+
+        public void otherComplete() {
+            if (DisposableHelper.dispose(this)) {
+                this.downstream.onComplete();
+            }
+        }
+
+        public void otherError(Throwable e) {
+            if (DisposableHelper.dispose(this)) {
+                this.downstream.onError(e);
+            } else {
+                RxJavaPlugins.onError(e);
+            }
+        }
+    }
+
+    public MaybeTakeUntilPublisher(MaybeSource<T> source, Publisher<U> other) {
+        super(source);
+        this.f96172e = other;
+    }
+
+    @Override // io.reactivex.rxjava3.core.Maybe
+    public void subscribeActual(MaybeObserver<? super T> observer) {
+        TakeUntilMainMaybeObserver takeUntilMainMaybeObserver = new TakeUntilMainMaybeObserver(observer);
+        observer.onSubscribe(takeUntilMainMaybeObserver);
+        this.f96172e.subscribe(takeUntilMainMaybeObserver.other);
+        this.source.subscribe(takeUntilMainMaybeObserver);
+    }
+}

@@ -1,0 +1,317 @@
+.class public final Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;
+.super Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction<",
+        "Ljava/util/List<",
+        "+",
+        "Lcom/onyx/android/sdk/replicator/note/db/model/SyncNoteModel;",
+        ">;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010!\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0018\u00002\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00020\u0001B\u0017\u0012\u0006\u0010\u0014\u001a\u00020\u0013\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\u0014\u0010\u0005\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00020\u0004H\u0014J\u001c\u0010\t\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00080\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006H\u0002J\"\u0010\u000b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00020\u00042\u000c\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0002H\u0002R\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u000c\u0010\rR\u001d\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u000e8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000f\u0010\u0010\u001a\u0004\u0008\u0011\u0010\u0012\u00a8\u0006\u0017"
+    }
+    d2 = {
+        "Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;",
+        "Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;",
+        "",
+        "Lcom/onyx/android/sdk/replicator/note/db/model/SyncNoteModel;",
+        "Lio/reactivex/rxjava3/core/Observable;",
+        "create",
+        "",
+        "excerptId",
+        "Lcom/onyx/android/sdk/replicator/note/db/model/ExcerptCollectionModel;",
+        "l",
+        "excerptCollectionList",
+        "m",
+        "h",
+        "Ljava/lang/String;",
+        "",
+        "i",
+        "Ljava/util/List;",
+        "getExcerptCollectionList",
+        "()Ljava/util/List;",
+        "Lcom/onyx/android/sdk/universal/editor/EditorBundle;",
+        "editorBundle",
+        "<init>",
+        "(Lcom/onyx/android/sdk/universal/editor/EditorBundle;Ljava/lang/String;)V",
+        "sdk-universal_overseasRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field public final h:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final i:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/onyx/android/sdk/replicator/note/db/model/ExcerptCollectionModel;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lcom/onyx/android/sdk/universal/editor/EditorBundle;Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Lcom/onyx/android/sdk/universal/editor/EditorBundle;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "editorBundle"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "excerptId"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0, p1}, Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;-><init>(Lcom/onyx/android/sdk/universal/editor/EditorBundle;)V
+
+    iput-object p2, p0, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;->h:Ljava/lang/String;
+
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;->i:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public static final synthetic access$loadExcerptCollectionList(Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;->l(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic access$loadNoteModelList(Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;Ljava/util/List;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;->m(Ljava/util/List;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public create()Lio/reactivex/rxjava3/core/Observable;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/rxjava3/core/Observable<",
+            "Ljava/util/List<",
+            "Lcom/onyx/android/sdk/replicator/note/db/model/SyncNoteModel;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;->h:Ljava/lang/String;
+
+    invoke-static {v0}, Lio/reactivex/rxjava3/core/Observable;->just(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;->getEditorBundle()Lcom/onyx/android/sdk/universal/editor/EditorBundle;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/onyx/android/sdk/universal/editor/extension/EditorBundleKt;->noteScheduler(Lcom/onyx/android/sdk/universal/editor/EditorBundle;)Lio/reactivex/rxjava3/core/Scheduler;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->observeOn(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$a;
+
+    invoke-direct {v1, p0}, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$a;-><init>(Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;)V
+
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->flatMap(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$b;
+
+    invoke-direct {v1, p0}, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$b;-><init>(Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;)V
+
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->flatMap(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p0
+
+    const-string v0, "flatMap(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public final getExcerptCollectionList()Ljava/util/List;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/onyx/android/sdk/replicator/note/db/model/ExcerptCollectionModel;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    iget-object p0, p0, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;->i:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public final l(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Observable<",
+            "Ljava/util/List<",
+            "Lcom/onyx/android/sdk/replicator/note/db/model/ExcerptCollectionModel;",
+            ">;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/onyx/android/sdk/note/request/excerpt/LoadExcerptCollectionListBySourceShapeIdRequest;
+
+    invoke-virtual {p0}, Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;->getEditorBundle()Lcom/onyx/android/sdk/universal/editor/EditorBundle;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/onyx/android/sdk/universal/editor/extension/EditorBundleKt;->noteBundle(Lcom/onyx/android/sdk/universal/editor/EditorBundle;)Lcom/onyx/android/sdk/note/NoteBundle;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1, p1}, Lcom/onyx/android/sdk/note/request/excerpt/LoadExcerptCollectionListBySourceShapeIdRequest;-><init>(Lcom/onyx/android/sdk/note/NoteBundle;Ljava/lang/String;)V
+
+    invoke-static {p0, v0}, Lcom/onyx/android/sdk/universal/editor/action/extension/RxBaseAppActionKt;->submitRequestToNote(Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;Lcom/onyx/android/sdk/base/rx/RxBaseRequest;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$c;
+
+    invoke-direct {v0, p0}, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$c;-><init>(Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;)V
+
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->doOnNext(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$d;
+
+    invoke-direct {v0, p0}, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$d;-><init>(Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction;)V
+
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->map(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p0
+
+    const-string p1, "map(...)"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public final m(Ljava/util/List;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/onyx/android/sdk/replicator/note/db/model/ExcerptCollectionModel;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/Observable<",
+            "Ljava/util/List<",
+            "Lcom/onyx/android/sdk/replicator/note/db/model/SyncNoteModel;",
+            ">;>;"
+        }
+    .end annotation
+
+    check-cast p1, Ljava/lang/Iterable;
+
+    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->asSequence(Ljava/lang/Iterable;)Lkotlin/sequences/Sequence;
+
+    move-result-object p1
+
+    sget-object v0, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$loadNoteModelList$idList$1;->INSTANCE:Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$loadNoteModelList$idList$1;
+
+    invoke-static {p1, v0}, Lkotlin/sequences/SequencesKt;->map(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/Sequence;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lkotlin/sequences/SequencesKt;->toList(Lkotlin/sequences/Sequence;)Ljava/util/List;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/onyx/android/sdk/note/request/excerpt/LoadNoteModelListByIdListRequest;
+
+    invoke-virtual {p0}, Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;->getEditorBundle()Lcom/onyx/android/sdk/universal/editor/EditorBundle;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/onyx/android/sdk/universal/editor/extension/EditorBundleKt;->noteBundle(Lcom/onyx/android/sdk/universal/editor/EditorBundle;)Lcom/onyx/android/sdk/note/NoteBundle;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1, p1}, Lcom/onyx/android/sdk/note/request/excerpt/LoadNoteModelListByIdListRequest;-><init>(Lcom/onyx/android/sdk/note/NoteBundle;Ljava/util/List;)V
+
+    invoke-static {p0, v0}, Lcom/onyx/android/sdk/universal/editor/action/extension/RxBaseAppActionKt;->submitRequestToNote(Lcom/onyx/android/sdk/universal/editor/action/RxBaseAppAction;Lcom/onyx/android/sdk/base/rx/RxBaseRequest;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p0
+
+    sget-object p1, Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$e;->e:Lcom/onyx/android/sdk/universal/editor/action/excerpt/LoadQuoteNoteModeListAction$e;
+
+    invoke-virtual {p0, p1}, Lio/reactivex/rxjava3/core/Observable;->map(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+
+    move-result-object p0
+
+    const-string p1, "map(...)"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method

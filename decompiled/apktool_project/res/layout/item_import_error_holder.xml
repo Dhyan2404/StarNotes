@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/overlay_05" android:ellipsize="end" android:id="@id/tv_error_name" android:layout_width="wrap_content" android:layout_height="@dimen/dp_18" android:maxWidth="@dimen/dp_200" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/overlay_05" android:id="@id/tv_error_code_des" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/tv_error_name" app:layout_constraintStart_toEndOf="@id/tv_error_name" app:layout_constraintTop_toTopOf="@id/tv_error_name" />
+    <TextView android:textColor="@color/error_100" android:id="@id/tv_error_code" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/tv_error_name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_error_name" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="@id/tv_error_name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_error_name">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/succeed_100" android:id="@id/tv_completed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/completed" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/primary_100" android:gravity="center_vertical" android:id="@id/tv_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:drawableLeft="@drawable/ic_backup_retry" android:drawablePadding="@dimen/dp_4" />
+        <ProgressBar android:id="@id/progress_retry" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:paddingEnd="@dimen/dp_1" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

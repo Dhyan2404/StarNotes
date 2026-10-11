@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/icon_color_set_un_add"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="star_path" android:animation="@animator/color_set_star_color_anim" />
+    <target android:name="border_path" android:animation="@animator/color_set_border_alpha_anim" />
+    <target android:name="plus_path" android:animation="@animator/color_set_plus_alpha_anim" />
+</animated-vector>

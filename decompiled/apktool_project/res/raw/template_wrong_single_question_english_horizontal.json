@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 60.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "48a6d26630df47849794921430663674",
+      "6146a64fb75b4d139ca2c7b489386ef7",
+      "b50f357818644ce58b1fa4331f46c04b",
+      "f0f0f6841b59451fb70d4530b30ffc2d",
+      "081c0caf6f464c3aaa537bc0cb0b9250"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_wrong_single_question_english",
+    "type": 21007,
+    "uniqueId": "21007",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_wrong_single_question_english_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_single_question_english_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "48a6d26630df47849794921430663674",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_wrong_single_question_english_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_single_question_english_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "6146a64fb75b4d139ca2c7b489386ef7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_wrong_single_question_english_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_single_question_english_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "b50f357818644ce58b1fa4331f46c04b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_wrong_single_question_english_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_single_question_english_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "f0f0f6841b59451fb70d4530b30ffc2d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_wrong_single_question_english_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_single_question_english_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "081c0caf6f464c3aaa537bc0cb0b9250",
+      "updatedAt": 0
+    }
+  ]
+}

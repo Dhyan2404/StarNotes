@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<remote-actions
+    enable_key="@863C9BD1"
+    version="1.2">
+    <action
+        id="single_click"
+        label="@string/single_click"
+        priority="1"
+        trigger_key="ZOOM_IN">
+        <preference
+            name="gesture"
+            value="click"/>
+        <preference
+            name="button_only"
+            value="true"/>
+    </action>
+    <action
+        id="double_click"
+        label="@string/double_click"
+        priority="2"
+        trigger_key="ZOOM_OUT">
+        <preference
+            name="gesture"
+            value="double_click"/>
+        <preference
+            name="button_only"
+            value="true"/>
+    </action>
+</remote-actions>

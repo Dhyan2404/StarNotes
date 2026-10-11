@@ -1,0 +1,157 @@
+package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
+
+import com.sun.org.apache.xalan.internal.templates.Constants;
+import javax.xml.namespace.QName;
+import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.SimpleValue;
+import org.apache.xmlbeans.impl.values.TypeStore;
+import org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STXstring;
+import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat;
+
+/* loaded from: classes15.dex */
+public class CTServerFormatImpl extends XmlComplexContentImpl implements CTServerFormat {
+    private static final QName[] PROPERTY_QNAME = {new QName("", "culture"), new QName("", Constants.ATTRNAME_FORMAT)};
+    private static final long serialVersionUID = 1;
+
+    public CTServerFormatImpl(SchemaType schemaType) {
+        super(schemaType);
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public String getCulture() {
+        String stringValue;
+        synchronized (monitor()) {
+            check_orphaned();
+            SimpleValue simpleValue = (SimpleValue) get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            stringValue = simpleValue == null ? null : simpleValue.getStringValue();
+        }
+        return stringValue;
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public String getFormat() {
+        String stringValue;
+        synchronized (monitor()) {
+            check_orphaned();
+            SimpleValue simpleValue = (SimpleValue) get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            stringValue = simpleValue == null ? null : simpleValue.getStringValue();
+        }
+        return stringValue;
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public boolean isSetCulture() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = get_store().find_attribute_user(PROPERTY_QNAME[0]) != null;
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public boolean isSetFormat() {
+        boolean z;
+        synchronized (monitor()) {
+            check_orphaned();
+            z = true;
+            if (get_store().find_attribute_user(PROPERTY_QNAME[1]) == null) {
+                z = false;
+            }
+        }
+        return z;
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public void setCulture(String str) {
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            SimpleValue simpleValue = (SimpleValue) typeStore.find_attribute_user(qNameArr[0]);
+            if (simpleValue == null) {
+                simpleValue = (SimpleValue) get_store().add_attribute_user(qNameArr[0]);
+            }
+            simpleValue.setStringValue(str);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public void setFormat(String str) {
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            SimpleValue simpleValue = (SimpleValue) typeStore.find_attribute_user(qNameArr[1]);
+            if (simpleValue == null) {
+                simpleValue = (SimpleValue) get_store().add_attribute_user(qNameArr[1]);
+            }
+            simpleValue.setStringValue(str);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public void unsetCulture() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_attribute(PROPERTY_QNAME[0]);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public void unsetFormat() {
+        synchronized (monitor()) {
+            check_orphaned();
+            get_store().remove_attribute(PROPERTY_QNAME[1]);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public STXstring xgetCulture() {
+        STXstring sTXstring;
+        synchronized (monitor()) {
+            check_orphaned();
+            sTXstring = (STXstring) get_store().find_attribute_user(PROPERTY_QNAME[0]);
+        }
+        return sTXstring;
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public STXstring xgetFormat() {
+        STXstring sTXstring;
+        synchronized (monitor()) {
+            check_orphaned();
+            sTXstring = (STXstring) get_store().find_attribute_user(PROPERTY_QNAME[1]);
+        }
+        return sTXstring;
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public void xsetCulture(STXstring sTXstring) {
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            STXstring sTXstring2 = (STXstring) typeStore.find_attribute_user(qNameArr[0]);
+            if (sTXstring2 == null) {
+                sTXstring2 = (STXstring) get_store().add_attribute_user(qNameArr[0]);
+            }
+            sTXstring2.set(sTXstring);
+        }
+    }
+
+    @Override // org.openxmlformats.schemas.spreadsheetml.x2006.main.CTServerFormat
+    public void xsetFormat(STXstring sTXstring) {
+        synchronized (monitor()) {
+            check_orphaned();
+            TypeStore typeStore = get_store();
+            QName[] qNameArr = PROPERTY_QNAME;
+            STXstring sTXstring2 = (STXstring) typeStore.find_attribute_user(qNameArr[1]);
+            if (sTXstring2 == null) {
+                sTXstring2 = (STXstring) get_store().add_attribute_user(qNameArr[1]);
+            }
+            sTXstring2.set(sTXstring);
+        }
+    }
+}

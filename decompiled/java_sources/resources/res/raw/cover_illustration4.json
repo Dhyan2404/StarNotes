@@ -1,0 +1,33 @@
+{
+  "coverModel": {
+    "categoryId": "ILLUSTRATION",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 140.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "8befa56f8aad4433a2d984b1670d1b01"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_illustration4",
+    "uniqueId": "2004",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_illustration4",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "8befa56f8aad4433a2d984b1670d1b01",
+      "updatedAt": 0
+    }
+  ]
+}

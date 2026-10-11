@@ -1,0 +1,166 @@
+package com.sun.xml.internal.stream.events;
+
+import com.sun.org.apache.xerces.internal.util.NamespaceContextWrapper;
+import com.sun.org.apache.xerces.internal.util.NamespaceSupport;
+import javax.xml.namespace.QName;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.events.XMLEvent;
+import javax.xml.stream.util.XMLEventAllocator;
+import javax.xml.stream.util.XMLEventConsumer;
+
+/* loaded from: classes10.dex */
+public class XMLEventAllocatorImpl implements XMLEventAllocator {
+    private QName getQName(XMLStreamReader xMLStreamReader) {
+        String prefix = xMLStreamReader.getPrefix();
+        String namespaceURI = xMLStreamReader.getNamespaceURI();
+        String localName = xMLStreamReader.getLocalName();
+        if (prefix != null && namespaceURI != null) {
+            return new QName(namespaceURI, localName, prefix);
+        }
+        if (prefix == null && namespaceURI != null) {
+            return new QName(namespaceURI, localName);
+        }
+        if (prefix == null && namespaceURI == null) {
+            return new QName(localName);
+        }
+        return null;
+    }
+
+    private void setNamespaceContext(StartElementEvent startElementEvent, XMLStreamReader xMLStreamReader) {
+        startElementEvent.setNamespaceContext(new NamespaceContextWrapper(new NamespaceSupport(((NamespaceContextWrapper) xMLStreamReader.getNamespaceContext()).getNamespaceContext())));
+    }
+
+    @Override // javax.xml.stream.util.XMLEventAllocator
+    public XMLEvent allocate(XMLStreamReader xMLStreamReader) throws XMLStreamException {
+        if (xMLStreamReader != null) {
+            return getXMLEvent(xMLStreamReader);
+        }
+        throw new XMLStreamException("Reader cannot be null");
+    }
+
+    public void fillAttributes(StartElementEvent startElementEvent, XMLStreamReader xMLStreamReader) {
+        int attributeCount = xMLStreamReader.getAttributeCount();
+        for (int i = 0; i < attributeCount; i++) {
+            QName attributeName = xMLStreamReader.getAttributeName(i);
+            attributeName.getPrefix();
+            attributeName.getLocalPart();
+            AttributeImpl attributeImpl = new AttributeImpl();
+            attributeImpl.setName(attributeName);
+            attributeImpl.setAttributeType(xMLStreamReader.getAttributeType(i));
+            attributeImpl.setSpecified(xMLStreamReader.isAttributeSpecified(i));
+            attributeImpl.setValue(xMLStreamReader.getAttributeValue(i));
+            startElementEvent.addAttribute(attributeImpl);
+        }
+    }
+
+    public void fillNamespaceAttributes(StartElementEvent startElementEvent, XMLStreamReader xMLStreamReader) {
+        int namespaceCount = xMLStreamReader.getNamespaceCount();
+        for (int i = 0; i < namespaceCount; i++) {
+            String namespaceURI = xMLStreamReader.getNamespaceURI(i);
+            String namespacePrefix = xMLStreamReader.getNamespacePrefix(i);
+            if (namespacePrefix == null) {
+                namespacePrefix = "";
+            }
+            startElementEvent.addNamespaceAttribute(new NamespaceImpl(namespacePrefix, namespaceURI));
+        }
+    }
+
+    public XMLEvent getNextEvent(XMLStreamReader xMLStreamReader) throws XMLStreamException {
+        xMLStreamReader.next();
+        return getXMLEvent(xMLStreamReader);
+    }
+
+    public XMLEvent getXMLEvent(XMLStreamReader xMLStreamReader) {
+        switch (xMLStreamReader.getEventType()) {
+            case 1:
+                StartElementEvent startElementEvent = new StartElementEvent(getQName(xMLStreamReader));
+                fillAttributes(startElementEvent, xMLStreamReader);
+                if (((Boolean) xMLStreamReader.getProperty(XMLInputFactory.IS_NAMESPACE_AWARE)).booleanValue()) {
+                    fillNamespaceAttributes(startElementEvent, xMLStreamReader);
+                    setNamespaceContext(startElementEvent, xMLStreamReader);
+                }
+                startElementEvent.setLocation(xMLStreamReader.getLocation());
+                return startElementEvent;
+            case 2:
+                EndElementEvent endElementEvent = new EndElementEvent(getQName(xMLStreamReader));
+                endElementEvent.setLocation(xMLStreamReader.getLocation());
+                if (!((Boolean) xMLStreamReader.getProperty(XMLInputFactory.IS_NAMESPACE_AWARE)).booleanValue()) {
+                    return endElementEvent;
+                }
+                fillNamespaceAttributes(endElementEvent, xMLStreamReader);
+                return endElementEvent;
+            case 3:
+                ProcessingInstructionEvent processingInstructionEvent = new ProcessingInstructionEvent(xMLStreamReader.getPITarget(), xMLStreamReader.getPIData());
+                processingInstructionEvent.setLocation(xMLStreamReader.getLocation());
+                return processingInstructionEvent;
+            case 4:
+                CharacterEvent characterEvent = new CharacterEvent(xMLStreamReader.getText());
+                characterEvent.setLocation(xMLStreamReader.getLocation());
+                return characterEvent;
+            case 5:
+                CommentEvent commentEvent = new CommentEvent(xMLStreamReader.getText());
+                commentEvent.setLocation(xMLStreamReader.getLocation());
+                return commentEvent;
+            case 6:
+                CharacterEvent characterEvent2 = new CharacterEvent(xMLStreamReader.getText(), false, true);
+                characterEvent2.setLocation(xMLStreamReader.getLocation());
+                return characterEvent2;
+            case 7:
+                StartDocumentEvent startDocumentEvent = new StartDocumentEvent();
+                startDocumentEvent.setVersion(xMLStreamReader.getVersion());
+                startDocumentEvent.setEncoding(xMLStreamReader.getEncoding());
+                if (xMLStreamReader.getCharacterEncodingScheme() != null) {
+                    startDocumentEvent.setDeclaredEncoding(true);
+                } else {
+                    startDocumentEvent.setDeclaredEncoding(false);
+                }
+                startDocumentEvent.setStandalone(xMLStreamReader.isStandalone());
+                startDocumentEvent.setLocation(xMLStreamReader.getLocation());
+                return startDocumentEvent;
+            case 8:
+                EndDocumentEvent endDocumentEvent = new EndDocumentEvent();
+                endDocumentEvent.setLocation(xMLStreamReader.getLocation());
+                return endDocumentEvent;
+            case 9:
+                EntityReferenceEvent entityReferenceEvent = new EntityReferenceEvent(xMLStreamReader.getLocalName(), new EntityDeclarationImpl(xMLStreamReader.getLocalName(), xMLStreamReader.getText()));
+                entityReferenceEvent.setLocation(xMLStreamReader.getLocation());
+                return entityReferenceEvent;
+            case 10:
+            default:
+                return null;
+            case 11:
+                return new DTDEvent(xMLStreamReader.getText());
+            case 12:
+                CharacterEvent characterEvent3 = new CharacterEvent(xMLStreamReader.getText(), true);
+                characterEvent3.setLocation(xMLStreamReader.getLocation());
+                return characterEvent3;
+        }
+    }
+
+    @Override // javax.xml.stream.util.XMLEventAllocator
+    public XMLEventAllocator newInstance() {
+        return new XMLEventAllocatorImpl();
+    }
+
+    @Override // javax.xml.stream.util.XMLEventAllocator
+    public void allocate(XMLStreamReader xMLStreamReader, XMLEventConsumer xMLEventConsumer) throws XMLStreamException {
+        XMLEvent xMLEvent = getXMLEvent(xMLStreamReader);
+        if (xMLEvent != null) {
+            xMLEventConsumer.add(xMLEvent);
+        }
+    }
+
+    public void fillNamespaceAttributes(EndElementEvent endElementEvent, XMLStreamReader xMLStreamReader) {
+        int namespaceCount = xMLStreamReader.getNamespaceCount();
+        for (int i = 0; i < namespaceCount; i++) {
+            String namespaceURI = xMLStreamReader.getNamespaceURI(i);
+            String namespacePrefix = xMLStreamReader.getNamespacePrefix(i);
+            if (namespacePrefix == null) {
+                namespacePrefix = "";
+            }
+            endElementEvent.addNamespace(new NamespaceImpl(namespacePrefix, namespaceURI));
+        }
+    }
+}

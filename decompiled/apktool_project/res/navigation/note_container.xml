@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_note_list" app:startDestination="@id/fragment_note_list_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="NoteListDisplayFragment" android:name="com.onyx.galaxy.note.category.ui.NoteListContainerFragment" android:id="@id/fragment_note_list_container" />
+    <fragment android:label="SearchNoteFragment" android:name="com.onyx.galaxy.note.category.ui.SearchNoteFragment" android:id="@id/fragment_search_note" />
+</navigation>

@@ -1,0 +1,79 @@
+.class public Lcom/sun/org/apache/xerces/internal/impl/dv/xs/Base64BinaryDV;
+.super Lcom/sun/org/apache/xerces/internal/impl/dv/xs/TypeValidator;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/sun/org/apache/xerces/internal/impl/dv/xs/Base64BinaryDV$XBase64;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/sun/org/apache/xerces/internal/impl/dv/xs/TypeValidator;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getActualValue(Ljava/lang/String;Lcom/sun/org/apache/xerces/internal/impl/dv/ValidationContext;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/sun/org/apache/xerces/internal/impl/dv/InvalidDatatypeValueException;
+        }
+    .end annotation
+
+    invoke-static {p1}, Lcom/sun/org/apache/xerces/internal/impl/dv/util/Base64;->decode(Ljava/lang/String;)[B
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    new-instance p1, Lcom/sun/org/apache/xerces/internal/impl/dv/xs/Base64BinaryDV$XBase64;
+
+    invoke-direct {p1, p0}, Lcom/sun/org/apache/xerces/internal/impl/dv/xs/Base64BinaryDV$XBase64;-><init>([B)V
+
+    return-object p1
+
+    :cond_0
+    new-instance p0, Lcom/sun/org/apache/xerces/internal/impl/dv/InvalidDatatypeValueException;
+
+    const-string p2, "base64Binary"
+
+    filled-new-array {p1, p2}, [Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string p2, "cvc-datatype-valid.1.2.1"
+
+    invoke-direct {p0, p2, p1}, Lcom/sun/org/apache/xerces/internal/impl/dv/InvalidDatatypeValueException;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    throw p0
+.end method
+
+.method public getAllowedFacets()S
+    .locals 0
+
+    const/16 p0, 0x81f
+
+    return p0
+.end method
+
+.method public getDataLength(Ljava/lang/Object;)I
+    .locals 0
+
+    check-cast p1, Lcom/sun/org/apache/xerces/internal/impl/dv/xs/Base64BinaryDV$XBase64;
+
+    invoke-virtual {p1}, Lcom/sun/org/apache/xerces/internal/impl/dv/util/ByteListImpl;->getLength()I
+
+    move-result p0
+
+    return p0
+.end method

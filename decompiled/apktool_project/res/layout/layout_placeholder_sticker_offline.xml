@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.onyx.android.sdk.theme.widgets.DynamicImageView android:id="@id/iv_holder" android:visibility="gone" android:layout_width="@dimen/dp_148" android:layout_height="@dimen/dp_148" />
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_03" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sticker_check_network" />
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/highlightTipText" android:background="@drawable/bg_sticker_tips_highlight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sticker_check_network" android:paddingHorizontal="@dimen/dp_16" android:paddingVertical="@dimen/dp_6" />
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_02" android:gravity="center_horizontal" android:id="@id/tv_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

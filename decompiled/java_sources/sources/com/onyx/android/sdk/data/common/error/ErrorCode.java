@@ -1,0 +1,83 @@
+package com.onyx.android.sdk.data.common.error;
+
+import com.onyx.android.sdk.base.common.error.OnyxException;
+import com.onyx.android.sdk.base.extension.StringKt;
+import com.onyx.android.sdk.base.utils.ResManager;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(m61527d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b3\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u00107\u001a\u0002082\u0006\u00109\u001a\u00020\u0004J\u000e\u0010:\u001a\u00020;2\u0006\u00109\u001a\u00020\u0004R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010/\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u00100\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u00101\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u00103\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u00105\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006<"}, m61528d2 = {"Lcom/onyx/android/sdk/data/common/error/ErrorCode;", "", "()V", "ABORT", "", "ACCOUNT_BANNED", "ACCOUNT_BAN_AREA_CODE", "ACCOUNT_DESTROYED", "ACCOUNT_EMAIL_BOUND_OTHERS", "ACCOUNT_EMAIL_FORMAT_ERROR", "ACCOUNT_EMAIL_NOT_EXIST", "ACCOUNT_EMAIL_NOT_REGISTERED", "ACCOUNT_EMAIL_SAME", "ACCOUNT_GOOGLE_UNMATCHED", "ACCOUNT_HUAWEI_BOUND_OTHERS", "ACCOUNT_HUAWEI_UNMATCHED", "ACCOUNT_ILLEGAL_IMAGE", "ACCOUNT_IMAGE_FORMAT_UNSUPPORTED", "ACCOUNT_MICROSOFT_UNMATCHED", "ACCOUNT_NOT_CONSISTENT", "ACCOUNT_NOT_EXIST", "ACCOUNT_PASSWORD_FAIL", "ACCOUNT_PHONE_AREA_FORMAT_ERROR", "ACCOUNT_PHONE_BOUND_OTHERS", "ACCOUNT_PHONE_FORMAT_ERROR", "ACCOUNT_PHONE_NOT_EXIST", "ACCOUNT_PHONE_NOT_REGISTERED", "ACCOUNT_PHONE_SAME", "ACCOUNT_QR_CODE_EXPIRED", "ACCOUNT_SENSITIVE_WORDS", "ACCOUNT_VERIFY_CODE_EXPIRED", "ACCOUNT_VERIFY_CODE_FREQUENT", "ACCOUNT_VERIFY_CODE_INCORRECT", "ACCOUNT_VERIFY_CODE_QUOTA_USED_OUT", "ACCOUNT_WECHAT_BOUND_OTHERS", "ACCOUNT_WECHAT_UNMATCHED", "API_REQUEST_FREQUENT", "DATA_HAS_BEEN", "DATA_NOT_EXIST", "DOCUMENT_OPEN_FAIL", "DOC_FORMAT_NOT_SUPPORT_EXPORT_PDF", "DOWNLOAD_FAIL", "EXCEEDING_SIZE_OF_UPLOAD_FAIL", "FEEDBACK_SENSITIVE_WORDS", "MEMBER_HAS_BEEN", "NOTE_SYNC_CLOUD_SPACE_NOT_ENOUGH", "NOTE_SYNC_DISK_NOT_BOUND", "NOTE_SYNC_GATEWAY_NOT_CONFIGURED", "NOTE_SYNC_NOT_LOGIN", "NOTE_SYNC_NO_PERMISSION", "NOTE_SYNC_OPTION_DISABLED", "NOTE_SYNC_TIMEOUT", "NOTE_SYNC_WIFI_NOT_CONNECTED", "SPACE_NOT_ENOUGH", "TIMEOUT", "getErrorMessage", "", "code", "httpErrorFromCode", "Lcom/onyx/android/sdk/base/common/error/OnyxException;", "sdk-data_release"}, m61529k = 1, m61530mv = {1, 9, 0}, m61532xi = 48)
+/* loaded from: classes7.dex */
+public final class ErrorCode {
+    public static final int ABORT = 100;
+    public static final int ACCOUNT_BANNED = 102012;
+    public static final int ACCOUNT_BAN_AREA_CODE = 102039;
+    public static final int ACCOUNT_DESTROYED = 102011;
+    public static final int ACCOUNT_EMAIL_BOUND_OTHERS = 102014;
+    public static final int ACCOUNT_EMAIL_FORMAT_ERROR = 102026;
+    public static final int ACCOUNT_EMAIL_NOT_EXIST = 102006;
+    public static final int ACCOUNT_EMAIL_NOT_REGISTERED = 102008;
+    public static final int ACCOUNT_EMAIL_SAME = 102018;
+    public static final int ACCOUNT_GOOGLE_UNMATCHED = 102033;
+    public static final int ACCOUNT_HUAWEI_BOUND_OTHERS = 102016;
+    public static final int ACCOUNT_HUAWEI_UNMATCHED = 102020;
+    public static final int ACCOUNT_ILLEGAL_IMAGE = 102029;
+    public static final int ACCOUNT_IMAGE_FORMAT_UNSUPPORTED = 102023;
+    public static final int ACCOUNT_MICROSOFT_UNMATCHED = 102038;
+    public static final int ACCOUNT_NOT_CONSISTENT = 102100;
+    public static final int ACCOUNT_NOT_EXIST = 102009;
+    public static final int ACCOUNT_PASSWORD_FAIL = 102010;
+    public static final int ACCOUNT_PHONE_AREA_FORMAT_ERROR = 102028;
+    public static final int ACCOUNT_PHONE_BOUND_OTHERS = 102013;
+    public static final int ACCOUNT_PHONE_FORMAT_ERROR = 102027;
+    public static final int ACCOUNT_PHONE_NOT_EXIST = 102005;
+    public static final int ACCOUNT_PHONE_NOT_REGISTERED = 102007;
+    public static final int ACCOUNT_PHONE_SAME = 102017;
+    public static final int ACCOUNT_QR_CODE_EXPIRED = 102004;
+    public static final int ACCOUNT_SENSITIVE_WORDS = 102024;
+    public static final int ACCOUNT_VERIFY_CODE_EXPIRED = 102002;
+    public static final int ACCOUNT_VERIFY_CODE_FREQUENT = 102003;
+    public static final int ACCOUNT_VERIFY_CODE_INCORRECT = 102001;
+    public static final int ACCOUNT_VERIFY_CODE_QUOTA_USED_OUT = 102025;
+    public static final int ACCOUNT_WECHAT_BOUND_OTHERS = 102015;
+    public static final int ACCOUNT_WECHAT_UNMATCHED = 102019;
+    public static final int API_REQUEST_FREQUENT = 100001;
+    public static final int DATA_HAS_BEEN = 104002;
+    public static final int DATA_NOT_EXIST = 104001;
+    public static final int DOCUMENT_OPEN_FAIL = 103;
+    public static final int DOC_FORMAT_NOT_SUPPORT_EXPORT_PDF = 105;
+    public static final int DOWNLOAD_FAIL = 102;
+    public static final int EXCEEDING_SIZE_OF_UPLOAD_FAIL = 104;
+    public static final int FEEDBACK_SENSITIVE_WORDS = 102040;
+
+    @NotNull
+    public static final ErrorCode INSTANCE = new ErrorCode();
+    public static final int MEMBER_HAS_BEEN = 105001;
+    public static final int NOTE_SYNC_CLOUD_SPACE_NOT_ENOUGH = 201006;
+    public static final int NOTE_SYNC_DISK_NOT_BOUND = 201004;
+    public static final int NOTE_SYNC_GATEWAY_NOT_CONFIGURED = 201007;
+    public static final int NOTE_SYNC_NOT_LOGIN = 201002;
+    public static final int NOTE_SYNC_NO_PERMISSION = 201005;
+    public static final int NOTE_SYNC_OPTION_DISABLED = 201003;
+    public static final int NOTE_SYNC_TIMEOUT = 201001;
+    public static final int NOTE_SYNC_WIFI_NOT_CONNECTED = 201008;
+    public static final int SPACE_NOT_ENOUGH = 101;
+    public static final int TIMEOUT = 101;
+
+    private ErrorCode() {
+    }
+
+    @NotNull
+    public final String getErrorMessage(int code) {
+        String stringSafely = ResManager.INSTANCE.getStringSafely(OnyxErrorHandler.INSTANCE.errorCodeToMessage(code));
+        if (StringKt.isEmpty(stringSafely)) {
+            stringSafely = ErrorType.REQUEST_FAIL;
+        }
+        return stringSafely + '(' + code + ')';
+    }
+
+    @NotNull
+    public final OnyxException httpErrorFromCode(int code) {
+        return OnyxException.INSTANCE.m31893of(ErrorType.REQUEST_FAIL, getErrorMessage(code), code);
+    }
+}

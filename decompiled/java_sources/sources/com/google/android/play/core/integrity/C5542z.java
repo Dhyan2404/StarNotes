@@ -1,0 +1,14 @@
+package com.google.android.play.core.integrity;
+
+import com.google.android.play.integrity.internal.C5569q;
+import com.google.android.play.integrity.internal.InterfaceC5551ai;
+
+/* renamed from: com.google.android.play.core.integrity.z */
+/* loaded from: classes6.dex */
+public final class C5542z implements InterfaceC5551ai {
+    @Override // com.google.android.play.integrity.internal.InterfaceC5554al
+    /* renamed from: a */
+    public final /* synthetic */ Object mo25669a() {
+        return new C5569q("IntegrityService");
+    }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tint_drawable"
+        android:drawable="@drawable/ic_selection_rotation_background"/>
+    <item android:drawable="@drawable/ic_selection_rotation_foreground"/>
+</layer-list>

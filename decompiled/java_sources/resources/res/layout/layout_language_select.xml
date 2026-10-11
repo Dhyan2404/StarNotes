@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/language_container"
+    android:background="@color/theme_background_color_02"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dp_24"
+    android:paddingEnd="@dimen/dp_24">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:id="@+id/tv_language_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="@+id/language_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/language_title"
+        style="@style/commonPrimaryTextStyle"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_18"
+        android:id="@+id/language_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_35"
+        android:text="@string/language_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/commonTextStyle"/>
+    <com.onyx.android.sdk.theme.widgets.TintView
+        android:id="@+id/language_divider"
+        android:background="@color/theme_divider_color_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0_5"
+        android:layout_marginTop="@dimen/dp_19"
+        app:layout_constraintTop_toBottomOf="@+id/language_title"/>
+    <com.onyx.android.sdk.theme.widgets.TintRecycleView
+        android:id="@+id/rl_language_list"
+        android:background="@drawable/shape_setting_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_divider"/>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

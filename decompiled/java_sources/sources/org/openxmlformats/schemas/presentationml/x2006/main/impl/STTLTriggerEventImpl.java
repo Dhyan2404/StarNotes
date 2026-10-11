@@ -1,0 +1,18 @@
+package org.openxmlformats.schemas.presentationml.x2006.main.impl;
+
+import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx;
+import org.openxmlformats.schemas.presentationml.x2006.main.STTLTriggerEvent;
+
+/* loaded from: classes14.dex */
+public class STTLTriggerEventImpl extends JavaStringEnumerationHolderEx implements STTLTriggerEvent {
+    private static final long serialVersionUID = 1;
+
+    public STTLTriggerEventImpl(SchemaType schemaType) {
+        super(schemaType, false);
+    }
+
+    public STTLTriggerEventImpl(SchemaType schemaType, boolean z) {
+        super(schemaType, z);
+    }
+}

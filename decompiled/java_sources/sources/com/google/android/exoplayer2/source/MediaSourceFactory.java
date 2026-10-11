@@ -1,0 +1,39 @@
+package com.google.android.exoplayer2.source;
+
+import androidx.annotation.Nullable;
+import com.google.android.exoplayer2.MediaItem;
+import com.google.android.exoplayer2.drm.DrmSessionManagerProvider;
+import com.google.android.exoplayer2.source.MediaSource;
+import com.google.android.exoplayer2.upstream.LoadErrorHandlingPolicy;
+
+@Deprecated
+/* loaded from: classes5.dex */
+public interface MediaSourceFactory extends MediaSource.Factory {
+    public static final MediaSourceFactory UNSUPPORTED = new C4840a();
+
+    /* renamed from: com.google.android.exoplayer2.source.MediaSourceFactory$a */
+    /* loaded from: classes5.dex */
+    public class C4840a implements MediaSourceFactory {
+        @Override // com.google.android.exoplayer2.source.MediaSource.Factory
+        /* renamed from: a, reason: merged with bridge method [inline-methods] */
+        public MediaSourceFactory setDrmSessionManagerProvider(@Nullable DrmSessionManagerProvider drmSessionManagerProvider) {
+            return this;
+        }
+
+        @Override // com.google.android.exoplayer2.source.MediaSource.Factory
+        /* renamed from: b, reason: merged with bridge method [inline-methods] */
+        public MediaSourceFactory setLoadErrorHandlingPolicy(@Nullable LoadErrorHandlingPolicy loadErrorHandlingPolicy) {
+            return this;
+        }
+
+        @Override // com.google.android.exoplayer2.source.MediaSource.Factory
+        public MediaSource createMediaSource(MediaItem mediaItem) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.google.android.exoplayer2.source.MediaSource.Factory
+        public int[] getSupportedTypes() {
+            throw new UnsupportedOperationException();
+        }
+    }
+}

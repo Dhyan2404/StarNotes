@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/fragment_settings_stylus_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24">
+            <com.onyx.android.sdk.ui.MediumTextView android:text="@string/stylus_settings" style="@style/SettingsDetailTitleStyle" />
+            <com.onyx.android.sdk.theme.widgets.TintView style="@style/SettingsDetailDividerStyle" />
+            <ScrollView android:id="@id/common_device_stylus_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:tag="binding_2" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/stylus_double_click_support" android:layout_marginStart="@dimen/dp_16" />
+                    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/double_click_container" style="@style/SettingsDetailItemContainerStyle">
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_stylus_pen_double_click_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:text="@string/stylus_pen_double_click" style="@style/settingsItemTextStyle" />
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_stylus_pen_double_click_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+                    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:gravity="start|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/double_click_tips" android:maxLines="@integer/text_view_max_lines_2" android:paddingHorizontal="@dimen/dp_16" />
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/stylus_long_press_support" android:layout_marginStart="@dimen/dp_16" />
+                    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/long_press_container" style="@style/SettingsDetailItemContainerStyle">
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_long_press_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:text="@string/button_long_press" style="@style/settingsItemTextStyle" />
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_stylus_button_long_press_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+                    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/stylus_primary_key_click_support" android:layout_marginStart="@dimen/dp_16" />
+                    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/primary_click_container" style="@style/SettingsDetailItemContainerStyle">
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_primary_click_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:text="@string/primary_key_single_click" style="@style/settingsItemTextStyle" />
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_primary_click_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+                    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/secondary_click_container" style="@style/SettingsDetailItemContainerStyle">
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_secondary_click_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:text="@string/secondary_key_single_click" style="@style/settingsItemTextStyle" />
+                        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_secondary_click_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+                    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                    <include android:id="@id/include_pinch_slide" layout="@layout/include_stylus_pinch_slide_container" />
+                </LinearLayout>
+            </ScrollView>
+            <include android:id="@id/include_special_device" layout="@layout/include_special_device_stylus" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/include_stylus_fun" layout="@layout/layout_stylus_fun_container" />
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

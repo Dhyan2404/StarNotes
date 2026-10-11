@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "data": [
+    {
+      "id": "1",
+      "name": "margin_template_standard",
+      "iconRes": "template_icon_margin_empty",
+      "spaceArgs": {
+        "defaultSpaceValueDp": 32.88,
+        "maxSpaceValueDp": 64.0,
+        "minSpaceValueDp": 8.0,
+        "spaceUniqueId": "template_space_key_margin_standard",
+        "spaceValuePx": 0.0
+      },
+      "templates": [
+        {
+          "name": "margin_template_style_empty",
+          "resName": "margin_empty_geojson",
+          "fillStyle": 0
+        },
+        {
+          "name": "margin_template_style_horizontal_line",
+          "resName": "margin_empty_horizontal_line_geojson",
+          "fillStyle": 1
+        },
+        {
+          "name": "margin_template_style_grid",
+          "resName": "margin_empty_grid_geojson",
+          "fillStyle": 3
+        },
+        {
+          "name": "margin_template_style_dotted",
+          "resName": "margin_empty_dotted_geojson",
+          "fillStyle": 2
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "margin_template_cornell_left",
+      "iconRes": "template_icon_margin_cornell_left",
+      "spaceArgs": {
+        "defaultSpaceValueDp": 32.88,
+        "maxSpaceValueDp": 64.0,
+        "minSpaceValueDp": 8.0,
+        "spaceUniqueId": "template_space_key_margin_cornell_left",
+        "spaceValuePx": 0.0
+      },
+      "templates": [
+        {
+          "name": "margin_template_style_empty",
+          "resName": "margin_cornell_left_empty_geojson",
+          "fillStyle": 0
+        },
+        {
+          "name": "margin_template_style_horizontal_line",
+          "resName": "margin_cornell_left_horizontal_line_geojson",
+          "fillStyle": 1
+        },
+        {
+          "name": "margin_template_style_grid",
+          "resName": "margin_cornell_left_grid_geojson",
+          "fillStyle": 3
+        },
+        {
+          "name": "margin_template_style_dotted",
+          "resName": "margin_cornell_left_dotted_geojson",
+          "fillStyle": 2
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "margin_template_cornell_right",
+      "iconRes": "template_icon_margin_cornell_right",
+      "spaceArgs": {
+        "defaultSpaceValueDp": 32.88,
+        "maxSpaceValueDp": 64.0,
+        "minSpaceValueDp": 8.0,
+        "spaceUniqueId": "template_space_key_margin_cornell_right",
+        "spaceValuePx": 0.0
+      },
+      "templates": [
+        {
+          "name": "margin_template_style_empty",
+          "resName": "margin_cornell_right_empty_geojson",
+          "fillStyle": 0
+        },
+        {
+          "name": "margin_template_style_horizontal_line",
+          "resName": "margin_cornell_right_horizontal_line_geojson",
+          "fillStyle": 1
+        },
+        {
+          "name": "margin_template_style_grid",
+          "resName": "margin_cornell_right_grid_geojson",
+          "fillStyle": 3
+        },
+        {
+          "name": "margin_template_style_dotted",
+          "resName": "margin_cornell_right_dotted_geojson",
+          "fillStyle": 2
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "margin_template_tokyo_university_left",
+      "iconRes": "template_icon_margin_tokyo_left",
+      "spaceArgs": {
+        "defaultSpaceValueDp": 32.88,
+        "maxSpaceValueDp": 64.0,
+        "minSpaceValueDp": 8.0,
+        "spaceUniqueId": "template_space_key_margin_tokyo_university_left",
+        "spaceValuePx": 0.0
+      },
+      "templates": [
+        {
+          "name": "margin_template_style_empty",
+          "resName": "margin_tokyo_university_left_empty_geojson",
+          "fillStyle": 0
+        },
+        {
+          "name": "margin_template_style_horizontal_line",
+          "resName": "margin_tokyo_university_left_horizontal_line_geojson",
+          "fillStyle": 1
+        },
+        {
+          "name": "margin_template_style_grid",
+          "resName": "margin_tokyo_university_left_grid_geojson",
+          "fillStyle": 3
+        },
+        {
+          "name": "margin_template_style_dotted",
+          "resName": "margin_tokyo_university_left_dotted_geojson",
+          "fillStyle": 2
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "margin_template_tokyo_university_right",
+      "iconRes": "template_icon_margin_tokyo_right",
+      "spaceArgs": {
+        "defaultSpaceValueDp": 32.88,
+        "maxSpaceValueDp": 64.0,
+        "minSpaceValueDp": 8.0,
+        "spaceUniqueId": "template_space_key_margin_tokyo_university_right",
+        "spaceValuePx": 0.0
+      },
+      "templates": [
+        {
+          "name": "margin_template_style_empty",
+          "resName": "margin_tokyo_university_right_empty_geojson",
+          "fillStyle": 0
+        },
+        {
+          "name": "margin_template_style_horizontal_line",
+          "resName": "margin_tokyo_university_right_horizontal_line_geojson",
+          "fillStyle": 1
+        },
+        {
+          "name": "margin_template_style_grid",
+          "resName": "margin_tokyo_university_right_grid_geojson",
+          "fillStyle": 3
+        },
+        {
+          "name": "margin_template_style_dotted",
+          "resName": "margin_tokyo_university_right_dotted_geojson",
+          "fillStyle": 2
+        }
+      ]
+    }
+  ]
+}

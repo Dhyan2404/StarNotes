@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="fraction" name="angle_default_stroke_width">0.25</item>
+    <item type="fraction" name="angle_default_text_size">0.25</item>
+    <item type="fraction" name="angle_fallback_side_ratio">4.0</item>
+    <item type="fraction" name="angle_line_straight_threshold_percent">0.08</item>
+    <item type="fraction" name="angle_radius_max_percent">0.25</item>
+    <item type="fraction" name="angle_side_differ_rate_max">2.0</item>
+    <item type="fraction" name="angle_single_radius_max_percent">0.6</item>
+    <item type="fraction" name="angle_turning_point_min_spacing_percent">0.05</item>
+    <item type="fraction" name="angle_turning_point_threshold_percent">0.9</item>
+    <item type="fraction" name="arrow_main_segment_min_length_percent">0.8</item>
+    <item type="fraction" name="arrow_max_length_percent">0.6</item>
+    <item type="fraction" name="arrow_turning_point_threshold_percent">0.8</item>
+    <item type="fraction" name="bracket_arrow_height_mistaken_percent">0.3</item>
+    <item type="fraction" name="bracket_min_ratio">2.0</item>
+    <fraction name="capture_icon_padding_percent">14.999998%</fraction>
+    <item type="fraction" name="circle_oval_diff_threshold_percent">0.05</item>
+    <fraction name="config_drag_after_percent">85.0%</fraction>
+    <fraction name="config_drag_before_percent">14.999998%</fraction>
+    <fraction name="config_drag_item_alpha">100.0%</fraction>
+    <fraction name="config_drag_shadow_alpha">29.999996%</fraction>
+    <item type="fraction" name="curly_bracket_max_height_percent">0.1</item>
+    <item type="fraction" name="curve_clean_points_percent">0.1</item>
+    <item type="fraction" name="ellipse_turning_point_threshold_percent">0.5</item>
+    <item type="fraction" name="font_line_spacing_max">3.0</item>
+    <item type="fraction" name="font_line_spacing_min">1.0</item>
+    <item type="fraction" name="guideline_parallel_deg_threshold">0.15</item>
+    <item type="fraction" name="guideline_parallel_distance_threshold">10.0</item>
+    <item type="fraction" name="ink_char_spacing_default">0.0</item>
+    <item type="fraction" name="ink_char_spacing_max">10.0</item>
+    <item type="fraction" name="ink_char_spacing_min">-10.0</item>
+    <item type="fraction" name="ink_font_size_default">16.0</item>
+    <item type="fraction" name="ink_font_size_max">100.0</item>
+    <item type="fraction" name="ink_font_size_min">1.0</item>
+    <item type="fraction" name="ink_line_spacing_default">1.2</item>
+    <item type="fraction" name="ink_line_spacing_max">3.0</item>
+    <item type="fraction" name="ink_line_spacing_min">1.0</item>
+    <item type="fraction" name="line_mistake_degree">10.0</item>
+    <item type="fraction" name="line_mistaken_degree_for_ruler">2.0</item>
+    <item type="fraction" name="line_mistaken_threshold_percent">0.1</item>
+    <item type="fraction" name="min_arrow_width_percent">2.0</item>
+    <item type="fraction" name="min_distance_percent_for_center_point">0.1</item>
+    <item type="fraction" name="parallel_mistaken_percent">0.08</item>
+    <item type="fraction" name="path_resample_max_spacing_percent">0.1</item>
+    <item type="fraction" name="path_resample_spacing_percent">0.1</item>
+    <item type="fraction" name="pdf_margin_bottom">8.0</item>
+    <item type="fraction" name="pdf_margin_left">10.0</item>
+    <item type="fraction" name="pdf_margin_right">10.0</item>
+    <item type="fraction" name="pdf_margin_top">8.0</item>
+    <item type="fraction" name="pentagram_inner_point_distance_percent">0.47213593</item>
+    <item type="fraction" name="rectangle_polygon_similar_threshold">0.75</item>
+    <item type="fraction" name="square_side_differ_rate_max">0.3</item>
+    <item type="fraction" name="text_selection_color_alpha">0.24</item>
+    <fraction name="toolbar_custom_popup_height_percent">60.000004%</fraction>
+    <fraction name="toolbar_custom_popup_list_height_percent">35.000004%</fraction>
+    <fraction name="toolbar_custom_popup_width_percent">90.0%</fraction>
+    <item type="fraction" name="triangle_min_point_spacing_percent">0.05</item>
+    <item type="fraction" name="triangle_straight_threshold_percent">0.2</item>
+    <item type="fraction" name="triangle_turning_point_threshold_percent">0.9</item>
+    <item type="fraction" name="turning_point_threshold_percent">0.75</item>
+</resources>

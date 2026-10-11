@@ -1,0 +1,150 @@
+package com.google.android.gms.internal.mlkit_vision_digital_ink;
+
+import java.net.InetAddress;
+import java.net.URI;
+import java.net.URL;
+import java.util.BitSet;
+import java.util.Calendar;
+import java.util.Currency;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+import java.util.UUID;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicIntegerArray;
+
+/* loaded from: classes5.dex */
+public final class zzbnb {
+    public static final zzbio zzA;
+    public static final zzbio zzB;
+    public static final zzbip zzC;
+    public static final zzbio zzD;
+    public static final zzbip zzE;
+    public static final zzbio zzF;
+    public static final zzbip zzG;
+    public static final zzbio zzH;
+    public static final zzbip zzI;
+    public static final zzbio zzJ;
+    public static final zzbip zzK;
+    public static final zzbio zzL;
+    public static final zzbip zzM;
+    public static final zzbio zzN;
+    public static final zzbip zzO;
+    public static final zzbio zzP;
+    public static final zzbip zzQ;
+    public static final zzbio zzR;
+    public static final zzbip zzS;
+    public static final zzbio zzT;
+    public static final zzbip zzU;
+    public static final zzbio zzV;
+    public static final zzbip zzW;
+    public static final zzbip zzX;
+    public static final zzbio zza;
+    public static final zzbip zzb;
+    public static final zzbio zzc;
+    public static final zzbip zzd;
+    public static final zzbio zze;
+    public static final zzbio zzf;
+    public static final zzbip zzg;
+    public static final zzbio zzh;
+    public static final zzbip zzi;
+    public static final zzbio zzj;
+    public static final zzbip zzk;
+    public static final zzbio zzl;
+    public static final zzbip zzm;
+    public static final zzbio zzn;
+    public static final zzbip zzo;
+    public static final zzbio zzp;
+    public static final zzbip zzq;
+    public static final zzbio zzr;
+    public static final zzbip zzs;
+    public static final zzbio zzt;
+    public static final zzbio zzu;
+    public static final zzbio zzv;
+    public static final zzbio zzw;
+    public static final zzbip zzx;
+    public static final zzbio zzy;
+    public static final zzbio zzz;
+
+    static {
+        zzbio zzd2 = new zzbmb().zzd();
+        zza = zzd2;
+        zzb = new zzbmn(Class.class, zzd2);
+        zzbio zzd3 = new zzbmm().zzd();
+        zzc = zzd3;
+        zzd = new zzbmn(BitSet.class, zzd3);
+        zzbms zzbmsVar = new zzbms();
+        zze = zzbmsVar;
+        zzf = new zzbmt();
+        zzg = new zzbmo(Boolean.TYPE, Boolean.class, zzbmsVar);
+        zzbmu zzbmuVar = new zzbmu();
+        zzh = zzbmuVar;
+        zzi = new zzbmo(Byte.TYPE, Byte.class, zzbmuVar);
+        zzbmv zzbmvVar = new zzbmv();
+        zzj = zzbmvVar;
+        zzk = new zzbmo(Short.TYPE, Short.class, zzbmvVar);
+        zzbmw zzbmwVar = new zzbmw();
+        zzl = zzbmwVar;
+        zzm = new zzbmo(Integer.TYPE, Integer.class, zzbmwVar);
+        zzbio zzd4 = new zzbmx().zzd();
+        zzn = zzd4;
+        zzo = new zzbmn(AtomicInteger.class, zzd4);
+        zzbio zzd5 = new zzbmy().zzd();
+        zzp = zzd5;
+        zzq = new zzbmn(AtomicBoolean.class, zzd5);
+        zzbio zzd6 = new zzblr().zzd();
+        zzr = zzd6;
+        zzs = new zzbmn(AtomicIntegerArray.class, zzd6);
+        zzt = new zzbls();
+        zzu = new zzblt();
+        zzv = new zzblu();
+        zzblv zzblvVar = new zzblv();
+        zzw = zzblvVar;
+        zzx = new zzbmo(Character.TYPE, Character.class, zzblvVar);
+        zzblw zzblwVar = new zzblw();
+        zzy = zzblwVar;
+        zzz = new zzblx();
+        zzA = new zzbly();
+        zzB = new zzblz();
+        zzC = new zzbmn(String.class, zzblwVar);
+        zzbma zzbmaVar = new zzbma();
+        zzD = zzbmaVar;
+        zzE = new zzbmn(StringBuilder.class, zzbmaVar);
+        zzbmc zzbmcVar = new zzbmc();
+        zzF = zzbmcVar;
+        zzG = new zzbmn(StringBuffer.class, zzbmcVar);
+        zzbmd zzbmdVar = new zzbmd();
+        zzH = zzbmdVar;
+        zzI = new zzbmn(URL.class, zzbmdVar);
+        zzbme zzbmeVar = new zzbme();
+        zzJ = zzbmeVar;
+        zzK = new zzbmn(URI.class, zzbmeVar);
+        zzbmf zzbmfVar = new zzbmf();
+        zzL = zzbmfVar;
+        zzM = new zzbmr(InetAddress.class, zzbmfVar);
+        zzbmg zzbmgVar = new zzbmg();
+        zzN = zzbmgVar;
+        zzO = new zzbmn(UUID.class, zzbmgVar);
+        zzbio zzd7 = new zzbmh().zzd();
+        zzP = zzd7;
+        zzQ = new zzbmn(Currency.class, zzd7);
+        zzbmi zzbmiVar = new zzbmi();
+        zzR = zzbmiVar;
+        zzS = new zzbmp(Calendar.class, GregorianCalendar.class, zzbmiVar);
+        zzbmj zzbmjVar = new zzbmj();
+        zzT = zzbmjVar;
+        zzU = new zzbmn(Locale.class, zzbmjVar);
+        zzbmk zzbmkVar = new zzbmk();
+        zzV = zzbmkVar;
+        zzW = new zzbmr(zzbhy.class, zzbmkVar);
+        zzX = new zzbml();
+    }
+
+    public static zzbip zza(Class cls, zzbio zzbioVar) {
+        return new zzbmn(cls, zzbioVar);
+    }
+
+    public static zzbip zzb(Class cls, Class cls2, zzbio zzbioVar) {
+        return new zzbmo(cls, cls2, zzbioVar);
+    }
+}

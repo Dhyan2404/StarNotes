@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "c3bd08c8b7494571a9ead0ef6f8e2a35",
+      "330abe1e806143f3a43049f486c38702",
+      "0d460528163448b689b8b3eb0baafcf5",
+      "77e1512e3b554ad1a3a0a8fb32462106",
+      "59fb49c3b6034180a02cc788e3569524"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_study_plan",
+    "type": 30009,
+    "uniqueId": "30009",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "c3bd08c8b7494571a9ead0ef6f8e2a35",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "330abe1e806143f3a43049f486c38702",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "0d460528163448b689b8b3eb0baafcf5",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "77e1512e3b554ad1a3a0a8fb32462106",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "59fb49c3b6034180a02cc788e3569524",
+      "updatedAt": 0
+    }
+  ]
+}

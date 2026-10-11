@@ -1,0 +1,50 @@
+package org.apache.poi.ss.formula.ptg;
+
+import com.google.android.material.motion.MotionUtils;
+import org.apache.poi.ss.formula.function.FunctionMetadata;
+import org.apache.poi.ss.formula.function.FunctionMetadataRegistry;
+import org.apache.poi.util.LittleEndianInput;
+import org.apache.poi.util.LittleEndianOutput;
+
+/* loaded from: classes13.dex */
+public final class FuncPtg extends AbstractFunctionPtg {
+    public static final int SIZE = 3;
+    public static final byte sid = 33;
+
+    private FuncPtg(int i, FunctionMetadata functionMetadata) {
+        super(i, functionMetadata.getReturnClassCode(), functionMetadata.getParameterClassCodes(), functionMetadata.getMinParams());
+    }
+
+    public static FuncPtg create(LittleEndianInput littleEndianInput) {
+        return create(littleEndianInput.readUShort());
+    }
+
+    @Override // org.apache.poi.ss.formula.ptg.Ptg, org.apache.poi.common.Duplicatable
+    public FuncPtg copy() {
+        return this;
+    }
+
+    @Override // org.apache.poi.ss.formula.ptg.Ptg
+    public byte getSid() {
+        return (byte) 33;
+    }
+
+    @Override // org.apache.poi.ss.formula.ptg.AbstractFunctionPtg, org.apache.poi.ss.formula.ptg.Ptg
+    public int getSize() {
+        return 3;
+    }
+
+    @Override // org.apache.poi.ss.formula.ptg.Ptg
+    public void write(LittleEndianOutput littleEndianOutput) {
+        littleEndianOutput.writeByte(getPtgClass() + 33);
+        littleEndianOutput.writeShort(getFunctionIndex());
+    }
+
+    public static FuncPtg create(int i) {
+        FunctionMetadata functionByIndex = FunctionMetadataRegistry.getFunctionByIndex(i);
+        if (functionByIndex != null) {
+            return new FuncPtg(i, functionByIndex);
+        }
+        throw new IllegalStateException("Invalid built-in function index (" + i + MotionUtils.f31762d);
+    }
+}

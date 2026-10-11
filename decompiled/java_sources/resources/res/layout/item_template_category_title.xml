@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/selector_template_category_text_color"
+        android:gravity="center"
+        android:id="@+id/tv_category_title_name"
+        android:background="@drawable/selector_template_category_title_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_28"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15"/>
+</LinearLayout>

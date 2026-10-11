@@ -1,0 +1,48 @@
+package com.onyx.android.sdk.rxgesture;
+
+import com.onyx.android.sdk.base.utils.ResManager;
+import com.sun.org.apache.bcel.internal.Constants;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(m61527d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0011\n\u0002\u0010\u0007\n\u0002\b\u000e\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b#\u0010$R\u0014\u0010\u0003\u001a\u00020\u00028\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0003\u0010\u0004R\u0014\u0010\u0006\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0006\u0010\u0007R\u0014\u0010\b\u001a\u00020\u00028\u0006X\u0086T¢\u0006\u0006\n\u0004\b\b\u0010\u0004R\u0014\u0010\t\u001a\u00020\u00028\u0006X\u0086T¢\u0006\u0006\n\u0004\b\t\u0010\u0004R\u0017\u0010\r\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\n\u0010\u0004\u001a\u0004\b\u000b\u0010\fR\u0014\u0010\u000e\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u000e\u0010\u0007R\u0014\u0010\u000f\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u000f\u0010\u0007R\u0014\u0010\u0010\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0010\u0010\u0007R\u0014\u0010\u0011\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0011\u0010\u0007R\u001a\u0010\u0014\u001a\u00020\u00028\u0006X\u0086D¢\u0006\f\n\u0004\b\u0012\u0010\u0004\u001a\u0004\b\u0013\u0010\fR\u0014\u0010\u0015\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0015\u0010\u0007R\u0014\u0010\u0016\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0016\u0010\u0007R\u0014\u0010\u0018\u001a\u00020\u00178\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R\u0014\u0010\u001a\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001a\u0010\u0007R\u0014\u0010\u001b\u001a\u00020\u00178\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001b\u0010\u0019R\u0014\u0010\u001c\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001c\u0010\u0007R\u0014\u0010\u001d\u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001d\u0010\u0007R\u0014\u0010\u001e\u001a\u00020\u00028\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001e\u0010\u0004R\u0014\u0010\u001f\u001a\u00020\u00028\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001f\u0010\u0004R\u0014\u0010 \u001a\u00020\u00058\u0006X\u0086T¢\u0006\u0006\n\u0004\b \u0010\u0007R\u0014\u0010!\u001a\u00020\u00028\u0006X\u0086T¢\u0006\u0006\n\u0004\b!\u0010\u0004R\u0014\u0010\"\u001a\u00020\u00028\u0006X\u0086T¢\u0006\u0006\n\u0004\b\"\u0010\u0004¨\u0006%"}, m61528d2 = {"Lcom/onyx/android/sdk/rxgesture/RxGestureConstant;", "", "", "MULTI_MOVE_DISTANCE_THRESHOLD", "I", "", "MULTI_MOVE_TIME_THRESHOLD", "J", "SINGLE_MOVE_DISTANCE_THRESHOLD", "SINGLE_MOVE_DISTANCE_THRESHOLD_SHORT", "a", "getSINGLE_TAP_DISTANCE_THRESHOLD", "()I", "SINGLE_TAP_DISTANCE_THRESHOLD", "SINGLE_TAP_TIME_MS_MAX", "SINGLE_TAP_TIME_MS_MIN", "STYLUS_SINGLE_TAP_TIME_MS_MIN", "SINGLE_TAP_CONFIRMED_TIME_MS_THRESHOLD", "b", "getDOUBLE_TAP_DISTANCE_THRESHOLD", "DOUBLE_TAP_DISTANCE_THRESHOLD", "DOUBLE_TAP_TIME_MS_THRESHOLD", "SINGLE_MOVE_TIME_THRESHOLD", "", "LARGE_AREA_TOUCH_THRESHOLD", "F", "PEN_LEAVE_TIME_THRESHOLD", "SCALE_FACTOR_INTERVAL_THRESHOLD", "SCALE_INTERVAL_TIME_MS", "MOVE_INTERVAL_TIME_MS", "MOVE_DISTANCE_THRESHOLD", "LONG_PRESS_MOVE_DISTANCE_THRESHOLD", "LONG_PRESS_TIME", "TWO_FINGER_POINT_COUNT", "THREE_FINGER_POINT_COUNT", Constants.CONSTRUCTOR_NAME, "()V", "sdk-rxgesture_release"}, m61529k = 1, m61530mv = {1, 9, 0})
+/* loaded from: classes8.dex */
+public final class RxGestureConstant {
+    public static final long DOUBLE_TAP_TIME_MS_THRESHOLD = 1200;
+    public static final float LARGE_AREA_TOUCH_THRESHOLD = 0.8f;
+    public static final int LONG_PRESS_MOVE_DISTANCE_THRESHOLD = 10;
+    public static final long LONG_PRESS_TIME = 500;
+    public static final int MOVE_DISTANCE_THRESHOLD = 5;
+    public static final long MOVE_INTERVAL_TIME_MS = 80;
+    public static final int MULTI_MOVE_DISTANCE_THRESHOLD = 150;
+    public static final long MULTI_MOVE_TIME_THRESHOLD = 200;
+    public static final long PEN_LEAVE_TIME_THRESHOLD = 20;
+    public static final float SCALE_FACTOR_INTERVAL_THRESHOLD = 0.03f;
+    public static final long SCALE_INTERVAL_TIME_MS = 50;
+    public static final int SINGLE_MOVE_DISTANCE_THRESHOLD = 30;
+    public static final int SINGLE_MOVE_DISTANCE_THRESHOLD_SHORT = 5;
+    public static final long SINGLE_MOVE_TIME_THRESHOLD = 300;
+    public static final long SINGLE_TAP_CONFIRMED_TIME_MS_THRESHOLD = 1200;
+    public static final long SINGLE_TAP_TIME_MS_MAX = 1200;
+    public static final long SINGLE_TAP_TIME_MS_MIN = 30;
+    public static final long STYLUS_SINGLE_TAP_TIME_MS_MIN = 10;
+    public static final int THREE_FINGER_POINT_COUNT = 3;
+    public static final int TWO_FINGER_POINT_COUNT = 2;
+
+    @NotNull
+    public static final RxGestureConstant INSTANCE = new RxGestureConstant();
+
+    /* renamed from: a, reason: from kotlin metadata */
+    public static final int SINGLE_TAP_DISTANCE_THRESHOLD = ResManager.INSTANCE.getScaledTouchSlop();
+
+    /* renamed from: b, reason: from kotlin metadata */
+    public static final int DOUBLE_TAP_DISTANCE_THRESHOLD = 50;
+
+    public final int getDOUBLE_TAP_DISTANCE_THRESHOLD() {
+        return DOUBLE_TAP_DISTANCE_THRESHOLD;
+    }
+
+    public final int getSINGLE_TAP_DISTANCE_THRESHOLD() {
+        return SINGLE_TAP_DISTANCE_THRESHOLD;
+    }
+}

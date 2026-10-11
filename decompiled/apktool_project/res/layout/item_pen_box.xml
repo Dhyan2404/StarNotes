@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_pen_box_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_doc_overview_item_bg" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_select" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/selector_pen_box_item" android:layout_marginEnd="@dimen/dp_10" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_01" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:layout_width="@dimen/dp_100" android:layout_height="wrap_content" android:minHeight="@dimen/dp_40" android:singleLine="true" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/pen_list" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+    <com.onyx.android.sdk.theme.widgets.TintView android:layout_gravity="bottom" android:id="@id/v_line" android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="@dimen/dp0_5" />
+</FrameLayout>

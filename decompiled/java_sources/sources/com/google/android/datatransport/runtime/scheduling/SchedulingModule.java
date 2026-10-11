@@ -1,0 +1,26 @@
+package com.google.android.datatransport.runtime.scheduling;
+
+import android.content.Context;
+import com.google.android.datatransport.runtime.dagger.Binds;
+import com.google.android.datatransport.runtime.dagger.Module;
+import com.google.android.datatransport.runtime.dagger.Provides;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoScheduler;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.SchedulerConfig;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.WorkScheduler;
+import com.google.android.datatransport.runtime.scheduling.persistence.EventStore;
+import com.google.android.datatransport.runtime.time.Clock;
+import com.google.android.datatransport.runtime.time.Monotonic;
+
+@Module
+/* loaded from: classes4.dex */
+public abstract class SchedulingModule {
+    @Provides
+    /* renamed from: b */
+    public static WorkScheduler m17463b(Context context, EventStore eventStore, SchedulerConfig schedulerConfig, @Monotonic Clock clock) {
+        return new JobInfoScheduler(context, eventStore, schedulerConfig);
+    }
+
+    @Binds
+    /* renamed from: a */
+    public abstract Scheduler m17464a(DefaultScheduler defaultScheduler);
+}

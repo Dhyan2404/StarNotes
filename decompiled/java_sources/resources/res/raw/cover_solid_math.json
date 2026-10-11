@@ -1,0 +1,86 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 20.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "bbcc4890d08b46679630fb4e5ea9a3d9",
+      "876e173e305a456bb8a93e8ed304146d",
+      "b047ab7936ce4a6eb269815b5f03b3df",
+      "e267a82d1936471bae465cd15ba1145e",
+      "673a88c780eb49769fd1290100073fa1"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_solid_math",
+    "uniqueId": "3",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -8485162,
+      "resName": "cover_solid_math1",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "bbcc4890d08b46679630fb4e5ea9a3d9",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -9726510,
+      "resName": "cover_solid_math2",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "876e173e305a456bb8a93e8ed304146d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -4026183,
+      "resName": "cover_solid_math3",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "b047ab7936ce4a6eb269815b5f03b3df",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -9391725,
+      "resName": "cover_solid_math4",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "e267a82d1936471bae465cd15ba1145e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -5461834,
+      "resName": "cover_solid_math5",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "673a88c780eb49769fd1290100073fa1",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+package com.google.android.gms.internal.measurement;
+
+import com.google.common.base.Supplier;
+import com.google.common.base.Suppliers;
+import org.checkerframework.dataflow.qual.SideEffectFree;
+
+/* loaded from: classes5.dex */
+public final class zznx implements Supplier<zznw> {
+    private static zznx zza = new zznx();
+    private final Supplier<zznw> zzb = Suppliers.ofInstance(new zznz());
+
+    @SideEffectFree
+    public static boolean zza() {
+        return ((zznw) zza.get()).zza();
+    }
+
+    @SideEffectFree
+    public static boolean zzb() {
+        return ((zznw) zza.get()).zzb();
+    }
+
+    @SideEffectFree
+    public static boolean zzc() {
+        return ((zznw) zza.get()).zzc();
+    }
+
+    @Override // com.google.common.base.Supplier, java.util.function.Supplier
+    public final /* synthetic */ Object get() {
+        return this.zzb.get();
+    }
+}

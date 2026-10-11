@@ -1,0 +1,33 @@
+{
+  "coverModel": {
+    "categoryId": "CUTE_PET",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 70.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "c4c2f52b524148368eae62b3d41b30cb"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_cute_pet4",
+    "uniqueId": "3504",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_cute_pet4_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "c4c2f52b524148368eae62b3d41b30cb",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:tag="layout/popup_ink_font_list_0"
+    android:background="@drawable/shape_common_popup_bg"
+    android:padding="@dimen/px_1"
+    android:clipChildren="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:outlineProvider="background"
+    android:clipToOutline="true">
+    <com.onyx.galaxy.note.common.view.MaxHeightRecyclerView
+        android:id="@+id/fontListView"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        app:maxHeight="@dimen/dp_300"/>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

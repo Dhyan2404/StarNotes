@@ -1,0 +1,35 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 50.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "961fe4ed5e3c484e823c50a67b919b03"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "cover_simple_simple_eggplant_flower",
+    "uniqueId": "14",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_simple_eggplant_flower",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "961fe4ed5e3c484e823c50a67b919b03",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_note_menu" app:startDestination="@id/fragment_note_list_drawer_function"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="NoteListDrawerFunctionFragment" android:name="com.onyx.galaxy.note.category.ui.NoteListDrawerFunctionFragment" android:id="@id/fragment_note_list_drawer_function" />
+</navigation>

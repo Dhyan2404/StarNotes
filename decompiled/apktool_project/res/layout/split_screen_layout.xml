@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:tag="layout/split_screen_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.galaxy.note.editor.view.drag.EditorViewDragLayout android:id="@id/editor_view_drag_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.onyx.android.sdk.theme.widgets.TintRelativeLayout android:id="@id/split_screen_divider" android:background="@color/theme_background_color_03" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16">
+        <FrameLayout android:id="@id/layout_vertical_switch_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" android:layout_marginStart="@dimen/dp_47">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_vertical_switch_layout" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/icon_vertical_switch_layout" android:scaleType="centerInside" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_vertical_switch_screen_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" android:layout_toEndOf="@id/layout_vertical_switch_layout">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_vertical_switch_screen_type" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/icon_vertical_switch_screen_type" android:scaleType="centerInside" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_vertical_drag_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_4" android:src="@drawable/split_screen_drag_indicator" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_horizontal_switch_layout" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_47">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_horizontal_switch_layout" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/icon_horizontal_switch_layout" android:scaleType="centerInside" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_horizontal_switch_screen_type" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_horizontal_switch_layout">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_horizontal_switch_screen_type" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/icon_horizontal_switch_screen_type" android:scaleType="centerInside" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_horizontal_drag_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:layout_width="@dimen/dp_4" android:layout_height="@dimen/dp_40" android:src="@drawable/split_screen_drag_indicator" />
+        </FrameLayout>
+    </com.onyx.android.sdk.theme.widgets.TintRelativeLayout>
+    <com.onyx.galaxy.note.editor.view.drag.EditorViewDragLayout android:id="@id/editor_view_drag_layout2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

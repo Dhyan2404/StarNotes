@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_4"
+        app:imageTint="@color/selector_tab_item_icon_color"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textAppearance="@style/BottomTabLayoutAppearance"
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/selector_theme_tab_layout_color"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

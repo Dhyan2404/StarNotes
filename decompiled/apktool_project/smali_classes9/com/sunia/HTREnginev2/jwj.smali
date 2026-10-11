@@ -1,0 +1,40 @@
+.class public final synthetic Lcom/sunia/HTREnginev2/jwj;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic e:Lcom/onyx/galaxy/note/category/ui/NoteListActivity;
+
+.field public final synthetic f:Ljava/lang/Boolean;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/onyx/galaxy/note/category/ui/NoteListActivity;Ljava/lang/Boolean;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/sunia/HTREnginev2/jwj;->e:Lcom/onyx/galaxy/note/category/ui/NoteListActivity;
+
+    iput-object p2, p0, Lcom/sunia/HTREnginev2/jwj;->f:Ljava/lang/Boolean;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/sunia/HTREnginev2/jwj;->e:Lcom/onyx/galaxy/note/category/ui/NoteListActivity;
+
+    iget-object p0, p0, Lcom/sunia/HTREnginev2/jwj;->f:Ljava/lang/Boolean;
+
+    invoke-static {v0, p0}, Lcom/onyx/galaxy/note/category/ui/NoteListActivity;->I(Lcom/onyx/galaxy/note/category/ui/NoteListActivity;Ljava/lang/Boolean;)V
+
+    return-void
+.end method

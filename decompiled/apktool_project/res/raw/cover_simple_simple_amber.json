@@ -1,0 +1,35 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 70.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "a2e8cc7cc95e41208c4cd5949d6d7434"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "cover_simple_simple_amber",
+    "uniqueId": "16",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_simple_amber",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "a2e8cc7cc95e41208c4cd5949d6d7434",
+      "updatedAt": 0
+    }
+  ]
+}

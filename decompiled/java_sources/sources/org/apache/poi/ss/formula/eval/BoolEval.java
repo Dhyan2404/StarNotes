@@ -1,0 +1,36 @@
+package org.apache.poi.ss.formula.eval;
+
+import org.apache.commons.collections4.IteratorUtils;
+
+/* loaded from: classes13.dex */
+public final class BoolEval implements NumericValueEval, StringValueEval {
+    public static final BoolEval FALSE = new BoolEval(false);
+    public static final BoolEval TRUE = new BoolEval(true);
+    private final boolean _value;
+
+    private BoolEval(boolean z) {
+        this._value = z;
+    }
+
+    public static BoolEval valueOf(boolean z) {
+        return z ? TRUE : FALSE;
+    }
+
+    public boolean getBooleanValue() {
+        return this._value;
+    }
+
+    @Override // org.apache.poi.ss.formula.eval.NumericValueEval
+    public double getNumberValue() {
+        return this._value ? 1.0d : 0.0d;
+    }
+
+    @Override // org.apache.poi.ss.formula.eval.StringValueEval
+    public String getStringValue() {
+        return this._value ? "TRUE" : "FALSE";
+    }
+
+    public String toString() {
+        return BoolEval.class.getName() + " [" + getStringValue() + IteratorUtils.f104924b;
+    }
+}

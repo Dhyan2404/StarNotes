@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "WRITE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "ee816434397d4f34afca51274d9391a5",
+      "5ff2b2b6a41a4064aa6b4c69afb88323",
+      "ba8c8314c3b64e0381f1abe389ea728a",
+      "2b73ceb7f1bc4eafbae62a05a4f7b82e",
+      "044407586eaf4aecade48f50623101ca"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_checkerboard_paper_30",
+    "type": 61006,
+    "uniqueId": "61006",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_checkerboard_paper_30_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_30_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "ee816434397d4f34afca51274d9391a5",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_checkerboard_paper_30_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_30_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "5ff2b2b6a41a4064aa6b4c69afb88323",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_checkerboard_paper_30_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_30_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "ba8c8314c3b64e0381f1abe389ea728a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_checkerboard_paper_30_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_30_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "2b73ceb7f1bc4eafbae62a05a4f7b82e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_checkerboard_paper_30_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_30_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "044407586eaf4aecade48f50623101ca",
+      "updatedAt": 0
+    }
+  ]
+}

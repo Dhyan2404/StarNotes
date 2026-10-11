@@ -1,0 +1,35 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 80.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "484863eb686d49a9b198c07df3e46d7e"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "cover_simple_simple_leaving_white_space",
+    "uniqueId": "17",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_simple_leaving_white_space",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "484863eb686d49a9b198c07df3e46d7e",
+      "updatedAt": 0
+    }
+  ]
+}

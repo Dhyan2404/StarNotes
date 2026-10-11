@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/theme_background_popup_color_01" android:height="5.0dip" android:width="11.0dip" android:viewportWidth="11.0" android:viewportHeight="5.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff000000" android:pathData="M6.228,1.709L9.5,5H1.5L4.813,1.705C5.205,1.316 5.838,1.317 6.228,1.709Z" />
+</vector>

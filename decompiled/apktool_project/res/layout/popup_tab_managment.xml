@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_container" android:tag="layout/popup_tab_managment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="end|center|top" android:id="@id/fl_content_wrapper" android:background="@drawable/popup_shadow_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:background="@drawable/shape_common_popup_bg" android:paddingBottom="@dimen/dp_12" android:layout_width="@dimen/dp_320" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_tabs_operations" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center_vertical" android:id="@id/toggle_tab" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:text="@string/hide_note_tab" android:paddingHorizontal="@dimen/dp_24" style="@style/materialSelectPressStyleNoRadius" />
+                    <com.onyx.android.sdk.theme.widgets.TintView android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginHorizontal="@dimen/dp_24" />
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/error_200" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/close_tab" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:text="@string/close_note_tab" android:paddingHorizontal="@dimen/dp_24" style="@style/materialSelectPressStyleNoRadiusError" />
+                </LinearLayout>
+                <com.onyx.galaxy.note.common.view.MaxHeightFrameLayout android:id="@id/list_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                    <com.onyx.android.sdk.theme.widgets.TintRecycleView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_12" />
+                </com.onyx.galaxy.note.common.view.MaxHeightFrameLayout>
+            </LinearLayout>
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    </FrameLayout>
+</FrameLayout>

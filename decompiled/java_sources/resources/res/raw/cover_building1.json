@@ -1,0 +1,33 @@
+{
+  "coverModel": {
+    "categoryId": "ILLUSTRATION",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "0dd88a6a8a2540659a772ea0a37b6a42"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_building1",
+    "uniqueId": "2013",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_building1",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "0dd88a6a8a2540659a772ea0a37b6a42",
+      "updatedAt": 0
+    }
+  ]
+}

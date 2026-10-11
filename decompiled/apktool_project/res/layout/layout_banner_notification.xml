@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bannerLayout" android:background="@drawable/shape_round_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginHorizontal="@dimen/dp_24" app:layout_constraintTop_toBottomOf="@id/top_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/dp_14" android:textColor="@color/theme_text_color_01" android:ellipsize="marquee" android:id="@id/contentText" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:singleLine="true" android:layout_weight="1.0" android:textAllCaps="false" />
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/closeButton" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/ic_guide_close" android:scaleType="centerInside" android:layout_marginHorizontal="@dimen/dp_12" app:imageTint="@color/theme_text_color_02" />
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

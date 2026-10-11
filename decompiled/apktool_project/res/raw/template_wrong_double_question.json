@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 50.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "5ef2c2f31ea049c1b1059dbbe485d1d4",
+      "6eed7697371d4a098375960b85fc7135",
+      "f93d6a66529840579dd229f9a0c412e8",
+      "e9241f0731764e879feb0ad10c2e4479",
+      "d3023c9f4e7e4d1ca2e30ddb9c859116"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_wrong_double_question",
+    "type": 20006,
+    "uniqueId": "20006",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_wrong_double_question",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_thumbnail",
+      "type": 0,
+      "uniqueId": "5ef2c2f31ea049c1b1059dbbe485d1d4",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_wrong_double_question",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_thumbnail",
+      "type": 0,
+      "uniqueId": "6eed7697371d4a098375960b85fc7135",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_wrong_double_question",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_thumbnail",
+      "type": 0,
+      "uniqueId": "f93d6a66529840579dd229f9a0c412e8",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_wrong_double_question",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_thumbnail",
+      "type": 0,
+      "uniqueId": "e9241f0731764e879feb0ad10c2e4479",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_wrong_double_question",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_thumbnail",
+      "type": 0,
+      "uniqueId": "d3023c9f4e7e4d1ca2e30ddb9c859116",
+      "updatedAt": 0
+    }
+  ]
+}

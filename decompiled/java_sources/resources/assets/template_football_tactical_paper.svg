@@ -1,0 +1,20 @@
+<svg width="560" height="792" viewBox="0 0 560 792" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M317 769V780H243V769" stroke="black" stroke-opacity="0.5" stroke-width="0.35" stroke-dasharray="2.33 2.33"/>
+<path d="M317 23V12H243V23" stroke="black" stroke-opacity="0.5" stroke-width="0.35" stroke-dasharray="2.33 2.33"/>
+<rect x="22.175" y="23.175" width="515.65" height="745.65" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M355 769V715H205V769" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M205 23L205 77L355 77L355 23" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M411 769V658H149V769" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M149 23L149 134L411 134L411 23" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<circle cx="280" cy="396" r="54.825" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M319 658C310.285 645.282 296.064 637 280 637C263.936 637 249.715 645.282 241 658" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M241 134C249.715 146.718 263.936 155 280 155C296.064 155 310.285 146.718 319 134" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M22 396L538 396" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M40 769C40 758.507 31.9411 750 22 750" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M40 23C40 33.4934 31.9411 42 22 42" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M538 750C528.059 750 520 758.507 520 769" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<path d="M538 42C528.059 42 520 33.4934 520 23" stroke="black" stroke-opacity="0.5" stroke-width="0.35"/>
+<circle cx="2" cy="2" r="2" transform="matrix(1 0 0 -1 278 398)" fill="#BDBDBD"/>
+<ellipse cx="2" cy="2.5" rx="2" ry="2.5" transform="matrix(1 0 0 -1 278 688)" fill="#BDBDBD"/>
+<ellipse cx="2" cy="2.5" rx="2" ry="2.5" transform="matrix(-1 -8.72759e-08 -8.75699e-08 1 282 104)" fill="#BDBDBD"/>
+</svg>

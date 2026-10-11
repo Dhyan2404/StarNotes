@@ -1,0 +1,32 @@
+{
+  "coverModel": {
+    "categoryId": "FRUIT",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "4f2cacbf1dc3457fb5ab2bf0c37f5785"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_fruit_orange",
+    "uniqueId": "5503",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_fruit_orange_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "4f2cacbf1dc3457fb5ab2bf0c37f5785",
+      "updatedAt": 0
+    }
+  ]
+}

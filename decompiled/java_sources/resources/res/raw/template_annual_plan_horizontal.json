@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 80.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "50b23be75c6045a3bbb1e232d278fca1",
+      "575eac64d3ba4ed88188e5da2115e78e",
+      "b9bc9e3d19554a62bf03ecbcb76bac3b",
+      "6b17079661284c11859e2c9c61a489f1",
+      "fcfb8e4d200344dfa44cc95ffaf009c8"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_annual_plan",
+    "type": 31006,
+    "uniqueId": "31006",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_annual_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_annual_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "50b23be75c6045a3bbb1e232d278fca1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_annual_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_annual_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "575eac64d3ba4ed88188e5da2115e78e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_annual_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_annual_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "b9bc9e3d19554a62bf03ecbcb76bac3b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_annual_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_annual_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "6b17079661284c11859e2c9c61a489f1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_annual_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_annual_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "fcfb8e4d200344dfa44cc95ffaf009c8",
+      "updatedAt": 0
+    }
+  ]
+}

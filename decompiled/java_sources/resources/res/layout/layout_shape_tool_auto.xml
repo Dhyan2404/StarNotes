@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/layout_shape_tool_auto_0"
+    android:scrollbars="none"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.onyx.galaxy.note.editor.view.toolbar.ShapeToolContainer
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/ll_shape_tool_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:iconMargin="@dimen/dp_4"/>
+</HorizontalScrollView>

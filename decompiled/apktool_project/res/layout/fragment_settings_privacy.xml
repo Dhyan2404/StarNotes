@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/fragment_settings_privacy_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24">
+        <com.onyx.android.sdk.ui.MediumTextView android:text="@string/privacy_settings" style="@style/SettingsDetailTitleStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintView style="@style/SettingsDetailDividerStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/note_encryption_container" style="@style/SettingsDetailItemContainerStyle">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_note_encryption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_settings_note_encryption" style="@style/settingsItemTextStyle" />
+            <com.onyx.galaxy.note.ui.view.ManualSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_note_encryption" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:isForceCollection="true" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+        <include android:id="@id/include_settings_privacy_container" android:visibility="gone" layout="@layout/include_settings_privacy_container" />
+    </LinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

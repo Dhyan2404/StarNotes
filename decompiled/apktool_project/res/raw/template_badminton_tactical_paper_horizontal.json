@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "SPECIALITY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 50.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "146ec6ace2f6499c89f5ceb89f453bbf",
+      "27ee2de8209843199f7c28a84a6628f7",
+      "1611ccd0695c4ddc81296991ee213c43",
+      "0045b94ddac5467a87c4f13aa59288de",
+      "7d7036391c7a47ad815fcffa4fccba6b"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_badminton_tactical_paper",
+    "type": 71006,
+    "uniqueId": "71006",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_badminton_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_badminton_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "146ec6ace2f6499c89f5ceb89f453bbf",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_badminton_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_badminton_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "27ee2de8209843199f7c28a84a6628f7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_badminton_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_badminton_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "1611ccd0695c4ddc81296991ee213c43",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_badminton_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_badminton_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "0045b94ddac5467a87c4f13aa59288de",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_badminton_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_badminton_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "7d7036391c7a47ad815fcffa4fccba6b",
+      "updatedAt": 0
+    }
+  ]
+}

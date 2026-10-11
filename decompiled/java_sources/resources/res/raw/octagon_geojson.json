@@ -1,0 +1,123 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              70.0,
+              0.0
+            ],
+            [
+              170.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              170.0,
+              0.0
+            ],
+            [
+              240.0,
+              70.71068
+            ]
+          ],
+          [
+            [
+              240.0,
+              70.71068
+            ],
+            [
+              240.0,
+              170.71068
+            ]
+          ],
+          [
+            [
+              240.0,
+              170.71068
+            ],
+            [
+              170.0,
+              241.42137
+            ]
+          ],
+          [
+            [
+              170.0,
+              241.42137
+            ],
+            [
+              70.0,
+              241.42137
+            ]
+          ],
+          [
+            [
+              70.0,
+              241.42137
+            ],
+            [
+              0.0,
+              170.71068
+            ]
+          ],
+          [
+            [
+              0.0,
+              170.71068
+            ],
+            [
+              0.0,
+              70.71068
+            ]
+          ],
+          [
+            [
+              0.0,
+              70.71068
+            ],
+            [
+              70.0,
+              0.0
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "roundCorner": true,
+          "width": 2.0
+        },
+        "subType": "",
+        "underContent": false
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "createAttr": {
+      "selectionPointIndex": 1,
+      "selectionPointType": "SCALE"
+    },
+    "radius": 0.0,
+    "selectionPointType": "DRAG",
+    "subType": "",
+    "useFixedRatio": true,
+    "underContent": false
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "octagon",
+  "version": 4
+}

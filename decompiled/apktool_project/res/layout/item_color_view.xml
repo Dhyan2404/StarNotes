@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/cls_container" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.onyx.galaxy.note.editor.view.toolbar.ColorView android:layout_gravity="center" android:id="@id/color_view" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" app:defaultColor="@color/background_50" app:normalSrc="@drawable/ic_color_view_normal" app:outlineSrc="@drawable/ic_color_view_outline" app:selectSrc="@drawable/ic_color_view_selected" app:selectTint="@color/theme_primary_color_01" style="@style/colorViewStyle" />
+    </FrameLayout>
+</FrameLayout>

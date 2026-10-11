@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/focused_round_shape"/>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/rounded_border_radius"/>
+                    <solid android:color="@android:color/black"/>
+                </shape>
+            </item>
+            <item
+                android:left="@dimen/group_rounded_border_with"
+                android:top="@dimen/group_rounded_border_with"
+                android:right="@dimen/group_rounded_border_with"
+                android:bottom="@dimen/group_rounded_border_with">
+                <shape>
+                    <corners android:radius="@dimen/rounded_border_inner_radius"/>
+                    <solid android:color="@android:color/white"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

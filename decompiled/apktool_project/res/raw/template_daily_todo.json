@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "cf90b596589f460f8f35d8ed72948b2e",
+      "b5453ab2c9014fb78867d527c2062c28",
+      "9486dcf33fc4466c92ff5495ac7eb706",
+      "279137c64dc0423db76196f1d1fd2710",
+      "85d21621c9f04b258b35b24561ef3aec"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_daily_todo",
+    "type": 30007,
+    "uniqueId": "30007",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_daily_todo",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_daily_todo_thumbnail",
+      "type": 0,
+      "uniqueId": "cf90b596589f460f8f35d8ed72948b2e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_daily_todo",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_daily_todo_thumbnail",
+      "type": 0,
+      "uniqueId": "b5453ab2c9014fb78867d527c2062c28",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_daily_todo",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_daily_todo_thumbnail",
+      "type": 0,
+      "uniqueId": "9486dcf33fc4466c92ff5495ac7eb706",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_daily_todo",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_daily_todo_thumbnail",
+      "type": 0,
+      "uniqueId": "279137c64dc0423db76196f1d1fd2710",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_daily_todo",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_daily_todo_thumbnail",
+      "type": 0,
+      "uniqueId": "85d21621c9f04b258b35b24561ef3aec",
+      "updatedAt": 0
+    }
+  ]
+}

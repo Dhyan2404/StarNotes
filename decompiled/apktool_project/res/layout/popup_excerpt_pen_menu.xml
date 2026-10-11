@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_excerpt_pen_menu_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_common_popup_bg" android:layout_width="@dimen/dp_320" android:layout_height="@dimen/dp_230">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.onyx.android.sdk.ui.MediumTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dp_48" android:text="@string/excerpt_pen" />
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end|center" android:id="@id/iv_guide" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/icon_guide" android:layout_marginEnd="@dimen/dp_16" />
+        </FrameLayout>
+        <com.onyx.android.sdk.theme.widgets.TintView style="@style/dividerStyle" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_24" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/text_excerpt_layout" android:background="@drawable/rectangle_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/ic_text_excerpt" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/text_excerpt" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/rect_excerpt_layout" android:background="@drawable/rectangle_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/ic_rect_excerpt" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/rect_excerpt" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_excerpt_indicator" android:layout_centerVertical="true" />
+            <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:id="@id/switch_indicator" android:checked="true" android:textOn="" android:textOff="" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+        </RelativeLayout>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</FrameLayout>

@@ -1,0 +1,32 @@
+{
+  "coverModel": {
+    "categoryId": "FRUIT",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "6bfc96e12548438cb7479a33ec0f91d2"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_fruit_litchi",
+    "uniqueId": "5501",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_fruit_litchi_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "6bfc96e12548438cb7479a33ec0f91d2",
+      "updatedAt": 0
+    }
+  ]
+}

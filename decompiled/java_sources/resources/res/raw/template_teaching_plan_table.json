@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WORK",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "258186c19dac4a2b86c948d719d7cc5c",
+      "7745da2901ea41dea56fbe283e5d52f5",
+      "05ed88f34dfc4c599386ef0aedf6d195",
+      "3be3cf157e0d4442aa6e235590da43aa",
+      "ff1c7a8854684d14a9562c02299a3e27"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_teaching_plan_table",
+    "type": 40003,
+    "uniqueId": "40003",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_teaching_plan_table",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_thumbnail",
+      "type": 0,
+      "uniqueId": "258186c19dac4a2b86c948d719d7cc5c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_teaching_plan_table",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_thumbnail",
+      "type": 0,
+      "uniqueId": "7745da2901ea41dea56fbe283e5d52f5",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_teaching_plan_table",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_thumbnail",
+      "type": 0,
+      "uniqueId": "05ed88f34dfc4c599386ef0aedf6d195",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_teaching_plan_table",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_thumbnail",
+      "type": 0,
+      "uniqueId": "3be3cf157e0d4442aa6e235590da43aa",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_teaching_plan_table",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_thumbnail",
+      "type": 0,
+      "uniqueId": "ff1c7a8854684d14a9562c02299a3e27",
+      "updatedAt": 0
+    }
+  ]
+}

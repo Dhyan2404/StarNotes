@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 50.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "fb3160aa2e6143229c2d15a17496da82",
+      "e98d2af741db46019cccd29831bc033a",
+      "8b1cc3aa56b245dd975996b0edfc036b",
+      "9677289616bf44738ae2bf7d1d42c5e8",
+      "a55551d54e614587a4c9af7a7c5e762a"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_wrong_double_question",
+    "type": 21006,
+    "uniqueId": "21006",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_wrong_double_question_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "fb3160aa2e6143229c2d15a17496da82",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_wrong_double_question_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "e98d2af741db46019cccd29831bc033a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_wrong_double_question_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "8b1cc3aa56b245dd975996b0edfc036b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_wrong_double_question_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "9677289616bf44738ae2bf7d1d42c5e8",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_wrong_double_question_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_wrong_double_question_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "a55551d54e614587a4c9af7a7c5e762a",
+      "updatedAt": 0
+    }
+  ]
+}

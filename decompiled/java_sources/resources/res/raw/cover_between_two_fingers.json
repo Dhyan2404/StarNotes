@@ -1,0 +1,33 @@
+{
+  "coverModel": {
+    "categoryId": "CUTE_PET",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "12c4da3d12db49b8b1bc2001be925821"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_between_two_fingers",
+    "uniqueId": "30010",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_between_two_fingers",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "12c4da3d12db49b8b1bc2001be925821",
+      "updatedAt": 0
+    }
+  ]
+}

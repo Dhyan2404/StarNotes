@@ -1,0 +1,33 @@
+{
+  "coverModel": {
+    "categoryId": "ILLUSTRATION",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 40.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "0b3f8ade76c04d0f849a921377ed8c81"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_rabbit4",
+    "uniqueId": "2511",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_rabbit4_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "0b3f8ade76c04d0f849a921377ed8c81",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "d72e1065a12f4af590b458f0610f7fa7",
+      "92c44e45a937414d9d7801324f3d5dee",
+      "099c10760849472baad0459749ba7e5e",
+      "f5ae6a29cec14f4d9b4e1b403262d337",
+      "567e1b5f94a446d6a8331dd1b1aaaa11"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_task_list",
+    "type": 31001,
+    "uniqueId": "31001",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_task_list_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "d72e1065a12f4af590b458f0610f7fa7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_task_list_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "92c44e45a937414d9d7801324f3d5dee",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_task_list_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "099c10760849472baad0459749ba7e5e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_task_list_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "f5ae6a29cec14f4d9b4e1b403262d337",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_task_list_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "567e1b5f94a446d6a8331dd1b1aaaa11",
+      "updatedAt": 0
+    }
+  ]
+}

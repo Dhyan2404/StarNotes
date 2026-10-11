@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_rotate_anticlockwise" android:id="@id/rotate_90_anticlockwise" android:title="@string/anticlockwise_90" />
+    <item android:icon="@drawable/ic_rotate_clockwise" android:id="@id/rotate_90_clockwise" android:title="@string/clockwise_90" />
+    <item android:icon="@drawable/ic_rotate_clockwise_180" android:id="@id/rotate_180_clockwise" android:title="@string/clockwise_180" />
+</menu>

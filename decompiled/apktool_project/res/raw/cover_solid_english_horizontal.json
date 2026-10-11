@@ -1,0 +1,86 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "6848d5e18c774adba385b3a8a08f2c53",
+      "647e2af98bef4316a97de4dc123728b6",
+      "fc4d7e92974d4cdaa9da237c7b429042",
+      "1f74c7c65d05446d83e7341fd7e5f843",
+      "694b564eb51b4496b18a84b47670da77"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_solid_english",
+    "uniqueId": "502",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -8485162,
+      "resName": "cover_solid_english1_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "6848d5e18c774adba385b3a8a08f2c53",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -9726510,
+      "resName": "cover_solid_english2_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "647e2af98bef4316a97de4dc123728b6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -4026183,
+      "resName": "cover_solid_english3_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "fc4d7e92974d4cdaa9da237c7b429042",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -9391725,
+      "resName": "cover_solid_english4_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "1f74c7c65d05446d83e7341fd7e5f843",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -5461834,
+      "resName": "cover_solid_english5_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "694b564eb51b4496b18a84b47670da77",
+      "updatedAt": 0
+    }
+  ]
+}

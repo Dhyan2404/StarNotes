@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_counter_history_options_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_common_popup_bg"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/theme_text_color_01"
+            android:gravity="start|center_vertical"
+            android:id="@+id/tv_rename"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:text="@string/rename"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawablePadding="@dimen/dp_12"
+            android:paddingHorizontal="@dimen/dp_16"
+            app:drawableLeftTint="@color/theme_icon_color_01"
+            style="@style/materialPressStyleRadiusDp12"/>
+        <com.onyx.android.sdk.theme.widgets.TintView
+            android:background="@color/theme_divider_color_01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0_5"
+            android:layout_marginStart="@dimen/dp_16"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/error_200"
+            android:gravity="start|center_vertical"
+            android:id="@+id/tv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:text="@string/delete"
+            android:drawableLeft="@drawable/ic_delete_round"
+            android:drawablePadding="@dimen/dp_12"
+            android:paddingHorizontal="@dimen/dp_16"
+            style="@style/materialPressStyleRadiusDp12"/>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</FrameLayout>

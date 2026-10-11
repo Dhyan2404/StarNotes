@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:background="@drawable/bg_audio_shape"
+    android:layout_width="@dimen/attachment_shape_width"
+    android:layout_height="@dimen/attachment_shape_height">
+    <ImageView
+        android:id="@+id/ic_attachment"
+        android:layout_width="@dimen/attachment_shape_size"
+        android:layout_height="@dimen/attachment_shape_size"
+        android:layout_margin="@dimen/attachment_padding"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/audio_text_margin_horizontal"/>
+    <TextView
+        android:textSize="@dimen/attachment_name_text_size"
+        android:textColor="@android:color/black"
+        android:ellipsize="middle"
+        android:id="@+id/fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/attachment_padding"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ic_attachment"/>
+    <TextView
+        android:textSize="@dimen/attachment_size_text_size"
+        android:textColor="@android:color/black"
+        android:id="@+id/fileSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/attachment_padding"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/ic_attachment"/>
+</RelativeLayout>

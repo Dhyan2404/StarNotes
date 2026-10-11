@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:tag="layout/fragment_settings_theme_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.ui.MediumTextView android:textSize="@dimen/sp_18" android:textColor="@color/theme_text_color_01" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_35" android:text="@string/theme_setting" />
+    <com.onyx.android.sdk.theme.widgets.TintView android:layout_marginTop="@dimen/dp_20" android:layout_marginHorizontal="@dimen/dp_24" style="@style/dividerStyle" />
+    <com.onyx.galaxy.note.category.view.AutoFitRecycleView android:id="@id/rl_theme_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:layoutDirection="ltr" android:layout_marginStart="@dimen/dp_24" app:widthLarge="@dimen/dp_240" />
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

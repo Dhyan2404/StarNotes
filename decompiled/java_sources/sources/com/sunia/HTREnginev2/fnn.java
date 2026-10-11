@@ -1,0 +1,28 @@
+package com.sunia.HTREnginev2;
+
+import android.transition.Transition;
+import androidx.annotation.RequiresApi;
+
+@RequiresApi(21)
+/* loaded from: classes6.dex */
+public abstract class fnn implements Transition.TransitionListener {
+    @Override // android.transition.Transition.TransitionListener
+    public void onTransitionCancel(Transition transition) {
+    }
+
+    @Override // android.transition.Transition.TransitionListener
+    public void onTransitionEnd(Transition transition) {
+    }
+
+    @Override // android.transition.Transition.TransitionListener
+    public void onTransitionPause(Transition transition) {
+    }
+
+    @Override // android.transition.Transition.TransitionListener
+    public void onTransitionResume(Transition transition) {
+    }
+
+    @Override // android.transition.Transition.TransitionListener
+    public void onTransitionStart(Transition transition) {
+    }
+}

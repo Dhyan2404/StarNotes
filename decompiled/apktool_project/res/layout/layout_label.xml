@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_icon" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/icon_label" app:imageTint="@color/theme_icon_color_01" />
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/flexbox_labels" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" app:alignItems="flex_start" app:flexDirection="row" app:flexWrap="wrap" app:justifyContent="flex_start" />
+</LinearLayout>

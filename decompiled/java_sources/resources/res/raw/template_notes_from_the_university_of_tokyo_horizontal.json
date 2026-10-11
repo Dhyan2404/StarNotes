@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 40.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "de7cb589549a47848313e36fbd3744bc",
+      "00cef3451bc445e4a09b56185c14530b",
+      "0c4a931f13b546e8a6c814900c924cab",
+      "089f81ce76d0451caef5a4572c21c2d9",
+      "ee948a740d7449498afa9f528b08be65"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_notes_from_the_university_of_tokyo",
+    "type": 21005,
+    "uniqueId": "21005",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_notes_from_the_university_of_tokyo_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_notes_from_the_university_of_tokyo_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "de7cb589549a47848313e36fbd3744bc",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_notes_from_the_university_of_tokyo_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_notes_from_the_university_of_tokyo_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "00cef3451bc445e4a09b56185c14530b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_notes_from_the_university_of_tokyo_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_notes_from_the_university_of_tokyo_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "0c4a931f13b546e8a6c814900c924cab",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_notes_from_the_university_of_tokyo_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_notes_from_the_university_of_tokyo_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "089f81ce76d0451caef5a4572c21c2d9",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_notes_from_the_university_of_tokyo_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_notes_from_the_university_of_tokyo_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "ee948a740d7449498afa9f528b08be65",
+      "updatedAt": 0
+    }
+  ]
+}

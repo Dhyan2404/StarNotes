@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 130.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "7e97c6a30da54c4c90ce663ff0d426b3",
+      "0a14366ffb0f45debc00a6af1d520b3c",
+      "ef3a21bb6fdd4382b748e401c1c2c928",
+      "d53e62394f6d4506905cd95ecc2d0dd9",
+      "c8d3db04562641e988dd372d3890aee5"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_essay_book",
+    "type": 21014,
+    "uniqueId": "21014",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_essay_book_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_essay_book_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "7e97c6a30da54c4c90ce663ff0d426b3",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_essay_book_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_essay_book_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "0a14366ffb0f45debc00a6af1d520b3c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_essay_book_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_essay_book_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "ef3a21bb6fdd4382b748e401c1c2c928",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_essay_book_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_essay_book_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "d53e62394f6d4506905cd95ecc2d0dd9",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_essay_book_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_essay_book_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "c8d3db04562641e988dd372d3890aee5",
+      "updatedAt": 0
+    }
+  ]
+}

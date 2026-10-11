@@ -1,0 +1,95 @@
+{
+  "templateModel": {
+    "categoryId": "BASE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "5c130606bc844d4692a1b4b5e8da6a26",
+      "b82d2488ef474ce29c49a1cd2f6603fd",
+      "9e95c071777e4494817b3ba0c74931a0",
+      "77db8ff7e5fb482b9ffcb798d51af2ec",
+      "96b505c162784d1692f1b157cdbda219"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "templateArgs": {
+      "spaceArgs": {
+        "defaultSpaceValueDp": 32.88,
+        "maxSpaceValueDp": 64.0,
+        "minSpaceValueDp": 8.0,
+        "spaceUniqueId": "template_space_key-BASE-11002",
+        "spaceValuePx": 0.0
+      }
+    },
+    "title": "",
+    "titleResName": "template_narrow_horizontal_line",
+    "type": 11002,
+    "uniqueId": "11002",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "5c130606bc844d4692a1b4b5e8da6a26",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "b82d2488ef474ce29c49a1cd2f6603fd",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "9e95c071777e4494817b3ba0c74931a0",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "77db8ff7e5fb482b9ffcb798d51af2ec",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": 1644167167,
+      "type": 0,
+      "uniqueId": "96b505c162784d1692f1b157cdbda219",
+      "updatedAt": 0
+    }
+  ]
+}

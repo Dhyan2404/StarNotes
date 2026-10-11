@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/counter_time_list_view_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:id="@id/ctl_root" android:background="@drawable/shape_common_popup_bg" android:paddingTop="@dimen/dp_66" android:paddingBottom="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_8" android:textColor="@color/theme_primary_color_01" android:id="@id/tv_collapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/counter_time_list_collapse" android:layout_marginStart="@dimen/dp_8" android:paddingHorizontal="@dimen/dp_8" android:paddingVertical="@dimen/dp_3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.onyx.galaxy.note.ui.view.ExpandToMaxHeightRecyclerView android:id="@id/rv_time_list" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_collapse" app:layout_constraintTop_toTopOf="@id/tv_collapse" app:max_height="@dimen/dp_80" />
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</FrameLayout>

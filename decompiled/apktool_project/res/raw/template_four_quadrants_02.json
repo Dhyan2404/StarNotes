@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WORK",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 70.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "cca116e345e445ac9618540fb7308077",
+      "2aee3efd9ce44aa087099915450f8ef8",
+      "7355d13a0623403bbe5f37959c279608",
+      "a588e411cb344c8aa3b22e1369db6ca5",
+      "29137977c93a41899ab1ebc4516436c6"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_four_quadrants_02",
+    "type": 40008,
+    "uniqueId": "40008",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_four_quadrants_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_four_quadrants_02_thumbnail",
+      "type": 0,
+      "uniqueId": "cca116e345e445ac9618540fb7308077",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_four_quadrants_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_four_quadrants_02_thumbnail",
+      "type": 0,
+      "uniqueId": "2aee3efd9ce44aa087099915450f8ef8",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_four_quadrants_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_four_quadrants_02_thumbnail",
+      "type": 0,
+      "uniqueId": "7355d13a0623403bbe5f37959c279608",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_four_quadrants_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_four_quadrants_02_thumbnail",
+      "type": 0,
+      "uniqueId": "a588e411cb344c8aa3b22e1369db6ca5",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_four_quadrants_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_four_quadrants_02_thumbnail",
+      "type": 0,
+      "uniqueId": "29137977c93a41899ab1ebc4516436c6",
+      "updatedAt": 0
+    }
+  ]
+}

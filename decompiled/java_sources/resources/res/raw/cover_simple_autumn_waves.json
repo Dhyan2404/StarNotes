@@ -1,0 +1,35 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 40.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "009ea84f86fd410a8a668a6dd28b3326"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "cover_simple_autumn_waves",
+    "uniqueId": "12",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_autumn_waves",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "009ea84f86fd410a8a668a6dd28b3326",
+      "updatedAt": 0
+    }
+  ]
+}

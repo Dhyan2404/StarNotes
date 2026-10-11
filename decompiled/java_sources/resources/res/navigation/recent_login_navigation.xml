@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_recent_login"
+    app:startDestination="@+id/fragment_recent_login">
+    <fragment
+        android:label="RecentLoginFragment"
+        android:name="com.onyx.galaxy.note.account.p043ui.RecentLoginFragment"
+        android:id="@+id/fragment_recent_login">
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_bind_phone"
+            app:destination="@+id/fragment_bind_phone"
+            app:popUpTo="@+id/fragment_login"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="bind_type"
+                android:defaultValue="BIND_PHONE"
+                app:argType="com.onyx.galaxy.note.account.data.BindType"/>
+        </action>
+        <action
+            android:id="@+id/goto_settings_help_and_feedback_fragment"
+            app:destination="@+id/settings_help_and_feedback_fragment"/>
+    </fragment>
+    <fragment
+        android:label="@string/help_and_feedback"
+        android:name="com.onyx.galaxy.note.settings.p047ui.fragment.SettingsHelpAndFeedbackFragment"
+        android:id="@+id/settings_help_and_feedback_fragment"/>
+</navigation>

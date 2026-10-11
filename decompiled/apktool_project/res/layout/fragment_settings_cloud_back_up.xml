@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:tag="layout/fragment_settings_cloud_back_up_0" android:background="@color/theme_background_color_02" android:paddingBottom="@dimen/dp_24" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.ui.MediumTextView android:text="@string/network_disk_backup" style="@style/SettingsDetailTitleStyle" />
+    <com.onyx.android.sdk.theme.widgets.TintView style="@style/SettingsDetailDividerStyle" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/backup_path" android:layout_marginStart="@dimen/dp_16" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/cloud_backup_tips" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_60" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:id="@id/tv_backup_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/path_cloud_backup" android:layout_marginStart="@dimen/dp_16" />
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:visibility="gone" style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baidu_network_disk" style="@style/commonTextStyle" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:layout_gravity="end|center" android:id="@id/tv_baidu_bind_state" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/commonPrimaryTextStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_network_disk" style="@style/commonTextStyle" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:layout_gravity="end|center" android:id="@id/tv_google_bind_state" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/commonPrimaryTextStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_driver_network_disk" style="@style/commonTextStyle" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:layout_gravity="end|center" android:id="@id/tv_onedrive_bind_state" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/commonPrimaryTextStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sp_24" android:text="@string/network_disk_backup" android:layout_marginStart="@dimen/dp_16" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:id="@id/tv_last_cloud_back_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/last_backup_time" android:layout_marginStart="@dimen/dp_16" />
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_backup" style="@style/commonTextStyle" />
+                <com.onyx.galaxy.note.ui.view.ManualSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_auto_backup" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_28" android:checked="true" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <include android:id="@id/fl_wifi_and_mobile" layout="@layout/layout_wifi_and_mobile_container" />
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_button_max_width" android:text="@string/manual_backup" style="@style/commonTextStyle" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:gravity="center" android:layout_gravity="end|center" android:id="@id/tv_backup_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_button_max_width" android:text="@string/backup_now" style="@style/commonPrimaryTextStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/import_from_the_network_disk" android:layout_marginStart="@dimen/dp_16" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/import_backup_tips" android:layout_marginStart="@dimen/dp_16" />
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:visibility="gone" style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_backup_baidu_import" style="@style/commonTextStyle" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="end|center" android:id="@id/tv_baidu_import" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_files" style="@style/commonPrimaryTextStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_backup_google_import" style="@style/commonTextStyle" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="end|center" android:id="@id/tv_google_import" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_files" style="@style/commonPrimaryTextStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_backup_onedrive_import" style="@style/commonTextStyle" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_gravity="end|center" android:id="@id/tv_onedrive_import" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_files" style="@style/commonPrimaryTextStyle" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

@@ -1,0 +1,68 @@
+package com.sunia.HTREnginev2;
+
+import com.alibaba.fastjson2.JSONWriter;
+import com.alibaba.fastjson2.writer.FieldWriter;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+/* loaded from: classes3.dex */
+public abstract class cfg<T> extends FieldWriter<T> {
+
+    /* renamed from: r */
+    public final boolean f66775r;
+
+    public cfg(String str, int i, long j, String str2, String str3, Class cls, Field field, Method method) {
+        super(str, i, j, str2, str3, cls, cls, field, method);
+        this.f66775r = (JSONWriter.Feature.BrowserCompatible.mask & j) != 0;
+    }
+
+    @Override // com.alibaba.fastjson2.writer.FieldWriter
+    public boolean write(JSONWriter jSONWriter, T t) {
+        try {
+            Long l = (Long) getFieldValue(t);
+            if (l != null) {
+                writeInt64(jSONWriter, l.longValue());
+                return true;
+            }
+            if (((this.features | jSONWriter.getFeatures()) & (JSONWriter.Feature.WriteNulls.mask | JSONWriter.Feature.NullAsDefaultValue.mask | JSONWriter.Feature.WriteNullNumberAsZero.mask)) == 0) {
+                return false;
+            }
+            writeFieldName(jSONWriter);
+            jSONWriter.writeInt64Null();
+            return true;
+        } catch (RuntimeException e) {
+            if (jSONWriter.isIgnoreErrorGetter()) {
+                return false;
+            }
+            throw e;
+        }
+    }
+
+    @Override // com.alibaba.fastjson2.writer.FieldWriter
+    public final void writeInt64(JSONWriter jSONWriter, long j) {
+        boolean z = true;
+        boolean z2 = ((jSONWriter.getFeatures() | this.features) & (JSONWriter.Feature.WriteNonStringValueAsString.mask | JSONWriter.Feature.WriteLongAsString.mask)) != 0;
+        writeFieldName(jSONWriter);
+        if (!z2) {
+            if (!this.f66775r || jSONWriter.jsonb || (j <= 9007199254740991L && j >= -9007199254740991L)) {
+                z = false;
+            }
+            z2 = z;
+        }
+        if (z2) {
+            jSONWriter.writeString(Long.toString(j));
+        } else {
+            jSONWriter.writeInt64(j);
+        }
+    }
+
+    @Override // com.alibaba.fastjson2.writer.FieldWriter
+    public void writeValue(JSONWriter jSONWriter, T t) {
+        Long l = (Long) getFieldValue(t);
+        if (l == null) {
+            jSONWriter.writeNull();
+        } else {
+            jSONWriter.writeInt64(l);
+        }
+    }
+}

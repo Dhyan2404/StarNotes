@@ -1,0 +1,105 @@
+{
+  "templateModel": {
+    "categoryId": "BASE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "8e0615b72d564e95a7f2d33f3d2ca6f7",
+      "0578951d289642949fab2e502c495ace",
+      "8786919754284394ad4c6d79630559f6",
+      "b4f9046bf0cf45f8b8b670a9a315eda4",
+      "d6ff97f37c4841ebbb7b3235fd12f5c9"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "templateArgs": {
+      "spaceArgs": {
+        "defaultSpaceValueDp": 32.88,
+        "maxSpaceValueDp": 64.0,
+        "minSpaceValueDp": 8.0,
+        "pagePaddingBottom": 40.0,
+        "pagePaddingLeft": 24.0,
+        "pagePaddingRight": 24.0,
+        "pagePaddingTop": 68.0,
+        "spaceUniqueId": "template_space_key-BASE-11007",
+        "spaceValuePx": 0.0
+      }
+    },
+    "title": "",
+    "titleResName": "template_narrow_horizontal_line",
+    "type": 11007,
+    "uniqueId": "11007",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "8e0615b72d564e95a7f2d33f3d2ca6f7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "0578951d289642949fab2e502c495ace",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "8786919754284394ad4c6d79630559f6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": -7829368,
+      "type": 0,
+      "uniqueId": "b4f9046bf0cf45f8b8b670a9a315eda4",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "layout_horizontal_line_geojson",
+      "resourceType": "dynamic",
+      "source": 0,
+      "strokeColor": 1644167167,
+      "type": 0,
+      "uniqueId": "d6ff97f37c4841ebbb7b3235fd12f5c9",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/item_select_move_to_layer_0"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/selector_color_selected"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_title"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        app:drawableRightTint="@color/theme_primary_color_01"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/share_resource_navigation"
+    app:startDestination="@+id/share_resource_fragment">
+    <fragment
+        android:name="com.onyx.galaxy.note.datarepository.p045ui.ShareResourceFragment"
+        android:id="@+id/share_resource_fragment"/>
+</navigation>

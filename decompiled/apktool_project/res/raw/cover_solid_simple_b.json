@@ -1,0 +1,86 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 60.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "a707ea0959e0460488006d162d7d4aae",
+      "e26228fb026e48a78a3dc71cfd883fa3",
+      "bd841ff46eb44374b7b90b460a84bb60",
+      "01a6552c79854ceb9da4b5cd957bd44b",
+      "084200435cf94b5bbc76d5c075bb27ed"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_solid_simple_b",
+    "uniqueId": "7",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -8485162,
+      "resName": "cover_solid_simple_b1",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "a707ea0959e0460488006d162d7d4aae",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -9726510,
+      "resName": "cover_solid_simple_b2",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "e26228fb026e48a78a3dc71cfd883fa3",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -4026183,
+      "resName": "cover_solid_simple_b3",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "bd841ff46eb44374b7b90b460a84bb60",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -9391725,
+      "resName": "cover_solid_simple_b4",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "01a6552c79854ceb9da4b5cd957bd44b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -5461834,
+      "resName": "cover_solid_simple_b5",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "084200435cf94b5bbc76d5c075bb27ed",
+      "updatedAt": 0
+    }
+  ]
+}

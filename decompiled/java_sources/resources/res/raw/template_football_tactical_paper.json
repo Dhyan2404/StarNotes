@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "SPECIALITY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "20ae518f3038416eb2aace5080b4983d",
+      "83b59b2db8c24ca29893a364a9adafcb",
+      "b947ad1f1be54c22b49b1c1d90f019bb",
+      "1a291ca8bd51446caef6469a7cf1108d",
+      "0fcd0c15d54b4214a0f4d1e296a8e942"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_football_tactical_paper",
+    "type": 70004,
+    "uniqueId": "70004",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_football_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_football_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "20ae518f3038416eb2aace5080b4983d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_football_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_football_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "83b59b2db8c24ca29893a364a9adafcb",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_football_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_football_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "b947ad1f1be54c22b49b1c1d90f019bb",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_football_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_football_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "1a291ca8bd51446caef6469a7cf1108d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_football_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_football_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "0fcd0c15d54b4214a0f4d1e296a8e942",
+      "updatedAt": 0
+    }
+  ]
+}

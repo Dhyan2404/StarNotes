@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_105"
+    android:layout_height="@dimen/dp_148">
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_item_create_bg"
+        android:layout_width="@dimen/dp_105"
+        android:layout_height="@dimen/dp_148"
+        app:backgroundTint="@color/theme_primary_color_01">
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_note_create"
+            app:imageTint="@color/theme_primary_color_01"/>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</LinearLayout>

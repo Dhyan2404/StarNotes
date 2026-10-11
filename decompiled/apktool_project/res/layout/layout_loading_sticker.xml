@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loadingLayout" android:background="@drawable/shape_loading_bg_light" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.galaxy.note.ui.view.LoadingView android:id="@id/loadingView" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white_percent_88" android:id="@id/loadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/sticker_message_uploading" />
+</LinearLayout>

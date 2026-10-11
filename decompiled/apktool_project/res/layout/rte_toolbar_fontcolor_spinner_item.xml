@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/rte_spinnerPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/chip_pacemaker" android:layout_width="fill_parent" android:layout_height="@dimen/rte_spinnerPreferredItemHeight">
+        <View android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/spinner_color" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/spinner_name" android:layout_width="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" style="?rte_ToolbarSpinnerItem" />
+    </LinearLayout>
+</FrameLayout>

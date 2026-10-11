@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_note_tag_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/note_more_setting_left_right_margin" android:layout_marginEnd="@dimen/note_more_setting_left_right_margin">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/tag_manager_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ic_bench_mark_add" app:imageTint="@color/theme_icon_color_02" style="@style/materialPressStyleRadiusDp08" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_02" android:gravity="center_vertical" android:id="@id/tv_tag_manager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_marks" android:layout_marginStart="@dimen/dp_4" />
+        </LinearLayout>
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end|center" android:id="@id/iv_expand" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ic_tag_manager_arrow" style="@style/materialPressStyleRadiusDp08" />
+    </FrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintRecycleView android:id="@id/rv_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+</LinearLayout>

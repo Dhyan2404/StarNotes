@@ -1,0 +1,91 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "6113107684e14a6c8447de1421c49f63",
+      "25d295c65e2c4c6f8f7a888ac6aaab95",
+      "8626365cfdfd4f7b951c632be06f97eb",
+      "3087795f90244b4f81982e06d2e17851",
+      "b9292ffe73fa466e878a7343193bddb8"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "cover_simple_title_tag",
+    "uniqueId": "510",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -3748139,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_title_tag_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "6113107684e14a6c8447de1421c49f63",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -8408367,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_title_tag_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "25d295c65e2c4c6f8f7a888ac6aaab95",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1664655,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_title_tag_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "8626365cfdfd4f7b951c632be06f97eb",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -7422552,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_title_tag_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "3087795f90244b4f81982e06d2e17851",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1388678,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_title_tag_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "b9292ffe73fa466e878a7343193bddb8",
+      "updatedAt": 0
+    }
+  ]
+}

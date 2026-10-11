@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:tag="layout/drag_right_layout_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/allow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_left_filled"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.onyx.galaxy.note.editor.view.drag.DragProgressView
+            android:id="@+id/state_image"
+            android:background="@drawable/ic_drag_up_state_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drag_up_state_full"
+            android:layout_marginVertical="@dimen/dp_12"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/selector_text_primary_enable"
+            android:gravity="center"
+            android:id="@+id/state_text"
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pull_to_add_new_page"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.onyx.galaxy.note.editor.view.custom.PageMarginView
+        android:id="@+id/template_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:scaleType="fitCenter"
+        android:minWidth="@dimen/dp_367"
+        android:minHeight="@dimen/dp_528"
+        app:strokeColor="@color/transparent"
+        app:strokeWidth="@dimen/dp_1"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "5921d04d45f949469d73db59e2668f9a",
+      "660c77b08e094ae994ff99b4e572c3d4",
+      "c17b8a3e262944a7b090f6b3c2a32b47",
+      "e250c23d97ab403580991608d4bce9aa",
+      "481b487279874641988426f8826294e7"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_time_plan",
+    "type": 31008,
+    "uniqueId": "31008",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_time_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_time_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "5921d04d45f949469d73db59e2668f9a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_time_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_time_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "660c77b08e094ae994ff99b4e572c3d4",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_time_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_time_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "c17b8a3e262944a7b090f6b3c2a32b47",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_time_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_time_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "e250c23d97ab403580991608d4bce9aa",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_time_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_time_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "481b487279874641988426f8826294e7",
+      "updatedAt": 0
+    }
+  ]
+}

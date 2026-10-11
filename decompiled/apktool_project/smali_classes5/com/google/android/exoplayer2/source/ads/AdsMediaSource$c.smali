@@ -1,0 +1,150 @@
+.class public final Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/exoplayer2/source/ads/AdsLoader$EventListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "c"
+.end annotation
+
+
+# instance fields
+.field public final a:Landroid/os/Handler;
+
+.field public volatile b:Z
+
+.field public final synthetic c:Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->c:Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {}, Lcom/google/android/exoplayer2/util/Util;->createHandlerForCurrentLooper()Landroid/os/Handler;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->a:Landroid/os/Handler;
+
+    return-void
+.end method
+
+.method public static synthetic a(Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;Lcom/google/android/exoplayer2/source/ads/AdPlaybackState;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->b(Lcom/google/android/exoplayer2/source/ads/AdPlaybackState;)V
+
+    return-void
+.end method
+
+.method private synthetic b(Lcom/google/android/exoplayer2/source/ads/AdPlaybackState;)V
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->b:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object p0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->c:Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;
+
+    invoke-static {p0, p1}, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;->f(Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;Lcom/google/android/exoplayer2/source/ads/AdPlaybackState;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public c()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->b:Z
+
+    iget-object p0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->a:Landroid/os/Handler;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public onAdLoadError(Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$AdLoadException;Lcom/google/android/exoplayer2/upstream/DataSpec;)V
+    .locals 7
+
+    iget-boolean v0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->b:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object p0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->c:Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;->e(Lcom/google/android/exoplayer2/source/ads/AdsMediaSource;Lcom/google/android/exoplayer2/source/MediaSource$MediaPeriodId;)Lcom/google/android/exoplayer2/source/MediaSourceEventListener$EventDispatcher;
+
+    move-result-object p0
+
+    new-instance v6, Lcom/google/android/exoplayer2/source/LoadEventInfo;
+
+    invoke-static {}, Lcom/google/android/exoplayer2/source/LoadEventInfo;->getNewId()J
+
+    move-result-wide v1
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v4
+
+    move-object v0, v6
+
+    move-object v3, p2
+
+    invoke-direct/range {v0 .. v5}, Lcom/google/android/exoplayer2/source/LoadEventInfo;-><init>(JLcom/google/android/exoplayer2/upstream/DataSpec;J)V
+
+    const/4 p2, 0x6
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v6, p2, p1, v0}, Lcom/google/android/exoplayer2/source/MediaSourceEventListener$EventDispatcher;->loadError(Lcom/google/android/exoplayer2/source/LoadEventInfo;ILjava/io/IOException;Z)V
+
+    return-void
+.end method
+
+.method public onAdPlaybackState(Lcom/google/android/exoplayer2/source/ads/AdPlaybackState;)V
+    .locals 2
+
+    iget-boolean v0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->b:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;->a:Landroid/os/Handler;
+
+    new-instance v1, Lcom/sunia/HTREnginev2/i9;
+
+    invoke-direct {v1, p0, p1}, Lcom/sunia/HTREnginev2/i9;-><init>(Lcom/google/android/exoplayer2/source/ads/AdsMediaSource$c;Lcom/google/android/exoplayer2/source/ads/AdPlaybackState;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method

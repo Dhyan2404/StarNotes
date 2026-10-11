@@ -1,0 +1,32 @@
+{
+  "coverModel": {
+    "categoryId": "FRUIT",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 90.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "744a4d6df13140669319f6b39c162e53"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_fruit_pineapple_ice_cream",
+    "uniqueId": "5010",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_fruit_pineapple_ice_cream",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "744a4d6df13140669319f6b39c162e53",
+      "updatedAt": 0
+    }
+  ]
+}

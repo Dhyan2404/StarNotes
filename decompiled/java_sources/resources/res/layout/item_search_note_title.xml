@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/theme_text_color_01"
+        android:gravity="start|center_vertical"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:text="@string/note_search_type_title"/>
+</FrameLayout>

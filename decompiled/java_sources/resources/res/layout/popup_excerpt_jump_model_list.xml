@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_excerpt_jump_model_list_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/common_rectangle_background"
+        android:paddingBottom="@dimen/dp_8"
+        android:layout_width="@dimen/dp_224"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/primary_200"
+            android:id="@+id/tv_jump_quote"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jump_quote"/>
+        <com.onyx.android.sdk.theme.widgets.TintView
+            android:id="@+id/view_divider"
+            android:background="@color/theme_divider_color_01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_marginStart="@dimen/dp_16"/>
+        <com.onyx.android.sdk.theme.widgets.TintRecycleView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</FrameLayout>

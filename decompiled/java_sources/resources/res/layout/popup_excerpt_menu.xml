@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_excerpt_menu_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:background="@drawable/common_rectangle_background"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_44"
+        app:divider="@color/divider_line"
+        app:dividerPadding="@dimen/dp_1"
+        app:showDividers="middle">
+        <TextView
+            android:textColor="@color/delete_red"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_delete"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_jump_quote"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jump_quote"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_comment"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

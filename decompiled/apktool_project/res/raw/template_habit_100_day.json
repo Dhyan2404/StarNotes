@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "LIFE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "f2e10766ae9f49e2aa6d50dfc6d6f005",
+      "8cae215c689549e187565e0c06116da5",
+      "6dd08d3e74954c3a98bba1789f90cc17",
+      "e3ccf6737efb48868edd00d5d31ad418",
+      "5346894b711848859cbeb7dc91d9c612"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_habit_100_day",
+    "type": 50007,
+    "uniqueId": "50007",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_habit_100_day",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_100_day_thumbnail",
+      "type": 0,
+      "uniqueId": "f2e10766ae9f49e2aa6d50dfc6d6f005",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_habit_100_day",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_100_day_thumbnail",
+      "type": 0,
+      "uniqueId": "8cae215c689549e187565e0c06116da5",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_habit_100_day",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_100_day_thumbnail",
+      "type": 0,
+      "uniqueId": "6dd08d3e74954c3a98bba1789f90cc17",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_habit_100_day",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_100_day_thumbnail",
+      "type": 0,
+      "uniqueId": "e3ccf6737efb48868edd00d5d31ad418",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_habit_100_day",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_100_day_thumbnail",
+      "type": 0,
+      "uniqueId": "5346894b711848859cbeb7dc91d9c612",
+      "updatedAt": 0
+    }
+  ]
+}

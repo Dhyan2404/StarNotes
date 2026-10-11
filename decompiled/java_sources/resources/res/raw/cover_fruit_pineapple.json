@@ -1,0 +1,32 @@
+{
+  "coverModel": {
+    "categoryId": "FRUIT",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "75e53a22103d402b94973024e021e16b"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_fruit_pineapple",
+    "uniqueId": "5002",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_fruit_pineapple",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "75e53a22103d402b94973024e021e16b",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_edit_counter_setting_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/dp_16">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_01" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerVertical="true" style="@style/materialPressStyleRadiusDp08" />
+        <com.onyx.android.sdk.ui.MediumTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_160" android:text="@string/shortcut_bar_timer" android:layout_centerInParent="true" android:layout_marginVertical="@dimen/tool_popup_title_margin_top" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/selector_color_enabled_blue_dark_gray" android:id="@id/tv_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/counter_task_save" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/materialPressStyleRadiusDp08" />
+    </com.onyx.android.sdk.theme.widgets.TintRelativeLayout>
+    <com.onyx.android.sdk.theme.widgets.TintView android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="@dimen/dp0_5" />
+    <com.onyx.android.sdk.theme.widgets.TintCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:layout_marginHorizontal="@dimen/dp_18" app:cardBackgroundColor="@color/theme_background_color_02" app:cardCornerRadius="@dimen/dp_8" app:cardElevation="0.0dip" app:contentPadding="@dimen/dp_2">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.onyx.android.sdk.theme.widgets.TintRadioButton android:id="@id/rb_count_down_normal" android:text="@string/counter_normal_count_down" style="@style/popup_counter_setting_tab_btn_style" />
+            <com.onyx.android.sdk.theme.widgets.TintRadioButton android:id="@id/rb_count_down_multiple" android:text="@string/counter_multiple_count_down" style="@style/popup_counter_setting_tab_btn_style" />
+        </RadioGroup>
+    </com.onyx.android.sdk.theme.widgets.TintCardView>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:isScrollContainer="false" />
+</LinearLayout>

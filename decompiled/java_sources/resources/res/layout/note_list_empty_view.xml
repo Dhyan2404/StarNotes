@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sp_14"
+    android:textColor="@color/theme_text_color_03"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/note_empty_view_hint"/>

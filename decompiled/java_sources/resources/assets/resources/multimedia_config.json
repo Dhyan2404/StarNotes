@@ -1,0 +1,16 @@
+[
+  {
+    "type": "audio",
+    "format": "svg",
+    "width": 48.0,
+    "height": 48.0,
+    "iconPath": "icon/audio.svg"
+  },
+  {
+    "type": "video",
+    "format": "svg",
+    "width": 48.0,
+    "height": 48.0,
+    "iconPath": "icon/video.svg"
+  }
+]

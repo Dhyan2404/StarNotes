@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/item_sticker_0"
+    android:clickable="true"
+    android:layout_width="@dimen/dp_68"
+    android:layout_height="@dimen/dp_68">
+    <com.onyx.android.sdk.theme.widgets.TintRelativeLayout
+        android:id="@+id/rly_sticker"
+        android:background="@drawable/shape_rectangle_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:padding="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"/>
+        <com.onyx.android.sdk.theme.widgets.TintCheckBox
+            android:id="@+id/checkbox"
+            android:background="@drawable/selector_circle_checked"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:button="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+    </com.onyx.android.sdk.theme.widgets.TintRelativeLayout>
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/fly_add"
+        android:background="@drawable/selector_shape_item_create_bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_add"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_material"
+            app:imageTint="@color/selector_sticker_add_color"/>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

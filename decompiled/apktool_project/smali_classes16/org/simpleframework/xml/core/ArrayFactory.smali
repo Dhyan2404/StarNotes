@@ -1,0 +1,178 @@
+.class Lorg/simpleframework/xml/core/ArrayFactory;
+.super Lorg/simpleframework/xml/core/Factory;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Lorg/simpleframework/xml/core/Context;Lorg/simpleframework/xml/strategy/Type;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lorg/simpleframework/xml/core/Factory;-><init>(Lorg/simpleframework/xml/core/Context;Lorg/simpleframework/xml/strategy/Type;)V
+
+    return-void
+.end method
+
+.method private getComponentType()Ljava/lang/Class;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lorg/simpleframework/xml/core/Factory;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->isArray()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    new-instance v1, Lorg/simpleframework/xml/core/InstantiationException;
+
+    iget-object p0, p0, Lorg/simpleframework/xml/core/Factory;->type:Lorg/simpleframework/xml/strategy/Type;
+
+    filled-new-array {v0, p0}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string v0, "The %s not an array for %s"
+
+    invoke-direct {v1, v0, p0}, Lorg/simpleframework/xml/core/InstantiationException;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    throw v1
+.end method
+
+.method private getInstance(Lorg/simpleframework/xml/strategy/Value;Ljava/lang/Class;)Lorg/simpleframework/xml/core/Instance;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 8
+    invoke-direct {p0}, Lorg/simpleframework/xml/core/ArrayFactory;->getComponentType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0, p2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 10
+    new-instance p0, Lorg/simpleframework/xml/core/ArrayInstance;
+
+    invoke-direct {p0, p1}, Lorg/simpleframework/xml/core/ArrayInstance;-><init>(Lorg/simpleframework/xml/strategy/Value;)V
+
+    return-object p0
+
+    .line 11
+    :cond_0
+    new-instance p1, Lorg/simpleframework/xml/core/InstantiationException;
+
+    iget-object p0, p0, Lorg/simpleframework/xml/core/Factory;->type:Lorg/simpleframework/xml/strategy/Type;
+
+    filled-new-array {v0, p2, p0}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string p2, "Array of type %s cannot hold %s for %s"
+
+    invoke-direct {p1, p2, p0}, Lorg/simpleframework/xml/core/InstantiationException;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    throw p1
+.end method
+
+
+# virtual methods
+.method public getInstance()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lorg/simpleframework/xml/core/ArrayFactory;->getComponentType()Ljava/lang/Class;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public getInstance(Lorg/simpleframework/xml/stream/InputNode;)Lorg/simpleframework/xml/core/Instance;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3
+    invoke-interface {p1}, Lorg/simpleframework/xml/stream/InputNode;->getPosition()Lorg/simpleframework/xml/stream/Position;
+
+    move-result-object v0
+
+    .line 4
+    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/Factory;->getOverride(Lorg/simpleframework/xml/stream/InputNode;)Lorg/simpleframework/xml/strategy/Value;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    invoke-interface {p1}, Lorg/simpleframework/xml/strategy/Value;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    .line 6
+    invoke-direct {p0, p1, v0}, Lorg/simpleframework/xml/core/ArrayFactory;->getInstance(Lorg/simpleframework/xml/strategy/Value;Ljava/lang/Class;)Lorg/simpleframework/xml/core/Instance;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 7
+    :cond_0
+    new-instance p1, Lorg/simpleframework/xml/core/ElementException;
+
+    iget-object p0, p0, Lorg/simpleframework/xml/core/Factory;->type:Lorg/simpleframework/xml/strategy/Type;
+
+    filled-new-array {p0, v0}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string v0, "Array length required for %s at %s"
+
+    invoke-direct {p1, v0, p0}, Lorg/simpleframework/xml/core/ElementException;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    throw p1
+.end method

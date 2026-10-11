@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:tag="layout/layout_note_export_settings_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/document_export" android:layout_marginStart="@dimen/note_more_setting_left_right_margin" />
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/export_cur_page_image" style="@style/noteSettingItemStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_current_page_image" android:paddingEnd="@dimen/dp_32" />
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end|center" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_arrow_right" app:imageTint="@color/theme_icon_color_02" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/export_document" style="@style/noteSettingItemStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_document" />
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end|center" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_arrow_right" app:imageTint="@color/theme_icon_color_02" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/export_document_pages" style="@style/noteSettingItemStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_document_pages" />
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end|center" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_arrow_right" app:imageTint="@color/theme_icon_color_02" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</LinearLayout>

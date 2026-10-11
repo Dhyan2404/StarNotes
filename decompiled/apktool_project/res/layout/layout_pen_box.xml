@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fly_content" android:tag="layout/layout_pen_box_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.galaxy.note.ui.view.ShadowLayout android:id="@id/shadow_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_4" app:cornerRadius="@dimen/dp_8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shadowColor="@color/black_percent_08" app:shadowDy="@dimen/dp_1" app:shadowRadius="@dimen/dp_8" app:showBorder="false" app:showShadow="true">
+        <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lly_content" android:background="@drawable/pen_box_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/icon" android:layout_width="@dimen/pen_box_icon_size" android:layout_height="@dimen/pen_box_icon_size">
+                <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/iv_pen_box" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ic_pen_box_icon" app:imageTint="@color/theme_icon_color_02" />
+                <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ic_pen_box_stroke" app:imageTint="@color/theme_text_color_04" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            <com.onyx.galaxy.note.common.view.ResizableRecyclerView android:id="@id/listview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:maxHeight="@dimen/pen_box_listview_length" app:maxWidth="@dimen/pen_box_listview_length" />
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_operation" android:padding="@dimen/dp_8" android:visibility="gone" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ic_pen_box_arrow_up" app:imageTint="@color/theme_icon_color_01" style="@style/materialPressStyleRadiusDp08" />
+        </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+    </com.onyx.galaxy.note.ui.view.ShadowLayout>
+</FrameLayout>

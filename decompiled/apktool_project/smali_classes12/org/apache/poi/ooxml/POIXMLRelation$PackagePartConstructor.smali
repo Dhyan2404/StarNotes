@@ -1,0 +1,28 @@
+.class public interface abstract Lorg/apache/poi/ooxml/POIXMLRelation$PackagePartConstructor;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/poi/ooxml/POIXMLRelation;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "PackagePartConstructor"
+.end annotation
+
+.annotation runtime Lorg/apache/poi/util/Internal;
+.end annotation
+
+
+# virtual methods
+.method public abstract init(Lorg/apache/poi/openxml4j/opc/PackagePart;)Lorg/apache/poi/ooxml/POIXMLDocumentPart;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lorg/apache/xmlbeans/XmlException;
+        }
+    .end annotation
+.end method

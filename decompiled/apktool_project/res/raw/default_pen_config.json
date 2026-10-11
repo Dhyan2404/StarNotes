@@ -1,0 +1,15 @@
+{
+  "defaultMarkerStrokeWidth": 25.0,
+  "defaultStrokeWidth": 2.0,
+  "defaultTapeStrokeWidth": 40.0,
+  "maxMarkerStrokeWidth": 80.0,
+  "maxNormalStrokeWidth": 20.0,
+  "maxStrokeNib": 100.0,
+  "maxStrokePressure": 100.0,
+  "maxTapeStrokeWidth": 120.0,
+  "minMarkerStrokeWidth": 5.0,
+  "minNormalStrokeWidth": 1.0,
+  "minStrokeNib": 0.0,
+  "minStrokePressure": 0.0,
+  "minTapeStrokeWidth": 10.0
+}

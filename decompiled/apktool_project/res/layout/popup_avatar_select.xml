@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/ripple_white_top_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px_1" android:layout_marginHorizontal="@dimen/dp_6">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/dp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:id="@id/selectFileButton" android:background="@drawable/ripple_white_top_corner" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:text="@string/file_select" />
+        <com.onyx.android.sdk.theme.widgets.TintView style="@style/dividerStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/dp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:id="@id/takePhotoButton" android:background="@drawable/ripple_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:text="@string/file_take_photo" />
+        <com.onyx.android.sdk.theme.widgets.TintView style="@style/dividerStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/dp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:id="@id/cancelButton" android:background="@drawable/ripple_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:text="@string/file_cancel" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tint="@color/theme_icon_phy_pen_unselect_color"
+    android:height="@dimen/dp_88"
+    android:width="@dimen/dp_24"
+    android:viewportWidth="24"
+    android:viewportHeight="88">
+    <group>
+        <clip-path android:pathData="M0,0h24v88h-24z"/>
+        <group>
+            <clip-path android:pathData="M23,41.471L23,87.5L1,87.5L1,41.471L8.299,16.134L8.299,16.134L8.302,16.122L12,1.977L15.698,16.122L15.698,16.122L15.701,16.134L23,41.471Z"/>
+            <path
+                android:fillColor="#a3a3a3"
+                android:pathData="M0.5,40.25L0.5,88L23.5,88L23.5,40.25L23.5,41.563L0.5,41.563L0.5,40.25Z"
+                android:fillType="evenOdd"/>
+        </group>
+    </group>
+</vector>

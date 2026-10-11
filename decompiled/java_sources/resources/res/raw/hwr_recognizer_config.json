@@ -1,0 +1,30 @@
+{
+  "activateServerList": [
+    {
+      "engineName": "SUNIA",
+      "serverType": "INTER_PROD"
+    }
+  ],
+  "engineEntryList": [
+    {
+      "functionKey": "ink_beautify",
+      "engineName": "ML",
+      "defaultLang": "en_US"
+    },
+    {
+      "functionKey": "hwr",
+      "engineName": "ML",
+      "defaultLang": "en_US"
+    },
+    {
+      "functionKey": "hwr_smart",
+      "engineName": "SUNIA",
+      "defaultLang": "en_US"
+    },
+    {
+      "functionKey": "hwr_search",
+      "engineName": "ML",
+      "defaultLang": "en_US"
+    }
+  ]
+}

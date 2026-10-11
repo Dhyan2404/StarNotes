@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_loading_0"
+    android:background="@drawable/shape_common_popup_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/theme_text_color_02"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/loadingView"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="@dimen/dp_100"
+        android:minHeight="@dimen/dp_200"
+        android:text="@string/message_loading"/>
+    <FrameLayout
+        android:id="@+id/contentViewWrapper"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

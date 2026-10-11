@@ -1,0 +1,81 @@
+.class public Lcom/google/common/collect/Tables$c$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/common/base/Function;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/common/collect/Tables$c;->rowMap()Ljava/util/Map;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/common/base/Function<",
+        "Ljava/util/Map<",
+        "TC;TV1;>;",
+        "Ljava/util/Map<",
+        "TC;TV2;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic e:Lcom/google/common/collect/Tables$c;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/common/collect/Tables$c;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/common/collect/Tables$c$b;->e:Lcom/google/common/collect/Tables$c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/util/Map;)Ljava/util/Map;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "TC;TV1;>;)",
+            "Ljava/util/Map<",
+            "TC;TV2;>;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/google/common/collect/Tables$c$b;->e:Lcom/google/common/collect/Tables$c;
+
+    iget-object p0, p0, Lcom/google/common/collect/Tables$c;->f:Lcom/google/common/base/Function;
+
+    invoke-static {p1, p0}, Lcom/google/common/collect/Maps;->transformValues(Ljava/util/Map;Lcom/google/common/base/Function;)Ljava/util/Map;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ljava/util/Map;
+
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/Tables$c$b;->a(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object p0
+
+    return-object p0
+.end method

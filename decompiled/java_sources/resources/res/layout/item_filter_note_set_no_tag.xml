@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:id="@+id/cls_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    style="@style/selectPressStyleNoRadius">
+    <com.onyx.android.sdk.theme.widgets.TintView
+        android:id="@+id/v_drag_in"
+        android:background="@drawable/shape_item_folder_drag_in"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_12"
+        android:layout_marginVertical="@dimen/dp_4"/>
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/iv_un_tag"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:src="@drawable/ic_un_tag"
+        android:layout_marginStart="@dimen/dp_36"
+        app:imageTint="@color/selector_theme_note_list_left_item_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/selector_theme_note_list_left_item_color"
+        android:id="@+id/tv_un_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_mark"
+        android:layout_marginStart="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_un_tag"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/theme_text_color_03"
+        android:id="@+id/tv_un_tag_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

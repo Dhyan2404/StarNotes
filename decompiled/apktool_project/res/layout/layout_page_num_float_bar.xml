@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:id="@id/pageScrollerContainer" android:tag="layout/layout_page_num_float_bar_0" android:padding="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/pageScrollerVertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scroller_bar_bg" />
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/pageScrollerHorizon" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scroller_bar_bg_horizon" />
+</FrameLayout>

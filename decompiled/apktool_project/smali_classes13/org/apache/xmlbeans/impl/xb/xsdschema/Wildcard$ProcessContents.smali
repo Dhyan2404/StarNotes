@@ -1,0 +1,105 @@
+.class public interface abstract Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/xmlbeans/XmlNMTOKEN;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "ProcessContents"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+    }
+.end annotation
+
+
+# static fields
+.field public static final Factory:Lorg/apache/xmlbeans/impl/schema/ElementFactory;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/apache/xmlbeans/impl/schema/ElementFactory<",
+            "Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final INT_LAX:I = 0x2
+
+.field public static final INT_SKIP:I = 0x1
+
+.field public static final INT_STRICT:I = 0x3
+
+.field public static final LAX:Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+.field public static final SKIP:Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+.field public static final STRICT:Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+.field public static final type:Lorg/apache/xmlbeans/SchemaType;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lorg/apache/xmlbeans/impl/schema/ElementFactory;
+
+    sget-object v1, Lorg/apache/xmlbeans/metadata/system/sXMLSCHEMA/TypeSystemHolder;->typeSystem:Lorg/apache/xmlbeans/metadata/system/sXMLSCHEMA/TypeSystemHolder;
+
+    const-string v2, "processcontents864aattrtype"
+
+    invoke-direct {v0, v1, v2}, Lorg/apache/xmlbeans/impl/schema/ElementFactory;-><init>(Lorg/apache/xmlbeans/SchemaTypeSystem;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents;->Factory:Lorg/apache/xmlbeans/impl/schema/ElementFactory;
+
+    invoke-virtual {v0}, Lorg/apache/xmlbeans/impl/schema/ElementFactory;->getType()Lorg/apache/xmlbeans/SchemaType;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents;->type:Lorg/apache/xmlbeans/SchemaType;
+
+    const-string v0, "skip"
+
+    invoke-static {v0}, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;->forString(Ljava/lang/String;)Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents;->SKIP:Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+    const-string v0, "lax"
+
+    invoke-static {v0}, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;->forString(Ljava/lang/String;)Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents;->LAX:Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+    const-string v0, "strict"
+
+    invoke-static {v0}, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;->forString(Ljava/lang/String;)Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents;->STRICT:Lorg/apache/xmlbeans/impl/xb/xsdschema/Wildcard$ProcessContents$Enum;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract getEnumValue()Lorg/apache/xmlbeans/StringEnumAbstractBase;
+.end method
+
+.method public abstract setEnumValue(Lorg/apache/xmlbeans/StringEnumAbstractBase;)V
+.end method

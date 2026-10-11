@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_quote_menu_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/common_rectangle_background" android:layout_width="wrap_content" android:layout_height="@dimen/dp_44">
+        <TextView android:textColor="@color/delete_red" android:id="@id/tv_delete" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:layout_centerVertical="true" />
+        <View android:id="@id/view_divider" android:background="@color/divider_line" android:layout_width="@dimen/dp_1" android:layout_height="fill_parent" android:layout_toEndOf="@id/tv_delete" android:layout_marginVertical="@dimen/dp_1" />
+        <TextView android:textColor="@color/black" android:id="@id/tv_jump_source" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jump_source" android:layout_centerVertical="true" android:layout_toEndOf="@id/view_divider" />
+    </RelativeLayout>
+</FrameLayout>

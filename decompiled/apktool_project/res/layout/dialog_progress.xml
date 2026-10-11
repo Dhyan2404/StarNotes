@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/dialog_progress_0" android:background="@drawable/shape_black_corner" android:layout_width="@dimen/dp_360" android:layout_height="wrap_content" android:minWidth="@dimen/dp_360" android:minHeight="@dimen/dp_133" android:paddingHorizontal="@dimen/dp_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/closeButton" android:visibility="invisible" android:layout_width="@dimen/dp_24" android:layout_height="fill_parent" android:src="@drawable/ic_backup_dialog_close" />
+    </FrameLayout>
+    <ProgressBar android:orientation="horizontal" android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="@dimen/dp_8" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_12" android:thumb="@null" style="@style/commonProgressStyle" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_24">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@id/leftText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@id/rightText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20" />
+    </LinearLayout>
+</LinearLayout>

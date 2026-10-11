@@ -1,0 +1,119 @@
+.class public final Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u000b\u0018\u00002\u00020\u0001B!\u0012\u0006\u0010\u0007\u001a\u00020\u0002\u0012\u0008\u0008\u0002\u0010\r\u001a\u00020\u0008\u0012\u0006\u0010\u0010\u001a\u00020\u0008\u00a2\u0006\u0004\u0008\u0011\u0010\u0012R\u0017\u0010\u0007\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\r\u001a\u00020\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008\t\u0010\n\u001a\u0004\u0008\u000b\u0010\u000cR\u0017\u0010\u0010\u001a\u00020\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000e\u0010\n\u001a\u0004\u0008\u000f\u0010\u000c\u00a8\u0006\u0013"
+    }
+    d2 = {
+        "Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;",
+        "",
+        "",
+        "a",
+        "Ljava/lang/String;",
+        "getId",
+        "()Ljava/lang/String;",
+        "id",
+        "",
+        "b",
+        "I",
+        "getPercent",
+        "()I",
+        "percent",
+        "c",
+        "getStatus",
+        "status",
+        "<init>",
+        "(Ljava/lang/String;II)V",
+        "note_overseasRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final b:I
+
+.field public final c:I
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "id"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;->a:Ljava/lang/String;
+
+    iput p2, p0, Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;->b:I
+
+    iput p3, p0, Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;->c:I
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    and-int/lit8 p4, p4, 0x2
+
+    if-eqz p4, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 2
+    :cond_0
+    invoke-direct {p0, p1, p2, p3}, Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;-><init>(Ljava/lang/String;II)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getId()Ljava/lang/String;
+    .locals 0
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    iget-object p0, p0, Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;->a:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final getPercent()I
+    .locals 0
+
+    iget p0, p0, Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;->b:I
+
+    return p0
+.end method
+
+.method public final getStatus()I
+    .locals 0
+
+    iget p0, p0, Lcom/onyx/galaxy/note/datarepository/event/DownloadEvent;->c:I
+
+    return p0
+.end method

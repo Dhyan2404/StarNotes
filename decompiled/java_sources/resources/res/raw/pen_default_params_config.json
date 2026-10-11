@@ -1,0 +1,7 @@
+{
+  "defaultVelocitySensitivity": 0.0,
+  "defaultVelocityAmplifier": 0.0,
+  "defaultVelocityIgnoreThreshold": 0.0,
+  "defaultVelocityLowerBound": 0.0,
+  "defaultVelocityUpperBound": 0.0
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_theme_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout
+        android:background="@drawable/shape_common_popup_bg"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.p039ui.MediumTextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/theme_text_color_01"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_theme"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_back"/>
+        <com.onyx.android.sdk.theme.widgets.TintView
+            android:id="@+id/divider"
+            android:background="@color/theme_divider_color_01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_marginTop="@dimen/dp_12"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+        <com.onyx.galaxy.note.common.view.MaxHeightRecyclerView
+            android:id="@+id/rl_theme_list"
+            android:scrollbars="none"
+            android:layout_width="@dimen/dp_248"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:maxHeight="@dimen/dp_480"/>
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</FrameLayout>

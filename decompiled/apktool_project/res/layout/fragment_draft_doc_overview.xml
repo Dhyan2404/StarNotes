@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/fragment_draft_doc_overview_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_search" layout="@layout/layout_doc_search" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lly_normal_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/card" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_180" android:layout_marginTop="@dimen/dp_21" android:layout_marginBottom="@dimen/dp_8" android:layout_marginStart="@dimen/dp_21" android:layout_marginEnd="@dimen/dp_21">
+            <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.onyx.android.sdk.theme.widgets.TintView android:id="@id/border" android:background="@drawable/bg_stroke_primary" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.onyx.android.sdk.theme.widgets.TintView android:id="@id/viewport" android:background="@drawable/bg_stroke_draft_viewport" android:layout_width="@dimen/dp_55" android:layout_height="@dimen/dp_37" />
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_01" android:layout_gravity="center" android:id="@id/tv_description" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:text="@string/boundless_note_paper" />
+    </LinearLayout>
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:id="@id/cl_search_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.onyx.galaxy.note.category.view.AutoFitRecycleView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_2" android:fadeScrollbars="true" android:layout_marginHorizontal="@dimen/dp_16" app:padding="@dimen/dp_24" app:widthLarge="@dimen/dp_126" />
+        <com.onyx.galaxy.note.category.view.CommonEmptyView android:id="@id/search_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:empty_holder_src="@drawable/icon_empty_view_search" app:empty_title="@string/overview_empty_view_search_title" />
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</LinearLayout>

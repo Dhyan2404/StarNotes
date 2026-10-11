@@ -1,0 +1,549 @@
+package com.sunia.HTREnginev2;
+
+import android.content.Context;
+import com.alibaba.sdk.android.oss.ClientConfiguration;
+import com.alibaba.sdk.android.oss.ClientException;
+import com.alibaba.sdk.android.oss.OSS;
+import com.alibaba.sdk.android.oss.ServiceException;
+import com.alibaba.sdk.android.oss.callback.OSSCompletedCallback;
+import com.alibaba.sdk.android.oss.common.OSSLogToFileUtils;
+import com.alibaba.sdk.android.oss.common.auth.OSSCredentialProvider;
+import com.alibaba.sdk.android.oss.common.utils.OSSUtils;
+import com.alibaba.sdk.android.oss.internal.ExtensionRequestOperation;
+import com.alibaba.sdk.android.oss.internal.InternalRequestOperation;
+import com.alibaba.sdk.android.oss.internal.OSSAsyncTask;
+import com.alibaba.sdk.android.oss.internal.ObjectURLPresigner;
+import com.alibaba.sdk.android.oss.model.AbortMultipartUploadRequest;
+import com.alibaba.sdk.android.oss.model.AbortMultipartUploadResult;
+import com.alibaba.sdk.android.oss.model.AppendObjectRequest;
+import com.alibaba.sdk.android.oss.model.AppendObjectResult;
+import com.alibaba.sdk.android.oss.model.CompleteMultipartUploadRequest;
+import com.alibaba.sdk.android.oss.model.CompleteMultipartUploadResult;
+import com.alibaba.sdk.android.oss.model.CopyObjectRequest;
+import com.alibaba.sdk.android.oss.model.CopyObjectResult;
+import com.alibaba.sdk.android.oss.model.CreateBucketRequest;
+import com.alibaba.sdk.android.oss.model.CreateBucketResult;
+import com.alibaba.sdk.android.oss.model.DeleteBucketLifecycleRequest;
+import com.alibaba.sdk.android.oss.model.DeleteBucketLifecycleResult;
+import com.alibaba.sdk.android.oss.model.DeleteBucketLoggingRequest;
+import com.alibaba.sdk.android.oss.model.DeleteBucketLoggingResult;
+import com.alibaba.sdk.android.oss.model.DeleteBucketRequest;
+import com.alibaba.sdk.android.oss.model.DeleteBucketResult;
+import com.alibaba.sdk.android.oss.model.DeleteMultipleObjectRequest;
+import com.alibaba.sdk.android.oss.model.DeleteMultipleObjectResult;
+import com.alibaba.sdk.android.oss.model.DeleteObjectRequest;
+import com.alibaba.sdk.android.oss.model.DeleteObjectResult;
+import com.alibaba.sdk.android.oss.model.GeneratePresignedUrlRequest;
+import com.alibaba.sdk.android.oss.model.GetBucketACLRequest;
+import com.alibaba.sdk.android.oss.model.GetBucketACLResult;
+import com.alibaba.sdk.android.oss.model.GetBucketInfoRequest;
+import com.alibaba.sdk.android.oss.model.GetBucketInfoResult;
+import com.alibaba.sdk.android.oss.model.GetBucketLifecycleRequest;
+import com.alibaba.sdk.android.oss.model.GetBucketLifecycleResult;
+import com.alibaba.sdk.android.oss.model.GetBucketLoggingRequest;
+import com.alibaba.sdk.android.oss.model.GetBucketLoggingResult;
+import com.alibaba.sdk.android.oss.model.GetBucketRefererRequest;
+import com.alibaba.sdk.android.oss.model.GetBucketRefererResult;
+import com.alibaba.sdk.android.oss.model.GetObjectACLRequest;
+import com.alibaba.sdk.android.oss.model.GetObjectACLResult;
+import com.alibaba.sdk.android.oss.model.GetObjectRequest;
+import com.alibaba.sdk.android.oss.model.GetObjectResult;
+import com.alibaba.sdk.android.oss.model.GetSymlinkRequest;
+import com.alibaba.sdk.android.oss.model.GetSymlinkResult;
+import com.alibaba.sdk.android.oss.model.HeadObjectRequest;
+import com.alibaba.sdk.android.oss.model.HeadObjectResult;
+import com.alibaba.sdk.android.oss.model.ImagePersistRequest;
+import com.alibaba.sdk.android.oss.model.ImagePersistResult;
+import com.alibaba.sdk.android.oss.model.InitiateMultipartUploadRequest;
+import com.alibaba.sdk.android.oss.model.InitiateMultipartUploadResult;
+import com.alibaba.sdk.android.oss.model.ListBucketsRequest;
+import com.alibaba.sdk.android.oss.model.ListBucketsResult;
+import com.alibaba.sdk.android.oss.model.ListMultipartUploadsRequest;
+import com.alibaba.sdk.android.oss.model.ListMultipartUploadsResult;
+import com.alibaba.sdk.android.oss.model.ListObjectsRequest;
+import com.alibaba.sdk.android.oss.model.ListObjectsResult;
+import com.alibaba.sdk.android.oss.model.ListPartsRequest;
+import com.alibaba.sdk.android.oss.model.ListPartsResult;
+import com.alibaba.sdk.android.oss.model.MultipartUploadRequest;
+import com.alibaba.sdk.android.oss.model.PutBucketLifecycleRequest;
+import com.alibaba.sdk.android.oss.model.PutBucketLifecycleResult;
+import com.alibaba.sdk.android.oss.model.PutBucketLoggingRequest;
+import com.alibaba.sdk.android.oss.model.PutBucketLoggingResult;
+import com.alibaba.sdk.android.oss.model.PutBucketRefererRequest;
+import com.alibaba.sdk.android.oss.model.PutBucketRefererResult;
+import com.alibaba.sdk.android.oss.model.PutObjectRequest;
+import com.alibaba.sdk.android.oss.model.PutObjectResult;
+import com.alibaba.sdk.android.oss.model.PutSymlinkRequest;
+import com.alibaba.sdk.android.oss.model.PutSymlinkResult;
+import com.alibaba.sdk.android.oss.model.RestoreObjectRequest;
+import com.alibaba.sdk.android.oss.model.RestoreObjectResult;
+import com.alibaba.sdk.android.oss.model.ResumableDownloadRequest;
+import com.alibaba.sdk.android.oss.model.ResumableDownloadResult;
+import com.alibaba.sdk.android.oss.model.ResumableUploadRequest;
+import com.alibaba.sdk.android.oss.model.ResumableUploadResult;
+import com.alibaba.sdk.android.oss.model.TriggerCallbackRequest;
+import com.alibaba.sdk.android.oss.model.TriggerCallbackResult;
+import com.alibaba.sdk.android.oss.model.UploadPartRequest;
+import com.alibaba.sdk.android.oss.model.UploadPartResult;
+import com.onyx.android.sdk.base.common.CommonConstant;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+/* loaded from: classes3.dex */
+public class u6k implements OSS {
+
+    /* renamed from: a */
+    public URI f86157a;
+
+    /* renamed from: b */
+    public OSSCredentialProvider f86158b;
+
+    /* renamed from: c */
+    public InternalRequestOperation f86159c;
+
+    /* renamed from: d */
+    public ExtensionRequestOperation f86160d;
+
+    /* renamed from: e */
+    public ClientConfiguration f86161e;
+
+    public u6k(Context context, String str, OSSCredentialProvider oSSCredentialProvider, ClientConfiguration clientConfiguration) {
+        OSSLogToFileUtils.init(context.getApplicationContext(), clientConfiguration);
+        try {
+            String trim = str.trim();
+            if (!trim.startsWith("http")) {
+                trim = CommonConstant.SCHEME_HTTP + trim;
+            }
+            URI uri = new URI(trim);
+            this.f86157a = uri;
+            if (oSSCredentialProvider != null) {
+                Boolean bool = Boolean.FALSE;
+                try {
+                    bool = Boolean.valueOf(OSSUtils.isValidateIP(uri.getHost()));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                if (this.f86157a.getScheme().equals("https") && bool.booleanValue()) {
+                    throw new IllegalArgumentException("endpoint should not be format with https://ip.");
+                }
+                this.f86158b = oSSCredentialProvider;
+                this.f86161e = clientConfiguration == null ? ClientConfiguration.getDefaultConf() : clientConfiguration;
+                this.f86159c = new InternalRequestOperation(context.getApplicationContext(), this.f86157a, oSSCredentialProvider, this.f86161e);
+                this.f86160d = new ExtensionRequestOperation(this.f86159c);
+                return;
+            }
+            throw new IllegalArgumentException("CredentialProvider can't be null.");
+        } catch (URISyntaxException unused) {
+            throw new IllegalArgumentException("Endpoint must be a string like 'http://oss-cn-****.aliyuncs.com',or your cname like 'http://image.cnamedomain.com'!");
+        }
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public AbortMultipartUploadResult abortMultipartUpload(AbortMultipartUploadRequest abortMultipartUploadRequest) throws ClientException, ServiceException {
+        return this.f86159c.abortMultipartUpload(abortMultipartUploadRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public void abortResumableUpload(ResumableUploadRequest resumableUploadRequest) throws IOException {
+        this.f86160d.abortResumableUpload(resumableUploadRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public AppendObjectResult appendObject(AppendObjectRequest appendObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.syncAppendObject(appendObjectRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<AbortMultipartUploadResult> asyncAbortMultipartUpload(AbortMultipartUploadRequest abortMultipartUploadRequest, OSSCompletedCallback<AbortMultipartUploadRequest, AbortMultipartUploadResult> oSSCompletedCallback) {
+        return this.f86159c.abortMultipartUpload(abortMultipartUploadRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<AppendObjectResult> asyncAppendObject(AppendObjectRequest appendObjectRequest, OSSCompletedCallback<AppendObjectRequest, AppendObjectResult> oSSCompletedCallback) {
+        return this.f86159c.appendObject(appendObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<CompleteMultipartUploadResult> asyncCompleteMultipartUpload(CompleteMultipartUploadRequest completeMultipartUploadRequest, OSSCompletedCallback<CompleteMultipartUploadRequest, CompleteMultipartUploadResult> oSSCompletedCallback) {
+        return this.f86159c.completeMultipartUpload(completeMultipartUploadRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<CopyObjectResult> asyncCopyObject(CopyObjectRequest copyObjectRequest, OSSCompletedCallback<CopyObjectRequest, CopyObjectResult> oSSCompletedCallback) {
+        return this.f86159c.copyObject(copyObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<CreateBucketResult> asyncCreateBucket(CreateBucketRequest createBucketRequest, OSSCompletedCallback<CreateBucketRequest, CreateBucketResult> oSSCompletedCallback) {
+        return this.f86159c.createBucket(createBucketRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<DeleteBucketResult> asyncDeleteBucket(DeleteBucketRequest deleteBucketRequest, OSSCompletedCallback<DeleteBucketRequest, DeleteBucketResult> oSSCompletedCallback) {
+        return this.f86159c.deleteBucket(deleteBucketRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<DeleteBucketLifecycleResult> asyncDeleteBucketLifecycle(DeleteBucketLifecycleRequest deleteBucketLifecycleRequest, OSSCompletedCallback<DeleteBucketLifecycleRequest, DeleteBucketLifecycleResult> oSSCompletedCallback) {
+        return this.f86159c.deleteBucketLifecycle(deleteBucketLifecycleRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<DeleteBucketLoggingResult> asyncDeleteBucketLogging(DeleteBucketLoggingRequest deleteBucketLoggingRequest, OSSCompletedCallback<DeleteBucketLoggingRequest, DeleteBucketLoggingResult> oSSCompletedCallback) {
+        return this.f86159c.deleteBucketLogging(deleteBucketLoggingRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<DeleteMultipleObjectResult> asyncDeleteMultipleObject(DeleteMultipleObjectRequest deleteMultipleObjectRequest, OSSCompletedCallback<DeleteMultipleObjectRequest, DeleteMultipleObjectResult> oSSCompletedCallback) {
+        return this.f86159c.deleteMultipleObject(deleteMultipleObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<DeleteObjectResult> asyncDeleteObject(DeleteObjectRequest deleteObjectRequest, OSSCompletedCallback<DeleteObjectRequest, DeleteObjectResult> oSSCompletedCallback) {
+        return this.f86159c.deleteObject(deleteObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetBucketACLResult> asyncGetBucketACL(GetBucketACLRequest getBucketACLRequest, OSSCompletedCallback<GetBucketACLRequest, GetBucketACLResult> oSSCompletedCallback) {
+        return this.f86159c.getBucketACL(getBucketACLRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetBucketInfoResult> asyncGetBucketInfo(GetBucketInfoRequest getBucketInfoRequest, OSSCompletedCallback<GetBucketInfoRequest, GetBucketInfoResult> oSSCompletedCallback) {
+        return this.f86159c.getBucketInfo(getBucketInfoRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetBucketLifecycleResult> asyncGetBucketLifecycle(GetBucketLifecycleRequest getBucketLifecycleRequest, OSSCompletedCallback<GetBucketLifecycleRequest, GetBucketLifecycleResult> oSSCompletedCallback) {
+        return this.f86159c.getBucketLifecycle(getBucketLifecycleRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetBucketLoggingResult> asyncGetBucketLogging(GetBucketLoggingRequest getBucketLoggingRequest, OSSCompletedCallback<GetBucketLoggingRequest, GetBucketLoggingResult> oSSCompletedCallback) {
+        return this.f86159c.getBucketLogging(getBucketLoggingRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetBucketRefererResult> asyncGetBucketReferer(GetBucketRefererRequest getBucketRefererRequest, OSSCompletedCallback<GetBucketRefererRequest, GetBucketRefererResult> oSSCompletedCallback) {
+        return this.f86159c.getBucketReferer(getBucketRefererRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetObjectResult> asyncGetObject(GetObjectRequest getObjectRequest, OSSCompletedCallback<GetObjectRequest, GetObjectResult> oSSCompletedCallback) {
+        return this.f86159c.getObject(getObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetObjectACLResult> asyncGetObjectACL(GetObjectACLRequest getObjectACLRequest, OSSCompletedCallback<GetObjectACLRequest, GetObjectACLResult> oSSCompletedCallback) {
+        return this.f86159c.getObjectACL(getObjectACLRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<GetSymlinkResult> asyncGetSymlink(GetSymlinkRequest getSymlinkRequest, OSSCompletedCallback<GetSymlinkRequest, GetSymlinkResult> oSSCompletedCallback) {
+        return this.f86159c.getSymlink(getSymlinkRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<HeadObjectResult> asyncHeadObject(HeadObjectRequest headObjectRequest, OSSCompletedCallback<HeadObjectRequest, HeadObjectResult> oSSCompletedCallback) {
+        return this.f86159c.headObject(headObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ImagePersistResult> asyncImagePersist(ImagePersistRequest imagePersistRequest, OSSCompletedCallback<ImagePersistRequest, ImagePersistResult> oSSCompletedCallback) {
+        return this.f86159c.imageActionPersist(imagePersistRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<InitiateMultipartUploadResult> asyncInitMultipartUpload(InitiateMultipartUploadRequest initiateMultipartUploadRequest, OSSCompletedCallback<InitiateMultipartUploadRequest, InitiateMultipartUploadResult> oSSCompletedCallback) {
+        return this.f86159c.initMultipartUpload(initiateMultipartUploadRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ListBucketsResult> asyncListBuckets(ListBucketsRequest listBucketsRequest, OSSCompletedCallback<ListBucketsRequest, ListBucketsResult> oSSCompletedCallback) {
+        return this.f86159c.listBuckets(listBucketsRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ListMultipartUploadsResult> asyncListMultipartUploads(ListMultipartUploadsRequest listMultipartUploadsRequest, OSSCompletedCallback<ListMultipartUploadsRequest, ListMultipartUploadsResult> oSSCompletedCallback) {
+        return this.f86159c.listMultipartUploads(listMultipartUploadsRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ListObjectsResult> asyncListObjects(ListObjectsRequest listObjectsRequest, OSSCompletedCallback<ListObjectsRequest, ListObjectsResult> oSSCompletedCallback) {
+        return this.f86159c.listObjects(listObjectsRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ListPartsResult> asyncListParts(ListPartsRequest listPartsRequest, OSSCompletedCallback<ListPartsRequest, ListPartsResult> oSSCompletedCallback) {
+        return this.f86159c.listParts(listPartsRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<CompleteMultipartUploadResult> asyncMultipartUpload(MultipartUploadRequest multipartUploadRequest, OSSCompletedCallback<MultipartUploadRequest, CompleteMultipartUploadResult> oSSCompletedCallback) {
+        return this.f86160d.multipartUpload(multipartUploadRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<PutBucketLifecycleResult> asyncPutBucketLifecycle(PutBucketLifecycleRequest putBucketLifecycleRequest, OSSCompletedCallback<PutBucketLifecycleRequest, PutBucketLifecycleResult> oSSCompletedCallback) {
+        return this.f86159c.putBucketLifecycle(putBucketLifecycleRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<PutBucketLoggingResult> asyncPutBucketLogging(PutBucketLoggingRequest putBucketLoggingRequest, OSSCompletedCallback<PutBucketLoggingRequest, PutBucketLoggingResult> oSSCompletedCallback) {
+        return this.f86159c.putBucketLogging(putBucketLoggingRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<PutBucketRefererResult> asyncPutBucketReferer(PutBucketRefererRequest putBucketRefererRequest, OSSCompletedCallback<PutBucketRefererRequest, PutBucketRefererResult> oSSCompletedCallback) {
+        return this.f86159c.putBucketReferer(putBucketRefererRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<PutObjectResult> asyncPutObject(PutObjectRequest putObjectRequest, OSSCompletedCallback<PutObjectRequest, PutObjectResult> oSSCompletedCallback) {
+        return this.f86159c.putObject(putObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<PutSymlinkResult> asyncPutSymlink(PutSymlinkRequest putSymlinkRequest, OSSCompletedCallback<PutSymlinkRequest, PutSymlinkResult> oSSCompletedCallback) {
+        return this.f86159c.putSymlink(putSymlinkRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<RestoreObjectResult> asyncRestoreObject(RestoreObjectRequest restoreObjectRequest, OSSCompletedCallback<RestoreObjectRequest, RestoreObjectResult> oSSCompletedCallback) {
+        return this.f86159c.restoreObject(restoreObjectRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ResumableDownloadResult> asyncResumableDownload(ResumableDownloadRequest resumableDownloadRequest, OSSCompletedCallback<ResumableDownloadRequest, ResumableDownloadResult> oSSCompletedCallback) {
+        return this.f86160d.resumableDownload(resumableDownloadRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ResumableUploadResult> asyncResumableUpload(ResumableUploadRequest resumableUploadRequest, OSSCompletedCallback<ResumableUploadRequest, ResumableUploadResult> oSSCompletedCallback) {
+        return this.f86160d.resumableUpload(resumableUploadRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<ResumableUploadResult> asyncSequenceUpload(ResumableUploadRequest resumableUploadRequest, OSSCompletedCallback<ResumableUploadRequest, ResumableUploadResult> oSSCompletedCallback) {
+        return this.f86160d.sequenceUpload(resumableUploadRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<TriggerCallbackResult> asyncTriggerCallback(TriggerCallbackRequest triggerCallbackRequest, OSSCompletedCallback<TriggerCallbackRequest, TriggerCallbackResult> oSSCompletedCallback) {
+        return this.f86159c.triggerCallback(triggerCallbackRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public OSSAsyncTask<UploadPartResult> asyncUploadPart(UploadPartRequest uploadPartRequest, OSSCompletedCallback<UploadPartRequest, UploadPartResult> oSSCompletedCallback) {
+        return this.f86159c.uploadPart(uploadPartRequest, oSSCompletedCallback);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public CompleteMultipartUploadResult completeMultipartUpload(CompleteMultipartUploadRequest completeMultipartUploadRequest) throws ClientException, ServiceException {
+        return this.f86159c.syncCompleteMultipartUpload(completeMultipartUploadRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public CopyObjectResult copyObject(CopyObjectRequest copyObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.copyObject(copyObjectRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public CreateBucketResult createBucket(CreateBucketRequest createBucketRequest) throws ClientException, ServiceException {
+        return this.f86159c.createBucket(createBucketRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public DeleteBucketResult deleteBucket(DeleteBucketRequest deleteBucketRequest) throws ClientException, ServiceException {
+        return this.f86159c.deleteBucket(deleteBucketRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public DeleteBucketLifecycleResult deleteBucketLifecycle(DeleteBucketLifecycleRequest deleteBucketLifecycleRequest) throws ClientException, ServiceException {
+        return this.f86159c.deleteBucketLifecycle(deleteBucketLifecycleRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public DeleteBucketLoggingResult deleteBucketLogging(DeleteBucketLoggingRequest deleteBucketLoggingRequest) throws ClientException, ServiceException {
+        return this.f86159c.deleteBucketLogging(deleteBucketLoggingRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public DeleteMultipleObjectResult deleteMultipleObject(DeleteMultipleObjectRequest deleteMultipleObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.deleteMultipleObject(deleteMultipleObjectRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public DeleteObjectResult deleteObject(DeleteObjectRequest deleteObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.deleteObject(deleteObjectRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public boolean doesObjectExist(String str, String str2) throws ClientException, ServiceException {
+        return this.f86160d.doesObjectExist(str, str2);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetBucketACLResult getBucketACL(GetBucketACLRequest getBucketACLRequest) throws ClientException, ServiceException {
+        return this.f86159c.getBucketACL(getBucketACLRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetBucketInfoResult getBucketInfo(GetBucketInfoRequest getBucketInfoRequest) throws ClientException, ServiceException {
+        return this.f86159c.getBucketInfo(getBucketInfoRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetBucketLifecycleResult getBucketLifecycle(GetBucketLifecycleRequest getBucketLifecycleRequest) throws ClientException, ServiceException {
+        return this.f86159c.getBucketLifecycle(getBucketLifecycleRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetBucketLoggingResult getBucketLogging(GetBucketLoggingRequest getBucketLoggingRequest) throws ClientException, ServiceException {
+        return this.f86159c.getBucketLogging(getBucketLoggingRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetBucketRefererResult getBucketReferer(GetBucketRefererRequest getBucketRefererRequest) throws ClientException, ServiceException {
+        return this.f86159c.getBucketReferer(getBucketRefererRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetObjectResult getObject(GetObjectRequest getObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.getObject(getObjectRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetObjectACLResult getObjectACL(GetObjectACLRequest getObjectACLRequest) throws ClientException, ServiceException {
+        return this.f86159c.getObjectACL(getObjectACLRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public GetSymlinkResult getSymlink(GetSymlinkRequest getSymlinkRequest) throws ClientException, ServiceException {
+        return this.f86159c.syncGetSymlink(getSymlinkRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public HeadObjectResult headObject(HeadObjectRequest headObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.headObject(headObjectRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ImagePersistResult imagePersist(ImagePersistRequest imagePersistRequest) throws ClientException, ServiceException {
+        return this.f86159c.imageActionPersist(imagePersistRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public InitiateMultipartUploadResult initMultipartUpload(InitiateMultipartUploadRequest initiateMultipartUploadRequest) throws ClientException, ServiceException {
+        return this.f86159c.initMultipartUpload(initiateMultipartUploadRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ListBucketsResult listBuckets(ListBucketsRequest listBucketsRequest) throws ClientException, ServiceException {
+        return this.f86159c.listBuckets(listBucketsRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ListMultipartUploadsResult listMultipartUploads(ListMultipartUploadsRequest listMultipartUploadsRequest) throws ClientException, ServiceException {
+        return this.f86159c.listMultipartUploads(listMultipartUploadsRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ListObjectsResult listObjects(ListObjectsRequest listObjectsRequest) throws ClientException, ServiceException {
+        return this.f86159c.listObjects(listObjectsRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ListPartsResult listParts(ListPartsRequest listPartsRequest) throws ClientException, ServiceException {
+        return this.f86159c.listParts(listPartsRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public CompleteMultipartUploadResult multipartUpload(MultipartUploadRequest multipartUploadRequest) throws ClientException, ServiceException {
+        return this.f86160d.multipartUpload(multipartUploadRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public String presignConstrainedObjectURL(GeneratePresignedUrlRequest generatePresignedUrlRequest) throws ClientException {
+        return new ObjectURLPresigner(this.f86157a, this.f86158b, this.f86161e).presignConstrainedURL(generatePresignedUrlRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public String presignPublicObjectURL(String str, String str2) {
+        return new ObjectURLPresigner(this.f86157a, this.f86158b, this.f86161e).presignPublicURL(str, str2);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public PutBucketLifecycleResult putBucketLifecycle(PutBucketLifecycleRequest putBucketLifecycleRequest) throws ClientException, ServiceException {
+        return this.f86159c.putBucketLifecycle(putBucketLifecycleRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public PutBucketLoggingResult putBucketLogging(PutBucketLoggingRequest putBucketLoggingRequest) throws ClientException, ServiceException {
+        return this.f86159c.putBucketLogging(putBucketLoggingRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public PutBucketRefererResult putBucketReferer(PutBucketRefererRequest putBucketRefererRequest) throws ClientException, ServiceException {
+        return this.f86159c.putBucketReferer(putBucketRefererRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public PutObjectResult putObject(PutObjectRequest putObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.syncPutObject(putObjectRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public PutSymlinkResult putSymlink(PutSymlinkRequest putSymlinkRequest) throws ClientException, ServiceException {
+        return this.f86159c.syncPutSymlink(putSymlinkRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public RestoreObjectResult restoreObject(RestoreObjectRequest restoreObjectRequest) throws ClientException, ServiceException {
+        return this.f86159c.syncRestoreObject(restoreObjectRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ResumableUploadResult resumableUpload(ResumableUploadRequest resumableUploadRequest) throws ClientException, ServiceException {
+        return this.f86160d.resumableUpload(resumableUploadRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ResumableUploadResult sequenceUpload(ResumableUploadRequest resumableUploadRequest) throws ClientException, ServiceException {
+        return this.f86160d.sequenceUpload(resumableUploadRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public ResumableDownloadResult syncResumableDownload(ResumableDownloadRequest resumableDownloadRequest) throws ClientException, ServiceException {
+        return this.f86160d.resumableDownload(resumableDownloadRequest, null).getResult();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public TriggerCallbackResult triggerCallback(TriggerCallbackRequest triggerCallbackRequest) throws ClientException, ServiceException {
+        return this.f86159c.asyncTriggerCallback(triggerCallbackRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public void updateCredentialProvider(OSSCredentialProvider oSSCredentialProvider) {
+        this.f86158b = oSSCredentialProvider;
+        this.f86159c.setCredentialProvider(oSSCredentialProvider);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public UploadPartResult uploadPart(UploadPartRequest uploadPartRequest) throws ClientException, ServiceException {
+        return this.f86159c.syncUploadPart(uploadPartRequest);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.OSS
+    public String presignConstrainedObjectURL(String str, String str2, long j) throws ClientException {
+        return new ObjectURLPresigner(this.f86157a, this.f86158b, this.f86161e).presignConstrainedURL(str, str2, j);
+    }
+
+    public u6k(Context context, OSSCredentialProvider oSSCredentialProvider, ClientConfiguration clientConfiguration) {
+        this.f86158b = oSSCredentialProvider;
+        this.f86161e = clientConfiguration == null ? ClientConfiguration.getDefaultConf() : clientConfiguration;
+        this.f86159c = new InternalRequestOperation(context.getApplicationContext(), oSSCredentialProvider, this.f86161e);
+        this.f86160d = new ExtensionRequestOperation(this.f86159c);
+    }
+}

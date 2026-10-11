@@ -1,0 +1,38 @@
+{
+  "coverModel": {
+    "categoryId": "YEARLY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "3fbf055dd6fe4008ac144871febca5f9"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleList": [],
+    "titleResName": "cover_yearly7",
+    "uniqueId": "6007",
+    "updatedAt": 0,
+    "version": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "orderIndex": -1.0,
+      "resName": "cover_yearly7",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "3fbf055dd6fe4008ac144871febca5f9",
+      "updatedAt": 0,
+      "version": 0
+    }
+  ]
+}

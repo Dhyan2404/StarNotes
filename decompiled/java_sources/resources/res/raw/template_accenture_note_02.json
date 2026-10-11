@@ -1,0 +1,91 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 90.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "04ac6b35943f48db8c020fdcc19a4c48",
+      "a42a67a9a8c54409bd1f18032531f9b7",
+      "8eaf4fa1493f4280933f44a86e686535",
+      "c3de08cb50a14bcba7d93f5ae85a71a3",
+      "20e7894991c34e0e948a96993818fbf2"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_accenture_note_02",
+    "type": 20010,
+    "uniqueId": "20010",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_accenture_note_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accenture_note_02_thumbnail",
+      "type": 0,
+      "uniqueId": "04ac6b35943f48db8c020fdcc19a4c48",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_accenture_note_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accenture_note_02_thumbnail",
+      "type": 0,
+      "uniqueId": "a42a67a9a8c54409bd1f18032531f9b7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_accenture_note_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accenture_note_02_thumbnail",
+      "type": 0,
+      "uniqueId": "8eaf4fa1493f4280933f44a86e686535",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_accenture_note_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accenture_note_02_thumbnail",
+      "type": 0,
+      "uniqueId": "c3de08cb50a14bcba7d93f5ae85a71a3",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_accenture_note_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accenture_note_02_thumbnail",
+      "type": 0,
+      "uniqueId": "20e7894991c34e0e948a96993818fbf2",
+      "updatedAt": 0
+    }
+  ]
+}

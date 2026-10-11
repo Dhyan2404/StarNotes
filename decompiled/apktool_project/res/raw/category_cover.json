@@ -1,0 +1,56 @@
+[
+  {
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_simple",
+    "uniqueId": "SIMPLE",
+    "updatedAt": 0
+  },
+  {
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_graphical",
+    "uniqueId": "GRAPHICAL",
+    "updatedAt": 0
+  },
+  {
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_fruit",
+    "uniqueId": "FRUIT",
+    "updatedAt": 0
+  },
+  {
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_cute_pet",
+    "uniqueId": "CUTE_PET",
+    "updatedAt": 0
+  },
+  {
+    "createdAt": 0,
+    "orderIndex": 40.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_illustration",
+    "uniqueId": "ILLUSTRATION",
+    "updatedAt": 0
+  },
+  {
+    "createdAt": 0,
+    "orderIndex": 50.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_yearly",
+    "uniqueId": "YEARLY",
+    "updatedAt": 0
+  }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wrapper" android:tag="layout/popup_sync_error_0" android:background="@drawable/popup_shadow_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/ripple_white_corner" android:padding="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_error_color_01" android:gravity="bottom" android:id="@id/tv_error_code" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_6" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/primary_100" android:gravity="center_vertical" android:id="@id/tv_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:drawableLeft="@drawable/ic_backup_retry" android:drawablePadding="@dimen/dp_4" android:layout_marginStart="@dimen/dp_6" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/arrowView" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_8" android:src="@drawable/icon_menu_arrow" android:scaleType="fitXY" />
+</LinearLayout>

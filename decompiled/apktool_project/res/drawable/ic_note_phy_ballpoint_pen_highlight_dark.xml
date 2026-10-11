@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/dp_88" android:width="@dimen/dp_24" android:viewportWidth="24.0" android:viewportHeight="88.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h24v88h-24z" />
+        <path android:fillColor="#ff6e6e6e" android:pathData="M0.5,38V44H23.5V38C23.5,36 23.5,33 21,25C19.089,18.883 17.364,14.255 16.744,12.631C16.597,12.248 16.23,12 15.82,12H8.167C7.763,12 7.401,12.24 7.252,12.615C6.615,14.215 4.847,18.816 3,25C0.5,33 0.5,36 0.5,38Z" />
+        <path android:fillColor="#ff6e6e6e" android:pathData="M0.5,88H23.5V78H0.5V88Z" />
+        <path android:fillColor="@drawable/$ic_note_phy_ballpoint_pen_highlight_dark__0" android:pathData="M0.5,44h23v34h-23z" />
+        <group>
+            <clip-path android:pathData="M0.5,38L0.5,88H23.5L23.5,38C23.5,36 23.5,33 21,25C19.089,18.883 17.364,14.255 16.744,12.631C16.597,12.248 16.23,12 15.82,12H8.167C7.763,12 7.401,12.24 7.251,12.615C6.615,14.215 4.847,18.816 3,25C0.5,33 0.5,36 0.5,38Z" />
+            <path android:fillColor="@drawable/$ic_note_phy_ballpoint_pen_highlight_dark__1" android:pathData="M23.5,13H11.5L13.998,24.868C14.997,29.61 15.5,34.443 15.5,39.289V88H23.5V13Z" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintRelativeLayout android:tag="layout/item_list_import_files_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_container_multiple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_icon_multiple" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_80" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_name_multiple" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_container_single" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_icon_single" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_40" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_name_single" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintRelativeLayout>

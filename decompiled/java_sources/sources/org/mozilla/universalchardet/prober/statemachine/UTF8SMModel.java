@@ -1,0 +1,21 @@
+package org.mozilla.universalchardet.prober.statemachine;
+
+import org.mozilla.universalchardet.Constants;
+
+/* loaded from: classes13.dex */
+public class UTF8SMModel extends SMModel {
+    public static final int UTF8_CLASS_FACTOR = 16;
+
+    /* renamed from: a */
+    public static int[] f115652a = {PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 0, 0), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 0, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(2, 2, 2, 2, 3, 3, 3, 3), PkgInt.pack4bits(4, 4, 4, 4, 4, 4, 4, 4), PkgInt.pack4bits(4, 4, 4, 4, 4, 4, 4, 4), PkgInt.pack4bits(4, 4, 4, 4, 4, 4, 4, 4), PkgInt.pack4bits(5, 5, 5, 5, 5, 5, 5, 5), PkgInt.pack4bits(5, 5, 5, 5, 5, 5, 5, 5), PkgInt.pack4bits(5, 5, 5, 5, 5, 5, 5, 5), PkgInt.pack4bits(5, 5, 5, 5, 5, 5, 5, 5), PkgInt.pack4bits(0, 0, 6, 6, 6, 6, 6, 6), PkgInt.pack4bits(6, 6, 6, 6, 6, 6, 6, 6), PkgInt.pack4bits(6, 6, 6, 6, 6, 6, 6, 6), PkgInt.pack4bits(6, 6, 6, 6, 6, 6, 6, 6), PkgInt.pack4bits(7, 8, 8, 8, 8, 8, 8, 8), PkgInt.pack4bits(8, 8, 8, 8, 8, 9, 8, 8), PkgInt.pack4bits(10, 11, 11, 11, 11, 11, 11, 11), PkgInt.pack4bits(12, 13, 13, 13, 14, 15, 0, 0)};
+
+    /* renamed from: b */
+    public static int[] f115653b = {PkgInt.pack4bits(1, 0, 1, 1, 1, 1, 12, 10), PkgInt.pack4bits(9, 11, 8, 7, 6, 5, 4, 3), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(2, 2, 2, 2, 2, 2, 2, 2), PkgInt.pack4bits(2, 2, 2, 2, 2, 2, 2, 2), PkgInt.pack4bits(1, 1, 5, 5, 5, 5, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 5, 5, 5, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 7, 7, 7, 7, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 7, 7, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 9, 9, 9, 9, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 9, 9, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 12, 12, 12, 12, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 12, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 12, 12, 12, 1, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1), PkgInt.pack4bits(1, 1, 0, 0, 0, 0, 1, 1), PkgInt.pack4bits(1, 1, 1, 1, 1, 1, 1, 1)};
+
+    /* renamed from: c */
+    public static int[] f115654c = {0, 1, 0, 0, 0, 0, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6};
+
+    public UTF8SMModel() {
+        super(new PkgInt(3, 7, 2, 15, f115652a), 16, new PkgInt(3, 7, 2, 15, f115653b), f115654c, Constants.CHARSET_UTF_8);
+    }
+}

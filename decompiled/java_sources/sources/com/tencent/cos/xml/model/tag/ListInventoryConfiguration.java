@@ -1,0 +1,39 @@
+package com.tencent.cos.xml.model.tag;
+
+import java.util.Set;
+
+/* loaded from: classes10.dex */
+public class ListInventoryConfiguration {
+    public String continuationToken;
+    public Set<InventoryConfiguration> inventoryConfigurations;
+    public boolean isTruncated = false;
+    public String nextContinuationToken;
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder("{ListInventoryConfigurationResult\n");
+        sb.append("IsTruncated:");
+        sb.append(this.isTruncated);
+        sb.append("\n");
+        if (this.continuationToken != null) {
+            sb.append("ContinuationToken:");
+            sb.append(this.continuationToken);
+            sb.append("\n");
+        }
+        if (this.nextContinuationToken != null) {
+            sb.append("NextContinuationToken:");
+            sb.append(this.nextContinuationToken);
+            sb.append("\n");
+        }
+        Set<InventoryConfiguration> set = this.inventoryConfigurations;
+        if (set != null) {
+            for (InventoryConfiguration inventoryConfiguration : set) {
+                if (inventoryConfiguration != null) {
+                    sb.append(inventoryConfiguration.toString());
+                    sb.append("\n");
+                }
+            }
+        }
+        sb.append("}");
+        return sb.toString();
+    }
+}

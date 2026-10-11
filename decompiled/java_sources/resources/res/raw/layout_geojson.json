@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "fillAttr": {
+      "color": -1,
+      "enableColor": true
+    },
+    "pageMargins": {
+      "layoutRect": {
+        "bottom": 0.0,
+        "empty": true,
+        "left": 0.0,
+        "right": 0.0,
+        "top": 0.0
+      },
+      "paddingBottom": 0.0,
+      "paddingLeft": 0.0,
+      "paddingRight": 0.0,
+      "paddingTop": 0.0,
+      "spacing": 10.0
+    },
+    "radius": 0.0,
+    "selectionPointType": "SCALE",
+    "subType": "Layout"
+  },
+  "type": "Feature",
+  "universalShapeType": "layout",
+  "version": 2
+}

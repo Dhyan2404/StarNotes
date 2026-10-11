@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_20"
+    android:layout_marginVertical="@dimen/dp_24">
+    <com.onyx.galaxy.note.p048ui.view.RatioImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_124"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_gravity="top|right"
+        android:id="@+id/closeButton"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:src="@drawable/icon_notification_close"
+        android:scaleType="fitXY"/>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

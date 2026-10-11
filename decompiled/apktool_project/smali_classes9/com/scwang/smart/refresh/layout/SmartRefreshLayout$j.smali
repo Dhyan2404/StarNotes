@@ -1,0 +1,217 @@
+.class public Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->autoLoadMore(IIFZ)Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic e:I
+
+.field public final synthetic f:F
+
+.field public final synthetic g:Z
+
+.field public final synthetic h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+
+# direct methods
+.method public constructor <init>(Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;IFZ)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iput p2, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->e:I
+
+    iput p3, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->f:F
+
+    iput-boolean p4, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->g:Z
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 4
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v1, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->mViceState:Lcom/scwang/smart/refresh/layout/constant/RefreshState;
+
+    sget-object v2, Lcom/scwang/smart/refresh/layout/constant/RefreshState;->Loading:Lcom/scwang/smart/refresh/layout/constant/RefreshState;
+
+    if-eq v1, v2, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    if-eqz v0, :cond_1
+
+    const-wide/16 v1, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    const/4 v1, 0x0
+
+    iput-object v1, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    :cond_1
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    div-float/2addr v1, v2
+
+    iput v1, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->mLastTouchX:F
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->mKernel:Lcom/scwang/smart/refresh/layout/api/RefreshKernel;
+
+    sget-object v1, Lcom/scwang/smart/refresh/layout/constant/RefreshState;->PullUpToLoad:Lcom/scwang/smart/refresh/layout/constant/RefreshState;
+
+    invoke-interface {v0, v1}, Lcom/scwang/smart/refresh/layout/api/RefreshKernel;->setState(Lcom/scwang/smart/refresh/layout/constant/RefreshState;)Lcom/scwang/smart/refresh/layout/api/RefreshKernel;
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->mRefreshFooter:Lcom/scwang/smart/refresh/layout/api/RefreshComponent;
+
+    if-eqz v0, :cond_2
+
+    iget v1, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->e:I
+
+    iget v2, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->f:F
+
+    iget-boolean v3, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->g:Z
+
+    invoke-interface {v0, v1, v2, v3}, Lcom/scwang/smart/refresh/layout/api/RefreshComponent;->autoOpen(IFZ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    return-void
+
+    :cond_2
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget v1, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->mFooterHeight:I
+
+    if-nez v1, :cond_3
+
+    iget v1, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->mFooterTriggerRate:F
+
+    goto :goto_0
+
+    :cond_3
+    int-to-float v1, v1
+
+    :goto_0
+    iget v2, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->f:F
+
+    const/high16 v3, 0x41200000    # 10.0f
+
+    cmpg-float v3, v2, v3
+
+    if-gez v3, :cond_4
+
+    mul-float/2addr v2, v1
+
+    :cond_4
+    iget v1, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->mSpinner:I
+
+    float-to-int v2, v2
+
+    neg-int v2, v2
+
+    filled-new-array {v1, v2}, [I
+
+    move-result-object v1
+
+    invoke-static {v1}, Landroid/animation/ValueAnimator;->ofInt([I)Landroid/animation/ValueAnimator;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    iget v1, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->e:I
+
+    int-to-long v1, v1
+
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    new-instance v1, Lcom/scwang/smart/refresh/layout/util/SmartUtil;
+
+    sget v2, Lcom/scwang/smart/refresh/layout/util/SmartUtil;->INTERPOLATOR_VISCOUS_FLUID:I
+
+    invoke-direct {v1, v2}, Lcom/scwang/smart/refresh/layout/util/SmartUtil;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    new-instance v1, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j$a;
+
+    invoke-direct {v1, p0}, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j$a;-><init>(Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;)V
+
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    iget-object v0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object v0, v0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    new-instance v1, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j$b;
+
+    invoke-direct {v1, p0}, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j$b;-><init>(Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;)V
+
+    invoke-virtual {v0, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    iget-object p0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout$j;->h:Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;
+
+    iget-object p0, p0, Lcom/scwang/smart/refresh/layout/SmartRefreshLayout;->reboundAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->start()V
+
+    return-void
+.end method

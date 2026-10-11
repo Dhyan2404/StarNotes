@@ -1,0 +1,44 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": "WaveLine",
+        "waveAttr": {
+          "wavyLength": 24.0,
+          "wavyPeak": 6.0,
+          "wavyOffset": 0.0
+        }
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "radius": 0.0,
+    "selectionPointType": "DRAG",
+    "subType": ""
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "wave_line",
+  "version": 4
+}

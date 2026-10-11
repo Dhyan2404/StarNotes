@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/BindPhoneFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="BindPhone" android:name="com.onyx.galaxy.note.usercenter.ui.BindPhoneFragment" android:id="@id/BindPhoneFragment">
+        <argument android:name="purpose" app:argType="string" />
+        <argument android:name="oldSocialAccount" android:defaultValue="" app:argType="string" />
+        <argument android:name="oldVerifyCode" android:defaultValue="" app:argType="string" />
+    </fragment>
+</navigation>

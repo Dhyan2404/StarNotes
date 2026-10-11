@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/icon_color_set_added">
+    <target
+        android:name="star_path"
+        android:animation="@animator/color_set_star_color_anim_reverse"/>
+    <target
+        android:name="border_path"
+        android:animation="@animator/color_set_border_alpha_anim_reverse"/>
+    <target
+        android:name="plus_path"
+        android:animation="@animator/color_set_plus_alpha_anim_reverse"/>
+</animated-vector>

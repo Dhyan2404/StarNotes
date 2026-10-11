@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/custom_scroll_bar_recycle_view_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.galaxy.note.category.view.AutoFitRecycleView android:id="@id/recycle_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/dp_16" app:widthLarge="@dimen/note_item_grid_pad_width" app:widthSmall="@dimen/note_item_grid_phone_width" />
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end" android:id="@id/scroll_bar" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_36" android:src="@drawable/scroller_bar_bg" />
+</FrameLayout>

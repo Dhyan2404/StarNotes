@@ -1,0 +1,91 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "07e5bbad65cf435381aa988e352f4ea4",
+      "7feead7a1bd9446ea5d497bdab5b16d1",
+      "abf0a17484704b7293109c4840396c64",
+      "23cf0c270e0d44148d89326161a4fd38",
+      "b9bf9da5be954e439f2b42b61ea86e0a"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "cover_simple_seal",
+    "uniqueId": "509",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -3748139,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "07e5bbad65cf435381aa988e352f4ea4",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -8408367,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "7feead7a1bd9446ea5d497bdab5b16d1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1664655,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "abf0a17484704b7293109c4840396c64",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -7422552,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "23cf0c270e0d44148d89326161a4fd38",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1388678,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "b9bf9da5be954e439f2b42b61ea86e0a",
+      "updatedAt": 0
+    }
+  ]
+}

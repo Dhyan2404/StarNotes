@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/item_count_up_history_time_list_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_38"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_10" android:textColor="@color/theme_play_icon_color" android:layout_gravity="start|center" android:id="@id/tv_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textFontWeight="@integer/font_weight_Medium" />
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_10" android:textColor="@color/theme_text_color_01" android:layout_gravity="end|center" android:id="@id/tv_count_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textFontWeight="@integer/font_weight_Medium" />
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

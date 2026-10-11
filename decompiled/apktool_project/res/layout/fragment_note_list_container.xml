@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:tag="layout/fragment_note_list_container_0" android:background="@color/theme_background_color_01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/top_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:defaultNavHost="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:navGraph="@navigation/note_top_container" />
+    <include android:id="@id/bannerLayout" layout="@layout/layout_banner_notification" />
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:id="@id/bottom_list" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/bannerLayout">
+        <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/fc_folder_root" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="true" app:navGraph="@navigation/note_container_folder_root" />
+        <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/fc_view_page" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="true" app:navGraph="@navigation/note_container_view_page_list" />
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

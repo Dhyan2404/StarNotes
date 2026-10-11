@@ -1,0 +1,91 @@
+{
+  "templateModel": {
+    "categoryId": "WRITE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "3e1745d1addf4b77bb16059861568391",
+      "bd0b071367e74cd7b93d23e3149d402c",
+      "7737e0a99024492a97a8fef9106f9d53",
+      "6517a9b0bb5b4619bce0bda2f358f9b1",
+      "ec13c319d49f4cf1affe58d892335aa2"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_checkerboard_paper",
+    "type": 61002,
+    "uniqueId": "61002",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_checkerboard_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "3e1745d1addf4b77bb16059861568391",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_checkerboard_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "bd0b071367e74cd7b93d23e3149d402c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_checkerboard_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "7737e0a99024492a97a8fef9106f9d53",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_checkerboard_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "6517a9b0bb5b4619bce0bda2f358f9b1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_checkerboard_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_checkerboard_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "ec13c319d49f4cf1affe58d892335aa2",
+      "updatedAt": 0
+    }
+  ]
+}

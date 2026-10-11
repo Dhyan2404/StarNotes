@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_layout" android:tag="layout/fragment_message_center_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_24" android:elevation="@dimen/dp_10" android:outlineProvider="none" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/back_button" style="@style/account_return_button" />
+        <TextView android:textSize="@dimen/dp_18" android:textColor="@color/theme_text_color_01" android:layout_gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_title_message_center" android:fontFamily="sans-serif" android:textFontWeight="@integer/font_weight_Medium" />
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/theme_text_color_01" android:layout_gravity="end|center" android:id="@id/readAllButton" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_24" android:text="@string/user_title_read_all" android:fontFamily="sans-serif" android:textFontWeight="@integer/font_weight_Regular" />
+    </FrameLayout>
+    <com.onyx.galaxy.note.ui.view.OnyxWebView android:id="@id/webView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/webViewTimeoutLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_marginHorizontal="@dimen/user_center_webview_marigin" android:layout_marginVertical="@dimen/dp_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar" layout="@layout/layout_webview_timeout" />
+    <LinearLayout android:gravity="center" android:id="@id/loadingView" android:tag="binding_1" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/dp_20" android:outlineProvider="none">
+        <include layout="@layout/layout_usercenter_loading" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

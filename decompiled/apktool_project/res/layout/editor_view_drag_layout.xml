@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/editor_view_drag_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/editor_view_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.onyx.galaxy.note.editor.view.drag.DragHelperView android:id="@id/view_drag_view" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+            <com.onyx.android.sdk.universal.editor.display.EditorView android:id="@id/editor_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.onyx.galaxy.note.editor.view.drag.DragHelperView>
+        <com.onyx.galaxy.note.editor.view.ruler.RulerView android:id="@id/ruler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:layout_below="@id/view_drag_view" layout="@layout/drag_bottom_layout" />
+        <include android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_40" android:layout_toEndOf="@id/view_drag_view" layout="@layout/drag_right_layout" />
+        <com.onyx.android.sdk.theme.widgets.TintView android:id="@id/editor_view_focus_rect" android:background="@drawable/rectangle_bg_content_view_selector" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include android:id="@id/magnifier_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/magnifier_editor_layout" />
+    <com.onyx.galaxy.note.editor.view.custom.PageScroller android:layout_gravity="end" android:id="@id/pageScroller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" />
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/black_38" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/pageNumView" android:background="@drawable/page_num_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_12" android:minWidth="@dimen/dp_48" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8" />
+    <com.onyx.galaxy.note.editor.view.custom.ShapesLocationBar android:layout_gravity="end" android:id="@id/shapes_location_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_80" />
+    <com.onyx.galaxy.note.editor.view.EditorViewAutoReLocLayout android:id="@id/editor_view_lock_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale" />
+</FrameLayout>

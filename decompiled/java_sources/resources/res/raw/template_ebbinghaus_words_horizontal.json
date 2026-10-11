@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "fc4e5fa5f234439d882924183eaf3996",
+      "51768d203dd74b51a48361ad5bc8cc5b",
+      "b977a696eaf84a2f986db164ea23291d",
+      "e3f81e00186448a099d8bb079249122b",
+      "d66805aa61a743f4aeb909c823472e27"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_ebbinghaus_words",
+    "type": 21004,
+    "uniqueId": "21004",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_ebbinghaus_words_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_ebbinghaus_words_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "fc4e5fa5f234439d882924183eaf3996",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_ebbinghaus_words_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_ebbinghaus_words_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "51768d203dd74b51a48361ad5bc8cc5b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_ebbinghaus_words_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_ebbinghaus_words_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "b977a696eaf84a2f986db164ea23291d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_ebbinghaus_words_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_ebbinghaus_words_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "e3f81e00186448a099d8bb079249122b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_ebbinghaus_words_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_ebbinghaus_words_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "d66805aa61a743f4aeb909c823472e27",
+      "updatedAt": 0
+    }
+  ]
+}

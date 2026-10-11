@@ -1,0 +1,34 @@
+.class public final synthetic Lcom/vivo/penengine/impl/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic e:Lcom/vivo/penengine/impl/VivoStylusGestureManagerImpl$2;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/vivo/penengine/impl/VivoStylusGestureManagerImpl$2;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/vivo/penengine/impl/b;->e:Lcom/vivo/penengine/impl/VivoStylusGestureManagerImpl$2;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 0
+
+    iget-object p0, p0, Lcom/vivo/penengine/impl/b;->e:Lcom/vivo/penengine/impl/VivoStylusGestureManagerImpl$2;
+
+    invoke-static {p0}, Lcom/vivo/penengine/impl/VivoStylusGestureManagerImpl$2;->c(Lcom/vivo/penengine/impl/VivoStylusGestureManagerImpl$2;)V
+
+    return-void
+.end method

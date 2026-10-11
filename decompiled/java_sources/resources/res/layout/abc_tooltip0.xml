@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="TW9kIEJ5IEVsYSBNb2RzCnlvdSBhcmUgTGVlY2hlciBNZW4uIApZb3UgVGhpbmsgWW91IGFyZSBzbWFydA=="
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="0x7f100111"
+        android:textColor="?unknown_attr_ref: 7f03019c"
+        android:ellipsize="end"
+        android:id="@drawable/exo_icon_next"
+        android:background="?unknown_attr_ref: 7f03019d"
+        android:paddingLeft="@color/dracula_bottom_toolbar_preview_text"
+        android:paddingTop="@color/dracula_item_checkCircle_borderColor"
+        android:paddingRight="@color/dracula_bottom_toolbar_preview_text"
+        android:paddingBottom="@color/dracula_item_checkCircle_borderColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@color/dracula_bottom_toolbar_preview_text_disable"
+        android:maxWidth="256dp"
+        android:maxLines="3"
+        android:paddingStart="@color/dracula_bottom_toolbar_preview_text"
+        android:paddingEnd="@color/dracula_bottom_toolbar_preview_text"/>
+</LinearLayout>

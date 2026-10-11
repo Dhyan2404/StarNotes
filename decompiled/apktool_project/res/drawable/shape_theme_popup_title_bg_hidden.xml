@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/theme_edit_title_start_color_hidden" android:endColor="@color/theme_edit_title_end_color_hidden" android:angle="270.0" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/theme_background_gradient_color_bottom" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/colors_gradient_bg_editor_title" />
+</layer-list>

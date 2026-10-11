@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:height="@dimen/tool_icon_size"
+                android:width="@dimen/tool_icon_size"/>
+            <solid android:color="@color/theme_shape_icon_bg_color"/>
+            <corners android:radius="@dimen/dp_12"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/colors_gradient_bg_radius_12_small"/>
+</layer-list>

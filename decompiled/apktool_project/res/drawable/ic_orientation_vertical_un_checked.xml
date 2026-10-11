@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_orientation_vertical_un_checked_outer_02" />
+    <item android:drawable="@drawable/ic_orientation_vertical_un_checked_outer_01" />
+    <item android:drawable="@drawable/ic_orientation_vertical_un_checked_inner_01" />
+    <item android:drawable="@drawable/ic_orientation_vertical_un_checked_inner_02" />
+</layer-list>

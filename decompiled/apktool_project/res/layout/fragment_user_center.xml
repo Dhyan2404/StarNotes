@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_layout" android:tag="layout/fragment_user_center_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/header1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/user_center_header1_height" android:src="@drawable/bg_user_center_header_1_v2" android:scaleType="fitXY" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/header2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/user_center_header2_height" android:src="@drawable/bg_user_center_header_2_v2" android:scaleType="centerCrop" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:gravity="center" android:id="@id/title_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_36" android:layout_marginTop="@dimen/dp_36" android:elevation="@dimen/dp_10" android:outlineProvider="none" app:layout_constraintTop_toTopOf="parent">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="start" android:id="@id/back_button" app:imageTint="@color/white" style="@style/account_return_button" />
+        <TextView android:textSize="@dimen/dp_18" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_title_user_center" />
+    </FrameLayout>
+    <com.onyx.galaxy.note.ui.view.OnyxWebView android:id="@id/webView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/offlinePlaceholderView" android:background="@drawable/shape_user_info_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_marginHorizontal="@dimen/user_center_webview_marigin" android:layout_marginVertical="@dimen/dp_60" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar">
+        <ImageView android:layout_width="@dimen/dp_256" android:layout_height="@dimen/dp_256" android:src="@drawable/icon_empty_view_network" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_03" android:gravity="center_horizontal" android:id="@id/tipText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/user_tip_wait_network" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/accountSettingButton" android:padding="@dimen/dp_5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:layout_marginRight="@dimen/dp_24" app:layout_constraintEnd_toEndOf="@id/webView" app:layout_constraintTop_toTopOf="@id/webView">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_user_text_light" android:id="@id/accountSettingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_title_account_setting" />
+        <ImageView android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26" android:src="@drawable/icon_back" android:rotation="180.0" app:tint="@color/color_user_text_light" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/loadingView" android:tag="binding_1" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/dp_20" android:outlineProvider="none">
+        <include layout="@layout/layout_usercenter_loading" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

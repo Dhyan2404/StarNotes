@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_lasso_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout
+        android:background="@drawable/shape_common_popup_bg"
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.p039ui.MediumTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tool_popup_title_margin_top"
+            android:text="@string/lasso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/commonTextStyle"/>
+        <com.onyx.android.sdk.theme.widgets.TintView
+            android:id="@+id/divider"
+            android:layout_marginTop="@dimen/tool_popup_title_margin_top"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            style="@style/dividerStyle"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/divider">
+            <LinearLayout
+                android:tag="binding_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/lasso_container"
+                    layout="@layout/include_popup_lasso_container"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</FrameLayout>

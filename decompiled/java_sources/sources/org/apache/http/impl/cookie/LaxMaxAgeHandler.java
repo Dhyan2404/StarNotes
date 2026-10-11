@@ -1,0 +1,37 @@
+package org.apache.http.impl.cookie;
+
+import java.util.Date;
+import java.util.regex.Pattern;
+import org.apache.http.annotation.Contract;
+import org.apache.http.annotation.ThreadingBehavior;
+import org.apache.http.cookie.ClientCookie;
+import org.apache.http.cookie.CommonCookieAttributeHandler;
+import org.apache.http.cookie.MalformedCookieException;
+import org.apache.http.cookie.SetCookie;
+import org.apache.http.util.Args;
+import org.apache.http.util.TextUtils;
+
+@Contract(threading = ThreadingBehavior.IMMUTABLE)
+/* loaded from: classes12.dex */
+public class LaxMaxAgeHandler extends AbstractCookieAttributeHandler implements CommonCookieAttributeHandler {
+
+    /* renamed from: a */
+    public static final Pattern f110859a = Pattern.compile("^\\-?[0-9]+$");
+
+    @Override // org.apache.http.cookie.CommonCookieAttributeHandler
+    public String getAttributeName() {
+        return ClientCookie.MAX_AGE_ATTR;
+    }
+
+    @Override // org.apache.http.cookie.CookieAttributeHandler
+    public void parse(SetCookie setCookie, String str) throws MalformedCookieException {
+        Args.notNull(setCookie, "Cookie");
+        if (!TextUtils.isBlank(str) && f110859a.matcher(str).matches()) {
+            try {
+                int parseInt = Integer.parseInt(str);
+                setCookie.setExpiryDate(parseInt >= 0 ? new Date(System.currentTimeMillis() + (parseInt * 1000)) : new Date(Long.MIN_VALUE));
+            } catch (NumberFormatException unused) {
+            }
+        }
+    }
+}

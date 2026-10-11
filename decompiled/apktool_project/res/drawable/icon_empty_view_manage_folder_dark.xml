@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/dp_148" android:width="@dimen/dp_148" android:drawable="@drawable/icon_empty_view_folder_root_link_dark" />
+</layer-list>

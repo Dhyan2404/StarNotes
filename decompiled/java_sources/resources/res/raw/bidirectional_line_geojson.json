@@ -1,0 +1,42 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "type": "BidirectionalLine"
+      },
+      "properties": {
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "roundCorner": true,
+          "width": 2.0
+        },
+        "subType": "",
+        "underContent": false
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "radius": 0.0,
+    "selectionPointType": "DRAG",
+    "subType": "",
+    "underContent": false
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "bidirectional_line",
+  "version": 4
+}

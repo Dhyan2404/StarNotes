@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_scale_collection_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:orientation="vertical" android:background="@drawable/shape_common_popup_bg" android:layout_width="@dimen/dp_140" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp_12">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_03" android:gravity="center" android:id="@id/tv_no_collection" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:text="@string/no_collection" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</FrameLayout>

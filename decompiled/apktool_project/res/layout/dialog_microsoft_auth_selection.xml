@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/dialog_microsoft_auth_selection_0" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/microsoft_account" style="@style/kcb_item_title_text_style" />
+    <LinearLayout android:gravity="center" android:id="@id/live_signin" android:background="@drawable/imagebtn_press_response_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:layout_width="@dimen/microsoft_auth_dialog_logo_size" android:layout_height="@dimen/microsoft_auth_dialog_logo_size" android:layout_margin="8.0dip" android:src="@drawable/live_auth_logo" android:scaleType="fitCenter" />
+        <TextView android:textColor="@android:color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/microsoft_hint" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/organization_account" style="@style/kcb_item_title_text_style" />
+    <LinearLayout android:gravity="center" android:id="@id/office_signin" android:background="@drawable/imagebtn_press_response_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:layout_width="@dimen/microsoft_auth_dialog_logo_size" android:layout_height="@dimen/microsoft_auth_dialog_logo_size" android:layout_margin="8.0dip" android:src="@drawable/office_auth_logo" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/kcb_item_sub_title_text_size" android:textColor="@android:color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/office_hint" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+{
+  "coverModel": {
+    "categoryId": "ILLUSTRATION",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 80.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "c4bc19b3e84c46248343a2f7b34ae9c9"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_little_bear1",
+    "uniqueId": "2505",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_little_bear1_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "c4bc19b3e84c46248343a2f7b34ae9c9",
+      "updatedAt": 0
+    }
+  ]
+}

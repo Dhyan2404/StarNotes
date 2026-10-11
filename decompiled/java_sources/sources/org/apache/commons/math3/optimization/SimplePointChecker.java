@@ -1,0 +1,54 @@
+package org.apache.commons.math3.optimization;
+
+import org.apache.commons.math3.exception.NotStrictlyPositiveException;
+import org.apache.commons.math3.util.FastMath;
+import org.apache.commons.math3.util.Pair;
+
+@Deprecated
+/* loaded from: classes12.dex */
+public class SimplePointChecker<PAIR extends Pair<double[], ? extends Object>> extends AbstractConvergenceChecker<PAIR> {
+
+    /* renamed from: f */
+    public static final int f109331f = -1;
+
+    /* renamed from: e */
+    public final int f109332e;
+
+    @Deprecated
+    public SimplePointChecker() {
+        this.f109332e = -1;
+    }
+
+    @Override // org.apache.commons.math3.optimization.AbstractConvergenceChecker, org.apache.commons.math3.optimization.ConvergenceChecker
+    public boolean converged(int i, PAIR pair, PAIR pair2) {
+        int i2 = this.f109332e;
+        if (i2 != -1 && i >= i2) {
+            return true;
+        }
+        double[] dArr = (double[]) pair.getKey();
+        double[] dArr2 = (double[]) pair2.getKey();
+        for (int i3 = 0; i3 < dArr.length; i3++) {
+            double d = dArr[i3];
+            double d2 = dArr2[i3];
+            double abs = FastMath.abs(d - d2);
+            if (abs > FastMath.max(FastMath.abs(d), FastMath.abs(d2)) * getRelativeThreshold() && abs > getAbsoluteThreshold()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public SimplePointChecker(double d, double d2) {
+        super(d, d2);
+        this.f109332e = -1;
+    }
+
+    public SimplePointChecker(double d, double d2, int i) {
+        super(d, d2);
+        if (i > 0) {
+            this.f109332e = i;
+            return;
+        }
+        throw new NotStrictlyPositiveException(Integer.valueOf(i));
+    }
+}

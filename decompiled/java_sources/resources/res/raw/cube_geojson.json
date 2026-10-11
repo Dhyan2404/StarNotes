@@ -1,0 +1,735 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  100.0,
+                  0.0
+                ],
+                [
+                  100.0,
+                  200.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "lineStyle": {
+                "dashLineIntervals": [
+                  8.0,
+                  5.0
+                ],
+                "phase": 0.0,
+                "type": 1,
+                "editable": false
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  0.0,
+                  300.0
+                ],
+                [
+                  0.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": false,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  0.0,
+                  100.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": false,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          }
+        ],
+        "properties": {
+          "radius": 0.0,
+          "selectionPointType": "SCALE",
+          "subType": ""
+        },
+        "type": "FeatureCollection"
+      },
+      "properties": {
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": "Surface"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  100.0,
+                  0.0
+                ],
+                [
+                  300.0,
+                  0.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": false,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  300.0,
+                  0.0
+                ],
+                [
+                  300.0,
+                  200.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": false,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          }
+        ],
+        "properties": {
+          "radius": 0.0,
+          "selectionPointType": "SCALE",
+          "subType": ""
+        },
+        "type": "FeatureCollection"
+      },
+      "properties": {
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": false,
+          "width": 2.0
+        },
+        "subType": "Surface"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  100.0,
+                  200.0
+                ],
+                [
+                  0.0,
+                  300.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "lineStyle": {
+                "dashLineIntervals": [
+                  8.0,
+                  5.0
+                ],
+                "phase": 0.0,
+                "type": 1,
+                "editable": false
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  0.0,
+                  300.0
+                ],
+                [
+                  200.0,
+                  300.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": false,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  200.0,
+                  300.0
+                ],
+                [
+                  300.0,
+                  200.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": false,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  300.0,
+                  200.0
+                ],
+                [
+                  100.0,
+                  200.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "lineStyle": {
+                "dashLineIntervals": [
+                  8.0,
+                  5.0
+                ],
+                "phase": 0.0,
+                "type": 1,
+                "editable": false
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          }
+        ],
+        "properties": {
+          "radius": 0.0,
+          "selectionPointType": "SCALE",
+          "subType": ""
+        },
+        "type": "FeatureCollection"
+      },
+      "properties": {
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": false,
+          "width": 2.0
+        },
+        "subType": "Surface"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  300.0,
+                  0.0
+                ],
+                [
+                  300.0,
+                  200.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  300.0,
+                  200.0
+                ],
+                [
+                  200.0,
+                  300.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  200.0,
+                  300.0
+                ],
+                [
+                  200.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": false,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  200.0,
+                  100.0
+                ],
+                [
+                  300.0,
+                  0.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          }
+        ],
+        "properties": {
+          "radius": 0.0,
+          "selectionPointType": "SCALE",
+          "subType": ""
+        },
+        "type": "FeatureCollection"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": "Surface"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  0.0,
+                  100.0
+                ],
+                [
+                  200.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  200.0,
+                  100.0
+                ],
+                [
+                  200.0,
+                  300.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  200.0,
+                  300.0
+                ],
+                [
+                  0.0,
+                  300.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  0.0,
+                  300.0
+                ],
+                [
+                  0.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          }
+        ],
+        "properties": {
+          "radius": 0.0,
+          "selectionPointType": "SCALE",
+          "subType": ""
+        },
+        "type": "FeatureCollection"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": "Surface"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  100.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  0.0,
+                  100.0
+                ],
+                [
+                  200.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  200.0,
+                  100.0
+                ],
+                [
+                  300.0,
+                  0.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  300.0,
+                  0.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "enableColor": true,
+                "width": 2.0
+              },
+              "subType": ""
+            },
+            "type": "Feature"
+          }
+        ],
+        "properties": {
+          "radius": 0.0,
+          "selectionPointType": "SCALE",
+          "subType": ""
+        },
+        "type": "FeatureCollection"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": "Surface"
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "radius": 0.0,
+    "selectionPointType": "SCALE",
+    "subType": ""
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "cube",
+  "version": 4
+}

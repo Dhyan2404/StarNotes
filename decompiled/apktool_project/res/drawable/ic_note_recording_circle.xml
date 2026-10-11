@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/theme_secondary_color_01" android:height="@dimen/menu_icon_size" android:width="@dimen/menu_icon_size" android:viewportWidth="70.0" android:viewportHeight="70.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff000000" android:pathData="M35,0C15.7,0 0,15.7 0,35s15.7,35 35,35s35,-15.7 35,-35S54.3,0 35,0zM35,67C17.4,67 3,52.6 3,35C3,17.4 17.4,3 35,3s32,14.4 32,32C67,52.6 52.6,67 35,67z" />
+    <path android:fillColor="#ff000000" android:pathData="M35,44.7c4.8,0 8.8,-3.9 8.8,-8.8V25.3c0,-4.8 -3.9,-8.8 -8.8,-8.8s-8.8,3.9 -8.8,8.8v10.6C26.2,40.8 30.2,44.7 35,44.7zM29.2,25.3c0,-3.2 2.6,-5.8 5.8,-5.8s5.8,2.6 5.8,5.8v10.6c0,3.2 -2.6,5.8 -5.8,5.8s-5.8,-2.6 -5.8,-5.8V25.3z" />
+    <path android:fillColor="#ff000000" android:pathData="M46.8,31.7c-0.8,0 -1.5,0.7 -1.5,1.5v2.7c0,5.7 -4.6,10.3 -10.3,10.3s-10.3,-4.6 -10.3,-10.3v-2.7c0,-0.8 -0.7,-1.5 -1.5,-1.5s-1.5,0.7 -1.5,1.5v2.7c0,6.8 5.2,12.4 11.8,13.2V52c0,0.8 0.7,1.5 1.5,1.5s1.5,-0.7 1.5,-1.5v-2.9c6.6,-0.7 11.8,-6.4 11.8,-13.2v-2.7C48.3,32.4 47.6,31.7 46.8,31.7z" />
+</vector>

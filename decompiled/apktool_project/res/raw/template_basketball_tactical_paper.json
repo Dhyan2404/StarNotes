@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "SPECIALITY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 40.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "893605c27cfc49b5bca7698955ab08ec",
+      "d403b817aa15495bb7067ce15651a026",
+      "dfde6f9c9fc44382a52d167ed5e25ffd",
+      "4111d775ffc54c23b55ccea4356f7718",
+      "60fdf1e6101e4b99a9ae92391b814c6b"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_basketball_tactical_paper",
+    "type": 70005,
+    "uniqueId": "70005",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_basketball_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_basketball_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "893605c27cfc49b5bca7698955ab08ec",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_basketball_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_basketball_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "d403b817aa15495bb7067ce15651a026",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_basketball_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_basketball_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "dfde6f9c9fc44382a52d167ed5e25ffd",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_basketball_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_basketball_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "4111d775ffc54c23b55ccea4356f7718",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_basketball_tactical_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_basketball_tactical_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "60fdf1e6101e4b99a9ae92391b814c6b",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintImageView android:gravity="center" android:id="@id/image" android:background="@drawable/bg_universal_favorite_hint" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" android:scaleType="fitCenter" android:layout_marginStart="@dimen/dp_12" app:imageTint="@color/theme_icon_color_01"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

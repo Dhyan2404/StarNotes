@@ -1,0 +1,366 @@
+.class public final Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;
+.super Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$h;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "g"
+.end annotation
+
+
+# instance fields
+.field public m:Lcom/google/protobuf/Descriptors$EnumDescriptor;
+
+.field public n:Ljava/lang/reflect/Method;
+
+.field public o:Ljava/lang/reflect/Method;
+
+.field public p:Z
+
+.field public q:Ljava/lang/reflect/Method;
+
+.field public r:Ljava/lang/reflect/Method;
+
+.field public s:Ljava/lang/reflect/Method;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "descriptor",
+            "camelCaseName",
+            "messageClass",
+            "builderClass",
+            "containingOneofCamelCaseName"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/protobuf/Descriptors$FieldDescriptor;",
+            "Ljava/lang/String;",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/google/protobuf/GeneratedMessage;",
+            ">;",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/google/protobuf/GeneratedMessage$Builder;",
+            ">;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    invoke-direct/range {p0 .. p5}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$h;-><init>(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getEnumType()Lcom/google/protobuf/Descriptors$EnumDescriptor;
+
+    move-result-object p5
+
+    iput-object p5, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->m:Lcom/google/protobuf/Descriptors$EnumDescriptor;
+
+    iget-object p5, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$h;->a:Ljava/lang/Class;
+
+    const/4 v0, 0x1
+
+    new-array v1, v0, [Ljava/lang/Class;
+
+    const-class v2, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    const-string v2, "valueOf"
+
+    invoke-static {p5, v2, v1}, Lcom/google/protobuf/GeneratedMessage;->access$1100(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p5
+
+    iput-object p5, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->n:Ljava/lang/reflect/Method;
+
+    iget-object p5, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$h;->a:Ljava/lang/Class;
+
+    const-string v1, "getValueDescriptor"
+
+    new-array v2, v3, [Ljava/lang/Class;
+
+    invoke-static {p5, v1, v2}, Lcom/google/protobuf/GeneratedMessage;->access$1100(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p5
+
+    iput-object p5, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->o:Ljava/lang/reflect/Method;
+
+    invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->legacyEnumFieldTreatedAsClosed()Z
+
+    move-result p1
+
+    xor-int/2addr p1, v0
+
+    iput-boolean p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->p:Z
+
+    if-eqz p1, :cond_0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p5, "get"
+
+    invoke-virtual {p1, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "Value"
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-array v2, v3, [Ljava/lang/Class;
+
+    invoke-static {p3, p1, v2}, Lcom/google/protobuf/GeneratedMessage;->access$1100(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->q:Ljava/lang/reflect/Method;
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p1, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-array p3, v3, [Ljava/lang/Class;
+
+    invoke-static {p4, p1, p3}, Lcom/google/protobuf/GeneratedMessage;->access$1100(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->r:Ljava/lang/reflect/Method;
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p3, "set"
+
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-array p2, v0, [Ljava/lang/Class;
+
+    sget-object p3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    aput-object p3, p2, v3
+
+    invoke-static {p4, p1, p2}, Lcom/google/protobuf/GeneratedMessage;->access$1100(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->s:Ljava/lang/reflect/Method;
+
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/google/protobuf/GeneratedMessage$Builder;Ljava/lang/Object;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "builder",
+            "value"
+        }
+    .end annotation
+
+    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->p:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->s:Ljava/lang/reflect/Method;
+
+    check-cast p2, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;
+
+    invoke-virtual {p2}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getNumber()I
+
+    move-result p2
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    filled-new-array {p2}, [Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-static {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessage;->access$1200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->n:Ljava/lang/reflect/Method;
+
+    const/4 v1, 0x0
+
+    filled-new-array {p2}, [Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-static {v0, v1, p2}, Lcom/google/protobuf/GeneratedMessage;->access$1200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$h;->a(Lcom/google/protobuf/GeneratedMessage$Builder;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public m(Lcom/google/protobuf/GeneratedMessage;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "message"
+        }
+    .end annotation
+
+    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->p:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->q:Ljava/lang/reflect/Method;
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-static {v0, p1, v1}, Lcom/google/protobuf/GeneratedMessage;->access$1200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->m:Lcom/google/protobuf/Descriptors$EnumDescriptor;
+
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/Descriptors$EnumDescriptor;->findValueByNumberCreatingIfUnknown(I)Lcom/google/protobuf/Descriptors$EnumValueDescriptor;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->o:Ljava/lang/reflect/Method;
+
+    invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$h;->m(Lcom/google/protobuf/GeneratedMessage;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    new-array p1, v1, [Ljava/lang/Object;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessage;->access$1200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public n(Lcom/google/protobuf/GeneratedMessage$Builder;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
+
+    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->p:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->r:Ljava/lang/reflect/Method;
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-static {v0, p1, v1}, Lcom/google/protobuf/GeneratedMessage;->access$1200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->m:Lcom/google/protobuf/Descriptors$EnumDescriptor;
+
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/Descriptors$EnumDescriptor;->findValueByNumberCreatingIfUnknown(I)Lcom/google/protobuf/Descriptors$EnumValueDescriptor;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$g;->o:Ljava/lang/reflect/Method;
+
+    invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$h;->n(Lcom/google/protobuf/GeneratedMessage$Builder;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    new-array p1, v1, [Ljava/lang/Object;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessage;->access$1200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method

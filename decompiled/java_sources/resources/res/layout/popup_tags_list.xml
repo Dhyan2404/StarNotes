@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_tags_list_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dp_2">
+        <com.onyx.galaxy.note.p048ui.view.BubbleLayout
+            android:id="@+id/bubbleLayout"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bubble_radius="12dp"
+            app:bubble_shadow_size="12dp"
+            app:bubble_show_border="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.onyx.galaxy.note.common.view.MaxHeightRecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginEnd="@dimen/dp_8"
+                app:maxHeight="@dimen/dp_96"/>
+        </com.onyx.galaxy.note.p048ui.view.BubbleLayout>
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</FrameLayout>

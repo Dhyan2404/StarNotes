@@ -1,0 +1,68 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              100.0,
+              0.0
+            ],
+            [
+              200.0,
+              200.0
+            ]
+          ],
+          [
+            [
+              200.0,
+              200.0
+            ],
+            [
+              0.0,
+              200.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              200.0
+            ],
+            [
+              100.0,
+              0.0
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": ""
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "createAttr": {
+      "selectionPointIndex": 1,
+      "selectionPointType": "SCALE"
+    },
+    "radius": 0.0,
+    "selectionPointType": "DRAG",
+    "subType": ""
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "isosceles_triangle",
+  "version": 4
+}

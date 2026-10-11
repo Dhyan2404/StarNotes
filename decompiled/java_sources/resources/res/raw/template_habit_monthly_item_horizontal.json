@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "LIFE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "d76b2bb99d4e48529edf191333bd7806",
+      "0516a1815a18455d873c8272e6ecda7b",
+      "62b9442dd68a4b0b9f48ecc7e6ba3c2b",
+      "9c666b29319b4c0eb40892459aa82233",
+      "b984135aa482427eaa5b1609d7165a3f"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_habit_monthly_item",
+    "type": 51005,
+    "uniqueId": "51005",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_item_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_item_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "d76b2bb99d4e48529edf191333bd7806",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_item_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_item_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "0516a1815a18455d873c8272e6ecda7b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_item_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_item_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "62b9442dd68a4b0b9f48ecc7e6ba3c2b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_item_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_item_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "9c666b29319b4c0eb40892459aa82233",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_habit_monthly_item_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_monthly_item_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "b984135aa482427eaa5b1609d7165a3f",
+      "updatedAt": 0
+    }
+  ]
+}

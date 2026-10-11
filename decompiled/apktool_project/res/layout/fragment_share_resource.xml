@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/fragment_share_resource_0" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/lly_content" android:background="@drawable/shape_common_dialog_bg" android:padding="@dimen/dp_24" android:layout_width="@dimen/dp_400" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_01" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/share_resource_download_instructions" android:paddingHorizontal="@dimen/dp_18" />
+        <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_24">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/shape_share_resource_cancel_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/lly_import" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_16">
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/fly_loading" android:background="@drawable/shape_share_resource_import_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/iv_loading" android:background="@drawable/animate_share_resource_loading" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_btn_color" android:gravity="center" android:id="@id/tv_import" android:background="@drawable/shape_share_resource_import_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/start_download" />
+            </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+        </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+        <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/document_description" />
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:id="@id/tv_file_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/document_count" />
+        </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+        <View android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="@dimen/dp0_5" android:layout_marginTop="@dimen/dp_12" />
+        <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+            <com.onyx.android.sdk.theme.widgets.TintRecycleView android:id="@id/rv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintHeight_max="@dimen/dp_180" app:layout_constraintTop_toTopOf="parent" />
+        </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_10" android:textColor="@color/theme_text_color_03" android:id="@id/tv_content_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/swipe_for_more" />
+        <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_download_tips" android:background="@drawable/shape_share_resource_download_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:minHeight="@dimen/dp_40" android:paddingStart="@dimen/dp_12">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_share_resource_tips" app:imageTint="@color/warning_200" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/warning_200" android:id="@id/tv_download_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" />
+        </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ic_indicator_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shapeAppearance="@style/eyes_comfort_shape_appearance"
+            app:strokeColor="@color/black_08"
+            app:strokeWidth="@dimen/dp_0_5"/>
+        <com.onyx.android.sdk.theme.widgets.TintView
+            android:id="@+id/iv_stroke"
+            android:background="@drawable/selector_eyes_comfort_item_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/overlay_01"
+            android:id="@+id/tv_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textFontWeight="@integer/font_weight_Regular"/>
+    </com.onyx.android.sdk.theme.widgets.TintRelativeLayout>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

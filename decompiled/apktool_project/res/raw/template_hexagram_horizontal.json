@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "SPECIALITY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "54a6bed7b3d74af1a72974724035bbf0",
+      "f94ce041c767483fa062ace6abdae9bd",
+      "7fb6463f11c341808d8f42ac8935d80c",
+      "3c12f673dd6a43a4bec4ef1d6b4fc635",
+      "696943d8dc544f80bdf5fd63b34e0fce"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_hexagram",
+    "type": 71003,
+    "uniqueId": "71003",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_hexagram_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_hexagram_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "54a6bed7b3d74af1a72974724035bbf0",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_hexagram_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_hexagram_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "f94ce041c767483fa062ace6abdae9bd",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_hexagram_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_hexagram_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "7fb6463f11c341808d8f42ac8935d80c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_hexagram_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_hexagram_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "3c12f673dd6a43a4bec4ef1d6b4fc635",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_hexagram_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_hexagram_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "696943d8dc544f80bdf5fd63b34e0fce",
+      "updatedAt": 0
+    }
+  ]
+}

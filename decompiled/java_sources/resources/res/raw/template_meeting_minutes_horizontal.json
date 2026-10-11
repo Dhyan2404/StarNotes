@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WORK",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "cbbcffb2fe314b3fa6d2d8fb33c63f9a",
+      "3ee6dd8c8dcc4f3cae028e3bfdae0b63",
+      "cbb7734191d4444c85d208e614e5061e",
+      "25783a692acf49cbafd904c9b4e1380f",
+      "0c82be153146430d9806677109f598b5"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_meeting_minutes",
+    "type": 41001,
+    "uniqueId": "41001",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_meeting_minutes_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_meeting_minutes_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "cbbcffb2fe314b3fa6d2d8fb33c63f9a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_meeting_minutes_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_meeting_minutes_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "3ee6dd8c8dcc4f3cae028e3bfdae0b63",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_meeting_minutes_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_meeting_minutes_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "cbb7734191d4444c85d208e614e5061e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_meeting_minutes_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_meeting_minutes_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "25783a692acf49cbafd904c9b4e1380f",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_meeting_minutes_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_meeting_minutes_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "0c82be153146430d9806677109f598b5",
+      "updatedAt": 0
+    }
+  ]
+}

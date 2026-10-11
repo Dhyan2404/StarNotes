@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WRITE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 40.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "1b1770c144c74c15ba4420381b800049",
+      "ffe319dc0c794422ae747a0f527a3f75",
+      "006689ae313d4fce8818a35aedd04bd8",
+      "69686b4105c14712aed80dd04262ed88",
+      "6959ac453c6146c6a4d5a2fc271ae087"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_mig_paper",
+    "type": 60004,
+    "uniqueId": "60004",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_mig_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "1b1770c144c74c15ba4420381b800049",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_mig_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "ffe319dc0c794422ae747a0f527a3f75",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_mig_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "006689ae313d4fce8818a35aedd04bd8",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_mig_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "69686b4105c14712aed80dd04262ed88",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_mig_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "6959ac453c6146c6a4d5a2fc271ae087",
+      "updatedAt": 0
+    }
+  ]
+}

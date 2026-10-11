@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/dialog_margin_left_right" android:paddingTop="@dimen/dialog_margin_top_bottom" android:paddingRight="@dimen/dialog_margin_left_right" android:paddingBottom="@dimen/dialog_margin_top_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/linkURL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/rte_link_enter_url" android:inputType="textWebEmailAddress" />
+    <EditText android:id="@id/linkText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/rte_link_enter_url_text" android:inputType="text" />
+</LinearLayout>

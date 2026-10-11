@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_stickers_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_common_popup_bg" android:layout_width="@dimen/dp_320" android:layout_height="@dimen/dp_455">
+        <com.onyx.android.sdk.theme.widgets.TintTabLayoutView android:textSize="@dimen/sp_16" android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabGravity="center" app:tabIndicatorAnimationMode="elastic" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" style="@style/tabLayoutStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintView android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="@dimen/dp0_5" />
+        <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/sp_12" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+    <FrameLayout android:id="@id/loadingContainer" android:tag="binding_1" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/loadingBinding" layout="@layout/layout_loading_sticker" />
+    </FrameLayout>
+</FrameLayout>

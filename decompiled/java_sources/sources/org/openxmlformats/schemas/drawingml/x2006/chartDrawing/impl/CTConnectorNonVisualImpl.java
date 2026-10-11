@@ -1,0 +1,74 @@
+package org.openxmlformats.schemas.drawingml.x2006.chartDrawing.impl;
+
+import javax.xml.namespace.QName;
+import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import org.openxmlformats.schemas.drawingml.x2006.chartDrawing.CTConnectorNonVisual;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTNonVisualConnectorProperties;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTNonVisualDrawingProps;
+
+/* loaded from: classes14.dex */
+public class CTConnectorNonVisualImpl extends XmlComplexContentImpl implements CTConnectorNonVisual {
+    private static final QName[] PROPERTY_QNAME = {new QName("http://schemas.openxmlformats.org/drawingml/2006/chartDrawing", "cNvPr"), new QName("http://schemas.openxmlformats.org/drawingml/2006/chartDrawing", "cNvCxnSpPr")};
+    private static final long serialVersionUID = 1;
+
+    public CTConnectorNonVisualImpl(SchemaType schemaType) {
+        super(schemaType);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.chartDrawing.CTConnectorNonVisual
+    public CTNonVisualConnectorProperties addNewCNvCxnSpPr() {
+        CTNonVisualConnectorProperties cTNonVisualConnectorProperties;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTNonVisualConnectorProperties = (CTNonVisualConnectorProperties) get_store().add_element_user(PROPERTY_QNAME[1]);
+        }
+        return cTNonVisualConnectorProperties;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.chartDrawing.CTConnectorNonVisual
+    public CTNonVisualDrawingProps addNewCNvPr() {
+        CTNonVisualDrawingProps cTNonVisualDrawingProps;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTNonVisualDrawingProps = (CTNonVisualDrawingProps) get_store().add_element_user(PROPERTY_QNAME[0]);
+        }
+        return cTNonVisualDrawingProps;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.chartDrawing.CTConnectorNonVisual
+    public CTNonVisualConnectorProperties getCNvCxnSpPr() {
+        CTNonVisualConnectorProperties cTNonVisualConnectorProperties;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTNonVisualConnectorProperties = (CTNonVisualConnectorProperties) get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            if (cTNonVisualConnectorProperties == null) {
+                cTNonVisualConnectorProperties = null;
+            }
+        }
+        return cTNonVisualConnectorProperties;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.chartDrawing.CTConnectorNonVisual
+    public CTNonVisualDrawingProps getCNvPr() {
+        CTNonVisualDrawingProps cTNonVisualDrawingProps;
+        synchronized (monitor()) {
+            check_orphaned();
+            cTNonVisualDrawingProps = (CTNonVisualDrawingProps) get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            if (cTNonVisualDrawingProps == null) {
+                cTNonVisualDrawingProps = null;
+            }
+        }
+        return cTNonVisualDrawingProps;
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.chartDrawing.CTConnectorNonVisual
+    public void setCNvCxnSpPr(CTNonVisualConnectorProperties cTNonVisualConnectorProperties) {
+        generatedSetterHelperImpl(cTNonVisualConnectorProperties, PROPERTY_QNAME[1], 0, (short) 1);
+    }
+
+    @Override // org.openxmlformats.schemas.drawingml.x2006.chartDrawing.CTConnectorNonVisual
+    public void setCNvPr(CTNonVisualDrawingProps cTNonVisualDrawingProps) {
+        generatedSetterHelperImpl(cTNonVisualDrawingProps, PROPERTY_QNAME[0], 0, (short) 1);
+    }
+}

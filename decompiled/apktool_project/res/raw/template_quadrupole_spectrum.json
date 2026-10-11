@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "SPECIALITY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "d9a1b06f6a6049acb0d6ef48a701728a",
+      "069a4a75c2f64c25ac25331ee731ab07",
+      "5613ac9aa391495f899c10e95586a7fe",
+      "d4927cd4323646f1b178ae9a2a5536c6",
+      "668f85956a544e2d91bdbec1097e2566"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_quadrupole_spectrum",
+    "type": 70002,
+    "uniqueId": "70002",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_quadrupole_spectrum",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_quadrupole_spectrum_thumbnail",
+      "type": 0,
+      "uniqueId": "d9a1b06f6a6049acb0d6ef48a701728a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_quadrupole_spectrum",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_quadrupole_spectrum_thumbnail",
+      "type": 0,
+      "uniqueId": "069a4a75c2f64c25ac25331ee731ab07",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_quadrupole_spectrum",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_quadrupole_spectrum_thumbnail",
+      "type": 0,
+      "uniqueId": "5613ac9aa391495f899c10e95586a7fe",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_quadrupole_spectrum",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_quadrupole_spectrum_thumbnail",
+      "type": 0,
+      "uniqueId": "d4927cd4323646f1b178ae9a2a5536c6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_quadrupole_spectrum",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_quadrupole_spectrum_thumbnail",
+      "type": 0,
+      "uniqueId": "668f85956a544e2d91bdbec1097e2566",
+      "updatedAt": 0
+    }
+  ]
+}

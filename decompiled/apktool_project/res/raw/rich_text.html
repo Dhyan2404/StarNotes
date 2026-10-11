@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <style>
+        :root {
+            font-size: 16px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1;
+        }
+    </style>
+    <body>
+        <div id="content">
+            #{content}
+        </div>
+    </body>
+    <script>
+        // ignore inline style of li
+        let liElements = document.querySelectorAll("li > *");
+        liElements.forEach(node => {
+            node.style.backgroundColor = "transparent";
+        });
+        // set theme color
+        window.setTextColor = color => {
+            let styleElement = document.createElement("style");
+            document.body.parentElement.appendChild(styleElement);
+            let rule = ":root {color: " + color + "}";
+            styleElement.sheet.insertRule(rule);
+        }
+        // load external injected script
+        #{script}
+    </script>
+</html>

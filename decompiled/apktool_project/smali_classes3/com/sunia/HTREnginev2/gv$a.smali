@@ -1,0 +1,91 @@
+.class public Lcom/sunia/HTREnginev2/gv$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/sunia/HTREnginev2/gv;->a()Ljava/lang/Runnable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic e:Lcom/sunia/HTREnginev2/gv;
+
+
+# direct methods
+.method public constructor <init>(Lcom/sunia/HTREnginev2/gv;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sunia/HTREnginev2/gv$a;->e:Lcom/sunia/HTREnginev2/gv;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/sunia/HTREnginev2/gv$a;->e:Lcom/sunia/HTREnginev2/gv;
+
+    iget-object v0, v0, Lcom/sunia/HTREnginev2/gv;->e:Landroid/content/Context;
+
+    const-string v1, "clipboard"
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/ClipboardManager;
+
+    iget-object v1, p0, Lcom/sunia/HTREnginev2/gv$a;->e:Lcom/sunia/HTREnginev2/gv;
+
+    iget-object v1, v1, Lcom/sunia/HTREnginev2/gv;->f:Landroid/net/Uri;
+
+    invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "url"
+
+    invoke-static {v2, v1}, Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
+
+    iget-object v0, p0, Lcom/sunia/HTREnginev2/gv$a;->e:Lcom/sunia/HTREnginev2/gv;
+
+    iget-object v0, v0, Lcom/sunia/HTREnginev2/gv;->e:Landroid/content/Context;
+
+    sget v1, Landroidx/browser/R$string;->copy_toast_msg:I
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lcom/sunia/HTREnginev2/gv$a;->e:Lcom/sunia/HTREnginev2/gv;
+
+    iget-object p0, p0, Lcom/sunia/HTREnginev2/gv;->e:Landroid/content/Context;
+
+    const/4 v1, 0x0
+
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/widget/Toast;->show()V
+
+    return-void
+.end method

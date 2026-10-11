@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WORK",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 80.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "c9ad6161a19f4f6f9aaf645dc8dade6d",
+      "c24b9c184926406a8e940c750e181225",
+      "ec58e838b2fb420b9f30b5593dc736eb",
+      "0ce6104eb86a41579f022d2e79d519c7",
+      "430d4e9ad12b48d2a6fe6180ebee7e15"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_legal_documents",
+    "type": 40009,
+    "uniqueId": "40009",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_legal_documents",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_legal_documents_thumbnail",
+      "type": 0,
+      "uniqueId": "c9ad6161a19f4f6f9aaf645dc8dade6d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_legal_documents",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_legal_documents_thumbnail",
+      "type": 0,
+      "uniqueId": "c24b9c184926406a8e940c750e181225",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_legal_documents",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_legal_documents_thumbnail",
+      "type": 0,
+      "uniqueId": "ec58e838b2fb420b9f30b5593dc736eb",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_legal_documents",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_legal_documents_thumbnail",
+      "type": 0,
+      "uniqueId": "0ce6104eb86a41579f022d2e79d519c7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_legal_documents",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_legal_documents_thumbnail",
+      "type": 0,
+      "uniqueId": "430d4e9ad12b48d2a6fe6180ebee7e15",
+      "updatedAt": 0
+    }
+  ]
+}

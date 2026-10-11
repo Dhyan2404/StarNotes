@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/fragment_settings_gesture_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24">
+        <com.onyx.android.sdk.ui.MediumTextView android:text="@string/gesture_settings" style="@style/SettingsDetailTitleStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintView style="@style/SettingsDetailDividerStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/two_finger_container" style="@style/SettingsDetailItemContainerStyle">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_two_finger_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_200" android:text="@string/two_finger_click" style="@style/settingsItemTextStyle" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_tow_finger_click_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/three_finger_container" style="@style/SettingsDetailItemContainerStyle">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_three_finger_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_200" android:text="@string/three_finger_click" style="@style/settingsItemTextStyle" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_three_finger_click_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/double_click_container" style="@style/SettingsDetailItemContainerStyle">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_finger_double_click_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_200" android:text="@string/finger_double_click" style="@style/settingsItemTextStyle" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_finger_double_click_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/setting_func_max_width" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/palm_gesture_container" style="@style/SettingsDetailItemContainerStyle">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:id="@id/tv_palm_gesture_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/palm_rejection" style="@style/settingsItemTextStyle" />
+            <com.onyx.galaxy.note.editor.view.PalmCollectionSwitch android:layout_gravity="end|center" android:id="@id/switch_palm_gesture" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:isForceCollection="true" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    </LinearLayout>
+    <include android:id="@id/include_finger_fun" layout="@layout/layout_stylus_fun_container" />
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

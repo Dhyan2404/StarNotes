@@ -1,0 +1,24 @@
+package kotlinx.coroutines.debug.internal;
+
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Constants;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(m61527d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0002\b\n\bÀ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\n\u0010\u000bR\"\u0010\t\u001a\u00020\u00028\u0000@\u0000X\u0080\u000e¢\u0006\u0012\n\u0004\b\u0003\u0010\u0004\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\b¨\u0006\f"}, m61528d2 = {"Lkotlinx/coroutines/debug/internal/AgentInstallationType;", "", "", "a", Constants.HASIDCALL_INDEX_SIG, "isInstalledStatically$kotlinx_coroutines_core", Constants.BOOLEAN_VALUE_SIG, "setInstalledStatically$kotlinx_coroutines_core", "(Z)V", "isInstalledStatically", com.sun.org.apache.bcel.internal.Constants.CONSTRUCTOR_NAME, "()V", "kotlinx-coroutines-core"}, m61529k = 1, m61530mv = {1, 8, 0})
+/* loaded from: classes11.dex */
+public final class AgentInstallationType {
+
+    @NotNull
+    public static final AgentInstallationType INSTANCE = new AgentInstallationType();
+
+    /* renamed from: a, reason: from kotlin metadata */
+    public static boolean isInstalledStatically;
+
+    public final boolean isInstalledStatically$kotlinx_coroutines_core() {
+        return isInstalledStatically;
+    }
+
+    public final void setInstalledStatically$kotlinx_coroutines_core(boolean z) {
+        isInstalledStatically = z;
+    }
+}

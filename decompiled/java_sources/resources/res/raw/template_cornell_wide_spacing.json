@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "0ca3c6521c6d4e00a3475bb54f510a33",
+      "fa4b421b01ef45beaf2c085076605dc1",
+      "3c634c6a167c4662b4a0ecb7a8d591be",
+      "43ca73d1b6be426d973bc167e3950b85",
+      "350099eb3bda4ca3bfc4e0a9c9b900c0"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_cornell_wide_spacing",
+    "type": 20002,
+    "uniqueId": "20002",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_cornell_wide_spacing",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_thumbnail",
+      "type": 0,
+      "uniqueId": "0ca3c6521c6d4e00a3475bb54f510a33",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_cornell_wide_spacing",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_thumbnail",
+      "type": 0,
+      "uniqueId": "fa4b421b01ef45beaf2c085076605dc1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_cornell_wide_spacing",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_thumbnail",
+      "type": 0,
+      "uniqueId": "3c634c6a167c4662b4a0ecb7a8d591be",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_cornell_wide_spacing",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_thumbnail",
+      "type": 0,
+      "uniqueId": "43ca73d1b6be426d973bc167e3950b85",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_cornell_wide_spacing",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_thumbnail",
+      "type": 0,
+      "uniqueId": "350099eb3bda4ca3bfc4e0a9c9b900c0",
+      "updatedAt": 0
+    }
+  ]
+}

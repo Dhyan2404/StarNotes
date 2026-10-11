@@ -1,0 +1,91 @@
+{
+  "templateModel": {
+    "categoryId": "LIFE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 0.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "ae186e0ede9e4ee1a51832804c8ecff0",
+      "b0aa0e2997a74239b998bb31dcf323c8",
+      "bf42a57ca87a47d4b52e9f629032d779",
+      "0dba787fccfc4d11bf3ad54a1822b27e",
+      "baea63a0e9cf4a47b2d32eb65a977519"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_habit_of_taking_care_of_oneself",
+    "type": 50001,
+    "uniqueId": "50001",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_habit_of_taking_care_of_oneself",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_of_taking_care_of_oneself_thumbnail",
+      "type": 0,
+      "uniqueId": "ae186e0ede9e4ee1a51832804c8ecff0",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_habit_of_taking_care_of_oneself",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_of_taking_care_of_oneself_thumbnail",
+      "type": 0,
+      "uniqueId": "b0aa0e2997a74239b998bb31dcf323c8",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_habit_of_taking_care_of_oneself",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_of_taking_care_of_oneself_thumbnail",
+      "type": 0,
+      "uniqueId": "bf42a57ca87a47d4b52e9f629032d779",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_habit_of_taking_care_of_oneself",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_of_taking_care_of_oneself_thumbnail",
+      "type": 0,
+      "uniqueId": "0dba787fccfc4d11bf3ad54a1822b27e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_habit_of_taking_care_of_oneself",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_habit_of_taking_care_of_oneself_thumbnail",
+      "type": 0,
+      "uniqueId": "baea63a0e9cf4a47b2d32eb65a977519",
+      "updatedAt": 0
+    }
+  ]
+}

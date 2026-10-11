@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_stroke_and_color_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/thickness" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_14" android:id="@id/stroke_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/seek_bar_container" android:background="@drawable/shape_rectangle_gray_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_8" app:layout_constraintTop_toBottomOf="@id/stroke_desc">
+        <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/stroke_seekbar" android:padding="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" app:layout_constraintTop_toBottomOf="@id/stroke_desc" style="@style/commonSeekBarStyle" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/sp_14" android:id="@id/color_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/colour" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/seek_bar_container" />
+    <com.onyx.galaxy.note.editor.view.toolbar.ShapeColorPropertyLayout android:id="@id/color_layout" android:background="@drawable/shape_rectangle_gray_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_8" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" app:isLarge="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/color_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

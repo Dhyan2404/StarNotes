@@ -1,0 +1,198 @@
+{
+  "geometries": [
+    {
+      "locations": [
+        "CONTENT_TOP_RIGHT",
+        "CONTENT_RIGHT_CENTER"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "fillAttr": {
+                "color": -1,
+                "enableColor": false
+              },
+              "layoutType": "LayoutGrid",
+              "pageMargins": {
+                "pagePaddingRect": {
+                  "left": 0.5,
+                  "top": 0.0,
+                  "right": 0.0,
+                  "bottom": -0.5
+                },
+                "spacing": 10.0
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 0.3
+              },
+              "subType": "Layout",
+              "forceFullFit": true,
+              "ignoreFirstRow": true,
+              "drawOrigin": "LEFT_BOTTOM"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    },
+    {
+      "locations": [
+        "CONTENT_BOTTOM_RIGHT"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "fillAttr": {
+                "color": -1,
+                "enableColor": false
+              },
+              "layoutType": "LayoutGrid",
+              "pageMargins": {
+                "pagePaddingRect": {
+                  "left": 0.5,
+                  "top": 0.5,
+                  "right": 0.0,
+                  "bottom": 0.0
+                },
+                "spacing": 10.0
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 0.3
+              },
+              "subType": "Layout",
+              "forceFullFit": true,
+              "ignoreFirstRow": true,
+              "ignoreFirstColumn": true,
+              "drawOrigin": "LEFT_TOP"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    },
+    {
+      "locations": [
+        "CONTENT_BOTTOM_LEFT",
+        "CONTENT_BOTTOM_CENTER"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "fillAttr": {
+                "color": -1,
+                "enableColor": false
+              },
+              "layoutType": "LayoutGrid",
+              "pageMargins": {
+                "pagePaddingRect": {
+                  "left": 0.0,
+                  "top": 0.5,
+                  "right": -0.8,
+                  "bottom": 0.0
+                },
+                "spacing": 10.0
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 0.3
+              },
+              "subType": "Layout",
+              "forceFullFit": true,
+              "drawOrigin": "RIGHT_TOP"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    },
+    {
+      "locations": [
+        "CONTENT_BOTTOM_LEFT",
+        "CONTENT_BOTTOM_CENTER",
+        "CONTENT_BOTTOM_RIGHT"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "layoutType": "LayoutDivider",
+              "pageMargins": {
+                "pagePaddingRect": {
+                }
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 4.0
+              },
+              "dividerAttr": {
+                "direction": "HORIZONTAL",
+                "percent": 0.0,
+                "offsetStroke": "RIGHT_OR_BOTTOM"
+              },
+              "forceFullFit": true,
+              "subType": "Layout"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    },
+    {
+      "locations": [
+        "CONTENT_TOP_RIGHT",
+        "CONTENT_RIGHT_CENTER"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "layoutType": "LayoutDivider",
+              "pageMargins": {
+                "pagePaddingRect": {
+                }
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 4.0
+              },
+              "dividerAttr": {
+                "direction": "VERTICAL",
+                "percent": 0.0,
+                "offsetStroke": "RIGHT_OR_BOTTOM"
+              },
+              "forceFullFit": true,
+              "subType": "Layout"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "Feature"
+}

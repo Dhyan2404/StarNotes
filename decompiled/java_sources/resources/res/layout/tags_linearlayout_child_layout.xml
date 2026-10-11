@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sp_10"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:tag="layout/tags_linearlayout_child_layout_0"
+    android:background="@drawable/shape_tags_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_18"
+    android:maxLines="1"
+    android:maxEms="@integer/note_grid_list_tag_ellipsize"
+    android:paddingHorizontal="@dimen/dp_6"/>

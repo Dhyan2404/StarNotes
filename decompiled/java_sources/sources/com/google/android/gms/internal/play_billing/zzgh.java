@@ -1,0 +1,8 @@
+package com.google.android.gms.internal.play_billing;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: classes5.dex */
+public abstract class zzgh extends zzgk {
+    public /* synthetic */ zzgh(zzgj zzgjVar) {
+    }
+}

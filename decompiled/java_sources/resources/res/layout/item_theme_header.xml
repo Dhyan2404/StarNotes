@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="@dimen/sp_14"
+    android:textColor="@color/theme_text_color_02"
+    android:id="@+id/tv_theme_title"
+    android:tag="layout/item_theme_header_0"
+    android:paddingTop="@dimen/dp_24"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_16"/>

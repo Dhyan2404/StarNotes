@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_area_code_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="start|center" android:id="@id/btn" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" android:paddingStart="@dimen/dp_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/materialPressStyleBtnRadiusDp08" />
+    <com.onyx.android.sdk.theme.widgets.TintView android:id="@id/v_divider" android:background="@color/theme_divider_color_01" android:layout_width="@dimen/dp_1" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

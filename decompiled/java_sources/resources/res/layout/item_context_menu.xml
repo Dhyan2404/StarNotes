@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:id="@+id/item_container"
+    android:tag="layout/item_context_menu_0"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingEnd="@dimen/dp_16"
+    style="@style/materialSelectPressStyleNoRadius">
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/iv_icon"
+        android:tag="binding_1"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        app:imageTint="@color/selector_color_enabled_black_gray"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/selector_color_enabled_black_gray"
+        android:gravity="center_vertical"
+        android:id="@+id/show"
+        android:tag="binding_2"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dp_180"
+        android:drawablePadding="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"/>
+</LinearLayout>

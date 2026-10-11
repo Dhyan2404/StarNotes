@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "orderIndex": 0.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_base",
+    "uniqueId": "BASE"
+  },
+  {
+    "id": 0,
+    "orderIndex": 10.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_study",
+    "uniqueId": "STUDY"
+  },
+  {
+    "id": 0,
+    "orderIndex": 20.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_plan",
+    "uniqueId": "PLAN"
+  },
+  {
+    "id": 0,
+    "orderIndex": 30.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_work",
+    "uniqueId": "WORK"
+  },
+  {
+    "id": 0,
+    "orderIndex": 40.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_life",
+    "uniqueId": "LIFE"
+  },
+  {
+    "id": 0,
+    "orderIndex": 50.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_write",
+    "uniqueId": "WRITE"
+  },
+  {
+    "id": 0,
+    "orderIndex": 60.0,
+    "source": 0,
+    "title": "",
+    "titleResName": "category_speciality",
+    "uniqueId": "SPECIALITY"
+  }
+]

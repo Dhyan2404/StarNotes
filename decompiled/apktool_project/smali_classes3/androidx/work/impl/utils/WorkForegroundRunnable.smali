@@ -1,0 +1,245 @@
+.class public Landroidx/work/impl/utils/WorkForegroundRunnable;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation build Landroidx/annotation/RestrictTo;
+    value = {
+        .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP:Landroidx/annotation/RestrictTo$Scope;
+    }
+.end annotation
+
+
+# static fields
+.field public static final k:Ljava/lang/String;
+
+
+# instance fields
+.field public final e:Landroidx/work/impl/utils/futures/SettableFuture;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/work/impl/utils/futures/SettableFuture<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Landroid/content/Context;
+
+.field public final g:Landroidx/work/impl/model/WorkSpec;
+
+.field public final h:Landroidx/work/ListenableWorker;
+
+.field public final i:Landroidx/work/ForegroundUpdater;
+
+.field public final j:Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    const-string v0, "WorkForegroundRunnable"
+
+    invoke-static {v0}, Landroidx/work/Logger;->tagWithPrefix(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Landroidx/work/impl/utils/WorkForegroundRunnable;->k:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroidx/work/impl/model/WorkSpec;Landroidx/work/ListenableWorker;Landroidx/work/ForegroundUpdater;Landroidx/work/impl/utils/taskexecutor/TaskExecutor;)V
+    .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/work/impl/model/WorkSpec;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/work/ListenableWorker;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Landroidx/work/ForegroundUpdater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p5    # Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "LambdaLast"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "workSpec",
+            "worker",
+            "foregroundUpdater",
+            "taskExecutor"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {}, Landroidx/work/impl/utils/futures/SettableFuture;->create()Landroidx/work/impl/utils/futures/SettableFuture;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->e:Landroidx/work/impl/utils/futures/SettableFuture;
+
+    iput-object p1, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->f:Landroid/content/Context;
+
+    iput-object p2, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->g:Landroidx/work/impl/model/WorkSpec;
+
+    iput-object p3, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->h:Landroidx/work/ListenableWorker;
+
+    iput-object p4, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->i:Landroidx/work/ForegroundUpdater;
+
+    iput-object p5, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->j:Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+
+    return-void
+.end method
+
+.method public static synthetic a(Landroidx/work/impl/utils/WorkForegroundRunnable;Landroidx/work/impl/utils/futures/SettableFuture;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Landroidx/work/impl/utils/WorkForegroundRunnable;->b(Landroidx/work/impl/utils/futures/SettableFuture;)V
+
+    return-void
+.end method
+
+.method private synthetic b(Landroidx/work/impl/utils/futures/SettableFuture;)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->e:Landroidx/work/impl/utils/futures/SettableFuture;
+
+    invoke-virtual {v0}, Landroidx/work/impl/utils/futures/AbstractFuture;->isCancelled()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object p0, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->h:Landroidx/work/ListenableWorker;
+
+    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getForegroundInfoAsync()Lcom/google/common/util/concurrent/ListenableFuture;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Landroidx/work/impl/utils/futures/SettableFuture;->setFuture(Lcom/google/common/util/concurrent/ListenableFuture;)Z
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x1
+
+    invoke-virtual {p1, p0}, Landroidx/work/impl/utils/futures/AbstractFuture;->cancel(Z)Z
+
+    :goto_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public getFuture()Lcom/google/common/util/concurrent/ListenableFuture;
+    .locals 0
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/util/concurrent/ListenableFuture<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->e:Landroidx/work/impl/utils/futures/SettableFuture;
+
+    return-object p0
+.end method
+
+.method public run()V
+    .locals 3
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "UnsafeExperimentalUsageError"
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->g:Landroidx/work/impl/model/WorkSpec;
+
+    iget-boolean v0, v0, Landroidx/work/impl/model/WorkSpec;->expedited:Z
+
+    if-eqz v0, :cond_1
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1f
+
+    if-lt v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {}, Landroidx/work/impl/utils/futures/SettableFuture;->create()Landroidx/work/impl/utils/futures/SettableFuture;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->j:Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+
+    invoke-interface {v1}, Landroidx/work/impl/utils/taskexecutor/TaskExecutor;->getMainThreadExecutor()Ljava/util/concurrent/Executor;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/sunia/HTREnginev2/iao;
+
+    invoke-direct {v2, p0, v0}, Lcom/sunia/HTREnginev2/iao;-><init>(Landroidx/work/impl/utils/WorkForegroundRunnable;Landroidx/work/impl/utils/futures/SettableFuture;)V
+
+    invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    new-instance v1, Landroidx/work/impl/utils/WorkForegroundRunnable$a;
+
+    invoke-direct {v1, p0, v0}, Landroidx/work/impl/utils/WorkForegroundRunnable$a;-><init>(Landroidx/work/impl/utils/WorkForegroundRunnable;Landroidx/work/impl/utils/futures/SettableFuture;)V
+
+    iget-object p0, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->j:Landroidx/work/impl/utils/taskexecutor/TaskExecutor;
+
+    invoke-interface {p0}, Landroidx/work/impl/utils/taskexecutor/TaskExecutor;->getMainThreadExecutor()Ljava/util/concurrent/Executor;
+
+    move-result-object p0
+
+    invoke-virtual {v0, v1, p0}, Landroidx/work/impl/utils/futures/AbstractFuture;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    return-void
+
+    :cond_1
+    :goto_0
+    iget-object p0, p0, Landroidx/work/impl/utils/WorkForegroundRunnable;->e:Landroidx/work/impl/utils/futures/SettableFuture;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Landroidx/work/impl/utils/futures/SettableFuture;->set(Ljava/lang/Object;)Z
+
+    return-void
+.end method

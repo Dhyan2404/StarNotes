@@ -1,0 +1,91 @@
+{
+  "templateModel": {
+    "categoryId": "WORK",
+    "contentPageId": "",
+    "createdAt": 0,
+    "status": 1,
+    "orderIndex": 40.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "7a6e27ccc0f14af7ae4a889bc5544853",
+      "82e5a5464b0f4689bd82924e5c124035",
+      "13d24f44d16b4d73ad950d52373024db",
+      "2eac4c82084b4825971792abe4d261b7",
+      "4f02fa956ea047688e28f5138cc1acf4"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_swot_02",
+    "type": 40005,
+    "uniqueId": "40005",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_swot_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_swot_02_thumbnail",
+      "type": 0,
+      "uniqueId": "7a6e27ccc0f14af7ae4a889bc5544853",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_swot_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_swot_02_thumbnail",
+      "type": 0,
+      "uniqueId": "82e5a5464b0f4689bd82924e5c124035",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_swot_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_swot_02_thumbnail",
+      "type": 0,
+      "uniqueId": "13d24f44d16b4d73ad950d52373024db",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_swot_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_swot_02_thumbnail",
+      "type": 0,
+      "uniqueId": "2eac4c82084b4825971792abe4d261b7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_swot_02",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_swot_02_thumbnail",
+      "type": 0,
+      "uniqueId": "4f02fa956ea047688e28f5138cc1acf4",
+      "updatedAt": 0
+    }
+  ]
+}

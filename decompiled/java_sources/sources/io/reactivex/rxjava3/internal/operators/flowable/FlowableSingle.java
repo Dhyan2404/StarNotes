@@ -1,0 +1,106 @@
+package io.reactivex.rxjava3.internal.operators.flowable;
+
+import com.sunia.HTREnginev2.AbstractC14025l3;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.FlowableSubscriber;
+import io.reactivex.rxjava3.internal.subscriptions.DeferredScalarSubscription;
+import io.reactivex.rxjava3.internal.subscriptions.SubscriptionHelper;
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import java.util.NoSuchElementException;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
+/* loaded from: classes10.dex */
+public final class FlowableSingle<T> extends AbstractC14025l3<T, T> {
+
+    /* renamed from: f */
+    public final T f95848f;
+
+    /* renamed from: g */
+    public final boolean f95849g;
+
+    /* loaded from: classes10.dex */
+    public static final class SingleElementSubscriber<T> extends DeferredScalarSubscription<T> implements FlowableSubscriber<T> {
+        private static final long serialVersionUID = -5526049321428043809L;
+        final T defaultValue;
+        boolean done;
+        final boolean failOnEmpty;
+        Subscription upstream;
+
+        public SingleElementSubscriber(Subscriber<? super T> actual, T defaultValue, boolean failOnEmpty) {
+            super(actual);
+            this.defaultValue = defaultValue;
+            this.failOnEmpty = failOnEmpty;
+        }
+
+        @Override // io.reactivex.rxjava3.internal.subscriptions.DeferredScalarSubscription, org.reactivestreams.Subscription
+        public void cancel() {
+            super.cancel();
+            this.upstream.cancel();
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onComplete() {
+            if (this.done) {
+                return;
+            }
+            this.done = true;
+            T t = this.value;
+            this.value = null;
+            if (t == null) {
+                t = this.defaultValue;
+            }
+            if (t != null) {
+                complete(t);
+            } else if (this.failOnEmpty) {
+                this.downstream.onError(new NoSuchElementException());
+            } else {
+                this.downstream.onComplete();
+            }
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onError(Throwable t) {
+            if (this.done) {
+                RxJavaPlugins.onError(t);
+            } else {
+                this.done = true;
+                this.downstream.onError(t);
+            }
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onNext(T t) {
+            if (this.done) {
+                return;
+            }
+            if (this.value == null) {
+                this.value = t;
+                return;
+            }
+            this.done = true;
+            this.upstream.cancel();
+            this.downstream.onError(new IllegalArgumentException("Sequence contains more than one element!"));
+        }
+
+        @Override // io.reactivex.rxjava3.core.FlowableSubscriber
+        public void onSubscribe(Subscription s) {
+            if (SubscriptionHelper.validate(this.upstream, s)) {
+                this.upstream = s;
+                this.downstream.onSubscribe(this);
+                s.request(Long.MAX_VALUE);
+            }
+        }
+    }
+
+    public FlowableSingle(Flowable<T> source, T defaultValue, boolean failOnEmpty) {
+        super(source);
+        this.f95848f = defaultValue;
+        this.f95849g = failOnEmpty;
+    }
+
+    @Override // io.reactivex.rxjava3.core.Flowable
+    public void subscribeActual(Subscriber<? super T> s) {
+        this.source.subscribe((FlowableSubscriber) new SingleElementSubscriber(s, this.f95848f, this.f95849g));
+    }
+}

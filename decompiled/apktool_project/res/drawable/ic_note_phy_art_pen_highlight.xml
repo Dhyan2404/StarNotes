@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/dp_88" android:width="@dimen/dp_24" android:viewportWidth="24.0" android:viewportHeight="88.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h24v88h-24z" />
+        <path android:fillColor="#ffe5e5e5" android:pathData="M5,45H19L22.237,26.965C22.407,26.02 22.231,25.047 21.776,24.202C19.84,20.604 14.679,10.137 14.505,0.499C14.5,0.223 14.276,0 14,0H12.5V26H13.25V34H10.75V26H11.5V0H10C9.724,0 9.5,0.223 9.495,0.499C9.321,10.137 4.16,20.604 2.224,24.202C1.769,25.047 1.593,26.02 1.763,26.965L5,45Z" />
+        <path android:fillColor="@drawable/$ic_note_phy_art_pen_highlight__0" android:pathData="M3.386,45.342L3.112,46.164C3.04,46.381 3.044,46.617 3.124,46.832L4.5,50.5H19.5L20.876,46.832C20.956,46.617 20.961,46.381 20.888,46.164L20.614,45.342C20.546,45.138 20.355,45 20.14,45H3.86C3.645,45 3.454,45.138 3.386,45.342ZM23.5,88H0.5L4.5,50.5H19.5L23.5,88Z" android:fillType="evenOdd" />
+        <group>
+            <clip-path android:pathData="M3.386,45.342L3.112,46.164C3.04,46.381 3.044,46.617 3.124,46.832L4.5,50.5H19.5L20.876,46.832C20.956,46.617 20.961,46.381 20.888,46.164L20.614,45.342C20.546,45.138 20.355,45 20.14,45H3.86C3.645,45 3.454,45.138 3.386,45.342ZM23.5,88H0.5L4.5,50.5H19.5L23.5,88Z" android:fillType="evenOdd" />
+            <path android:fillColor="#ff000000" android:pathData="M22.5,46.5H2.5L4.5,50.5L13.5,60L15,88H23.5L22.5,46.5Z" android:fillAlpha="0.08" />
+        </group>
+        <group>
+            <clip-path android:pathData="M5,45H19L22.237,26.965C22.407,26.02 22.231,25.047 21.776,24.202C19.84,20.604 14.679,10.137 14.505,0.499C14.5,0.223 14.276,0 14,0H12.5V26H13.25V34H10.75V26H11.5V0H10C9.724,0 9.5,0.223 9.495,0.499C9.321,10.137 4.16,20.604 2.224,24.202C1.769,25.047 1.593,26.02 1.763,26.965L5,45Z" />
+            <path android:fillColor="#ff000000" android:pathData="M12,0h11v45h-11z" android:fillAlpha="0.08" />
+            <path android:fillColor="@drawable/$ic_note_phy_art_pen_highlight__1" android:pathData="M12,0l-11,0l-0,45l11,0z" />
+        </group>
+    </group>
+</vector>

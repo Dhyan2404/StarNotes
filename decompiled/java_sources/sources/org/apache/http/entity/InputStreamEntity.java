@@ -1,0 +1,84 @@
+package org.apache.http.entity;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import org.apache.http.util.Args;
+
+/* loaded from: classes12.dex */
+public class InputStreamEntity extends AbstractHttpEntity {
+
+    /* renamed from: e */
+    public final InputStream f110359e;
+
+    /* renamed from: f */
+    public final long f110360f;
+
+    public InputStreamEntity(InputStream inputStream) {
+        this(inputStream, -1L);
+    }
+
+    @Override // org.apache.http.HttpEntity
+    public InputStream getContent() throws IOException {
+        return this.f110359e;
+    }
+
+    @Override // org.apache.http.HttpEntity
+    public long getContentLength() {
+        return this.f110360f;
+    }
+
+    @Override // org.apache.http.HttpEntity
+    public boolean isRepeatable() {
+        return false;
+    }
+
+    @Override // org.apache.http.HttpEntity
+    public boolean isStreaming() {
+        return true;
+    }
+
+    @Override // org.apache.http.HttpEntity
+    public void writeTo(OutputStream outputStream) throws IOException {
+        int read;
+        Args.notNull(outputStream, "Output stream");
+        InputStream inputStream = this.f110359e;
+        try {
+            byte[] bArr = new byte[4096];
+            long j = this.f110360f;
+            if (j < 0) {
+                while (true) {
+                    int read2 = inputStream.read(bArr);
+                    if (read2 == -1) {
+                        break;
+                    } else {
+                        outputStream.write(bArr, 0, read2);
+                    }
+                }
+            } else {
+                while (j > 0 && (read = inputStream.read(bArr, 0, (int) Math.min(4096L, j))) != -1) {
+                    outputStream.write(bArr, 0, read);
+                    j -= read;
+                }
+            }
+        } finally {
+            inputStream.close();
+        }
+    }
+
+    public InputStreamEntity(InputStream inputStream, long j) {
+        this(inputStream, j, null);
+    }
+
+    public InputStreamEntity(InputStream inputStream, ContentType contentType) {
+        this(inputStream, -1L, contentType);
+    }
+
+    public InputStreamEntity(InputStream inputStream, long j, ContentType contentType) {
+        this.f110359e = (InputStream) Args.notNull(inputStream, "Source input stream");
+        this.f110360f = j;
+        if (contentType != null) {
+            setContentType(contentType.toString());
+        }
+    }
+}

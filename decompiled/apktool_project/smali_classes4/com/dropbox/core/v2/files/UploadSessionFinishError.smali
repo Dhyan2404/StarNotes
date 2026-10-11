@@ -1,0 +1,671 @@
+.class public final Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/dropbox/core/v2/files/UploadSessionFinishError$b;,
+        Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+    }
+.end annotation
+
+
+# static fields
+.field public static final OTHER:Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+.field public static final TOO_MANY_SHARED_FOLDER_TARGETS:Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+.field public static final TOO_MANY_WRITE_OPERATIONS:Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+
+# instance fields
+.field public a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+.field public b:Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+
+.field public c:Lcom/dropbox/core/v2/files/WriteError;
+
+.field public d:Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {v0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->TOO_MANY_SHARED_FOLDER_TARGETS:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {v0, v1}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->TOO_MANY_SHARED_FOLDER_TARGETS:Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    new-instance v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {v0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->TOO_MANY_WRITE_OPERATIONS:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {v0, v1}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->TOO_MANY_WRITE_OPERATIONS:Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    new-instance v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {v0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->OTHER:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {v0, v1}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->OTHER:Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lcom/dropbox/core/v2/files/UploadSessionFinishError;)Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+    .locals 0
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->b:Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+
+    return-object p0
+.end method
+
+.method public static synthetic b(Lcom/dropbox/core/v2/files/UploadSessionFinishError;)Lcom/dropbox/core/v2/files/WriteError;
+    .locals 0
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->c:Lcom/dropbox/core/v2/files/WriteError;
+
+    return-object p0
+.end method
+
+.method public static synthetic c(Lcom/dropbox/core/v2/files/UploadSessionFinishError;)Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+    .locals 0
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d:Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+
+    return-object p0
+.end method
+
+.method public static lookupFailed(Lcom/dropbox/core/v2/files/UploadSessionLookupError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+    .locals 2
+
+    if-eqz p0, :cond_0
+
+    new-instance v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {v0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->LOOKUP_FAILED:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {v0, v1, p0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->e(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;Lcom/dropbox/core/v2/files/UploadSessionLookupError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Value is null"
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static path(Lcom/dropbox/core/v2/files/WriteError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+    .locals 2
+
+    if-eqz p0, :cond_0
+
+    new-instance v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {v0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->PATH:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {v0, v1, p0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->f(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;Lcom/dropbox/core/v2/files/WriteError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Value is null"
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static propertiesError(Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+    .locals 2
+
+    if-eqz p0, :cond_0
+
+    new-instance v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {v0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->PROPERTIES_ERROR:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {v0, v1, p0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->g(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Value is null"
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final d(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+    .locals 0
+
+    new-instance p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {p0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    iput-object p1, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    return-object p0
+.end method
+
+.method public final e(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;Lcom/dropbox/core/v2/files/UploadSessionLookupError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+    .locals 0
+
+    new-instance p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {p0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    iput-object p1, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    iput-object p2, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->b:Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+
+    return-object p0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    if-nez p1, :cond_1
+
+    return v1
+
+    :cond_1
+    instance-of v2, p1, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    if-eqz v2, :cond_9
+
+    check-cast p1, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    iget-object v2, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    iget-object v3, p1, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-eq v2, v3, :cond_2
+
+    return v1
+
+    :cond_2
+    sget-object v3, Lcom/dropbox/core/v2/files/UploadSessionFinishError$a;->a:[I
+
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v2
+
+    aget v2, v3, v2
+
+    packed-switch v2, :pswitch_data_0
+
+    return v1
+
+    :pswitch_0
+    return v0
+
+    :pswitch_1
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d:Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+
+    iget-object p1, p1, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d:Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+
+    if-eq p0, p1, :cond_4
+
+    invoke-virtual {p0, p1}, Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    goto :goto_0
+
+    :cond_3
+    move v0, v1
+
+    :cond_4
+    :goto_0
+    return v0
+
+    :pswitch_2
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->c:Lcom/dropbox/core/v2/files/WriteError;
+
+    iget-object p1, p1, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->c:Lcom/dropbox/core/v2/files/WriteError;
+
+    if-eq p0, p1, :cond_6
+
+    invoke-virtual {p0, p1}, Lcom/dropbox/core/v2/files/WriteError;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_5
+
+    goto :goto_1
+
+    :cond_5
+    move v0, v1
+
+    :cond_6
+    :goto_1
+    return v0
+
+    :pswitch_3
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->b:Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+
+    iget-object p1, p1, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->b:Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+
+    if-eq p0, p1, :cond_8
+
+    invoke-virtual {p0, p1}, Lcom/dropbox/core/v2/files/UploadSessionLookupError;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_7
+
+    goto :goto_2
+
+    :cond_7
+    move v0, v1
+
+    :cond_8
+    :goto_2
+    return v0
+
+    :cond_9
+    return v1
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final f(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;Lcom/dropbox/core/v2/files/WriteError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+    .locals 0
+
+    new-instance p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {p0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    iput-object p1, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    iput-object p2, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->c:Lcom/dropbox/core/v2/files/WriteError;
+
+    return-object p0
+.end method
+
+.method public final g(Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;)Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+    .locals 0
+
+    new-instance p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;
+
+    invoke-direct {p0}, Lcom/dropbox/core/v2/files/UploadSessionFinishError;-><init>()V
+
+    iput-object p1, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    iput-object p2, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d:Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+
+    return-object p0
+.end method
+
+.method public getLookupFailedValue()Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+    .locals 3
+
+    iget-object v0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->LOOKUP_FAILED:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne v0, v1, :cond_0
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->b:Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+
+    return-object p0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Invalid tag: required Tag.LOOKUP_FAILED, but was Tag."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public getPathValue()Lcom/dropbox/core/v2/files/WriteError;
+    .locals 3
+
+    iget-object v0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->PATH:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne v0, v1, :cond_0
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->c:Lcom/dropbox/core/v2/files/WriteError;
+
+    return-object p0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Invalid tag: required Tag.PATH, but was Tag."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public getPropertiesErrorValue()Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+    .locals 3
+
+    iget-object v0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v1, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->PROPERTIES_ERROR:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne v0, v1, :cond_0
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d:Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+
+    return-object p0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Invalid tag: required Tag.PROPERTIES_ERROR, but was Tag."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    iget-object v0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    iget-object v1, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->b:Lcom/dropbox/core/v2/files/UploadSessionLookupError;
+
+    iget-object v2, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->c:Lcom/dropbox/core/v2/files/WriteError;
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->d:Lcom/dropbox/core/v2/fileproperties/InvalidPropertyGroupError;
+
+    filled-new-array {v0, v1, v2, p0}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public isLookupFailed()Z
+    .locals 1
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->LOOKUP_FAILED:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isOther()Z
+    .locals 1
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->OTHER:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isPath()Z
+    .locals 1
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->PATH:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isPropertiesError()Z
+    .locals 1
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->PROPERTIES_ERROR:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isTooManySharedFolderTargets()Z
+    .locals 1
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->TOO_MANY_SHARED_FOLDER_TARGETS:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isTooManyWriteOperations()Z
+    .locals 1
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;->TOO_MANY_WRITE_OPERATIONS:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public tag()Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+    .locals 0
+
+    iget-object p0, p0, Lcom/dropbox/core/v2/files/UploadSessionFinishError;->a:Lcom/dropbox/core/v2/files/UploadSessionFinishError$Tag;
+
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$b;->b:Lcom/dropbox/core/v2/files/UploadSessionFinishError$b;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, p0, v1}, Lcom/dropbox/core/stone/StoneSerializer;->serialize(Ljava/lang/Object;Z)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public toStringMultiline()Ljava/lang/String;
+    .locals 2
+
+    sget-object v0, Lcom/dropbox/core/v2/files/UploadSessionFinishError$b;->b:Lcom/dropbox/core/v2/files/UploadSessionFinishError$b;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p0, v1}, Lcom/dropbox/core/stone/StoneSerializer;->serialize(Ljava/lang/Object;Z)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

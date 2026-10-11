@@ -1,0 +1,151 @@
+.class public interface abstract Lcom/microsoft/schemas/vml/CTTextbox;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/xmlbeans/XmlObject;
+
+
+# static fields
+.field public static final Factory:Lorg/apache/xmlbeans/impl/schema/DocumentFactory;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/apache/xmlbeans/impl/schema/DocumentFactory<",
+            "Lcom/microsoft/schemas/vml/CTTextbox;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final type:Lorg/apache/xmlbeans/SchemaType;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lorg/apache/xmlbeans/impl/schema/DocumentFactory;
+
+    sget-object v1, Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;->typeSystem:Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;
+
+    const-string v2, "cttextboxf712type"
+
+    invoke-direct {v0, v1, v2}, Lorg/apache/xmlbeans/impl/schema/DocumentFactory;-><init>(Lorg/apache/xmlbeans/SchemaTypeSystem;Ljava/lang/String;)V
+
+    sput-object v0, Lcom/microsoft/schemas/vml/CTTextbox;->Factory:Lorg/apache/xmlbeans/impl/schema/DocumentFactory;
+
+    invoke-virtual {v0}, Lorg/apache/xmlbeans/impl/schema/ElementFactory;->getType()Lorg/apache/xmlbeans/SchemaType;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/microsoft/schemas/vml/CTTextbox;->type:Lorg/apache/xmlbeans/SchemaType;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract addNewTxbxContent()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTTxbxContent;
+.end method
+
+.method public abstract getId()Ljava/lang/String;
+.end method
+
+.method public abstract getInset()Ljava/lang/String;
+.end method
+
+.method public abstract getInsetmode()Lcom/microsoft/schemas/office/office/STInsetMode$Enum;
+.end method
+
+.method public abstract getSingleclick()Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STTrueFalse$Enum;
+.end method
+
+.method public abstract getStyle()Ljava/lang/String;
+.end method
+
+.method public abstract getTxbxContent()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTTxbxContent;
+.end method
+
+.method public abstract isSetId()Z
+.end method
+
+.method public abstract isSetInset()Z
+.end method
+
+.method public abstract isSetInsetmode()Z
+.end method
+
+.method public abstract isSetSingleclick()Z
+.end method
+
+.method public abstract isSetStyle()Z
+.end method
+
+.method public abstract isSetTxbxContent()Z
+.end method
+
+.method public abstract setId(Ljava/lang/String;)V
+.end method
+
+.method public abstract setInset(Ljava/lang/String;)V
+.end method
+
+.method public abstract setInsetmode(Lcom/microsoft/schemas/office/office/STInsetMode$Enum;)V
+.end method
+
+.method public abstract setSingleclick(Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STTrueFalse$Enum;)V
+.end method
+
+.method public abstract setStyle(Ljava/lang/String;)V
+.end method
+
+.method public abstract setTxbxContent(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTTxbxContent;)V
+.end method
+
+.method public abstract unsetId()V
+.end method
+
+.method public abstract unsetInset()V
+.end method
+
+.method public abstract unsetInsetmode()V
+.end method
+
+.method public abstract unsetSingleclick()V
+.end method
+
+.method public abstract unsetStyle()V
+.end method
+
+.method public abstract unsetTxbxContent()V
+.end method
+
+.method public abstract xgetId()Lorg/apache/xmlbeans/XmlString;
+.end method
+
+.method public abstract xgetInset()Lorg/apache/xmlbeans/XmlString;
+.end method
+
+.method public abstract xgetInsetmode()Lcom/microsoft/schemas/office/office/STInsetMode;
+.end method
+
+.method public abstract xgetSingleclick()Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STTrueFalse;
+.end method
+
+.method public abstract xgetStyle()Lorg/apache/xmlbeans/XmlString;
+.end method
+
+.method public abstract xsetId(Lorg/apache/xmlbeans/XmlString;)V
+.end method
+
+.method public abstract xsetInset(Lorg/apache/xmlbeans/XmlString;)V
+.end method
+
+.method public abstract xsetInsetmode(Lcom/microsoft/schemas/office/office/STInsetMode;)V
+.end method
+
+.method public abstract xsetSingleclick(Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STTrueFalse;)V
+.end method
+
+.method public abstract xsetStyle(Lorg/apache/xmlbeans/XmlString;)V
+.end method

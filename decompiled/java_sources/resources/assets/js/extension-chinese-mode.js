@@ -1,0 +1,1 @@
+import{Mark}from"@tiptap/core";export const ChineseMode=Mark.create({name:"chineseMode",addOptions:()=>({HTMLAttributes:{"data-chinese-mode":{default:"Simplified"}}}),parseHTML:()=>[{tag:"span"}],renderHTML:({HTMLAttributes:e})=>["span",e,0],addCommands:()=>({setChineseMode:e=>({commands:t})=>(console.log("================ mode:",e),window.textType=e,!0)})});

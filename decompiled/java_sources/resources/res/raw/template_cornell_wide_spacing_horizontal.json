@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 10.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "830912b871824298bfdea34746d1f5a6",
+      "a05bfc99156946cdb14751d8d7afe0d7",
+      "0c49bc87e5e842f788bdc1ac0ab0768c",
+      "1d4b0b3d13a5425ea87e6dfe5cf8f79a",
+      "1f381ebc074a40bc84a14a9e0d165dee"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_cornell_wide_spacing",
+    "type": 21002,
+    "uniqueId": "21002",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_cornell_wide_spacing_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "830912b871824298bfdea34746d1f5a6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_cornell_wide_spacing_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "a05bfc99156946cdb14751d8d7afe0d7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_cornell_wide_spacing_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "0c49bc87e5e842f788bdc1ac0ab0768c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_cornell_wide_spacing_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "1d4b0b3d13a5425ea87e6dfe5cf8f79a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_cornell_wide_spacing_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_cornell_wide_spacing_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "1f381ebc074a40bc84a14a9e0d165dee",
+      "updatedAt": 0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="36.0dip" android:width="36.0dip" android:viewportWidth="36.0" android:viewportHeight="36.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffdfa2f3" android:pathData="M36,18L36,18A1,1 0,0 1,35 19L27,19A1,1 0,0 1,26 18L26,18A1,1 0,0 1,27 17L35,17A1,1 0,0 1,36 18z" android:strokeAlpha="0.78" android:fillAlpha="0.78" />
+    <path android:fillColor="#ffdfa2f3" android:pathData="M10,18L10,18A1,1 0,0 1,9 19L1,19A1,1 0,0 1,0 18L0,18A1,1 0,0 1,1 17L9,17A1,1 0,0 1,10 18z" android:strokeAlpha="0.3" android:fillAlpha="0.3" />
+    <path android:fillColor="#ffdfa2f3" android:pathData="M18,36L18,36A1,1 0,0 1,17 35L17,27A1,1 0,0 1,18 26L18,26A1,1 0,0 1,19 27L19,35A1,1 0,0 1,18 36z" android:strokeAlpha="0.56" android:fillAlpha="0.56" />
+    <path android:fillColor="#ffdfa2f3" android:pathData="M18,10L18,10A1,1 0,0 1,17 9L17,1A1,1 0,0 1,18 0L18,0A1,1 0,0 1,19 1L19,9A1,1 0,0 1,18 10z" android:strokeAlpha="0.94" android:fillAlpha="0.94" />
+    <path android:fillColor="#ff49badc" android:pathData="M27.899,27.9L27.899,27.9A1,1 0,0 1,26.485 27.9L23.657,25.071A1,1 0,0 1,23.657 23.657L23.657,23.657A1,1 0,0 1,25.071 23.657L27.899,26.485A1,1 0,0 1,27.899 27.9z" android:strokeAlpha="0.68" android:fillAlpha="0.68" />
+    <path android:fillColor="#ff49badc" android:pathData="M12.343,12.343L12.343,12.343A1,1 0,0 1,10.929 12.343L8.101,9.514A1,1 0,0 1,8.101 8.1L8.101,8.1A1,1 0,0 1,9.515 8.1L12.343,10.929A1,1 0,0 1,12.343 12.343z" />
+    <path android:fillColor="#ff49badc" android:pathData="M8.101,27.899L8.101,27.899A1,1 77.649,0 1,8.101 26.485L10.929,23.657A1,1 0,0 1,12.343 23.657L12.343,23.657A1,1 0,0 1,12.343 25.071L9.515,27.899A1,1 77.649,0 1,8.101 27.899z" android:strokeAlpha="0.42" android:fillAlpha="0.42" />
+    <path android:fillColor="#ff49badc" android:pathData="M23.657,12.343L23.657,12.343A1,1 122.399,0 1,23.657 10.928L26.485,8.1A1,1 110.19,0 1,27.899 8.1L27.899,8.1A1,1 110.19,0 1,27.899 9.514L25.071,12.343A1,1 122.399,0 1,23.657 12.343z" android:strokeAlpha="0.84" android:fillAlpha="0.84" />
+</vector>

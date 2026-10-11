@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/dp_120" android:width="@dimen/dp_80">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_12" />
+            <gradient android:startColor="@color/theme_background_gradient_color_01" android:endColor="#00f08080" android:angle="0.0" android:type="radial" android:centerX="-0.1" android:centerY="-0.1" android:gradientRadius="350.0" />
+        </shape>
+    </item>
+    <item android:height="@dimen/dp_120" android:width="@dimen/dp_80">
+        <shape android:layout_width="wrap_content" android:layout_height="fill_parent" android:shape="rectangle">
+            <corners android:radius="@dimen/dp_12" />
+            <gradient android:startColor="@color/theme_background_gradient_color_02" android:endColor="#00ffd1dc" android:angle="0.0" android:type="radial" android:centerX="1.22" android:centerY="0.2" android:gradientRadius="180.0" />
+        </shape>
+    </item>
+    <item android:height="@dimen/dp_120" android:width="@dimen/dp_80">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_12" />
+            <gradient android:startColor="@color/theme_background_gradient_color_03" android:endColor="#00ffffe0" android:angle="0.0" android:type="radial" android:centerX="0.15" android:centerY="1.0" android:gradientRadius="170.0" />
+        </shape>
+    </item>
+    <item android:height="@dimen/dp_120" android:width="@dimen/dp_80">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_12" />
+            <gradient android:startColor="@color/theme_background_gradient_color_04" android:endColor="#00e0ffff" android:angle="0.0" android:type="radial" android:centerX="1.1" android:centerY="1.1" android:gradientRadius="180.0" />
+        </shape>
+    </item>
+</layer-list>

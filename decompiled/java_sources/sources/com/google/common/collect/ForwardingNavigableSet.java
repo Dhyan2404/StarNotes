@@ -1,0 +1,147 @@
+package com.google.common.collect;
+
+import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtIncompatible;
+import com.google.common.collect.Sets;
+import com.sunia.HTREnginev2.snf;
+import com.sunia.HTREnginev2.xvk;
+import java.util.Iterator;
+import java.util.NavigableSet;
+import java.util.SortedSet;
+import javax.annotation.CheckForNull;
+
+@snf
+@GwtIncompatible
+/* loaded from: classes6.dex */
+public abstract class ForwardingNavigableSet<E> extends ForwardingSortedSet<E> implements NavigableSet<E> {
+
+    @Beta
+    /* loaded from: classes6.dex */
+    public class StandardDescendingSet extends Sets.C6026f<E> {
+        public StandardDescendingSet(ForwardingNavigableSet forwardingNavigableSet) {
+            super(forwardingNavigableSet);
+        }
+    }
+
+    @Override // java.util.NavigableSet
+    @CheckForNull
+    public E ceiling(@xvk E e) {
+        return delegate().ceiling(e);
+    }
+
+    @Override // com.google.common.collect.ForwardingSortedSet, com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
+    public abstract NavigableSet<E> delegate();
+
+    @Override // java.util.NavigableSet
+    public Iterator<E> descendingIterator() {
+        return delegate().descendingIterator();
+    }
+
+    @Override // java.util.NavigableSet
+    public NavigableSet<E> descendingSet() {
+        return delegate().descendingSet();
+    }
+
+    @Override // java.util.NavigableSet
+    @CheckForNull
+    public E floor(@xvk E e) {
+        return delegate().floor(e);
+    }
+
+    @Override // java.util.NavigableSet
+    public NavigableSet<E> headSet(@xvk E e, boolean z) {
+        return delegate().headSet(e, z);
+    }
+
+    @Override // java.util.NavigableSet
+    @CheckForNull
+    public E higher(@xvk E e) {
+        return delegate().higher(e);
+    }
+
+    @Override // java.util.NavigableSet
+    @CheckForNull
+    public E lower(@xvk E e) {
+        return delegate().lower(e);
+    }
+
+    @Override // java.util.NavigableSet
+    @CheckForNull
+    public E pollFirst() {
+        return delegate().pollFirst();
+    }
+
+    @Override // java.util.NavigableSet
+    @CheckForNull
+    public E pollLast() {
+        return delegate().pollLast();
+    }
+
+    @CheckForNull
+    public E standardCeiling(@xvk E e) {
+        return (E) Iterators.getNext(tailSet(e, true).iterator(), null);
+    }
+
+    @xvk
+    public E standardFirst() {
+        return iterator().next();
+    }
+
+    @CheckForNull
+    public E standardFloor(@xvk E e) {
+        return (E) Iterators.getNext(headSet(e, true).descendingIterator(), null);
+    }
+
+    public SortedSet<E> standardHeadSet(@xvk E e) {
+        return headSet(e, false);
+    }
+
+    @CheckForNull
+    public E standardHigher(@xvk E e) {
+        return (E) Iterators.getNext(tailSet(e, false).iterator(), null);
+    }
+
+    @xvk
+    public E standardLast() {
+        return descendingIterator().next();
+    }
+
+    @CheckForNull
+    public E standardLower(@xvk E e) {
+        return (E) Iterators.getNext(headSet(e, false).descendingIterator(), null);
+    }
+
+    @CheckForNull
+    public E standardPollFirst() {
+        return (E) Iterators.m26348k(iterator());
+    }
+
+    @CheckForNull
+    public E standardPollLast() {
+        return (E) Iterators.m26348k(descendingIterator());
+    }
+
+    @Beta
+    public NavigableSet<E> standardSubSet(@xvk E e, boolean z, @xvk E e2, boolean z2) {
+        return tailSet(e, z).headSet(e2, z2);
+    }
+
+    public SortedSet<E> standardTailSet(@xvk E e) {
+        return tailSet(e, true);
+    }
+
+    @Override // java.util.NavigableSet
+    public NavigableSet<E> subSet(@xvk E e, boolean z, @xvk E e2, boolean z2) {
+        return delegate().subSet(e, z, e2, z2);
+    }
+
+    @Override // java.util.NavigableSet
+    public NavigableSet<E> tailSet(@xvk E e, boolean z) {
+        return delegate().tailSet(e, z);
+    }
+
+    @Override // com.google.common.collect.ForwardingSortedSet
+    public SortedSet<E> standardSubSet(@xvk E e, @xvk E e2) {
+        return subSet(e, true, e2, false);
+    }
+}

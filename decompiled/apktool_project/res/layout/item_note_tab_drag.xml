@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:tag="layout/item_note_tab_drag_0" android:background="@drawable/bg_tab_item_drag" android:padding="@dimen/dp_5" android:layout_width="@dimen/note_tab_item_width" android:layout_height="fill_parent" android:elevation="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/note_tab_item_text_size" android:textColor="@color/overlay_02" android:gravity="center" android:id="@id/title" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_5" android:layout_toStartOf="@id/close" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/close" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/selector_tab_closed" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tint="@color/black" />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WRITE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 50.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "11c2e8857ded45e0aadee6090c55bad1",
+      "8bd4e193309241058964cbeeb2057a84",
+      "511502b148a74b41bb1ea9e00985d0f3",
+      "d486e532ab594f549fd1c5b611945f6f",
+      "93ed37c356c24b5a8333d2ca2ff0d45e"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_letter_paper",
+    "type": 60005,
+    "uniqueId": "60005",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_letter_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_letter_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "11c2e8857ded45e0aadee6090c55bad1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_letter_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_letter_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "8bd4e193309241058964cbeeb2057a84",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_letter_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_letter_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "511502b148a74b41bb1ea9e00985d0f3",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_letter_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_letter_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "d486e532ab594f549fd1c5b611945f6f",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_letter_paper",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_letter_paper_thumbnail",
+      "type": 0,
+      "uniqueId": "93ed37c356c24b5a8333d2ca2ff0d45e",
+      "updatedAt": 0
+    }
+  ]
+}

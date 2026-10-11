@@ -1,0 +1,192 @@
+.class public final Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/xerces/impl/dv/ValidationContext;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public final a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+.field public b:Lorg/apache/xerces/xni/NamespaceContext;
+
+
+# direct methods
+.method public constructor <init>(Lorg/apache/xerces/impl/dv/ValidationContext;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lorg/apache/xerces/xni/NamespaceContext;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->b:Lorg/apache/xerces/xni/NamespaceContext;
+
+    return-void
+.end method
+
+.method public addId(Ljava/lang/String;)V
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0, p1}, Lorg/apache/xerces/impl/dv/ValidationContext;->addId(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public addIdRef(Ljava/lang/String;)V
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0, p1}, Lorg/apache/xerces/impl/dv/ValidationContext;->addIdRef(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public getLocale()Ljava/util/Locale;
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0}, Lorg/apache/xerces/impl/dv/ValidationContext;->getLocale()Ljava/util/Locale;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getSymbol(Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0, p1}, Lorg/apache/xerces/impl/dv/ValidationContext;->getSymbol(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getURI(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->b:Lorg/apache/xerces/xni/NamespaceContext;
+
+    if-nez v0, :cond_0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0, p1}, Lorg/apache/xerces/impl/dv/ValidationContext;->getURI(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    invoke-interface {v0, p1}, Lorg/apache/xerces/xni/NamespaceContext;->getURI(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public isEntityDeclared(Ljava/lang/String;)Z
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0, p1}, Lorg/apache/xerces/impl/dv/ValidationContext;->isEntityDeclared(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public isEntityUnparsed(Ljava/lang/String;)Z
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0, p1}, Lorg/apache/xerces/impl/dv/ValidationContext;->isEntityUnparsed(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public isIdDeclared(Ljava/lang/String;)Z
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0, p1}, Lorg/apache/xerces/impl/dv/ValidationContext;->isIdDeclared(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public needExtraChecking()Z
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0}, Lorg/apache/xerces/impl/dv/ValidationContext;->needExtraChecking()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public needFacetChecking()Z
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0}, Lorg/apache/xerces/impl/dv/ValidationContext;->needFacetChecking()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public needToNormalize()Z
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/impl/dv/xs/XSSimpleTypeDecl$b;->a:Lorg/apache/xerces/impl/dv/ValidationContext;
+
+    invoke-interface {p0}, Lorg/apache/xerces/impl/dv/ValidationContext;->needToNormalize()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public useNamespaces()Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method

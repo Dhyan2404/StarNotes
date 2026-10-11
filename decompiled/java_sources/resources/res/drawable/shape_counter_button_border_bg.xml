@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/theme_ripple_bg_radius_dp_08"/>
+    <item>
+        <shape>
+            <stroke
+                android:width="@dimen/dp_1"
+                android:color="@color/theme_bg_overlay_color_01"/>
+            <corners android:radius="@dimen/dp_8"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,56 @@
+.class public final Lcom/google/mlkit/vision/digitalink/R$string;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/mlkit/vision/digitalink/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static call_notification_answer_action:I = 0x7f1500c7
+
+.field public static call_notification_answer_video_action:I = 0x7f1500c8
+
+.field public static call_notification_decline_action:I = 0x7f1500c9
+
+.field public static call_notification_hang_up_action:I = 0x7f1500ca
+
+.field public static call_notification_incoming_text:I = 0x7f1500cb
+
+.field public static call_notification_ongoing_text:I = 0x7f1500cc
+
+.field public static call_notification_screening_text:I = 0x7f1500cd
+
+.field public static mdd_download_notification_channel_name:I = 0x7f150562
+
+.field public static mdd_foreground_service_notification_title:I = 0x7f150563
+
+.field public static mdd_notification_action_cancel:I = 0x7f150564
+
+.field public static mdd_notification_download_failed:I = 0x7f150565
+
+.field public static mdd_notification_download_paused:I = 0x7f150566
+
+.field public static mdd_notification_download_paused_wifi:I = 0x7f150567
+
+.field public static mdd_notification_download_success:I = 0x7f150568
+
+.field public static status_bar_notification_info_overflow:I = 0x7f150841
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

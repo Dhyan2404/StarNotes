@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?rte_icMenuRotateLeft" android:id="@id/rotate_left" android:orderInCategory="1" android:alphabeticShortcut="l" app:showAsAction="always" />
+    <item android:icon="?rte_icMenuRotateRight" android:id="@id/rotate_right" android:orderInCategory="2" android:alphabeticShortcut="r" app:showAsAction="always" />
+    <item android:icon="?rte_icMenuSave" android:id="@id/save" android:orderInCategory="3" android:alphabeticShortcut="s" app:showAsAction="always" />
+    <item android:icon="?rte_icMenuCloseClearCancel" android:id="@id/cancel" android:orderInCategory="4" android:alphabeticShortcut="q" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,36 @@
+package com.google.android.gms.measurement;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
+import androidx.legacy.content.WakefulBroadcastReceiver;
+import com.google.android.gms.measurement.internal.zzhj;
+
+/* loaded from: classes5.dex */
+public final class AppMeasurementReceiver extends WakefulBroadcastReceiver implements zzhj.zza {
+
+    /* renamed from: h */
+    public zzhj f29647h;
+
+    @NonNull
+    public final BroadcastReceiver.PendingResult doGoAsync() {
+        return goAsync();
+    }
+
+    @Override // com.google.android.gms.measurement.internal.zzhj.zza
+    @MainThread
+    public final void doStartService(@NonNull Context context, @NonNull Intent intent) {
+        WakefulBroadcastReceiver.startWakefulService(context, intent);
+    }
+
+    @Override // android.content.BroadcastReceiver
+    @MainThread
+    public final void onReceive(@NonNull Context context, @NonNull Intent intent) {
+        if (this.f29647h == null) {
+            this.f29647h = new zzhj(this);
+        }
+        this.f29647h.zza(context, intent);
+    }
+}

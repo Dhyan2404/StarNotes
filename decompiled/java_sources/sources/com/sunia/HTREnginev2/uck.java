@@ -1,0 +1,34 @@
+package com.sunia.HTREnginev2;
+
+import com.alibaba.fastjson2.JSONWriter;
+import com.alibaba.fastjson2.writer.ObjectWriterPrimitiveImpl;
+import java.lang.reflect.Type;
+
+/* loaded from: classes3.dex */
+public final class uck extends ObjectWriterPrimitiveImpl {
+
+    /* renamed from: a */
+    public static final uck f86356a = new uck();
+
+    @Override // com.alibaba.fastjson2.writer.ObjectWriter
+    public void write(JSONWriter jSONWriter, Object obj, Object obj2, Type type, long j) {
+        if (obj == null) {
+            jSONWriter.writeNumberNull();
+            return;
+        }
+        jSONWriter.writeInt32(((Number) obj).intValue());
+        if (((jSONWriter.getFeatures() | j) & JSONWriter.Feature.WriteClassName.mask) == 0 || type == Byte.class || type == Byte.TYPE) {
+            return;
+        }
+        jSONWriter.writeRaw('B');
+    }
+
+    @Override // com.alibaba.fastjson2.writer.ObjectWriter
+    public void writeJSONB(JSONWriter jSONWriter, Object obj, Object obj2, Type type, long j) {
+        if (obj == null) {
+            jSONWriter.writeNumberNull();
+        } else {
+            jSONWriter.writeInt8(((Byte) obj).byteValue());
+        }
+    }
+}

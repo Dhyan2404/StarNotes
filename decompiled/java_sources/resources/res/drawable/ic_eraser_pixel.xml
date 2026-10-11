@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <vector
+            android:height="48dp"
+            android:width="48dp"
+            android:viewportWidth="48"
+            android:viewportHeight="48">
+            <path
+                android:fillColor="#bdbdbd"
+                android:pathData="M6,18C6,16.895 6.895,16 8,16H32C33.105,16 34,16.895 34,18V30C34,31.105 33.105,32 32,32H8C6.895,32 6,31.105 6,30V18Z"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M16.29,18.347C15.887,19.179 15.571,20.062 15.352,20.982L20.334,16H18.637L16.29,18.347Z"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M23.637,16L15.015,24.622C15.039,25.142 15.094,25.654 15.178,26.156L25.334,16H23.637Z"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M28.637,16L15.893,28.744C16.05,29.144 16.226,29.534 16.42,29.914L30.334,16H28.637Z"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M33.221,16.416L17.702,31.935C17.719,31.957 17.735,31.978 17.752,32H19.334L33.914,17.419C33.792,17.016 33.546,16.667 33.221,16.416Z"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M34,20.637L22.637,32H24.334L34,22.334V20.637Z"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M34,25.637L27.637,32H29.334L34,27.334V25.637Z"/>
+        </vector>
+    </item>
+    <item>
+        <vector
+            android:tint="@color/theme_icon_color_01"
+            android:height="48dp"
+            android:width="48dp"
+            android:viewportWidth="48"
+            android:viewportHeight="48">
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M28,10.6L28,10.6A13.4,13.4 0,0 1,41.4 24L41.4,24A13.4,13.4 0,0 1,28 37.4L28,37.4A13.4,13.4 0,0 1,14.6 24L14.6,24A13.4,13.4 0,0 1,28 10.6z"
+                android:strokeColor="#000000"
+                android:strokeWidth="1.2"/>
+        </vector>
+    </item>
+</layer-list>

@@ -1,0 +1,8 @@
+{
+  "storageManagerEnable": false,
+  "filterByDocTypes": true,
+  "internalRecognizerLangList": [
+    "en_US"
+  ],
+  "shareResourceEnable": false
+}

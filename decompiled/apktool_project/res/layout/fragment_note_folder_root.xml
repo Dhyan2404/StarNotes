@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/fl_root" android:tag="layout/fragment_note_folder_root_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:paddingTop="@dimen/dp_16" android:layout_width="0.0dip" android:layout_height="fill_parent" android:splitMotionEvents="false" android:layout_marginHorizontal="@dimen/note_list_horizontal_margin" />
+    <View android:layout_gravity="top" android:id="@id/v_scroll_up" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dp_16" />
+    <View android:layout_gravity="bottom" android:id="@id/v_scroll_down" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60" />
+    <com.onyx.galaxy.note.ui.view.ShadowLayout android:layout_gravity="end|bottom|center" android:id="@id/sl_go_top" android:visibility="gone" android:layout_width="@dimen/dp_54" android:layout_height="@dimen/dp_54" android:layout_marginBottom="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" app:borderColor="@color/theme_divider_color_01" app:borderWidth="@dimen/dp0_5" app:cornerRadius="@dimen/dp_48" app:shadowColor="@color/black_percent_15" app:shadowRadius="@dimen/dp_6" app:showShadow="true">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/icon_list_go_top" />
+    </com.onyx.galaxy.note.ui.view.ShadowLayout>
+    <com.onyx.galaxy.note.category.view.CommonEmptyView android:id="@id/include_empty_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

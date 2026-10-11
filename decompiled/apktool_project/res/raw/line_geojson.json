@@ -1,0 +1,38 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": ""
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "radius": 0.0,
+    "selectionPointType": "DRAG",
+    "subType": ""
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "line",
+  "version": 4
+}

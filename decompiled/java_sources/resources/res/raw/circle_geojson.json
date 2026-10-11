@@ -1,0 +1,48 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            2.0
+          ]
+        ],
+        "type": "MultiPoint"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 1.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": "Circle"
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "createAttr": {
+      "selectionPointIndex": 1,
+      "selectionPointType": "SCALE"
+    },
+    "radius": 0.0,
+    "selectionPointType": "DRAG",
+    "subType": "",
+    "useFixedRatio": true
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "circle",
+  "version": 4
+}

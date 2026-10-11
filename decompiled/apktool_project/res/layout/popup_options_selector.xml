@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/rootLayout" android:padding="@dimen/px_1" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:outlineProvider="background" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.galaxy.note.common.view.MaxHeightRecyclerView android:id="@id/optionsListView" android:layout_width="@dimen/dp_256" android:layout_height="wrap_content" android:layout_margin="@dimen/px_1" app:maxHeight="@dimen/dp_200" />
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

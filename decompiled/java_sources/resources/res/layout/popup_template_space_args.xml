@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_template_space_args_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:layout_gravity="center"
+        android:background="@drawable/shape_common_popup_bg"
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="@dimen/dp_80">
+        <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+            android:layout_gravity="center"
+            android:background="@drawable/shape_template_color_list_bg"
+            android:layout_width="@dimen/dp_288"
+            android:layout_height="@dimen/dp_48">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <com.onyx.galaxy.note.editor.view.custom.StickSeekBarView
+                    android:id="@+id/seek_space"
+                    android:layout_width="@dimen/dp_230"
+                    android:layout_height="match_parent"
+                    app:isStick="true"
+                    style="@style/stickSeekBarStyle"/>
+                <com.onyx.android.sdk.theme.widgets.TintTextView
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/theme_text_color_01"
+                    android:id="@+id/tv_spacing_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/dp_40"
+                    android:layout_marginStart="@dimen/dp_10"/>
+            </LinearLayout>
+        </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/fragment_settings_more_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24">
+        <com.onyx.android.sdk.ui.MediumTextView android:text="@string/other_settings" style="@style/SettingsDetailTitleStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintView style="@style/SettingsDetailDividerStyle" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:background="@drawable/shape_setting_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_16">
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hide_status_bar" android:layout_marginStart="@dimen/dp_16" style="@style/settingsItemTextStyle" />
+                    <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_hide_status_bar" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" android:layout_marginEnd="@dimen/dp_16" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/fl_language_item" style="@style/SettingsDetailItemContainerStyle">
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language_settings" style="@style/settingsItemTextStyle" />
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_02" android:layout_gravity="end|center" android:id="@id/tv_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_arrow_right" app:drawableRightTint="@color/theme_icon_color_02" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:background="@drawable/shape_setting_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_16">
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_screen_on" android:layout_marginStart="@dimen/dp_16" style="@style/settingsItemTextStyle" />
+                    <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_keep_screen_on" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" android:layout_marginEnd="@dimen/dp_16" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/screen_keep_hint" android:layout_marginStart="@dimen/dp_16" />
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:background="@drawable/shape_setting_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_16">
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eyes_comfort_mode" android:layout_marginStart="@dimen/dp_16" style="@style/settingsItemTextStyle" />
+                    <com.onyx.galaxy.note.ui.view.ManualSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_eyes_comfort_setting" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" android:layout_marginEnd="@dimen/dp_16" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+                <com.onyx.galaxy.note.ui.view.EyesComfortSettingLayout android:id="@id/eyes_comfort_setting_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/about_start_note_container" style="@style/SettingsDetailItemContainerStyle">
+                    <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discover_star_note" style="@style/settingsItemTextStyle" />
+                    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end|center" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_arrow_right" app:imageTint="@color/theme_icon_color_02" />
+                </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+            </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include android:id="@id/include_star_note_discover" layout="@layout/layout_star_note_discover" />
+    <include android:id="@id/include_language_container" layout="@layout/layout_language_select" />
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

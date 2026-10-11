@@ -1,0 +1,61 @@
+package org.openxmlformats.schemas.drawingml.x2006.main;
+
+import org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder;
+import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.StringEnumAbstractBase;
+import org.apache.xmlbeans.XmlToken;
+import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
+
+/* loaded from: classes14.dex */
+public interface STLineEndLength extends XmlToken {
+    public static final SimpleTypeFactory<STLineEndLength> Factory;
+    public static final int INT_LG = 3;
+    public static final int INT_MED = 2;
+    public static final int INT_SM = 1;
+
+    /* renamed from: LG */
+    public static final Enum f115725LG;
+    public static final Enum MED;
+
+    /* renamed from: SM */
+    public static final Enum f115726SM;
+    public static final SchemaType type;
+
+    /* loaded from: classes14.dex */
+    public static final class Enum extends StringEnumAbstractBase {
+        static final int INT_LG = 3;
+        static final int INT_MED = 2;
+        static final int INT_SM = 1;
+        private static final long serialVersionUID = 1;
+        public static final StringEnumAbstractBase.Table table = new StringEnumAbstractBase.Table(new Enum[]{new Enum("sm", 1), new Enum("med", 2), new Enum("lg", 3)});
+
+        private Enum(String str, int i) {
+            super(str, i);
+        }
+
+        public static Enum forInt(int i) {
+            return (Enum) table.forInt(i);
+        }
+
+        public static Enum forString(String str) {
+            return (Enum) table.forString(str);
+        }
+
+        private Object readResolve() {
+            return forInt(intValue());
+        }
+    }
+
+    static {
+        SimpleTypeFactory<STLineEndLength> simpleTypeFactory = new SimpleTypeFactory<>(TypeSystemHolder.typeSystem, "stlineendlength3f2etype");
+        Factory = simpleTypeFactory;
+        type = simpleTypeFactory.getType();
+        f115726SM = Enum.forString("sm");
+        MED = Enum.forString("med");
+        f115725LG = Enum.forString("lg");
+    }
+
+    StringEnumAbstractBase getEnumValue();
+
+    void setEnumValue(StringEnumAbstractBase stringEnumAbstractBase);
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="?rte_icToolbarFontSize" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:drawable="?rte_icToolbarFontSize" />
+    <TextView android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/title" android:paddingLeft="4.0dip" android:paddingRight="0.0dip" android:textIsSelectable="false" style="?rte_ToolbarSpinnerItem" />
+</FrameLayout>

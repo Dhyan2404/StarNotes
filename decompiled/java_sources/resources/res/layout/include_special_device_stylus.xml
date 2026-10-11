@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/stylus_container"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/shape_setting_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_16">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_16"
+            android:id="@+id/long_press_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_long_press"
+            android:layout_marginStart="@dimen/dp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/settingsItemTextStyle"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textColor="@color/theme_text_color_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_eraser"
+            android:layout_marginStart="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_62"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/long_press_title"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.onyx.android.sdk.theme.widgets.TintSwitchCompat
+            android:id="@+id/switch_long_press_eraser"
+            android:textOn=""
+            android:textOff=""
+            android:layout_marginStart="@dimen/dp_56"
+            android:layout_marginEnd="@dimen/dp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:thumbTint="@color/white"
+            style="@style/commonSwitchStyle"/>
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

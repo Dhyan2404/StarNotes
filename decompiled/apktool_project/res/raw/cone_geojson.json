@@ -1,0 +1,203 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  30.0,
+                  0.0
+                ],
+                [
+                  60.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "colorTransformMode": 0,
+                "enableColor": true,
+                "roundCorner": true,
+                "width": 2.0
+              },
+              "subType": "",
+              "underContent": false
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  60.0,
+                  100.0
+                ],
+                [
+                  0.0,
+                  100.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "subType": "",
+              "underContent": false
+            },
+            "type": "Feature"
+          },
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  0.0,
+                  100.0
+                ],
+                [
+                  30.0,
+                  0.0
+                ]
+              ],
+              "type": "LineString"
+            },
+            "properties": {
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -16777216,
+                "colorTransformMode": 0,
+                "enableColor": true,
+                "roundCorner": true,
+                "width": 2.0
+              },
+              "subType": "",
+              "underContent": false
+            },
+            "type": "Feature"
+          }
+        ],
+        "properties": {
+          "radius": 0.0,
+          "selectionPointType": "SCALE",
+          "subType": "",
+          "underContent": false
+        },
+        "type": "FeatureCollection"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "roundCorner": true,
+          "width": 2.0
+        },
+        "subType": "Surface",
+        "underContent": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            0.0,
+            85.0
+          ],
+          [
+            60.0,
+            115.0
+          ],
+          [
+            0.0,
+            180.0
+          ]
+        ],
+        "type": "MultiPoint"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "roundCorner": true,
+          "width": 2.0
+        },
+        "subType": "Arc",
+        "underContent": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            0.0,
+            85.0
+          ],
+          [
+            60.0,
+            115.0
+          ],
+          [
+            180.0,
+            180.0
+          ]
+        ],
+        "type": "MultiPoint"
+      },
+      "properties": {
+        "lineStyle": {
+          "dashLineIntervals": [
+            8.0,
+            5.0
+          ],
+          "phase": 0.0,
+          "type": 1,
+          "editable": false
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "colorTransformMode": 0,
+          "enableColor": true,
+          "roundCorner": true,
+          "width": 2.0
+        },
+        "subType": "Arc",
+        "underContent": false
+      },
+      "type": "Feature"
+    }
+  ],
+  "properties": {
+    "radius": 0.0,
+    "selectionPointType": "SCALE",
+    "subType": "",
+    "underContent": false
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "cone",
+  "version": 4
+}

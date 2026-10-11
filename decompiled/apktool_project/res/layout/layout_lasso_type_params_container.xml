@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="horizontal" android:tag="layout/layout_lasso_type_params_container_0" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/free_lasso_type" android:background="@drawable/rectangle_bg_selector" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" android:src="@drawable/ic_free_lasso" />
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/rectangle_lasso_type" android:background="@drawable/rectangle_bg_selector" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" android:src="@drawable/ic_rectangular_lasso" android:layout_marginStart="@dimen/dp_8" />
+</LinearLayout>

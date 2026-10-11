@@ -1,0 +1,57 @@
+{
+  "shapeToolConfig": {
+    "defaultSelectShapeTool": "WRITE_PEN_GROUP",
+    "enableSwitchBrushList": [
+      "INK_PEN",
+      "BALLPOINT_PEN",
+      "MARKER_PEN",
+      "PENCIL",
+      "CALLIGRAPHY_PEN",
+      "SOFT_PAINT_PEN",
+      "WRITE_PEN_GROUP"
+    ],
+    "unDisplayShapeToolList": [
+      "INK_PEN",
+      "CALLIGRAPHY_PEN",
+      "BALLPOINT_PEN",
+      "PENCIL",
+      "SOFT_PAINT_PEN"
+    ]
+  },
+  "tapeList": [
+    "TAPE_FILL_STYLE_BIAS",
+    "TAPE_FILL_STYLE_STAR",
+    "TAPE_FILL_STYLE_GRID",
+    "TAPE_FILL_STYLE_PURE_COLOR",
+    "TAPE_FILL_STYLE_DOODLE",
+    "TAPE_FILL_STYLE_CUBE"
+  ],
+  "webConfig": {
+    "dataRepositoryRedirection": true,
+    "dataRepositoryPath": "library/center"
+  },
+  "fontBeautifyEnable": false,
+  "inkBeautifyTypesetEnable": false,
+  "aiLabEnable": false,
+  "userManualName": "user_manual_overseas",
+  "inkBeautifyFeatureEnabled": false,
+  "aiSearchFeatureEnabled": false,
+  "smartHwrFeatureEnabled": true,
+  "languageList": [
+    "DEFAULT",
+    "CHINESE_SIMPLIFIED",
+    "CHINESE_TRADITIONAL",
+    "ENGLISH_UK",
+    "ENGLISH_US",
+    "GERMAN",
+    "SPANISH",
+    "PORTUGUESE",
+    "TURKISH",
+    "KOREAN",
+    "JAPANESE",
+    "ARABIC",
+    "FRENCH",
+    "ITALIAN",
+    "RUSSIAN"
+  ]
+}

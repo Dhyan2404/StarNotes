@@ -1,0 +1,52 @@
+package com.onyx.android.sdk.cloudstorage.provider.webdav.action;
+
+import com.onyx.android.sdk.cloudstorage.model.CloudFileBean;
+import com.onyx.android.sdk.cloudstorage.provider.common.action.cloud.UploadFileAction;
+import com.onyx.android.sdk.cloudstorage.provider.common.request.TransferCloudFileRequest;
+import com.onyx.android.sdk.cloudstorage.provider.webdav.WebDavProvider;
+import com.onyx.android.sdk.cloudstorage.provider.webdav.WebDavUtils;
+import com.onyx.android.sdk.cloudstorage.provider.webdav.request.WebDavUploadRequest;
+import com.sun.org.apache.bcel.internal.Constants;
+import com.thegrizzlylabs.sardineandroid.DavResource;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(m61527d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u001d\u0012\u0006\u0010\r\u001a\u00020\t\u0012\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00040\u000e¢\u0006\u0004\b\u0010\u0010\u0011J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0014J\u0016\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0004H\u0014J\b\u0010\n\u001a\u00020\tH\u0016R\u0014\u0010\r\u001a\u00020\t8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000b\u0010\f¨\u0006\u0012"}, m61528d2 = {"Lcom/onyx/android/sdk/cloudstorage/provider/webdav/action/WebDavUploadFileAction;", "Lcom/onyx/android/sdk/cloudstorage/provider/common/action/cloud/UploadFileAction;", "Lcom/thegrizzlylabs/sardineandroid/DavResource;", "r", "Lcom/onyx/android/sdk/cloudstorage/model/CloudFileBean;", "toCloudFile", "cloudFile", "Lcom/onyx/android/sdk/cloudstorage/provider/common/request/TransferCloudFileRequest;", "createUploadRequest", "Lcom/onyx/android/sdk/cloudstorage/provider/webdav/WebDavProvider;", "getProvider", "e", "Lcom/onyx/android/sdk/cloudstorage/provider/webdav/WebDavProvider;", "webDavProvider", "", "files", Constants.CONSTRUCTOR_NAME, "(Lcom/onyx/android/sdk/cloudstorage/provider/webdav/WebDavProvider;Ljava/util/List;)V", "sdk-cloudstorage_release"}, m61529k = 1, m61530mv = {1, 9, 0})
+/* loaded from: classes7.dex */
+public final class WebDavUploadFileAction extends UploadFileAction<DavResource> {
+
+    /* renamed from: e, reason: from kotlin metadata */
+    @NotNull
+    public final WebDavProvider webDavProvider;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public WebDavUploadFileAction(@NotNull WebDavProvider webDavProvider, @NotNull List<CloudFileBean> files) {
+        super(files);
+        Intrinsics.checkNotNullParameter(webDavProvider, "webDavProvider");
+        Intrinsics.checkNotNullParameter(files, "files");
+        this.webDavProvider = webDavProvider;
+    }
+
+    @Override // com.onyx.android.sdk.cloudstorage.provider.common.action.cloud.UploadFileAction
+    @NotNull
+    public TransferCloudFileRequest<DavResource> createUploadRequest(@NotNull CloudFileBean cloudFile) throws Exception {
+        Intrinsics.checkNotNullParameter(cloudFile, "cloudFile");
+        return new WebDavUploadRequest(this.webDavProvider.getWebDavClient(), cloudFile);
+    }
+
+    @Override // com.onyx.android.sdk.cloudstorage.common.base.BaseCloudStorageAction
+    @NotNull
+    /* renamed from: getProvider, reason: from getter */
+    public WebDavProvider getWebDavProvider() {
+        return this.webDavProvider;
+    }
+
+    @Override // com.onyx.android.sdk.cloudstorage.provider.common.action.cloud.UploadFileAction
+    @NotNull
+    public CloudFileBean toCloudFile(@NotNull DavResource r) throws Exception {
+        Intrinsics.checkNotNullParameter(r, "r");
+        return WebDavUtils.INSTANCE.toCloudFile(this.webDavProvider.getCloudStorageRecordProvider(), r, this.webDavProvider.getAccountId());
+    }
+}

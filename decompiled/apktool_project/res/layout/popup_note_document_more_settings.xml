@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_note_document_more_settings_0" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/theme_background_popup_color_01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/sidebar_title_height" android:layout_marginStart="@dimen/note_more_setting_left_right_margin" android:layout_marginEnd="@dimen/note_more_setting_left_right_margin">
+            <com.onyx.android.sdk.ui.MediumTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/other_settings" android:layout_weight="1.0" />
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="end|center" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_popup" app:imageTint="@color/theme_icon_color_03" />
+        </FrameLayout>
+        <com.onyx.android.sdk.theme.widgets.TintView android:layout_gravity="bottom" style="@style/dividerStyle" />
+        <androidx.core.widget.NestedScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.onyx.galaxy.note.editor.view.toolbar.NoteTitleEditText android:textSize="@dimen/sp_12" android:layout_gravity="center_vertical" android:id="@id/title_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:minHeight="@dimen/dp_36" android:layout_marginHorizontal="@dimen/note_more_setting_left_right_margin" />
+                <com.onyx.galaxy.note.editor.view.toolbar.NoteTagLayout android:id="@id/fl_tag_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.onyx.android.sdk.theme.widgets.TintView android:layout_marginTop="@dimen/dp_12" android:layout_marginHorizontal="@dimen/dp_16" style="@style/dividerStyle" />
+                <com.onyx.galaxy.note.editor.view.toolbar.NotePageSettingsLayout android:id="@id/note_page_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" />
+                <com.onyx.android.sdk.theme.widgets.TintView android:layout_marginTop="@dimen/dp_8" android:layout_marginStart="@dimen/note_more_setting_left_right_margin" android:layout_marginEnd="@dimen/note_more_setting_left_right_margin" style="@style/dividerStyle" />
+                <com.onyx.galaxy.note.editor.view.toolbar.NoteExportSettingsLayout android:id="@id/note_export_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" />
+                <com.onyx.android.sdk.theme.widgets.TintView android:layout_marginTop="@dimen/dp_8" android:layout_marginStart="@dimen/note_more_setting_left_right_margin" android:layout_marginEnd="@dimen/note_more_setting_left_right_margin" style="@style/dividerStyle" />
+                <com.onyx.galaxy.note.editor.view.toolbar.NoteCommonSettingsLayout android:id="@id/note_common_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+    <com.onyx.android.sdk.theme.widgets.TintView android:layout_gravity="start" android:background="@color/theme_divider_color_01" android:layout_width="@dimen/dp0_5" android:layout_height="fill_parent" />
+    <com.onyx.android.sdk.theme.widgets.TintView android:layout_gravity="end" android:background="@color/theme_divider_color_01" android:layout_width="@dimen/dp0_5" android:layout_height="fill_parent" />
+</FrameLayout>

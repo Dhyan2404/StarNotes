@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.galaxy.note.p048ui.view.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/layout_shapes_location_bar_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cornerRadius="@dimen/dp_12"
+    app:shadowColor="@color/black_percent_08"
+    app:shadowDy="@dimen/dp_1"
+    app:shadowRadius="@dimen/dp_12"
+    app:showBorder="false"
+    app:showShadow="true">
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:id="@+id/container"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_30">
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/prev"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:src="@drawable/shapes_location_bar_prev"
+            android:layout_marginStart="@dimen/dp_9"
+            style="@style/materialPressStyleRadiusDp12"/>
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:layout_gravity="center"
+            android:id="@+id/origin"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:src="@drawable/shapes_location_bar_origin"
+            app:imageTint="@color/theme_icon_color_01"
+            style="@style/materialPressStyleRadiusDp12"/>
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:layout_gravity="end|center_vertical"
+            android:id="@+id/next"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:src="@drawable/shapes_location_bar_next"
+            android:layout_marginEnd="@dimen/dp_9"
+            style="@style/materialPressStyleRadiusDp12"/>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</com.onyx.galaxy.note.p048ui.view.ShadowLayout>

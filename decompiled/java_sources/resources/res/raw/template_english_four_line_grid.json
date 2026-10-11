@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WRITE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "52d8213797cd47e782daa4bb4ee12ce0",
+      "7ad1746d2c244ea4900fc394725357b1",
+      "f335e78400fb481799630bb7c86fd2e6",
+      "d264c805f5f64e5caf8cd3af7960e87c",
+      "ff9448d27d044e26abc17df0ca4c52e9"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_english_four_line_grid",
+    "type": 60001,
+    "uniqueId": "60001",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_english_four_line_grid",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_english_four_line_grid_thumbnail",
+      "type": 0,
+      "uniqueId": "52d8213797cd47e782daa4bb4ee12ce0",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_english_four_line_grid",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_english_four_line_grid_thumbnail",
+      "type": 0,
+      "uniqueId": "7ad1746d2c244ea4900fc394725357b1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_english_four_line_grid",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_english_four_line_grid_thumbnail",
+      "type": 0,
+      "uniqueId": "f335e78400fb481799630bb7c86fd2e6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_english_four_line_grid",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_english_four_line_grid_thumbnail",
+      "type": 0,
+      "uniqueId": "d264c805f5f64e5caf8cd3af7960e87c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_english_four_line_grid",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_english_four_line_grid_thumbnail",
+      "type": 0,
+      "uniqueId": "ff9448d27d044e26abc17df0ca4c52e9",
+      "updatedAt": 0
+    }
+  ]
+}

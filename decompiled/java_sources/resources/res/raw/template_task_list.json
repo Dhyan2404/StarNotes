@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "3701e4b9c2dd4f2b9a9d6dacd441494c",
+      "882a67e694a44e3dba33242edce223be",
+      "ceb93aba18264eddbb3df562faafbebd",
+      "188523a18cb94cd8a637667c2eb47008",
+      "a9bd8e0635334b098245170b998d5bba"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_task_list",
+    "type": 30001,
+    "uniqueId": "30001",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_task_list",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_thumbnail",
+      "type": 0,
+      "uniqueId": "3701e4b9c2dd4f2b9a9d6dacd441494c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_task_list",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_thumbnail",
+      "type": 0,
+      "uniqueId": "882a67e694a44e3dba33242edce223be",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_task_list",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_thumbnail",
+      "type": 0,
+      "uniqueId": "ceb93aba18264eddbb3df562faafbebd",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_task_list",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_thumbnail",
+      "type": 0,
+      "uniqueId": "188523a18cb94cd8a637667c2eb47008",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_task_list",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_task_list_thumbnail",
+      "type": 0,
+      "uniqueId": "a9bd8e0635334b098245170b998d5bba",
+      "updatedAt": 0
+    }
+  ]
+}

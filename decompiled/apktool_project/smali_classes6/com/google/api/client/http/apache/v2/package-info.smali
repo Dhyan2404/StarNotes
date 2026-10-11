@@ -1,0 +1,3 @@
+.class interface abstract synthetic Lcom/google/api/client/http/apache/v2/package-info;
+.super Ljava/lang/Object;
+.source "SourceFile"

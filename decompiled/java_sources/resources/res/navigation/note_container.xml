@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_note_list"
+    app:startDestination="@+id/fragment_note_list_container">
+    <fragment
+        android:label="NoteListDisplayFragment"
+        android:name="com.onyx.galaxy.note.category.p044ui.NoteListContainerFragment"
+        android:id="@+id/fragment_note_list_container"/>
+    <fragment
+        android:label="SearchNoteFragment"
+        android:name="com.onyx.galaxy.note.category.p044ui.SearchNoteFragment"
+        android:id="@+id/fragment_search_note"/>
+</navigation>

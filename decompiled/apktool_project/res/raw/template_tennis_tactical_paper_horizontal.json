@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "SPECIALITY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 60.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "1f0cbc94548242e49efac73f19847c72",
+      "facd05a2b9c34d26828ac585a0ee1ba4",
+      "7d443f3f22e242ebb3925235455dafd7",
+      "68ec5db489614541a8e4b2ec4fbd5dcd",
+      "251a54127ff042a88fa831535a254022"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_tennis_tactical_paper",
+    "type": 71007,
+    "uniqueId": "71007",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_tennis_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tennis_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "1f0cbc94548242e49efac73f19847c72",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_tennis_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tennis_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "facd05a2b9c34d26828ac585a0ee1ba4",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_tennis_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tennis_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "7d443f3f22e242ebb3925235455dafd7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_tennis_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tennis_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "68ec5db489614541a8e4b2ec4fbd5dcd",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_tennis_tactical_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tennis_tactical_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "251a54127ff042a88fa831535a254022",
+      "updatedAt": 0
+    }
+  ]
+}

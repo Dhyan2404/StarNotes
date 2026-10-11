@@ -1,0 +1,149 @@
+.class public final Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;
+.super Lio/reactivex/rxjava3/core/Scheduler;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler$a;,
+        Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler$b;,
+        Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler$c;
+    }
+.end annotation
+
+
+# static fields
+.field public static final g:Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;
+
+    invoke-direct {v0}, Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;-><init>()V
+
+    sput-object v0, Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;->g:Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lio/reactivex/rxjava3/core/Scheduler;-><init>()V
+
+    return-void
+.end method
+
+.method public static instance()Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;
+    .locals 1
+
+    sget-object v0, Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;->g:Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public createWorker()Lio/reactivex/rxjava3/core/Scheduler$Worker;
+    .locals 0
+    .annotation build Lio/reactivex/rxjava3/annotations/NonNull;
+    .end annotation
+
+    new-instance p0, Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler$c;
+
+    invoke-direct {p0}, Lio/reactivex/rxjava3/internal/schedulers/TrampolineScheduler$c;-><init>()V
+
+    return-object p0
+.end method
+
+.method public scheduleDirect(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .locals 0
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Lio/reactivex/rxjava3/annotations/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "run"
+        }
+    .end annotation
+
+    .annotation build Lio/reactivex/rxjava3/annotations/NonNull;
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lio/reactivex/rxjava3/plugins/RxJavaPlugins;->onSchedule(Ljava/lang/Runnable;)Ljava/lang/Runnable;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+
+    .line 2
+    sget-object p0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->INSTANCE:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
+
+    return-object p0
+.end method
+
+.method public scheduleDirect(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .locals 0
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Lio/reactivex/rxjava3/annotations/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "run",
+            "delay",
+            "unit"
+        }
+    .end annotation
+
+    .annotation build Lio/reactivex/rxjava3/annotations/NonNull;
+    .end annotation
+
+    .line 3
+    :try_start_0
+    invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->sleep(J)V
+
+    .line 4
+    invoke-static {p1}, Lio/reactivex/rxjava3/plugins/RxJavaPlugins;->onSchedule(Ljava/lang/Runnable;)Ljava/lang/Runnable;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    .line 5
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
+
+    .line 6
+    invoke-static {p0}, Lio/reactivex/rxjava3/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
+
+    .line 7
+    :goto_0
+    sget-object p0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->INSTANCE:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
+
+    return-object p0
+.end method

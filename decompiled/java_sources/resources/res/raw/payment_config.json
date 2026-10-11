@@ -1,0 +1,8 @@
+{
+  "paymentTypeList": [
+    {
+      "iapPayment": true,
+      "type": "GOOGLE_IAP"
+    }
+  ]
+}

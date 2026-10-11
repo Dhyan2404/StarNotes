@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_circle_gray_bg" />
+    <item android:drawable="@drawable/ic_tag_manager_arrow_down" />
+</layer-list>

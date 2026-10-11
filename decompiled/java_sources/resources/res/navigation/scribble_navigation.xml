@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scribble_navigation"
+    app:startDestination="@+id/scribble_fragment">
+    <fragment
+        android:name="com.onyx.galaxy.note.editor.p046ui.NoteScribbleFragment"
+        android:id="@+id/scribble_fragment"/>
+</navigation>

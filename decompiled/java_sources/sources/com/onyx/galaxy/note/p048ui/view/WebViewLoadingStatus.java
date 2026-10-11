@@ -1,0 +1,45 @@
+package com.onyx.galaxy.note.p048ui.view;
+
+import kotlin.Metadata;
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+@Metadata(m61527d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\u0007"}, m61528d2 = {"Lcom/onyx/galaxy/note/ui/view/WebViewLoadingStatus;", "", "(Ljava/lang/String;I)V", "LOADING", "LOADED", "TIMEOUT", "ERROR", "note_overseasRelease"}, m61529k = 1, m61530mv = {1, 9, 0}, m61532xi = 48)
+/* loaded from: classes9.dex */
+public final class WebViewLoadingStatus {
+    private static final /* synthetic */ EnumEntries $ENTRIES;
+    private static final /* synthetic */ WebViewLoadingStatus[] $VALUES;
+    public static final WebViewLoadingStatus LOADING = new WebViewLoadingStatus("LOADING", 0);
+    public static final WebViewLoadingStatus LOADED = new WebViewLoadingStatus("LOADED", 1);
+    public static final WebViewLoadingStatus TIMEOUT = new WebViewLoadingStatus("TIMEOUT", 2);
+    public static final WebViewLoadingStatus ERROR = new WebViewLoadingStatus("ERROR", 3);
+
+    private static final /* synthetic */ WebViewLoadingStatus[] $values() {
+        return new WebViewLoadingStatus[]{LOADING, LOADED, TIMEOUT, ERROR};
+    }
+
+    static {
+        WebViewLoadingStatus[] $values = $values();
+        $VALUES = $values;
+        $ENTRIES = EnumEntriesKt.enumEntries($values);
+    }
+
+    private WebViewLoadingStatus(String str, int i) {
+    }
+
+    @NotNull
+    public static EnumEntries<WebViewLoadingStatus> getEntries() {
+        return $ENTRIES;
+    }
+
+    public static WebViewLoadingStatus valueOf(String str) {
+        return (WebViewLoadingStatus) Enum.valueOf(WebViewLoadingStatus.class, str);
+    }
+
+    public static WebViewLoadingStatus[] values() {
+        return (WebViewLoadingStatus[]) $VALUES.clone();
+    }
+}

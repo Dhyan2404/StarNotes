@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_margin_template_space_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:background="@drawable/shape_common_popup_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:paddingHorizontal="@dimen/dp_16">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.onyx.galaxy.note.editor.view.custom.StickSeekBarView
+                android:id="@+id/seek_space"
+                android:layout_width="@dimen/dp_188"
+                android:layout_height="match_parent"
+                app:drawSegment="false"
+                app:isStick="true"
+                style="@style/seekBarStyle"/>
+            <com.onyx.android.sdk.theme.widgets.TintTextView
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/theme_text_color_01"
+                android:id="@+id/tv_spacing_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:minEms="2"
+                android:singleLine="true"
+                android:layout_marginStart="@dimen/dp_12"/>
+        </LinearLayout>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</FrameLayout>

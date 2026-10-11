@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "LIFE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 40.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "63dd0d8197944c6db12359e217c07fea",
+      "1f2a6fd3c03a4b4b897f43fe4175ed90",
+      "94e6e997d0f54c80a6a7be79748c757a",
+      "e6d570c165f5498da2cc43ff4092c030",
+      "f2be65df96ce443bbf74d0c0cde929b2"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_accounting_book",
+    "type": 50008,
+    "uniqueId": "50008",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_accounting_book",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_thumbnail",
+      "type": 0,
+      "uniqueId": "63dd0d8197944c6db12359e217c07fea",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_accounting_book",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_thumbnail",
+      "type": 0,
+      "uniqueId": "1f2a6fd3c03a4b4b897f43fe4175ed90",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_accounting_book",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_thumbnail",
+      "type": 0,
+      "uniqueId": "94e6e997d0f54c80a6a7be79748c757a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_accounting_book",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_thumbnail",
+      "type": 0,
+      "uniqueId": "e6d570c165f5498da2cc43ff4092c030",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_accounting_book",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_thumbnail",
+      "type": 0,
+      "uniqueId": "f2be65df96ce443bbf74d0c0cde929b2",
+      "updatedAt": 0
+    }
+  ]
+}

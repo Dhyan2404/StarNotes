@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_feature_resource_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_resource" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/fly_player" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.exoplayer2.ui.PlayerView android:id="@id/player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:use_controller="false" />
+        <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:id="@id/cly_control" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_play" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_btn_color" android:id="@id/tv_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_player_volume" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_30" android:src="@drawable/ic_player_volume_off" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+            <com.google.android.exoplayer2.ui.DefaultTimeBar android:id="@id/player_time_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/dp_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

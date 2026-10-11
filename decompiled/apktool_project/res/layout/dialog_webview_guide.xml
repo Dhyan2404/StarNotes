@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dp_576" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:id="@id/guide_container" android:background="@drawable/shape_common_popup_bg" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_331" app:layout_constraintTop_toTopOf="parent">
+            <WebView android:id="@id/web_view" android:layout_width="@dimen/dp_560" android:layout_height="@dimen/dp_316" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textColor="@color/theme_text_color_01" android:id="@id/tv_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" app:layout_constraintTop_toBottomOf="@id/web_view" />
+        </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_close" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_24" android:src="@drawable/ic_guide_view_close" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/guide_container" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

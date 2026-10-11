@@ -1,0 +1,18 @@
+package com.google.mlkit.common.sdkinternal;
+
+import android.os.Handler;
+import androidx.annotation.NonNull;
+import java.util.concurrent.Executor;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: classes6.dex */
+public enum zzh implements Executor {
+    INSTANCE;
+
+    @Override // java.util.concurrent.Executor
+    public final void execute(@NonNull Runnable runnable) {
+        Handler handler;
+        handler = MLTaskExecutor.getInstance().f36557a;
+        handler.post(runnable);
+    }
+}

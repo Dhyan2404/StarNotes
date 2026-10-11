@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/fragment_data_repository_0"
+    android:background="@color/theme_background_color_02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_36"
+        android:elevation="@dimen/dp_10"
+        android:outlineProvider="none"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/back_button"
+            android:visibility="gone"
+            style="@style/account_return_button"/>
+    </FrameLayout>
+    <com.onyx.galaxy.note.p048ui.view.OnyxWebView
+        android:id="@+id/webView"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <include
+        android:id="@+id/webViewTimeoutLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginHorizontal="@dimen/user_center_webview_marigin"
+        android:layout_marginVertical="@dimen/dp_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        layout="@layout/layout_webview_timeout"/>
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout
+        android:gravity="center"
+        android:id="@+id/loadingView"
+        android:tag="binding_1"
+        android:background="@color/theme_background_color_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/dp_20"
+        android:outlineProvider="none">
+        <include layout="@layout/layout_usercenter_loading"/>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

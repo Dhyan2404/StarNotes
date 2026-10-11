@@ -1,0 +1,91 @@
+{
+  "coverModel": {
+    "categoryId": "SIMPLE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 0.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "43824e053c094704814bb208399c449f",
+      "29a1b955a7e844ee951a45f9aa6bf76e",
+      "2b6776e6737d49e8ab4bb6753b9788c6",
+      "276b194822044ae599f6d28f06e51395",
+      "ffc90cf735cb420895206f527c9755e0"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "cover_simple_seal",
+    "uniqueId": "9",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -3748139,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "43824e053c094704814bb208399c449f",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -8408367,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "29a1b955a7e844ee951a45f9aa6bf76e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1664655,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "2b6776e6737d49e8ab4bb6753b9788c6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -7422552,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "276b194822044ae599f6d28f06e51395",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1388678,
+      "orderIndex": -1.0,
+      "resName": "cover_simple_seal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "ffc90cf735cb420895206f527c9755e0",
+      "updatedAt": 0
+    }
+  ]
+}

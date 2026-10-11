@@ -1,0 +1,47 @@
+{
+  "geometries": [
+    {
+      "locations": [
+        "CONTENT_RIGHT_CENTER"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "layoutType": "LayoutDivider",
+              "pageMargins": {
+                "layoutRect": {
+                  "bottom": 0.0,
+                  "empty": true,
+                  "left": 0.0,
+                  "right": 0.0,
+                  "top": 0.0
+                },
+                "paddingBottom": 0.0,
+                "paddingLeft": 0.0,
+                "paddingRight": 0.0,
+                "paddingTop": 0.0,
+                "spacing": 40.0
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 6.0
+              },
+              "dividerAttr": {
+                "direction": "VERTICAL",
+                "percent": 0.5
+              },
+              "subType": "Layout"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "Feature"
+}

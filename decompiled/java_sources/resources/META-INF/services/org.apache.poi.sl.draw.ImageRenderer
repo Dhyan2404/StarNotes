@@ -1,0 +1,10 @@
+org.apache.poi.sl.draw.AndroidImageRenderer
+org.apache.poi.sl.draw.AndroidBitmapImageRenderer
+org.apache.poi.hwmf.draw.AndroidHwmfImageRenderer
+org.apache.poi.hemf.draw.AndroidHemfImageRenderer
+org.apache.poi.xslf.draw.AndroidSVGImageRenderer
+com.onyx.poi.latex.AndroidLatexRender
+org.apache.poi.xslf.draw.SVGImageRenderer
+org.apache.poi.hwmf.draw.HwmfImageRenderer
+org.apache.poi.hemf.draw.HemfImageRenderer
+org.apache.poi.sl.draw.BitmapImageRenderer

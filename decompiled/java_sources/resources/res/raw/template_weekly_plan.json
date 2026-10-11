@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 60.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "ede683fd88aa480e84a13c810e7d565a",
+      "839b0396105445218fb8f6aa488204ee",
+      "562219318de74f2c9d33667aa6d04ebc",
+      "659c985ad5c94745aa2422ab86375ce1",
+      "8ee60051aabf499aaf42c376d380de87"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_weekly_plan",
+    "type": 30004,
+    "uniqueId": "30004",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_weekly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_weekly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "ede683fd88aa480e84a13c810e7d565a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_weekly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_weekly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "839b0396105445218fb8f6aa488204ee",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_weekly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_weekly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "562219318de74f2c9d33667aa6d04ebc",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_weekly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_weekly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "659c985ad5c94745aa2422ab86375ce1",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_weekly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_weekly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "8ee60051aabf499aaf42c376d380de87",
+      "updatedAt": 0
+    }
+  ]
+}

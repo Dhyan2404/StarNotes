@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/item_scale_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/ll_bg"
+        android:background="@color/selector_btn_note_set_bg"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_40"
+        android:foreground="@color/settings_item_foreground_color_selector"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_12">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/selector_primary_color_select"
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:src="@drawable/ic_scale_delete"
+            app:imageTint="@color/theme_icon_color_03"/>
+    </LinearLayout>
+</FrameLayout>

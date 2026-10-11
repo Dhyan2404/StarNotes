@@ -1,0 +1,143 @@
+package com.google.android.material.datepicker;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.NonNull;
+import androidx.core.util.Preconditions;
+import com.google.android.material.datepicker.CalendarConstraints;
+import java.util.ArrayList;
+import java.util.List;
+
+/* loaded from: classes6.dex */
+public final class CompositeDateValidator implements CalendarConstraints.DateValidator {
+    private static final int COMPARATOR_ALL_ID = 2;
+    private static final int COMPARATOR_ANY_ID = 1;
+
+    @NonNull
+    private final InterfaceC5233d operator;
+
+    @NonNull
+    private final List<CalendarConstraints.DateValidator> validators;
+    private static final InterfaceC5233d ANY_OPERATOR = new C5230a();
+    private static final InterfaceC5233d ALL_OPERATOR = new C5231b();
+    public static final Parcelable.Creator<CompositeDateValidator> CREATOR = new C5232c();
+
+    /* renamed from: com.google.android.material.datepicker.CompositeDateValidator$a */
+    /* loaded from: classes6.dex */
+    public class C5230a implements InterfaceC5233d {
+        @Override // com.google.android.material.datepicker.CompositeDateValidator.InterfaceC5233d
+        /* renamed from: a */
+        public boolean mo23922a(@NonNull List<CalendarConstraints.DateValidator> list, long j) {
+            for (CalendarConstraints.DateValidator dateValidator : list) {
+                if (dateValidator != null && dateValidator.isValid(j)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        @Override // com.google.android.material.datepicker.CompositeDateValidator.InterfaceC5233d
+        public int getId() {
+            return 1;
+        }
+    }
+
+    /* renamed from: com.google.android.material.datepicker.CompositeDateValidator$b */
+    /* loaded from: classes6.dex */
+    public class C5231b implements InterfaceC5233d {
+        @Override // com.google.android.material.datepicker.CompositeDateValidator.InterfaceC5233d
+        /* renamed from: a */
+        public boolean mo23922a(@NonNull List<CalendarConstraints.DateValidator> list, long j) {
+            for (CalendarConstraints.DateValidator dateValidator : list) {
+                if (dateValidator != null && !dateValidator.isValid(j)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        @Override // com.google.android.material.datepicker.CompositeDateValidator.InterfaceC5233d
+        public int getId() {
+            return 2;
+        }
+    }
+
+    /* renamed from: com.google.android.material.datepicker.CompositeDateValidator$c */
+    /* loaded from: classes6.dex */
+    public class C5232c implements Parcelable.Creator<CompositeDateValidator> {
+        @Override // android.os.Parcelable.Creator
+        @NonNull
+        /* renamed from: a, reason: merged with bridge method [inline-methods] */
+        public CompositeDateValidator createFromParcel(@NonNull Parcel parcel) {
+            ArrayList readArrayList = parcel.readArrayList(CalendarConstraints.DateValidator.class.getClassLoader());
+            int readInt = parcel.readInt();
+            return new CompositeDateValidator((List) Preconditions.checkNotNull(readArrayList), readInt == 2 ? CompositeDateValidator.ALL_OPERATOR : readInt == 1 ? CompositeDateValidator.ANY_OPERATOR : CompositeDateValidator.ALL_OPERATOR, null);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        @NonNull
+        /* renamed from: b, reason: merged with bridge method [inline-methods] */
+        public CompositeDateValidator[] newArray(int i) {
+            return new CompositeDateValidator[i];
+        }
+    }
+
+    /* renamed from: com.google.android.material.datepicker.CompositeDateValidator$d */
+    /* loaded from: classes6.dex */
+    public interface InterfaceC5233d {
+        /* renamed from: a */
+        boolean mo23922a(@NonNull List<CalendarConstraints.DateValidator> list, long j);
+
+        int getId();
+    }
+
+    public /* synthetic */ CompositeDateValidator(List list, InterfaceC5233d interfaceC5233d, C5230a c5230a) {
+        this(list, interfaceC5233d);
+    }
+
+    @NonNull
+    public static CalendarConstraints.DateValidator allOf(@NonNull List<CalendarConstraints.DateValidator> list) {
+        return new CompositeDateValidator(list, ALL_OPERATOR);
+    }
+
+    @NonNull
+    public static CalendarConstraints.DateValidator anyOf(@NonNull List<CalendarConstraints.DateValidator> list) {
+        return new CompositeDateValidator(list, ANY_OPERATOR);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof CompositeDateValidator)) {
+            return false;
+        }
+        CompositeDateValidator compositeDateValidator = (CompositeDateValidator) obj;
+        return this.validators.equals(compositeDateValidator.validators) && this.operator.getId() == compositeDateValidator.operator.getId();
+    }
+
+    public int hashCode() {
+        return this.validators.hashCode();
+    }
+
+    @Override // com.google.android.material.datepicker.CalendarConstraints.DateValidator
+    public boolean isValid(long j) {
+        return this.operator.mo23922a(this.validators, j);
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeList(this.validators);
+        parcel.writeInt(this.operator.getId());
+    }
+
+    private CompositeDateValidator(@NonNull List<CalendarConstraints.DateValidator> list, InterfaceC5233d interfaceC5233d) {
+        this.validators = list;
+        this.operator = interfaceC5233d;
+    }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "channel": "starnote",
+    "packageName": "",
+    "localMarketUri": "",
+    "webMarketUri": "https://mystarnote.cn/"
+  },
+  {
+    "channel": "google",
+    "packageName": "com.android.vending",
+    "localMarketUri": "market://details?id=$packageName",
+    "webMarketUri": "https://play.google.com/"
+  },
+  {
+    "channel": "huawei",
+    "packageName": "com.huawei.appmarket",
+    "localMarketUri": "appmarket://details?id=$packageName",
+    "webMarketUri": "https://appgallery.huawei.com/"
+  },
+  {
+    "channel": "honor",
+    "packageName": "com.hihonor.appmarket",
+    "localMarketUri": "honormarket://details?id=$packageName",
+    "webMarketUri": ""
+  },
+  {
+    "channel": "xiaomi",
+    "packageName": "com.xiaomi.market",
+    "localMarketUri": "mimarket://details?id=$packageName",
+    "webMarketUri": "https://app.mi.com/"
+  },
+  {
+    "channel": "vivo",
+    "packageName": "com.bbk.appstore",
+    "localMarketUri": "vivomarket://details?id=$packageName",
+    "webMarketUri": "https://h5.appstore.vivo.com.cn/"
+  },
+  {
+    "channel": "oppo",
+    "packageName": "com.heytap.market",
+    "localMarketUri": "oppomarket://details?packagename=$packageName",
+    "webMarketUri": "https://store.oppomobile.com/"
+  }
+]

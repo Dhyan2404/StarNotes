@@ -1,0 +1,105 @@
+.class public final Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel;->f()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lio/reactivex/rxjava3/functions/Consumer;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final e:Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j;
+
+    invoke-direct {v0}, Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j;-><init>()V
+
+    sput-object v0, Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j;->e:Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Z)V
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    sget-object p0, Lcom/onyx/android/sdk/universal/editor/extension/MMKVNote;->INSTANCE:Lcom/onyx/android/sdk/universal/editor/extension/MMKVNote;
+
+    const/4 p1, 0x0
+
+    const/4 v0, 0x3
+
+    const/4 v1, 0x0
+
+    invoke-static {p0, v1, p1, v0, v1}, Lcom/onyx/android/sdk/universal/editor/extension/MMKVNote;->getTemplateOption$default(Lcom/onyx/android/sdk/universal/editor/extension/MMKVNote;Ljava/lang/String;IILjava/lang/Object;)Lcom/onyx/android/sdk/data/utils/JSONObjectOption;
+
+    move-result-object p0
+
+    sget-object p1, Lcom/onyx/android/sdk/data/common/data/TemplateJsonBean;->Companion:Lcom/onyx/android/sdk/data/common/data/TemplateJsonBean$Companion;
+
+    invoke-virtual {p1}, Lcom/onyx/android/sdk/data/common/data/TemplateJsonBean$Companion;->defaultPaper()Lcom/onyx/android/sdk/data/common/data/TemplateJsonBean;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/onyx/android/sdk/data/utils/JSONObjectOption;->put(Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public bridge synthetic accept(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Lcom/onyx/galaxy/note/category/viewmodel/NoteTemplateViewModel$j;->a(Z)V
+
+    return-void
+.end method

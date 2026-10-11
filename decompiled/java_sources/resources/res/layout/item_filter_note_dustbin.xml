@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_20"
+    style="@style/selectPressStyleNoRadius">
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/iv_dust_bin"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:src="@drawable/icon_dustbin"
+        app:imageTint="@color/selector_theme_note_list_left_item_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/selector_theme_note_list_left_item_color"
+        android:id="@+id/tv_dust_bin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dustbin"
+        android:layout_marginStart="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_dust_bin"
+        app:layout_constraintTop_toTopOf="parent"/>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

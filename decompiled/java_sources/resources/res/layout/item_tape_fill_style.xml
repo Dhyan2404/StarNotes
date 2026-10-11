@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:tag="layout/item_tape_fill_style_0"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_28">
+    <com.onyx.android.sdk.p039ui.RoundImageView
+        android:id="@+id/iv_icon"
+        android:padding="@dimen/dp_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:borderWidth="@dimen/dp_1"
+        app:cornerRadius="@dimen/dp_8"/>
+    <com.onyx.android.sdk.theme.widgets.TintView
+        android:background="@drawable/tape_pen_fill_style_selector"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

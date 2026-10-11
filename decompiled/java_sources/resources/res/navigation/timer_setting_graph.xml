@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_counter_setting"
+    app:startDestination="@+id/fragment_counter_setting_home">
+    <fragment
+        android:label="CounterSettingHomeFragment"
+        android:name="com.onyx.galaxy.note.editor.view.fragment.CounterSettingHomeFragment"
+        android:id="@+id/fragment_counter_setting_home"/>
+    <fragment
+        android:label="MyCountDownTaskFragment"
+        android:name="com.onyx.galaxy.note.editor.view.fragment.MyCountDownTaskFragment"
+        android:id="@+id/fragment_my_count_down_task"/>
+    <fragment
+        android:label="CountUpHistoryFragment"
+        android:name="com.onyx.galaxy.note.editor.view.fragment.CountUpHistoryFragment"
+        android:id="@+id/fragment_count_up_history"/>
+    <fragment
+        android:label="CountDownHistoryFragment"
+        android:name="com.onyx.galaxy.note.editor.view.fragment.CountDownHistoryFragment"
+        android:id="@+id/fragment_count_down_history"/>
+    <fragment
+        android:label="EditCounterSettingFragment"
+        android:name="com.onyx.galaxy.note.editor.view.fragment.EditCounterSettingFragment"
+        android:id="@+id/fragment_edit_counter_setting"/>
+    <fragment
+        android:label="CounterAlarmSettingFragment"
+        android:name="com.onyx.galaxy.note.editor.view.fragment.CounterAlarmSettingFragment"
+        android:id="@+id/fragment_alarm_setting"/>
+</navigation>

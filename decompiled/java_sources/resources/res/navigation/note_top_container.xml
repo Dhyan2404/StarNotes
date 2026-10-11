@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_note_top_container"
+    app:startDestination="@+id/fragment_note_top_container">
+    <fragment
+        android:label="NoteTopContainerFragment"
+        android:name="com.onyx.galaxy.note.category.p044ui.NoteTopContainerFragment"
+        android:id="@+id/fragment_note_top_container"/>
+</navigation>

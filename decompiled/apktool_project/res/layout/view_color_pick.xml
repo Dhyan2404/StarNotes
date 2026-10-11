@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.galaxy.note.ui.colorpicker.view.ColorPanelView android:id="@id/colorPanel" android:layout_width="fill_parent" android:layout_height="@dimen/dp_288" android:layout_marginBottom="@dimen/dp_12" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layoutDirection="ltr">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_pick_title_hex" android:maxLines="@integer/text_view_max_lines_2" android:layout_weight="1.0" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/sp_8" android:autoSizeMaxTextSize="@dimen/sp_14" />
+        <com.onyx.galaxy.note.ui.view.ColorInputView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:id="@id/colorValueText" android:background="@drawable/shape_hex_value" android:layout_width="@dimen/dp_90" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_4" />
+        <com.onyx.galaxy.note.ui.view.AlphaInputView android:textSize="@dimen/sp_16" android:textColor="@color/selector_color_enabled_black_gray" android:gravity="center" android:id="@id/alphaValueText" android:background="@drawable/shape_alpha_value" android:layout_width="@dimen/dp_66" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_1_" android:maxLength="4" android:digits="@string/percent_chars" />
+        <FrameLayout android:id="@id/addButton" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_40" android:layout_marginStart="@dimen/dp_14">
+            <View android:id="@id/iv_picked_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/icon_color_add" android:layout_marginEnd="@dimen/dp_8" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.onyx.android.sdk.theme.widgets.TintView android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="@dimen/dp0_5" android:layout_marginTop="@dimen/dp_16" />
+    <com.onyx.galaxy.note.common.view.MaxHeightScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_48" app:maxHeight="@dimen/dp_184">
+        <GridLayout android:id="@id/cellLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="6" />
+    </com.onyx.galaxy.note.common.view.MaxHeightScrollView>
+</LinearLayout>

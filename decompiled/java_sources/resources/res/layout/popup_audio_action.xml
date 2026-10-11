@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_audio_action_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_common_popup_bg"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="match_parent"
+        android:minWidth="@dimen/dp_240">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:id="@+id/audio_recognize"
+            android:visibility="gone"
+            android:text="@string/audio_to_text"
+            android:drawableLeft="@drawable/ic_audio_recognize"
+            app:drawableLeftTint="@color/theme_icon_color_01"
+            style="@style/popup_insert_page_btn_style"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:id="@+id/audio_link"
+            android:text="@string/insert_recording"
+            android:drawableLeft="@drawable/ic_audio_link"
+            app:drawableLeftTint="@color/theme_icon_color_01"
+            style="@style/popup_insert_page_btn_style"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:id="@+id/goto_link"
+            android:text="@string/goto_recording"
+            android:drawableLeft="@drawable/ic_audio_goto_link"
+            app:drawableLeftTint="@color/theme_icon_color_01"
+            style="@style/popup_insert_page_btn_style"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:id="@+id/rename"
+            android:text="@string/rename"
+            android:drawableLeft="@drawable/ic_edit"
+            app:drawableLeftTint="@color/theme_icon_color_01"
+            style="@style/popup_insert_page_btn_style"/>
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textColor="@color/selector_delete_color"
+            android:id="@+id/delete"
+            android:text="@string/delete"
+            android:drawableLeft="@drawable/ic_delete_round"
+            app:drawableLeftTint="@color/selector_delete_color"
+            style="@style/popup_insert_page_btn_style"/>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</FrameLayout>

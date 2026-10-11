@@ -1,0 +1,84 @@
+.class public Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBindingRequest;
+.super Lcom/tencent/cos/xml/model/appid/AppIdRequest;
+.source "SourceFile"
+
+
+# instance fields
+.field private createDatasetBinding:Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBinding;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    invoke-direct {p0, p1}, Lcom/tencent/cos/xml/model/appid/AppIdRequest;-><init>(Ljava/lang/String;)V
+
+    const-string p1, "Content-Type"
+
+    invoke-virtual {p0, p1}, Lcom/tencent/cos/xml/model/CosXmlRequest;->addNoSignHeader(Ljava/lang/String;)V
+
+    const-string p1, "Accept"
+
+    const-string v0, "application/json"
+
+    invoke-virtual {p0, p1, v0}, Lcom/tencent/cos/xml/model/CosXmlRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getMethod()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "POST"
+
+    return-object p0
+.end method
+
+.method public getPath(Lcom/tencent/cos/xml/CosXmlServiceConfig;)Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "/datasetbinding"
+
+    return-object p0
+.end method
+
+.method public getRequestBody()Lcom/tencent/qcloud/core/http/RequestBodySerializer;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/tencent/cos/xml/exception/CosXmlClientException;
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBindingRequest;->createDatasetBinding:Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBinding;
+
+    invoke-static {p0}, Lcom/tencent/cos/xml/utils/QCloudJsonUtils;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "application/json"
+
+    invoke-static {v0, p0}, Lcom/tencent/qcloud/core/http/RequestBodySerializer;->string(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/qcloud/core/http/RequestBodySerializer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public setCreateDatasetBinding(Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBinding;)V
+    .locals 0
+    .param p1    # Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBinding;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    iput-object p1, p0, Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBindingRequest;->createDatasetBinding:Lcom/tencent/cos/xml/model/ci/metainsight/CreateDatasetBinding;
+
+    return-void
+.end method

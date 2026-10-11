@@ -1,0 +1,28 @@
+package org.apache.commons.math3.linear;
+
+import org.apache.commons.math3.FieldElement;
+
+/* loaded from: classes12.dex */
+public class DefaultFieldMatrixChangingVisitor<T extends FieldElement<T>> implements FieldMatrixChangingVisitor<T> {
+
+    /* renamed from: a */
+    public final T f108472a;
+
+    public DefaultFieldMatrixChangingVisitor(T t) {
+        this.f108472a = t;
+    }
+
+    @Override // org.apache.commons.math3.linear.FieldMatrixChangingVisitor
+    public T end() {
+        return this.f108472a;
+    }
+
+    @Override // org.apache.commons.math3.linear.FieldMatrixChangingVisitor
+    public void start(int i, int i2, int i3, int i4, int i5, int i6) {
+    }
+
+    @Override // org.apache.commons.math3.linear.FieldMatrixChangingVisitor
+    public T visit(int i, int i2, T t) {
+        return t;
+    }
+}

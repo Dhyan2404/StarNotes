@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/dialog_magnifier_feature_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_16" app:cardElevation="0.0dip">
+        <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:background="@color/theme_charge_color_04" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/lly_feature_content" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_24" app:layout_constraintTop_toTopOf="parent">
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_23" android:textStyle="bold" android:textColor="@color/theme_text_color_01" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_features" android:layout_width="fill_parent" android:layout_height="@dimen/dp_36" android:layout_marginTop="@dimen/dp_24" />
+                <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/theme_text_color_02" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.viewpager2.widget.ViewPager2 android:id="@id/rv_feature_resource" android:layout_width="fill_parent" android:layout_height="@dimen/dp_288" android:layout_marginTop="@dimen/dp_16" />
+                    <com.onyx.galaxy.note.member.view.ChargeIndicatorView android:layout_gravity="bottom|center" android:id="@id/charge_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_8" />
+                </FrameLayout>
+            </LinearLayout>
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_close" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_16" android:src="@drawable/ic_close_dialog" android:layout_marginEnd="@dimen/dp_16" app:imageTint="@color/theme_icon_color_03" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/lly_feature_content" />
+        </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+    </com.onyx.android.sdk.theme.widgets.TintCardView>
+</FrameLayout>

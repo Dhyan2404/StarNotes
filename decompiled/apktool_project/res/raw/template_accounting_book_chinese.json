@@ -1,0 +1,91 @@
+{
+  "templateModel": {
+    "status": 1,
+    "categoryId": "LIFE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "32b9c62065da4f429d91558d42351d0f",
+      "0e64777198754ce6b7f67504a76c476a",
+      "8b0583dece9f4464a48d593d95c4a39c",
+      "735db5eee00d42a79d29ff1493ad2398",
+      "27705898b0fe43bea50a64b13ffb5d1b"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_accounting_book_chinese",
+    "type": 50003,
+    "uniqueId": "50003",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_accounting_book_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "32b9c62065da4f429d91558d42351d0f",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_accounting_book_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "0e64777198754ce6b7f67504a76c476a",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_accounting_book_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "8b0583dece9f4464a48d593d95c4a39c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_accounting_book_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "735db5eee00d42a79d29ff1493ad2398",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_accounting_book_chinese",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_accounting_book_chinese_thumbnail",
+      "type": 0,
+      "uniqueId": "27705898b0fe43bea50a64b13ffb5d1b",
+      "updatedAt": 0
+    }
+  ]
+}

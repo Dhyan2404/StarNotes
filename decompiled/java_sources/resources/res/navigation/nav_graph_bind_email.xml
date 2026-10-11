@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/BindEmailFragment">
+    <fragment
+        android:label="BindEmail"
+        android:name="com.onyx.galaxy.note.usercenter.p049ui.BindEmailFragment"
+        android:id="@+id/BindEmailFragment">
+        <argument
+            android:name="purpose"
+            app:argType="string"/>
+        <argument
+            android:name="oldSocialAccount"
+            android:defaultValue=""
+            app:argType="string"/>
+        <argument
+            android:name="oldVerifyCode"
+            android:defaultValue=""
+            app:argType="string"/>
+    </fragment>
+</navigation>

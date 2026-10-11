@@ -1,0 +1,40 @@
+package onyx.org.apache.commons.io.output;
+
+import java.io.InterruptedIOException;
+import java.io.OutputStream;
+import java.util.Objects;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+import onyx.org.apache.commons.io.input.QueueInputStream;
+
+/* loaded from: classes11.dex */
+public class QueueOutputStream extends OutputStream {
+
+    /* renamed from: e */
+    public final BlockingQueue<Integer> f104513e;
+
+    public QueueOutputStream() {
+        this(new LinkedBlockingQueue());
+    }
+
+    public QueueInputStream newQueueInputStream() {
+        return QueueInputStream.builder().setBlockingQueue(this.f104513e).get();
+    }
+
+    @Override // java.io.OutputStream
+    public void write(int i) throws InterruptedIOException {
+        try {
+            this.f104513e.put(Integer.valueOf(i & 255));
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            InterruptedIOException interruptedIOException = new InterruptedIOException();
+            interruptedIOException.initCause(e);
+            throw interruptedIOException;
+        }
+    }
+
+    public QueueOutputStream(BlockingQueue<Integer> blockingQueue) {
+        Objects.requireNonNull(blockingQueue, "blockingQueue");
+        this.f104513e = blockingQueue;
+    }
+}

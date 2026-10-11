@@ -1,0 +1,139 @@
+package com.dropbox.core.p006v2.teamlog;
+
+import com.dropbox.core.stone.CompositeSerializer;
+import com.dropbox.core.stone.StoneDeserializerLogger;
+import com.dropbox.core.stone.StoneSerializer;
+import com.dropbox.core.stone.StoneSerializers;
+import com.dropbox.core.stone.StructSerializer;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import java.io.IOException;
+import java.util.Arrays;
+
+/* loaded from: classes4.dex */
+public class PaperDocEditCommentDetails {
+    protected final String commentText;
+    protected final String eventUuid;
+
+    /* renamed from: com.dropbox.core.v2.teamlog.PaperDocEditCommentDetails$a */
+    /* loaded from: classes4.dex */
+    public static class C3886a extends StructSerializer<PaperDocEditCommentDetails> {
+
+        /* renamed from: b */
+        public static final C3886a f20159b = new C3886a();
+
+        @Override // com.dropbox.core.stone.StructSerializer
+        /* renamed from: a, reason: merged with bridge method [inline-methods] */
+        public PaperDocEditCommentDetails deserialize(JsonParser jsonParser, boolean z) throws IOException, JsonParseException {
+            String str;
+            String str2 = null;
+            if (z) {
+                str = null;
+            } else {
+                StoneSerializer.expectStartObject(jsonParser);
+                str = CompositeSerializer.readTag(jsonParser);
+            }
+            if (str != null) {
+                throw new JsonParseException(jsonParser, "No subtype found that matches tag: \"" + str + "\"");
+            }
+            String str3 = null;
+            while (jsonParser.getCurrentToken() == JsonToken.FIELD_NAME) {
+                String currentName = jsonParser.getCurrentName();
+                jsonParser.nextToken();
+                if ("event_uuid".equals(currentName)) {
+                    str2 = StoneSerializers.string().deserialize(jsonParser);
+                } else if ("comment_text".equals(currentName)) {
+                    str3 = (String) StoneSerializers.nullable(StoneSerializers.string()).deserialize(jsonParser);
+                } else {
+                    StoneSerializer.skipValue(jsonParser);
+                }
+            }
+            if (str2 == null) {
+                throw new JsonParseException(jsonParser, "Required field \"event_uuid\" missing.");
+            }
+            PaperDocEditCommentDetails paperDocEditCommentDetails = new PaperDocEditCommentDetails(str2, str3);
+            if (!z) {
+                StoneSerializer.expectEndObject(jsonParser);
+            }
+            StoneDeserializerLogger.log(paperDocEditCommentDetails, paperDocEditCommentDetails.toStringMultiline());
+            return paperDocEditCommentDetails;
+        }
+
+        @Override // com.dropbox.core.stone.StructSerializer
+        /* renamed from: b, reason: merged with bridge method [inline-methods] */
+        public void serialize(PaperDocEditCommentDetails paperDocEditCommentDetails, JsonGenerator jsonGenerator, boolean z) throws IOException, JsonGenerationException {
+            if (!z) {
+                jsonGenerator.writeStartObject();
+            }
+            jsonGenerator.writeFieldName("event_uuid");
+            StoneSerializers.string().serialize((StoneSerializer<String>) paperDocEditCommentDetails.eventUuid, jsonGenerator);
+            if (paperDocEditCommentDetails.commentText != null) {
+                jsonGenerator.writeFieldName("comment_text");
+                StoneSerializers.nullable(StoneSerializers.string()).serialize((StoneSerializer) paperDocEditCommentDetails.commentText, jsonGenerator);
+            }
+            if (z) {
+                return;
+            }
+            jsonGenerator.writeEndObject();
+        }
+    }
+
+    public PaperDocEditCommentDetails(String str, String str2) {
+        if (str != null) {
+            this.eventUuid = str;
+            this.commentText = str2;
+            return;
+        }
+        throw new IllegalArgumentException("Required value for 'eventUuid' is null");
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj == null || !obj.getClass().equals(getClass())) {
+            return false;
+        }
+        PaperDocEditCommentDetails paperDocEditCommentDetails = (PaperDocEditCommentDetails) obj;
+        String str = this.eventUuid;
+        String str2 = paperDocEditCommentDetails.eventUuid;
+        if (str == str2 || str.equals(str2)) {
+            String str3 = this.commentText;
+            String str4 = paperDocEditCommentDetails.commentText;
+            if (str3 == str4) {
+                return true;
+            }
+            if (str3 != null && str3.equals(str4)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String getCommentText() {
+        return this.commentText;
+    }
+
+    public String getEventUuid() {
+        return this.eventUuid;
+    }
+
+    public int hashCode() {
+        return Arrays.hashCode(new Object[]{this.eventUuid, this.commentText});
+    }
+
+    public String toString() {
+        return C3886a.f20159b.serialize((C3886a) this, false);
+    }
+
+    public String toStringMultiline() {
+        return C3886a.f20159b.serialize((C3886a) this, true);
+    }
+
+    public PaperDocEditCommentDetails(String str) {
+        this(str, null);
+    }
+}

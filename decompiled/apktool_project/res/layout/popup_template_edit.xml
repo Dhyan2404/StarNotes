@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/popup_template_edit_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_common_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/error_200" android:gravity="center" android:id="@id/tv_delete" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:foreground="@drawable/selector_common_icon_foreground_bg" android:minWidth="@dimen/dp_72" android:text="@string/delete" android:paddingHorizontal="@dimen/dp_6" />
+        <View android:background="@color/overlay_04" android:layout_width="@dimen/dp0_5" android:layout_height="@dimen/dp_40" />
+        <TextView android:gravity="center" android:id="@id/tv_rename" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:foreground="@drawable/selector_common_icon_foreground_bg" android:minWidth="@dimen/dp_72" android:text="@string/rename" android:paddingHorizontal="@dimen/dp_6" style="@style/commonTextStyle" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

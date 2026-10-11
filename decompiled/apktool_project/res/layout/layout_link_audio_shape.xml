@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:background="@drawable/shape_link_audio_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/shape_link_audio_bg_stroke"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ic_audio" android:layout_width="@dimen/link_icon_size" android:layout_height="@dimen/link_icon_size" android:src="@drawable/ic_attachment_audio" android:layout_centerVertical="true" android:layout_marginStart="@dimen/link_audio_margin_start" android:layout_marginEnd="@dimen/link_padding" />
+    <TextView android:textSize="@dimen/audio_content_text_size" android:textColor="@color/link_text_color" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/link_audio_margin_end" android:layout_toEndOf="@id/ic_audio" android:layout_alignParentEnd="true" android:textFontWeight="@integer/font_weight_Regular" />
+</RelativeLayout>

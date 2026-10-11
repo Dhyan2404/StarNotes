@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WRITE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "76dc15c03ac24b5d8ed04d43ffc13787",
+      "bf1e2c4878bd487a83a89c49e27453f8",
+      "ec7e5d4a93e14747b234fe56258c80d6",
+      "ea2486a34eeb4f4e8c41d53e7ab2641e",
+      "bb5eb97e39f14043a3a174fbe61ba274"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_mig_paper",
+    "type": 61004,
+    "uniqueId": "61004",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_mig_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "76dc15c03ac24b5d8ed04d43ffc13787",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_mig_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "bf1e2c4878bd487a83a89c49e27453f8",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_mig_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "ec7e5d4a93e14747b234fe56258c80d6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_mig_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "ea2486a34eeb4f4e8c41d53e7ab2641e",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_mig_paper_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_mig_paper_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "bb5eb97e39f14043a3a174fbe61ba274",
+      "updatedAt": 0
+    }
+  ]
+}

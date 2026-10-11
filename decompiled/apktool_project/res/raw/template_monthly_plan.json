@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 70.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "936ed11173f342299691d26be77e4c1f",
+      "bf413107a07a4003b900297aa7c64039",
+      "dc0ac143d0144f4cafcc1f1b8fd9ad31",
+      "d521db4c7d72432f8c17a22dd8da1aff",
+      "49f99b2eb2564b8aaa9194eb7a7396ae"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_monthly_plan",
+    "type": 30005,
+    "uniqueId": "30005",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_monthly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_monthly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "936ed11173f342299691d26be77e4c1f",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_monthly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_monthly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "bf413107a07a4003b900297aa7c64039",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_monthly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_monthly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "dc0ac143d0144f4cafcc1f1b8fd9ad31",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_monthly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_monthly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "d521db4c7d72432f8c17a22dd8da1aff",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_monthly_plan",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_monthly_plan_thumbnail",
+      "type": 0,
+      "uniqueId": "49f99b2eb2564b8aaa9194eb7a7396ae",
+      "updatedAt": 0
+    }
+  ]
+}

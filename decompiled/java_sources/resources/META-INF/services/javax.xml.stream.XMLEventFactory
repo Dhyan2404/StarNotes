@@ -1,0 +1,2 @@
+org.apache.xerces.stax.XMLEventFactoryImpl
+com.sun.xml.internal.stream.events.XMLEventFactoryImpl

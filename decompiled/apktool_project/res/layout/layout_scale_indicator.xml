@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/layout_scale_indicator_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_scale_container" android:background="@drawable/shape_scale_indicator_bg" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_collection" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/selector_scale_collect" android:scaleType="centerInside" android:layout_marginStart="@dimen/dp_12" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_percent" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center" android:id="@id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_62" />
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_arrow" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_scale_arrow" android:scaleType="centerInside" />
+        </LinearLayout>
+        <ImageView android:gravity="center" android:id="@id/lock" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_unlock" android:layout_marginHorizontal="@dimen/dp_10" app:iconSize="@dimen/dp_24" style="@style/materialPressStyleRadiusDp08" />
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/reset" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_reload" android:layout_marginHorizontal="@dimen/dp_10" app:iconSize="@dimen/dp_24" style="@style/materialPressStyleRadiusDp08" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

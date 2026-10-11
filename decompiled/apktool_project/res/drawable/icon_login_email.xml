@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <vector android:height="@dimen/dp_48" android:width="@dimen/dp_48" android:viewportWidth="48.0" android:viewportHeight="48.0">
+            <group>
+                <clip-path android:pathData="M12,15h24v18h-24z" />
+                <path android:fillColor="#ff6b8bff" android:pathData="M36.004,29.999C35.999,30.503 35.865,30.998 35.614,31.437L28.034,22.964L35.535,16.442C35.839,16.917 36.001,17.468 36.004,18.032V29.995V29.999ZM24.002,24.505L34.428,15.374C33.988,15.128 33.493,15 32.989,15H14.988C14.483,15 13.985,15.128 13.543,15.374L24.002,24.505ZM26.882,23.944L24.47,26.066C24.337,26.192 24.16,26.262 23.977,26.262C23.794,26.262 23.617,26.192 23.484,26.066L21.07,23.944L13.439,32.532C13.912,32.833 14.462,32.993 15.023,32.993H33.025C33.587,32.993 34.136,32.833 34.61,32.532L26.917,23.944H26.882ZM12.468,16.442C12.17,16.909 12.008,17.45 12,18.005V30.004C12.004,30.508 12.139,31.004 12.389,31.442L19.964,22.969L12.47,16.455L12.468,16.442Z" />
+            </group>
+        </vector>
+    </item>
+    <item>
+        <vector android:tint="@color/theme_divider_color_01" android:height="@dimen/dp_48" android:width="@dimen/dp_48" android:viewportWidth="48.0" android:viewportHeight="48.0">
+            <path android:fillColor="#00000000" android:pathData="M24,24m-23.5,0a23.5,23.5 0,1 1,47 0a23.5,23.5 0,1 1,-47 0" android:strokeColor="#ff222222" android:strokeWidth="1.0" />
+        </vector>
+    </item>
+</layer-list>

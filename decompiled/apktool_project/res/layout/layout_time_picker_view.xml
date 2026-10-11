@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/layout_time_picker_view_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_vertical" android:background="@drawable/shape_timer_picker_selection_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_24" />
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.onyx.android.sdk.ui.wheelview.WheelView android:id="@id/wv_hour" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:wheelview_dividerColor="@color/transparent" app:wheelview_textSize="@dimen/sp_14" app:wheelview_textSizeOut="@dimen/sp_10" app:wheelview_textSkewX="0.0" />
+        <com.onyx.android.sdk.ui.wheelview.WheelView android:id="@id/wv_minute" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:wheelview_dividerColor="@color/transparent" app:wheelview_textSize="@dimen/sp_14" app:wheelview_textSizeOut="@dimen/sp_10" app:wheelview_textSkewX="0.0" />
+        <com.onyx.android.sdk.ui.wheelview.WheelView android:id="@id/wv_second" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:wheelview_dividerColor="@color/transparent" app:wheelview_textSize="@dimen/sp_14" app:wheelview_textSizeOut="@dimen/sp_10" app:wheelview_textSkewX="0.0" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

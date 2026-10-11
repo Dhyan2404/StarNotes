@@ -1,0 +1,35 @@
+package org.apache.commons.math3.analysis.function;
+
+import org.apache.commons.math3.analysis.DifferentiableUnivariateFunction;
+import org.apache.commons.math3.analysis.FunctionUtils;
+import org.apache.commons.math3.analysis.UnivariateFunction;
+import org.apache.commons.math3.analysis.differentiation.DerivativeStructure;
+import org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction;
+import org.apache.commons.math3.util.FastMath;
+
+/* loaded from: classes12.dex */
+public class Power implements UnivariateDifferentiableFunction, DifferentiableUnivariateFunction {
+
+    /* renamed from: e */
+    public final double f107807e;
+
+    public Power(double d) {
+        this.f107807e = d;
+    }
+
+    @Override // org.apache.commons.math3.analysis.DifferentiableUnivariateFunction
+    @Deprecated
+    public UnivariateFunction derivative() {
+        return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative();
+    }
+
+    @Override // org.apache.commons.math3.analysis.UnivariateFunction
+    public double value(double d) {
+        return FastMath.pow(d, this.f107807e);
+    }
+
+    @Override // org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction
+    public DerivativeStructure value(DerivativeStructure derivativeStructure) {
+        return derivativeStructure.pow(this.f107807e);
+    }
+}

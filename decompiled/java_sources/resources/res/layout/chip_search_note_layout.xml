@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintChipView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="@style/chipTextAppearance"
+    android:textSize="@dimen/sp_14"
+    android:textColor="@color/theme_text_color_01"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:maxEms="@integer/search_note_history_length"
+    android:singleLine="true"
+    app:chipBackgroundColor="@color/theme_background_color_02"
+    app:chipStrokeWidth="0dp"
+    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+    style="@style/Widget.Material3.Chip.Assist"/>

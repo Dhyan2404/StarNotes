@@ -1,0 +1,2 @@
+org.apache.poi.xslf.usermodel.XSLFSlideShowFactory
+org.apache.poi.hslf.usermodel.HSLFSlideShowFactory

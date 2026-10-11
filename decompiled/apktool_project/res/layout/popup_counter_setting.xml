@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:id="@id/fl_root" android:tag="layout/popup_counter_setting_0" android:background="@drawable/popup_shadow_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/shape_common_popup_bg" android:layout_width="@dimen/dp_320" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/dp_16">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_popup_back" android:layout_centerVertical="true" app:imageTint="@color/theme_icon_color_01" style="@style/materialPressStyleRadiusDp08" />
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_alarm_setting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_counter_setting" android:layout_centerVertical="true" app:imageTint="@color/theme_icon_color_01" style="@style/materialPressStyleRadiusDp08" />
+            <com.onyx.android.sdk.ui.MediumTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shortcut_bar_timer" android:layout_centerInParent="true" android:layout_marginVertical="@dimen/tool_popup_title_margin_top" />
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_popup" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:imageTint="@color/theme_icon_color_03" style="@style/materialPressStyleRadiusDp08" />
+        </RelativeLayout>
+        <com.onyx.android.sdk.theme.widgets.TintView android:id="@id/divider_navigation" android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="@dimen/dp0_5" />
+        <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_timer_host_fragment_main" android:layout_width="fill_parent" android:layout_height="wrap_content" app:defaultNavHost="false" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

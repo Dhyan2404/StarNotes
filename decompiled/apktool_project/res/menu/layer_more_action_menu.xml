@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_edit" android:id="@id/rename" android:title="@string/rename" />
+    <item android:icon="@drawable/ic_shovel" android:id="@id/clean" android:title="@string/clean" />
+    <item android:icon="@drawable/ic_arrow_big_down" android:id="@id/merge_down" android:title="@string/merge_down" />
+    <item android:icon="@drawable/ic_delete_round" android:id="@id/delete" android:title="@string/delete" android:titleCondensed="@string/warning" />
+</menu>

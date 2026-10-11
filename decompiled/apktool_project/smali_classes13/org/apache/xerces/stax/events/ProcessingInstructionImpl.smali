@@ -1,0 +1,108 @@
+.class public final Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;
+.super Lcom/sunia/HTREnginev2/plo;
+.source "SourceFile"
+
+# interfaces
+.implements Ljavax/xml/stream/events/ProcessingInstruction;
+
+
+# instance fields
+.field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljavax/xml/stream/Location;)V
+    .locals 1
+
+    const/4 v0, 0x3
+
+    invoke-direct {p0, v0, p3}, Lcom/sunia/HTREnginev2/plo;-><init>(ILjavax/xml/stream/Location;)V
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, ""
+
+    :goto_0
+    iput-object p1, p0, Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;->g:Ljava/lang/String;
+
+    iput-object p2, p0, Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;->h:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getData()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;->h:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public getTarget()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;->g:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public writeAsEncodedUnicode(Ljava/io/Writer;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljavax/xml/stream/XMLStreamException;
+        }
+    .end annotation
+
+    :try_start_0
+    const-string v0, "<?"
+
+    invoke-virtual {p1, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+
+    iget-object v0, p0, Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;->g:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+
+    iget-object v0, p0, Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;->h:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    const/16 v0, 0x20
+
+    invoke-virtual {p1, v0}, Ljava/io/Writer;->write(I)V
+
+    iget-object p0, p0, Lorg/apache/xerces/stax/events/ProcessingInstructionImpl;->h:Ljava/lang/String;
+
+    invoke-virtual {p1, p0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+
+    :cond_0
+    const-string p0, "?>"
+
+    invoke-virtual {p1, p0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Ljavax/xml/stream/XMLStreamException;
+
+    invoke-direct {p1, p0}, Ljavax/xml/stream/XMLStreamException;-><init>(Ljava/lang/Throwable;)V
+
+    throw p1
+.end method

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:orientation="vertical" android:id="@id/cl_title_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/top_bar_gradient_view" android:background="@drawable/shape_theme_popup_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="@id/edit_title_layout" app:layout_constraintTop_toTopOf="@id/edit_title_layout" />
+        <com.onyx.android.sdk.theme.widgets.DynamicImageView android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:src="@drawable/ic_note_edit_tool_bar_dynamic_bg" android:scaleType="fitEnd" app:layout_constraintBottom_toBottomOf="@id/edit_title_layout" app:layout_constraintTop_toTopOf="@id/edit_title_layout" />
+        <LinearLayout android:orientation="vertical" android:id="@id/edit_title_layout" android:paddingTop="@dimen/dp_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:translationZ="1.0dip" app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.onyx.galaxy.note.editor.view.NoteTabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintGuide_percent="0.8" />
+                <View android:id="@id/guide_view_tab" android:visibility="gone" android:layout_width="@dimen/dp_4" android:layout_height="@dimen/dp_4" app:layout_constraintBottom_toBottomOf="@id/tab_layout" app:layout_constraintEnd_toEndOf="@id/guideline" app:layout_constraintStart_toStartOf="@id/guideline" app:layout_constraintTop_toTopOf="@id/tab_layout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.onyx.galaxy.note.editor.view.FunctionToolLayout android:id="@id/func_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/cl_title_bar_container">
+        <com.onyx.android.sdk.theme.widgets.TintRelativeLayout android:id="@id/editor_container" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.onyx.galaxy.note.editor.view.toolbar.ShapeAndToolContainer android:id="@id/shape_and_tool" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.onyx.galaxy.note.editor.view.InputTextToolLayout android:id="@id/input_text_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </com.onyx.android.sdk.theme.widgets.TintRelativeLayout>
+        <com.onyx.galaxy.note.editor.view.NoteOutlineDragContainer android:id="@id/left_side_bar_layout" android:visibility="gone" android:layout_width="@dimen/side_bar_layout_width" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+        <com.onyx.galaxy.note.editor.view.NoteOutlineDragContainer android:id="@id/right_side_bar_layout" android:visibility="gone" android:layout_width="@dimen/side_bar_layout_width" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_gravity="start|center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/ll"
+    android:tag="layout/layout_image_shape_params_container_0"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/add"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:src="@drawable/icon_toolbal_add"
+        android:layout_marginEnd="@dimen/dp_4"
+        style="@style/materialPressStyleRadiusDp12"/>
+    <View
+        android:background="@color/color_tool_select_bg"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_8"
+        style="@style/dividingLineStyle"/>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

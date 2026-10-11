@@ -1,0 +1,10 @@
+{
+  "loginTypes": [
+    "google",
+    "microsoft",
+    "email",
+    "account"
+  ],
+  "loginAuthType": "google",
+  "enableSwitchCluster": true
+}

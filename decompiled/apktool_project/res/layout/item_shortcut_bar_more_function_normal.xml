@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:tag="layout/item_shortcut_bar_more_function_normal_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/materialSelectPressStyleNoRadius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layoutDirection="locale">
+        <com.onyx.android.sdk.theme.widgets.TintImageView android:id="@id/iv_icon" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginStart="@dimen/dp_16" app:imageTint="@color/theme_icon_color_01" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_text_color_01" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="@integer/text_view_max_lines_2" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_16" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/sp_14" android:autoSizeMaxTextSize="@dimen/sp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_icon" app:layout_constraintTop_toTopOf="parent" />
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

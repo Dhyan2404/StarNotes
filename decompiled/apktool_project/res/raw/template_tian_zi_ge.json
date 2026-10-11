@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WRITE",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 30.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "f14328902e874ac2a82eb657ab22f5e6",
+      "1aa5fb9293f64b47835a6bc9d7b52467",
+      "afb266fb9573450dbdc7e21e5b8a3af7",
+      "e38a00eeb9be4135aed965681e99af0b",
+      "f533c1e10de041489e45b18e2505d4b4"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_tian_zi_ge",
+    "type": 60003,
+    "uniqueId": "60003",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_tian_zi_ge",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tian_zi_ge_thumbnail",
+      "type": 0,
+      "uniqueId": "f14328902e874ac2a82eb657ab22f5e6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_tian_zi_ge",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tian_zi_ge_thumbnail",
+      "type": 0,
+      "uniqueId": "1aa5fb9293f64b47835a6bc9d7b52467",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_tian_zi_ge",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tian_zi_ge_thumbnail",
+      "type": 0,
+      "uniqueId": "afb266fb9573450dbdc7e21e5b8a3af7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_tian_zi_ge",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tian_zi_ge_thumbnail",
+      "type": 0,
+      "uniqueId": "e38a00eeb9be4135aed965681e99af0b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_tian_zi_ge",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_tian_zi_ge_thumbnail",
+      "type": 0,
+      "uniqueId": "f533c1e10de041489e45b18e2505d4b4",
+      "updatedAt": 0
+    }
+  ]
+}

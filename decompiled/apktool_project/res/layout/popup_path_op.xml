@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_path_op_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:background="@drawable/shape_common_popup_bg" android:layout_width="@dimen/dp_240" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp_8">
+        <com.onyx.galaxy.note.common.view.MaxHeightRecyclerView android:id="@id/rv" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:maxHeight="@dimen/dp_264" />
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</FrameLayout>

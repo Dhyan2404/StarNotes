@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/layout_sticker_category_sub_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sticker_category_label_text_size"
+        android:textColor="@color/selector_category_label_text_color"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/categoryNameButton"
+        android:tag="binding_1"
+        android:background="@drawable/selector_category_label_bg"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="@integer/name_max_length"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/dp_5"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:paddingVertical="@dimen/dp_5"/>
+</RelativeLayout>

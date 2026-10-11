@@ -1,0 +1,2 @@
+org.apache.xerces.jaxp.validation.XMLSchemaFactory
+com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory

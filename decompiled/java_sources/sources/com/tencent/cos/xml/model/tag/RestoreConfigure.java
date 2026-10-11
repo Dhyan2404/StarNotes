@@ -1,0 +1,47 @@
+package com.tencent.cos.xml.model.tag;
+
+/* loaded from: classes10.dex */
+public class RestoreConfigure {
+    public CASJobParameters casJobParameters;
+    public int days;
+
+    /* loaded from: classes10.dex */
+    public static class CASJobParameters {
+        public String tier = Tier.Standard.getTier();
+
+        public String toString() {
+            return "{CASJobParameters:\nTier:" + this.tier + "\n}";
+        }
+    }
+
+    /* loaded from: classes10.dex */
+    public enum Tier {
+        Expedited("Expedited"),
+        Standard("Standard"),
+        Bulk("Bulk");
+
+        private String tier;
+
+        Tier(String str) {
+            this.tier = str;
+        }
+
+        public String getTier() {
+            return this.tier;
+        }
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder("{RestoreRequest:\n");
+        sb.append("Days:");
+        sb.append(this.days);
+        sb.append("\n");
+        CASJobParameters cASJobParameters = this.casJobParameters;
+        if (cASJobParameters != null) {
+            sb.append(cASJobParameters.toString());
+            sb.append("\n");
+        }
+        sb.append("}");
+        return sb.toString();
+    }
+}

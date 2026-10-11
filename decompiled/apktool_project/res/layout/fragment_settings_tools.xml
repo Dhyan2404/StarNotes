@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:tag="layout/fragment_settings_tools_0" android:background="@color/theme_background_color_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.ui.MediumTextView android:text="@string/tool_settings" style="@style/SettingsDetailTitleStyle" />
+    <com.onyx.android.sdk.theme.widgets.TintView style="@style/SettingsDetailDividerStyle" />
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stroke_convert_to_graph" style="@style/settingsItemTextStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_graph_convert" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:textColor="@color/selector_text_color" android:id="@id/tv_switch_graph_convert_with_pressure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stroke_convert_to_graph_with_pressure" android:paddingEnd="@dimen/dp_60" style="@style/settingsItemTextStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_graph_convert_with_pressure" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/graphic_filling" style="@style/settingsItemTextStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_graph_filling" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout style="@style/SettingsDetailItemContainerStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_stylus_select_text" android:paddingEnd="@dimen/dp_60" style="@style/settingsItemTextStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:layout_gravity="end|center" android:id="@id/switch_stylus_select_text" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/stylus_select_text_tip" android:layout_marginStart="@dimen/dp_16" />
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:background="@drawable/shape_setting_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_16" style="@style/SettingsDetailItemContainerStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/long_press_of_page_menu" android:paddingEnd="@dimen/dp_60" style="@style/settingsItemTextStyle" />
+        <com.onyx.android.sdk.theme.widgets.TintSwitchCompat android:layout_gravity="end|center" android:id="@id/long_press_of_page_menu" android:textOn="" android:textOff="" android:layout_marginStart="@dimen/dp_56" app:thumbTint="@color/white" style="@style/commonSwitchStyle" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/long_press_of_page_menu_hint" android:layout_marginStart="@dimen/dp_16" />
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

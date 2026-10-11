@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_text_font_list_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_common_popup_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/theme_primary_color_01"
+            android:gravity="center"
+            android:id="@+id/tv_import"
+            android:background="@drawable/ripple_item_select_bg"
+            android:padding="@dimen/dp_12"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/dp_280"
+            android:text="@string/import_font_tips"
+            android:drawableLeft="@drawable/ic_import"
+            app:drawableLeftTint="@color/theme_primary_color_01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.onyx.galaxy.note.common.view.MaxHeightRecyclerView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/list"
+            android:padding="@dimen/dp_1"
+            android:scrollbars="none"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/tv_import"
+            app:layout_constraintStart_toStartOf="@+id/tv_import"
+            app:layout_constraintTop_toBottomOf="@+id/tv_import"
+            app:maxHeight="@dimen/dp_270"/>
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</FrameLayout>

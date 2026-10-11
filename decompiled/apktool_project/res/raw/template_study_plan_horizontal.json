@@ -1,0 +1,97 @@
+{
+  "templateModel": {
+    "categoryId": "PLAN",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "c3eb3ab4e78c4cc4a71d0f833e021f11",
+      "57870fa3266b4c1dbd4e53f13c340c11",
+      "6c98179ae6f947058cc84d4189fbf9e6",
+      "1786f4377aab400dbc5adb9d0eba36fc",
+      "684c72db0bea4a5682774fcbbec7dd62"
+    ],
+    "revisionId": "",
+    "sizeFormat": "A4",
+    "source": 0,
+    "status": 0,
+    "title": "",
+    "titleResName": "template_study_plan",
+    "type": 31009,
+    "uniqueId": "31009",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "c3eb3ab4e78c4cc4a71d0f833e021f11",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "57870fa3266b4c1dbd4e53f13c340c11",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "6c98179ae6f947058cc84d4189fbf9e6",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "1786f4377aab400dbc5adb9d0eba36fc",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "orderIndex": -1.0,
+      "resName": "template_study_plan_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_study_plan_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "684c72db0bea4a5682774fcbbec7dd62",
+      "updatedAt": 0
+    }
+  ]
+}

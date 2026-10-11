@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_margin_size_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_common_popup_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintRecycleView
+            android:id="@+id/rv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dp_112"
+            android:paddingVertical="@dimen/dp_5"/>
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</FrameLayout>

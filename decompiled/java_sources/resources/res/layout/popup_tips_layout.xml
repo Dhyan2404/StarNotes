@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/top_arrow_view"
+        android:visibility="gone"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_10"
+        android:src="@drawable/icon_menu_arrow"
+        android:scaleType="fitXY"
+        android:rotation="180"
+        android:elevation="@dimen/dp_1"
+        app:imageTint="@color/black_88"/>
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:id="@+id/fly_content"
+        android:background="@drawable/shape_tips_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/white"
+            android:id="@+id/tv_content"
+            android:padding="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_style_01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:id="@+id/arrowView"
+        android:visibility="gone"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_10"
+        android:src="@drawable/icon_menu_arrow"
+        android:scaleType="fitXY"
+        android:elevation="@dimen/dp_1"
+        app:imageTint="@color/black_88"/>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/item_page_margin_template_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:id="@+id/template_thumbnail"
+            android:layout_width="@dimen/dp_23"
+            android:layout_height="@dimen/dp_32"
+            android:scaleType="fitXY"/>
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="@dimen/dp_23"
+            android:layout_height="@dimen/dp_32"
+            android:src="@drawable/template_icon_margin_selected"
+            android:scaleType="fitXY"
+            app:imageTint="@color/theme_primary_color_01"/>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_view" android:tag="layout/item_option_select_0" android:background="@drawable/ripple_white" android:padding="@dimen/dp_10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dp_18" android:textColor="@color/selector_color_enabled_black_gray" android:gravity="center" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/select_image" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/icon_option_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

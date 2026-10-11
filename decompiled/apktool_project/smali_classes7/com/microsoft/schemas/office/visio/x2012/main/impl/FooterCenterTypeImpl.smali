@@ -1,0 +1,32 @@
+.class public Lcom/microsoft/schemas/office/visio/x2012/main/impl/FooterCenterTypeImpl;
+.super Lorg/apache/xmlbeans/impl/values/JavaStringHolderEx;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/microsoft/schemas/office/visio/x2012/main/FooterCenterType;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x1L
+
+
+# direct methods
+.method public constructor <init>(Lorg/apache/xmlbeans/SchemaType;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    .line 1
+    invoke-direct {p0, p1, v0}, Lorg/apache/xmlbeans/impl/values/JavaStringHolderEx;-><init>(Lorg/apache/xmlbeans/SchemaType;Z)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/apache/xmlbeans/SchemaType;Z)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Lorg/apache/xmlbeans/impl/values/JavaStringHolderEx;-><init>(Lorg/apache/xmlbeans/SchemaType;Z)V
+
+    return-void
+.end method

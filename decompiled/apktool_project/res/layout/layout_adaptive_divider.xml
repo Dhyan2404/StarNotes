@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.onyx.android.sdk.theme.widgets.TintView android:background="@color/theme_background_popup_color_01" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.onyx.android.sdk.theme.widgets.TintView android:background="@color/theme_divider_color_01" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

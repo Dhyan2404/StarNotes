@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/theme_background_popup_color_01" />
+    <corners android:radius="8.0dip" />
+    <stroke android:width="@dimen/dp0_5" android:color="@color/black_percent_08" />
+</shape>

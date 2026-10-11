@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/selector_note_op_btn_color" android:id="@id/tv_progress_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_14" android:textColor="@color/selector_note_op_value_color" android:id="@id/tv_progress_value" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_progress_title" />
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout android:background="@drawable/shape_rectangle_gray_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_8" app:layout_constraintTop_toBottomOf="@id/tv_progress_title">
+        <com.onyx.galaxy.note.editor.view.custom.StickSeekBarView android:layout_gravity="center" android:id="@id/seek_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" style="@style/stickSeekBarStyle" />
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

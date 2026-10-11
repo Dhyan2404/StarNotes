@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pronunciation_container"
+    android:background="@color/theme_background_color_02"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dp_24"
+    android:paddingEnd="@dimen/dp_24">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginStart="@dimen/dp_40"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title"
+        style="@style/commonPrimaryTextStyle"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:id="@+id/tv_title"
+        android:text="@string/prioritize_pronunciation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SettingsDetailTitleStyle"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:id="@+id/divider_pronunciation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        style="@style/SettingsDetailDividerStyle"/>
+    <com.onyx.android.sdk.theme.widgets.TintRecycleView
+        android:id="@+id/rl_pronunciation_list"
+        android:background="@drawable/shape_setting_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        app:layout_constraintTop_toBottomOf="@+id/divider_pronunciation"/>
+</com.onyx.android.sdk.theme.widgets.TintConstraintLayout>

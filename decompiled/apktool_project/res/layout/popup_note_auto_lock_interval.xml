@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_note_auto_lock_interval_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintConstraintLayout android:background="@drawable/shape_common_popup_bg" android:layout_width="@dimen/dp_116" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_8" android:paddingVertical="@dimen/dp_8">
+        <View android:background="@drawable/shape_timer_picker_selection_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.onyx.android.sdk.ui.wheelview.WheelView android:id="@id/wv_minute" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:wheelview_dividerColor="@color/transparent" app:wheelview_textSize="@dimen/sp_14" app:wheelview_textSizeOut="@dimen/sp_10" app:wheelview_textSkewX="0.0" />
+    </com.onyx.android.sdk.theme.widgets.TintConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/popup_long_press_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+    <com.onyx.android.sdk.theme.widgets.TintImageView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/arrowView"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_10"
+        android:src="@drawable/icon_menu_arrow"
+        android:scaleType="fitXY"
+        android:elevation="@dimen/dp_1"/>
+    <com.onyx.galaxy.note.p048ui.view.ShadowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="@dimen/dp_12"
+        app:shadowColor="@color/black_percent_15"
+        app:shadowRadius="@dimen/dp_10"
+        app:showShadow="true">
+        <com.onyx.android.sdk.theme.widgets.TintLinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/menuContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.onyx.galaxy.note.p048ui.view.ShadowLayout>
+</FrameLayout>

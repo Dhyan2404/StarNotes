@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/sunia/HTREnginev2/zri;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lnet/sf/saxon/expr/ItemFilter$Lambda;
+
+
+# instance fields
+.field public final synthetic a:Lnet/sf/saxon/om/NodeInfo;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lnet/sf/saxon/om/NodeInfo;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/sunia/HTREnginev2/zri;->a:Lnet/sf/saxon/om/NodeInfo;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final test(Lnet/sf/saxon/om/Item;)Z
+    .locals 0
+
+    iget-object p0, p0, Lcom/sunia/HTREnginev2/zri;->a:Lnet/sf/saxon/om/NodeInfo;
+
+    invoke-static {p0, p1}, Lnet/sf/saxon/functions/KeyFn;->c(Lnet/sf/saxon/om/NodeInfo;Lnet/sf/saxon/om/Item;)Z
+
+    move-result p0
+
+    return p0
+.end method

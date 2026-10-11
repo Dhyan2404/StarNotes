@@ -1,0 +1,32 @@
+{
+  "coverModel": {
+    "categoryId": "FRUIT",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 100.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "5d37f3bd3b1e497e827dbd4e12c7c61a"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "cover_fruit_strawberry_ice_cream",
+    "uniqueId": "5011",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": 0,
+      "resName": "cover_fruit_strawberry_ice_cream",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "type": 1,
+      "uniqueId": "5d37f3bd3b1e497e827dbd4e12c7c61a",
+      "updatedAt": 0
+    }
+  ]
+}

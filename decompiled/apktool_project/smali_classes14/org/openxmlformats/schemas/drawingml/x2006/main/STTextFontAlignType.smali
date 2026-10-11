@@ -1,0 +1,120 @@
+.class public interface abstract Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/xmlbeans/XmlToken;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+    }
+.end annotation
+
+
+# static fields
+.field public static final AUTO:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+.field public static final B:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+.field public static final BASE:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+.field public static final CTR:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+.field public static final Factory:Lorg/apache/xmlbeans/impl/schema/SimpleTypeFactory;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/apache/xmlbeans/impl/schema/SimpleTypeFactory<",
+            "Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final INT_AUTO:I = 0x1
+
+.field public static final INT_B:I = 0x5
+
+.field public static final INT_BASE:I = 0x4
+
+.field public static final INT_CTR:I = 0x3
+
+.field public static final INT_T:I = 0x2
+
+.field public static final T:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+.field public static final type:Lorg/apache/xmlbeans/SchemaType;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lorg/apache/xmlbeans/impl/schema/SimpleTypeFactory;
+
+    sget-object v1, Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;->typeSystem:Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;
+
+    const-string v2, "sttextfontaligntypecb44type"
+
+    invoke-direct {v0, v1, v2}, Lorg/apache/xmlbeans/impl/schema/SimpleTypeFactory;-><init>(Lorg/apache/xmlbeans/SchemaTypeSystem;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;->Factory:Lorg/apache/xmlbeans/impl/schema/SimpleTypeFactory;
+
+    invoke-virtual {v0}, Lorg/apache/xmlbeans/impl/schema/ElementFactory;->getType()Lorg/apache/xmlbeans/SchemaType;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;->type:Lorg/apache/xmlbeans/SchemaType;
+
+    const-string v0, "auto"
+
+    invoke-static {v0}, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;->forString(Ljava/lang/String;)Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;->AUTO:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    const-string v0, "t"
+
+    invoke-static {v0}, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;->forString(Ljava/lang/String;)Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;->T:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    const-string v0, "ctr"
+
+    invoke-static {v0}, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;->forString(Ljava/lang/String;)Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;->CTR:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    const-string v0, "base"
+
+    invoke-static {v0}, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;->forString(Ljava/lang/String;)Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;->BASE:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    const-string v0, "b"
+
+    invoke-static {v0}, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;->forString(Ljava/lang/String;)Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType;->B:Lorg/openxmlformats/schemas/drawingml/x2006/main/STTextFontAlignType$Enum;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract getEnumValue()Lorg/apache/xmlbeans/StringEnumAbstractBase;
+.end method
+
+.method public abstract setEnumValue(Lorg/apache/xmlbeans/StringEnumAbstractBase;)V
+.end method

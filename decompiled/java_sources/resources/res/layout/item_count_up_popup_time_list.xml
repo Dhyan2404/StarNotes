@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/item_count_up_popup_time_list_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_12">
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/theme_text_color_03"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/tv_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/theme_text_color_03"
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/tv_count_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.onyx.android.sdk.theme.widgets.TintFrameLayout>

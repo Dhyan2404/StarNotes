@@ -1,0 +1,139 @@
+package org.apache.commons.lang3;
+
+/* loaded from: classes12.dex */
+public class CharSequenceUtils {
+
+    /* renamed from: a */
+    public static final int f107362a = -1;
+
+    /* renamed from: a */
+    public static int m67222a(CharSequence charSequence, int i, int i2) {
+        if (charSequence instanceof String) {
+            return ((String) charSequence).indexOf(i, i2);
+        }
+        int length = charSequence.length();
+        if (i2 < 0) {
+            i2 = 0;
+        }
+        if (i < 65536) {
+            for (int i3 = i2; i3 < length; i3++) {
+                if (charSequence.charAt(i3) == i) {
+                    return i3;
+                }
+            }
+        }
+        if (i > 1114111) {
+            return -1;
+        }
+        char[] chars = Character.toChars(i);
+        while (i2 < length - 1) {
+            char charAt = charSequence.charAt(i2);
+            int i4 = i2 + 1;
+            char charAt2 = charSequence.charAt(i4);
+            if (charAt == chars[0] && charAt2 == chars[1]) {
+                return i2;
+            }
+            i2 = i4;
+        }
+        return -1;
+    }
+
+    /* renamed from: b */
+    public static int m67223b(CharSequence charSequence, CharSequence charSequence2, int i) {
+        return charSequence.toString().indexOf(charSequence2.toString(), i);
+    }
+
+    /* renamed from: c */
+    public static int m67224c(CharSequence charSequence, int i, int i2) {
+        if (charSequence instanceof String) {
+            return ((String) charSequence).lastIndexOf(i, i2);
+        }
+        int length = charSequence.length();
+        if (i2 < 0) {
+            return -1;
+        }
+        if (i2 >= length) {
+            i2 = length - 1;
+        }
+        if (i < 65536) {
+            for (int i3 = i2; i3 >= 0; i3--) {
+                if (charSequence.charAt(i3) == i) {
+                    return i3;
+                }
+            }
+        }
+        if (i <= 1114111) {
+            char[] chars = Character.toChars(i);
+            if (i2 == length - 1) {
+                return -1;
+            }
+            while (i2 >= 0) {
+                char charAt = charSequence.charAt(i2);
+                char charAt2 = charSequence.charAt(i2 + 1);
+                if (chars[0] == charAt && chars[1] == charAt2) {
+                    return i2;
+                }
+                i2--;
+            }
+        }
+        return -1;
+    }
+
+    /* renamed from: d */
+    public static int m67225d(CharSequence charSequence, CharSequence charSequence2, int i) {
+        return charSequence.toString().lastIndexOf(charSequence2.toString(), i);
+    }
+
+    /* renamed from: e */
+    public static boolean m67226e(CharSequence charSequence, boolean z, int i, CharSequence charSequence2, int i2, int i3) {
+        if ((charSequence instanceof String) && (charSequence2 instanceof String)) {
+            return ((String) charSequence).regionMatches(z, i, (String) charSequence2, i2, i3);
+        }
+        int length = charSequence.length() - i;
+        int length2 = charSequence2.length() - i2;
+        if (i < 0 || i2 < 0 || i3 < 0 || length < i3 || length2 < i3) {
+            return false;
+        }
+        while (true) {
+            int i4 = i3 - 1;
+            if (i3 <= 0) {
+                return true;
+            }
+            int i5 = i + 1;
+            char charAt = charSequence.charAt(i);
+            int i6 = i2 + 1;
+            char charAt2 = charSequence2.charAt(i2);
+            if (charAt != charAt2) {
+                if (!z) {
+                    return false;
+                }
+                if (Character.toUpperCase(charAt) != Character.toUpperCase(charAt2) && Character.toLowerCase(charAt) != Character.toLowerCase(charAt2)) {
+                    return false;
+                }
+            }
+            i = i5;
+            i3 = i4;
+            i2 = i6;
+        }
+    }
+
+    /* renamed from: f */
+    public static char[] m67227f(CharSequence charSequence) {
+        if (charSequence instanceof String) {
+            return ((String) charSequence).toCharArray();
+        }
+        int length = charSequence.length();
+        char[] cArr = new char[charSequence.length()];
+        for (int i = 0; i < length; i++) {
+            cArr[i] = charSequence.charAt(i);
+        }
+        return cArr;
+    }
+
+    public static CharSequence subSequence(CharSequence charSequence, int i) {
+        if (charSequence == null) {
+            return null;
+        }
+        return charSequence.subSequence(i, charSequence.length());
+    }
+}

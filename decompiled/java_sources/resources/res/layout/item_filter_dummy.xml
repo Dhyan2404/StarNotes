@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/divider"
+    android:background="@color/theme_divider_color_01"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp0_5"
+    android:layout_marginHorizontal="@dimen/dp_24"/>

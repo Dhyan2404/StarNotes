@@ -1,0 +1,83 @@
+.class public abstract Lio/opencensus/metrics/export/Value$a;
+.super Lio/opencensus/metrics/export/Value;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/opencensus/metrics/export/Value;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "a"
+.end annotation
+
+.annotation build Ljavax/annotation/concurrent/Immutable;
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lio/opencensus/metrics/export/Value;-><init>()V
+
+    return-void
+.end method
+
+.method public static a(Lio/opencensus/metrics/export/Distribution;)Lio/opencensus/metrics/export/Value$a;
+    .locals 1
+
+    new-instance v0, Lio/opencensus/metrics/export/h;
+
+    invoke-direct {v0, p0}, Lio/opencensus/metrics/export/h;-><init>(Lio/opencensus/metrics/export/Distribution;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public abstract b()Lio/opencensus/metrics/export/Distribution;
+.end method
+
+.method public final match(Lio/opencensus/common/Function;Lio/opencensus/common/Function;Lio/opencensus/common/Function;Lio/opencensus/common/Function;Lio/opencensus/common/Function;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lio/opencensus/common/Function<",
+            "-",
+            "Ljava/lang/Double;",
+            "TT;>;",
+            "Lio/opencensus/common/Function<",
+            "-",
+            "Ljava/lang/Long;",
+            "TT;>;",
+            "Lio/opencensus/common/Function<",
+            "-",
+            "Lio/opencensus/metrics/export/Distribution;",
+            "TT;>;",
+            "Lio/opencensus/common/Function<",
+            "-",
+            "Lio/opencensus/metrics/export/Summary;",
+            "TT;>;",
+            "Lio/opencensus/common/Function<",
+            "-",
+            "Lio/opencensus/metrics/export/Value;",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lio/opencensus/metrics/export/Value$a;->b()Lio/opencensus/metrics/export/Distribution;
+
+    move-result-object p0
+
+    invoke-interface {p3, p0}, Lio/opencensus/common/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method

@@ -1,0 +1,13 @@
+{
+  "supportDocumentType": [
+    "ALL",
+    "pdf",
+    "ppt",
+    "doc/docx",
+    "epub",
+    "mobi",
+    "txt"
+  ],
+  "importFontMaxCount": 1,
+  "importLocalBackupMaxCount": 1
+}

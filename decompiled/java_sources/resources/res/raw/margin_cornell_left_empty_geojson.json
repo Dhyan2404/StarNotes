@@ -1,0 +1,76 @@
+{
+  "geometries": [
+    {
+      "locations": [
+        "CONTENT_BOTTOM_LEFT",
+        "CONTENT_BOTTOM_CENTER",
+        "CONTENT_BOTTOM_RIGHT"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "layoutType": "LayoutDivider",
+              "pageMargins": {
+                "pagePaddingRect": {
+                }
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 4.0
+              },
+              "dividerAttr": {
+                "direction": "HORIZONTAL",
+                "percent": 0.0,
+                "offsetStroke": "RIGHT_OR_BOTTOM"
+              },
+              "forceFullFit": true,
+              "subType": "Layout"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    },
+    {
+      "locations": [
+        "CONTENT_TOP_LEFT",
+        "CONTENT_LEFT_CENTER"
+      ],
+      "type": "LayoutFrame",
+      "geometries": [
+        {
+          "geoLayout": {
+            "properties": {
+              "layoutType": "LayoutDivider",
+              "pageMargins": {
+                "pagePaddingRect": {
+                }
+              },
+              "radius": 0.0,
+              "selectionPointType": "SCALE",
+              "strokeAttr": {
+                "color": -7829368,
+                "enableColor": true,
+                "width": 4.0
+              },
+              "dividerAttr": {
+                "direction": "VERTICAL",
+                "percent": 1.0,
+                "offsetStroke": "LEFT_OR_TOP"
+              },
+              "forceFullFit": true,
+              "subType": "Layout"
+            },
+            "type": "Feature"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "Feature"
+}

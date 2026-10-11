@@ -1,0 +1,71 @@
+package com.google.android.gms.common.util;
+
+import androidx.annotation.NonNull;
+import com.alibaba.fastjson2.JSONB;
+import com.google.android.gms.common.annotation.KeepForSdk;
+import com.google.android.gms.common.internal.ShowFirstParty;
+
+@ShowFirstParty
+@KeepForSdk
+/* loaded from: classes5.dex */
+public class Hex {
+
+    /* renamed from: a */
+    public static final char[] f29484a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+
+    /* renamed from: b */
+    public static final char[] f29485b = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+
+    @NonNull
+    @KeepForSdk
+    public static String bytesToStringLowercase(@NonNull byte[] bArr) {
+        int length = bArr.length;
+        char[] cArr = new char[length + length];
+        int i = 0;
+        for (byte b : bArr) {
+            int i2 = b & 255;
+            int i3 = i + 1;
+            char[] cArr2 = f29485b;
+            cArr[i] = cArr2[i2 >>> 4];
+            cArr[i3] = cArr2[i2 & 15];
+            i = i3 + 1;
+        }
+        return new String(cArr);
+    }
+
+    @NonNull
+    @KeepForSdk
+    public static String bytesToStringUppercase(@NonNull byte[] bArr) {
+        return bytesToStringUppercase(bArr, false);
+    }
+
+    @NonNull
+    @KeepForSdk
+    public static byte[] stringToBytes(@NonNull String str) throws IllegalArgumentException {
+        int length = str.length();
+        if (length % 2 != 0) {
+            throw new IllegalArgumentException("Hex string has odd number of characters");
+        }
+        byte[] bArr = new byte[length / 2];
+        int i = 0;
+        while (i < length) {
+            int i2 = i + 2;
+            bArr[i / 2] = (byte) Integer.parseInt(str.substring(i, i2), 16);
+            i = i2;
+        }
+        return bArr;
+    }
+
+    @NonNull
+    @KeepForSdk
+    public static String bytesToStringUppercase(@NonNull byte[] bArr, boolean z) {
+        int length = bArr.length;
+        StringBuilder sb = new StringBuilder(length + length);
+        for (int i = 0; i < length && (!z || i != length - 1 || (bArr[i] & 255) != 0); i++) {
+            char[] cArr = f29484a;
+            sb.append(cArr[(bArr[i] & JSONB.Constants.BC_INT32_NUM_MIN) >>> 4]);
+            sb.append(cArr[bArr[i] & 15]);
+        }
+        return sb.toString();
+    }
+}

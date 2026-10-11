@@ -1,0 +1,13 @@
+.class public final synthetic Lcom/sunia/HTREnginev2/whe;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/os/OutcomeReceiver;Ljava/lang/Throwable;)V
+    .locals 0
+
+    invoke-interface {p0, p1}, Landroid/os/OutcomeReceiver;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+.end method

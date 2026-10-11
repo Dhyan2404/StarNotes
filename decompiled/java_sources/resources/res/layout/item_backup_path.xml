@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onyx.android.sdk.theme.widgets.TintLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout/item_backup_path_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.onyx.android.sdk.theme.widgets.TintFrameLayout
+        android:id="@+id/fl_internal_storage_container"
+        style="@style/SettingsDetailItemContainerStyle">
+        <com.onyx.android.sdk.theme.widgets.TintTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/settingsItemTextStyle"/>
+        <com.onyx.android.sdk.theme.widgets.TintImageView
+            android:layout_gravity="end|center_vertical"
+            android:id="@+id/iv_selected"
+            android:visibility="gone"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_settings_confirm"
+            app:imageTint="@color/theme_primary_color_01"/>
+    </com.onyx.android.sdk.theme.widgets.TintFrameLayout>
+    <com.onyx.android.sdk.theme.widgets.TintTextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/theme_text_color_03"
+        android:id="@+id/tv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginStart="@dimen/dp_16"/>
+</com.onyx.android.sdk.theme.widgets.TintLinearLayout>

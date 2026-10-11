@@ -1,0 +1,71 @@
+package com.google.android.gms.internal.mlkit_vision_digital_ink;
+
+import java.util.List;
+
+/* loaded from: classes5.dex */
+public final class zzcah extends zzbui implements zzbvv {
+    private static final zzcah zza;
+    private static volatile zzbwc zze;
+    private int zzf;
+    private String zzg = "";
+    private zzbuq zzh = zzbui.zzW();
+
+    static {
+        zzcah zzcahVar = new zzcah();
+        zza = zzcahVar;
+        zzbui.zzad(zzcah.class, zzcahVar);
+    }
+
+    private zzcah() {
+    }
+
+    public static zzcah zzf() {
+        return zza;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_digital_ink.zzbui
+    public final Object zzb(int i, Object obj, Object obj2) {
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            return zzbui.zzaa(zza, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0000\u0001ဈ\u0000\u0002\u001b", new Object[]{"zzf", "zzg", "zzh", zzcag.class});
+        }
+        if (i2 == 3) {
+            return new zzcah();
+        }
+        if (i2 == 4) {
+            return new zzcae(null);
+        }
+        if (i2 == 5) {
+            return zza;
+        }
+        if (i2 != 6) {
+            return null;
+        }
+        zzbwc zzbwcVar = zze;
+        if (zzbwcVar == null) {
+            synchronized (zzcah.class) {
+                zzbwcVar = zze;
+                if (zzbwcVar == null) {
+                    zzbwcVar = new zzbuc(zza);
+                    zze = zzbwcVar;
+                }
+            }
+        }
+        return zzbwcVar;
+    }
+
+    public final int zzc() {
+        return this.zzh.size();
+    }
+
+    public final String zzg() {
+        return this.zzg;
+    }
+
+    public final List zzh() {
+        return this.zzh;
+    }
+}

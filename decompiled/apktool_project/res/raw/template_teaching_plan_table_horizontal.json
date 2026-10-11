@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "WORK",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 20.0,
+    "orientation": 0,
+    "resourceIdList": [
+      "5b883b58238847c8aeaf1954a040df37",
+      "6e139c4d1c09435b860a72578169a9e9",
+      "75d3814a3c774e55a109060bab5d97fc",
+      "f62fb78a64434c1eb7d3c341f23dd21b",
+      "5ff267e3899e4c4fb3d152a47cf42389"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_teaching_plan_table",
+    "type": 41003,
+    "uniqueId": "41003",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_teaching_plan_table_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "5b883b58238847c8aeaf1954a040df37",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_teaching_plan_table_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "6e139c4d1c09435b860a72578169a9e9",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_teaching_plan_table_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "75d3814a3c774e55a109060bab5d97fc",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_teaching_plan_table_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "f62fb78a64434c1eb7d3c341f23dd21b",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_teaching_plan_table_horizontal",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_teaching_plan_table_horizontal_thumbnail",
+      "type": 0,
+      "uniqueId": "5ff267e3899e4c4fb3d152a47cf42389",
+      "updatedAt": 0
+    }
+  ]
+}

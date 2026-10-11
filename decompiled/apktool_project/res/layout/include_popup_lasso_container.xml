@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/include_popup_lasso_container_0" android:paddingTop="@dimen/tool_popup_item_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_lasso_type_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/free_lasso_type" android:background="@drawable/rectangle_bg_selector" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/ic_free_lasso" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/free_lasso" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.onyx.android.sdk.theme.widgets.TintImageView android:layout_gravity="center" android:id="@id/rectangle_lasso_type" android:background="@drawable/rectangle_bg_selector" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/ic_rectangular_lasso" />
+            <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/rectangular_lasso" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.onyx.android.sdk.theme.widgets.TintTextView android:textSize="@dimen/sp_12" android:textColor="@color/theme_text_color_03" android:id="@id/tv_select_element_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tool_popup_margin_end" android:text="@string/selectable" android:layout_marginStart="@dimen/tool_popup_margin_start" />
+    <com.onyx.android.sdk.theme.widgets.TintView android:id="@id/element_divider" android:layout_marginTop="@dimen/dp_8" android:layout_marginHorizontal="@dimen/dp_24" style="@style/dividerStyle" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/lasso_element_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tool_popup_item_margin_top" android:layout_marginBottom="@dimen/tool_popup_padding_bottom" android:layout_marginStart="@dimen/tool_popup_margin_start" android:layout_marginEnd="@dimen/tool_popup_margin_end" />
+</LinearLayout>

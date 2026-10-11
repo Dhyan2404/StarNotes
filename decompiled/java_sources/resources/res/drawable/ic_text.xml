@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:tint="@color/theme_divider_color_01"
+            android:height="24dp"
+            android:width="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="#000000"
+                android:pathData="M1.2,20L1.2,4C1.2,2.454 2.454,1.2 4,1.2L20,1.2C21.546,1.2 22.8,2.454 22.8,4L22.8,15.503L22.303,16H20C17.791,16 16,17.791 16,20V22.303L15.503,22.8H4C2.454,22.8 1.2,21.546 1.2,20ZM17.2,21.103L19.152,19.152L21.103,17.2H20C18.454,17.2 17.2,18.454 17.2,20V21.103ZM16,24H4C1.791,24 0,22.209 0,20V4C0,1.791 1.791,0 4,0H20C22.209,0 24,1.791 24,4V16L22.8,17.2L20,20L17.2,22.8L16,24Z"
+                android:fillType="evenOdd"/>
+        </vector>
+    </item>
+    <item>
+        <vector
+            android:tint="@color/theme_icon_color_03"
+            android:height="24dp"
+            android:width="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="#000000"
+                android:pathData="M12.721,7.469V16H11.262V7.469H12.721ZM15.398,7.469V8.641H8.607V7.469H15.398Z"/>
+        </vector>
+    </item>
+</layer-list>

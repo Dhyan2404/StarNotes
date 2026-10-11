@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/dp_88" android:width="@dimen/dp_24" android:viewportWidth="24.0" android:viewportHeight="88.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_note_phy_soft_paint_pen_highlight__0" android:pathData="M8.398,17.366C8.458,17.15 8.655,17 8.88,17H15.12C15.345,17 15.542,17.15 15.602,17.366L17.927,25.737C17.976,25.912 18,26.092 18,26.273V28.5H6V26.273C6,26.092 6.025,25.912 6.073,25.737L8.398,17.366Z" />
+    <path android:fillColor="@drawable/$ic_note_phy_soft_paint_pen_highlight__1" android:pathData="M8.398,17.366C8.458,17.15 8.655,17 8.88,17H15.12C15.345,17 15.542,17.15 15.602,17.366L18,26V28.5H6V26L8.398,17.366Z" android:fillAlpha="0.3" />
+    <path android:fillColor="@drawable/$ic_note_phy_soft_paint_pen_highlight__2" android:pathData="M4.5,28.5H19.5L20,30L22.5,52.5L23.5,54V88H0.5V54L1.5,52.45L4,30L4.5,28.5Z" />
+    <path android:fillColor="#ff000000" android:pathData="M18,26V28.5H11.5V17.5H15.625L18,26Z" android:fillAlpha="0.06" />
+    <path android:fillColor="@drawable/$ic_note_phy_soft_paint_pen_highlight__3" android:pathData="M8.5,28.5H6V26L8.375,17.5H9.5L8.5,28.5Z" android:fillAlpha="0.25" />
+    <path android:fillColor="@drawable/$ic_note_phy_soft_paint_pen_highlight__4" android:pathData="M23.5,54V88H14V54H23.5Z" android:fillAlpha="0.12" />
+    <path android:fillColor="@drawable/$ic_note_phy_soft_paint_pen_highlight__5" android:pathData="M20,30L22.5,52.5H15.5L14,30H20Z" android:fillAlpha="0.12" />
+</vector>

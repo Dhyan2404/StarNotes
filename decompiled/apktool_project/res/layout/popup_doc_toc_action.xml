@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_doc_toc_action_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.onyx.android.sdk.theme.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/shape_common_popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dp_240" android:paddingVertical="@dimen/dp_12">
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textColor="@color/theme_text_color_01" android:id="@id/add_sibling_toc" android:text="@string/add_sibling_toc" android:drawableLeft="@drawable/ic_add_round_menu" app:drawableLeftTint="@color/theme_icon_color_01" style="@style/popup_insert_page_btn_style" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textColor="@color/theme_text_color_01" android:id="@id/add_child_toc" android:text="@string/add_child_toc" android:drawableLeft="@drawable/ic_add_round_menu" app:drawableLeftTint="@color/theme_icon_color_01" style="@style/popup_insert_page_btn_style" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textColor="@color/theme_text_color_01" android:id="@id/edit_child_toc" android:text="@string/edit" android:drawableLeft="@drawable/ic_edit" app:drawableLeftTint="@color/theme_icon_color_01" style="@style/popup_insert_page_btn_style" />
+        <com.onyx.android.sdk.theme.widgets.TintTextView android:textColor="@color/selector_delete_color" android:gravity="center_vertical" android:id="@id/delete_child_toc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_48" android:text="@string/delete" android:drawableLeft="@drawable/ic_delete_round" android:drawablePadding="@dimen/dp_12" android:paddingHorizontal="@dimen/dp_16" app:drawableLeftTint="@color/selector_delete_color" style="@style/materialSelectPressStyleNoRadiusError" />
+    </com.onyx.android.sdk.theme.widgets.TintLinearLayout>
+</FrameLayout>

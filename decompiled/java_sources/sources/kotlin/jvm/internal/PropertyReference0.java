@@ -1,0 +1,44 @@
+package kotlin.jvm.internal;
+
+import com.caverock.androidsvg.SVG;
+import com.sun.org.apache.xml.internal.serializer.SerializerConstants;
+import kotlin.SinceKotlin;
+import kotlin.reflect.KCallable;
+import kotlin.reflect.KProperty0;
+
+/* loaded from: classes9.dex */
+public abstract class PropertyReference0 extends PropertyReference implements KProperty0 {
+    public PropertyReference0() {
+    }
+
+    @Override // kotlin.jvm.internal.CallableReference
+    public KCallable computeReflected() {
+        return Reflection.property0(this);
+    }
+
+    @Override // kotlin.reflect.KProperty0
+    @SinceKotlin(version = SerializerConstants.XMLVERSION11)
+    public Object getDelegate() {
+        return ((KProperty0) getReflected()).getDelegate();
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        return get();
+    }
+
+    @SinceKotlin(version = SerializerConstants.XMLVERSION11)
+    public PropertyReference0(Object obj) {
+        super(obj);
+    }
+
+    @Override // kotlin.reflect.KProperty
+    public KProperty0.Getter getGetter() {
+        return ((KProperty0) getReflected()).getGetter();
+    }
+
+    @SinceKotlin(version = SVG.f15818g)
+    public PropertyReference0(Object obj, Class cls, String str, String str2, int i) {
+        super(obj, cls, str, str2, i);
+    }
+}

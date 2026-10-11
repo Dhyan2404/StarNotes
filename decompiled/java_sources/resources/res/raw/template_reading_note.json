@@ -1,0 +1,90 @@
+{
+  "templateModel": {
+    "categoryId": "STUDY",
+    "contentPageId": "",
+    "createdAt": 0,
+    "orderIndex": 100.0,
+    "orientation": 1,
+    "resourceIdList": [
+      "3c62395d80314cd1b91d8b50c13326e7",
+      "5b43fa6b37e4421bb9420019588eb9f3",
+      "b0a436834ea64679a78adfd30e56188c",
+      "25fac4f63e244ac292b28ede83a6a62d",
+      "b8f1c4cbee1b415da4017a43c4282e14"
+    ],
+    "sizeFormat": "A4",
+    "source": 0,
+    "title": "",
+    "titleResName": "template_reading_note",
+    "type": 20011,
+    "uniqueId": "20011",
+    "updatedAt": 0
+  },
+  "templateResourceList": [
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1,
+      "resName": "template_reading_note",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_reading_note_thumbnail",
+      "type": 0,
+      "uniqueId": "3c62395d80314cd1b91d8b50c13326e7",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1313812,
+      "resName": "template_reading_note",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_reading_note_thumbnail",
+      "type": 0,
+      "uniqueId": "5b43fa6b37e4421bb9420019588eb9f3",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -198940,
+      "resName": "template_reading_note",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_reading_note_thumbnail",
+      "type": 0,
+      "uniqueId": "b0a436834ea64679a78adfd30e56188c",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 0,
+      "createdAt": 0,
+      "fillColor": -1973784,
+      "resName": "template_reading_note",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_reading_note_thumbnail",
+      "type": 0,
+      "uniqueId": "25fac4f63e244ac292b28ede83a6a62d",
+      "updatedAt": 0
+    },
+    {
+      "colorTransformMode": 1,
+      "createdAt": 0,
+      "fillColor": -13027015,
+      "resName": "template_reading_note",
+      "resourceType": "vector",
+      "source": 0,
+      "strokeColor": 0,
+      "thumbnailResName": "template_reading_note_thumbnail",
+      "type": 0,
+      "uniqueId": "b8f1c4cbee1b415da4017a43c4282e14",
+      "updatedAt": 0
+    }
+  ]
+}

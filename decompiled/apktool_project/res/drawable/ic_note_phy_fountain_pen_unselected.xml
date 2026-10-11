@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/theme_icon_phy_pen_unselect_color" android:height="@dimen/dp_88" android:width="@dimen/dp_24" android:viewportWidth="24.0" android:viewportHeight="88.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffa3a3a3" android:pathData="M3.112,46.164L3.386,45.342C3.454,45.138 3.645,45 3.86,45H20.14C20.355,45 20.546,45.138 20.614,45.342L20.888,46.164C20.961,46.381 20.956,46.617 20.876,46.832L19.5,50.5C19.5,50.5 23,69 23,88H1C1,69 4.5,50.5 4.5,50.5L3.124,46.832C3.044,46.617 3.04,46.381 3.112,46.164Z" />
+</vector>

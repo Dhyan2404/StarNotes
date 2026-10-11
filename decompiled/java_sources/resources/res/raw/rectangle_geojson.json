@@ -1,0 +1,74 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              200.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              200.0,
+              0.0
+            ],
+            [
+              200.0,
+              200.0
+            ]
+          ],
+          [
+            [
+              200.0,
+              200.0
+            ],
+            [
+              0.0,
+              200.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              200.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "fillAttr": {
+          "color": 0,
+          "enableColor": true
+        },
+        "radius": 0.0,
+        "selectionPointType": "SCALE",
+        "strokeAttr": {
+          "color": -16777216,
+          "enableColor": true,
+          "width": 2.0
+        },
+        "subType": ""
+      },
+      "type": "Polygon"
+    }
+  ],
+  "properties": {
+    "radius": 0.0,
+    "selectionPointType": "SCALE",
+    "subType": ""
+  },
+  "type": "FeatureCollection",
+  "universalShapeType": "rectangle",
+  "version": 4
+}
