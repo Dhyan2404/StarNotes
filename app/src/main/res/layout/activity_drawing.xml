@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Top Drawing Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp">
+
+        <ImageButton
+            android:id="@+id/btnDrawingBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Back" />
+
+        <EditText
+            android:id="@+id/editDrawingTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Canvas Title"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:background="@null"
+            android:paddingHorizontal="8dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/btnDrawingUndo"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Undo" />
+
+        <ImageButton
+            android:id="@+id/btnDrawingClear"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Clear" />
+
+        <ImageButton
+            android:id="@+id/btnDrawingSave"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_save"
+            android:contentDescription="Save" />
+    </LinearLayout>
+
+    <!-- Color & Tool Palette -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="#F3F4F6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color:"
+            android:textSize="13sp"
+            android:textColor="#4B5563"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Black -->
+        <ImageButton
+            android:id="@+id/btnPenBlack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#000000"
+            android:background="@drawable/bg_circle" />
+
+        <!-- Blue -->
+        <ImageButton
+            android:id="@+id/btnPenBlue"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#1E88E5"
+            android:background="@drawable/bg_circle" />
+
+        <!-- Red -->
+        <ImageButton
+            android:id="@+id/btnPenRed"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#E53935"
+            android:background="@drawable/bg_circle" />
+
+        <!-- Green -->
+        <ImageButton
+            android:id="@+id/btnPenGreen"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#43A047"
+            android:background="@drawable/bg_circle" />
+
+        <!-- Eraser -->
+        <ImageButton
+            android:id="@+id/btnDrawingEraser"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Eraser" />
+
+    </LinearLayout>
+
+    <!-- Canvas Area -->
+    <com.dhyan.starnotes.view.DrawingCanvasView
+        android:id="@+id/drawingCanvasView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
