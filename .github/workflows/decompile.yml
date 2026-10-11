@@ -1,0 +1,105 @@
+name: 1. Decompile APK to Source Code
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_path:
+        description: "Path to APK file in repo"
+        required: false
+        default: "StarNote_v1.3.0.apk"
+  push:
+    paths:
+      - "*.apk"
+      - ".github/workflows/decompile.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  decompile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Install JADX and Apktool
+        run: |
+          echo "=== Installing JADX ==="
+          JADX_VERSION="1.5.0"
+          wget -q https://github.com/skylot/jadx/releases/download/v${JADX_VERSION}/jadx-${JADX_VERSION}.zip
+          unzip -q jadx-${JADX_VERSION}.zip -d /opt/jadx
+          sudo ln -s /opt/jadx/bin/jadx /usr/local/bin/jadx
+
+          echo "=== Installing Apktool ==="
+          sudo apt-get update -qq
+          sudo apt-get install -y apktool
+
+          jadx --version
+          apktool --version
+
+      - name: Locate APK file
+        id: locate_apk
+        run: |
+          APK_FILE="${{ github.event.inputs.apk_path }}"
+          if [ -z "$APK_FILE" ]; then
+            APK_FILE="StarNote_v1.3.0.apk"
+          fi
+          if [ ! -f "$APK_FILE" ]; then
+            APK_FILE=$(find . -maxdepth 2 -name "*.apk" | head -n 1)
+          fi
+          if [ ! -f "$APK_FILE" ]; then
+            echo "Error: No APK file found at $APK_FILE"
+            exit 1
+          fi
+          echo "Found APK: $APK_FILE"
+          echo "apk_path=$APK_FILE" >> $GITHUB_OUTPUT
+
+      - name: Decompile DEX to Java via JADX (for reading & analysis)
+        run: |
+          APK_PATH="${{ steps.locate_apk.outputs.apk_path }}"
+          mkdir -p decompiled/java_sources
+          echo "Decompiling $APK_PATH with JADX..."
+          jadx -d decompiled/java_sources --deobf "$APK_PATH" || true
+          echo "JADX decompilation complete."
+
+      - name: Decode APK with Apktool (Manifest, Resources & Smali for Rebuilding)
+        run: |
+          APK_PATH="${{ steps.locate_apk.outputs.apk_path }}"
+          mkdir -p decompiled/apktool_project
+          echo "Disassembling with Apktool..."
+          apktool d -f "$APK_PATH" -o decompiled/apktool_project || true
+          echo "Apktool disassembly complete."
+
+      - name: Upload Decompiled Artifacts (ZIP)
+        uses: actions/upload-artifact@v4
+        with:
+          name: decompiled-source-code
+          path: decompiled/
+          retention-days: 14
+
+      - name: Commit and Push Decompiled Code to Repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Pull latest main before committing
+          git pull origin main --rebase || true
+          
+          git add decompiled/
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-decompiled source code from ${{ steps.locate_apk.outputs.apk_path }} [skip ci]"
+            git push origin main
+          fi

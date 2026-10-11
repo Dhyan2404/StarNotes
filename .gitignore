@@ -1,0 +1,9 @@
+# Build and temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Large build outputs (decompiled code is pushed via GitHub Action to decompiled-source branch)
+*.apk.idsig
+powershell.cmd
