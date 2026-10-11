@@ -165,6 +165,8 @@ class DrawingCanvasView @JvmOverloads constructor(
                 }
             }
             invalidate()
-        } catch (_: Exception) {}
+        } catch (e: Exception) {
+            // ignore malformed drawing data
+        }
     }
 }
