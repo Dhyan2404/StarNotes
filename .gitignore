@@ -8,3 +8,10 @@ Thumbs.db
 *.apk.idsig
 powershell.cmd
 .*.ps1
+
+# Native Android build and local tooling
+.gradle/
+**/build/
+local.properties
+.tools/
+*.hprof
