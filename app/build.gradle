@@ -17,17 +17,14 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        debug {
-            // Default debug keystore
-        }
-    }
-
     buildTypes {
+        debug {
+            // Debug build is signed automatically
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.debug
+            signingConfig = android.signingConfigs.debug
         }
     }
     compileOptions {
@@ -36,9 +33,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = '17'
-    }
-    buildFeatures {
-        viewBinding true
     }
 }
 
