@@ -1,37 +1,33 @@
 package com.dhyan.starnotes.view
 
 import android.content.Context
-import android.graphics.*
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.Path
+import android.graphics.PointF
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import org.json.JSONArray
+import org.json.JSONException
 import org.json.JSONObject
 
 class DrawingCanvasView @JvmOverloads constructor(
-    context: Context,
-    attrs: AttributeSet? = null,
-    defStyleAttr: Int = 0
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
-
     data class StrokePath(
-        val path: Path,
-        val color: Int,
-        val strokeWidth: Float,
-        val isEraser: Boolean = false,
-        val points: MutableList<PointF> = mutableListOf()
+        val path: Path, val color: Int, val strokeWidth: Float,
+        val isEraser: Boolean = false, val points: MutableList<PointF> = mutableListOf()
     )
 
     private val paths = mutableListOf<StrokePath>()
-    private var currentPath: Path? = null
-    private var currentPoints = mutableListOf<PointF>()
+    private var currentStroke: StrokePath? = null
+    private var activePointerId = MotionEvent.INVALID_POINTER_ID
     private var currentColor = Color.BLACK
     private var currentStrokeWidth = 8f
     private var isEraserMode = false
-
-    private val paint = Paint().apply {
-        isAntiAlias = true
-        isDither = true
+    private val paint = Paint(Paint.ANTI_ALIAS_FLAG or Paint.DITHER_FLAG).apply {
         style = Paint.Style.STROKE
         strokeJoin = Paint.Join.ROUND
         strokeCap = Paint.Cap.ROUND
@@ -43,68 +39,77 @@ class DrawingCanvasView @JvmOverloads constructor(
     }
 
     fun setStrokeWidth(width: Float) {
+        require(width.isFinite() && width > 0f)
         currentStrokeWidth = width
     }
 
-    fun setEraserMode(enabled: Boolean) {
-        isEraserMode = enabled
-    }
+    fun setEraserMode(enabled: Boolean) { isEraserMode = enabled }
+    fun isEmpty(): Boolean = paths.isEmpty() && currentStroke == null
 
     fun clearCanvas() {
+        cancelStroke()
         paths.clear()
         invalidate()
     }
 
     fun undo() {
-        if (paths.isNotEmpty()) {
-            paths.removeAt(paths.size - 1)
-            invalidate()
-        }
+        cancelStroke()
+        if (paths.isNotEmpty()) paths.removeAt(paths.lastIndex)
+        invalidate()
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         canvas.drawColor(Color.WHITE)
+        for (stroke in paths) drawStroke(canvas, stroke)
+        currentStroke?.let { drawStroke(canvas, it) }
+    }
 
-        for (stroke in paths) {
-            paint.color = stroke.color
-            paint.strokeWidth = stroke.strokeWidth
-            if (stroke.isEraser) {
-                paint.color = Color.WHITE
-            }
+    private fun drawStroke(canvas: Canvas, stroke: StrokePath) {
+        paint.color = if (stroke.isEraser) Color.WHITE else stroke.color
+        paint.strokeWidth = stroke.strokeWidth
+        if (stroke.points.size == 1) {
+            val point = stroke.points.first()
+            canvas.drawPoint(point.x, point.y, paint)
+        } else {
             canvas.drawPath(stroke.path, paint)
-        }
-
-        currentPath?.let {
-            paint.color = if (isEraserMode) Color.WHITE else currentColor
-            paint.strokeWidth = currentStrokeWidth
-            canvas.drawPath(it, paint)
         }
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x
-        val y = event.y
-
-        when (event.action) {
+        when (event.actionMasked) {
             MotionEvent.ACTION_DOWN -> {
-                val path = Path().apply { moveTo(x, y) }
-                currentPath = path
-                currentPoints = mutableListOf(PointF(x, y))
+                activePointerId = event.getPointerId(0)
+                currentStroke = StrokePath(Path(), currentColor, currentStrokeWidth, isEraserMode)
+                addPoint(event.x, event.y)
+                parent?.requestDisallowInterceptTouchEvent(true)
                 invalidate()
                 return true
             }
             MotionEvent.ACTION_MOVE -> {
-                currentPath?.lineTo(x, y)
-                currentPoints.add(PointF(x, y))
-                invalidate()
+                val index = event.findPointerIndex(activePointerId)
+                if (index >= 0) {
+                    for (position in 0 until event.historySize) {
+                        addPoint(event.getHistoricalX(index, position), event.getHistoricalY(index, position))
+                    }
+                    addPoint(event.getX(index), event.getY(index))
+                    invalidate()
+                }
                 return true
             }
-            MotionEvent.ACTION_UP -> {
-                currentPath?.let {
-                    paths.add(StrokePath(it, currentColor, currentStrokeWidth, isEraserMode, currentPoints))
+            MotionEvent.ACTION_UP, MotionEvent.ACTION_POINTER_UP -> {
+                if (event.getPointerId(event.actionIndex) == activePointerId) {
+                    addPoint(event.getX(event.actionIndex), event.getY(event.actionIndex))
+                    currentStroke?.let { paths.add(it) }
+                    cancelStroke()
+                    invalidate()
+                    performClick()
                 }
-                currentPath = null
+                return true
+            }
+            MotionEvent.ACTION_POINTER_DOWN -> return true
+            MotionEvent.ACTION_CANCEL -> {
+                cancelStroke()
                 invalidate()
                 return true
             }
@@ -112,61 +117,65 @@ class DrawingCanvasView @JvmOverloads constructor(
         return super.onTouchEvent(event)
     }
 
+    override fun performClick(): Boolean {
+        super.performClick()
+        return true
+    }
+
+    private fun addPoint(x: Float, y: Float) {
+        if (!x.isFinite() || !y.isFinite()) return
+        val stroke = currentStroke ?: return
+        if (stroke.points.lastOrNull()?.let { it.x == x && it.y == y } == true) return
+        if (stroke.points.isEmpty()) stroke.path.moveTo(x, y) else stroke.path.lineTo(x, y)
+        stroke.points.add(PointF(x, y))
+    }
+
+    private fun cancelStroke() {
+        currentStroke = null
+        activePointerId = MotionEvent.INVALID_POINTER_ID
+        parent?.requestDisallowInterceptTouchEvent(false)
+    }
+
     fun serializeDrawing(): String {
-        val root = JSONArray()
-        for (stroke in paths) {
-            val strokeObj = JSONObject().apply {
-                put("color", stroke.color)
-                put("width", stroke.strokeWidth.toDouble())
-                put("isEraser", stroke.isEraser)
-                val pts = JSONArray()
-                for (p in stroke.points) {
-                    val ptObj = JSONObject().apply {
-                        put("x", p.x.toDouble())
-                        put("y", p.y.toDouble())
-                    }
-                    pts.put(ptObj)
-                }
-                put("points", pts)
+        val result = JSONArray()
+        for (stroke in paths + listOfNotNull(currentStroke)) {
+            val points = JSONArray()
+            for (point in stroke.points) {
+                points.put(JSONObject().put("x", point.x.toDouble()).put("y", point.y.toDouble()))
             }
-            root.put(strokeObj)
+            result.put(JSONObject()
+                .put("color", stroke.color).put("width", stroke.strokeWidth.toDouble())
+                .put("isEraser", stroke.isEraser).put("points", points))
         }
-        return root.toString()
+        return result.toString()
     }
 
     fun deserializeDrawing(jsonString: String) {
-        paths.clear()
+        val restored = mutableListOf<StrokePath>()
         try {
             val root = JSONArray(jsonString)
-            for (i in 0 until root.length()) {
-                val strokeObj = root.getJSONObject(i)
-                val color = strokeObj.getInt("color")
-                val width = strokeObj.getDouble("width").toFloat()
-                val isEraser = strokeObj.optBoolean("isEraser", false)
-                val ptsArray = strokeObj.getJSONArray("points")
-
-                if (ptsArray.length() > 0) {
-                    val path = Path()
-                    val points = mutableListOf<PointF>()
-                    val first = ptsArray.getJSONObject(0)
-                    val fx = first.getDouble("x").toFloat()
-                    val fy = first.getDouble("y").toFloat()
-                    path.moveTo(fx, fy)
-                    points.add(PointF(fx, fy))
-
-                    for (j in 1 until ptsArray.length()) {
-                        val pt = ptsArray.getJSONObject(j)
-                        val px = pt.getDouble("x").toFloat()
-                        val py = pt.getDouble("y").toFloat()
-                        path.lineTo(px, py)
-                        points.add(PointF(px, py))
-                    }
-                    paths.add(StrokePath(path, color, width, isEraser, points))
+            for (index in 0 until root.length()) {
+                val item = root.getJSONObject(index)
+                val width = item.getDouble("width").toFloat()
+                require(width.isFinite() && width > 0f) { "Invalid stroke width" }
+                val stroke = StrokePath(Path(), item.getInt("color"), width, item.optBoolean("isEraser"))
+                val points = item.getJSONArray("points")
+                for (position in 0 until points.length()) {
+                    val point = points.getJSONObject(position)
+                    val x = point.getDouble("x").toFloat()
+                    val y = point.getDouble("y").toFloat()
+                    require(x.isFinite() && y.isFinite()) { "Invalid stroke point" }
+                    if (stroke.points.isEmpty()) stroke.path.moveTo(x, y) else stroke.path.lineTo(x, y)
+                    stroke.points.add(PointF(x, y))
                 }
+                if (stroke.points.isNotEmpty()) restored.add(stroke)
             }
-            invalidate()
-        } catch (e: Exception) {
-            // ignore malformed drawing data
+        } catch (error: JSONException) {
+            throw IllegalArgumentException("Invalid drawing data", error)
         }
+        cancelStroke()
+        paths.clear()
+        paths.addAll(restored)
+        invalidate()
     }
 }

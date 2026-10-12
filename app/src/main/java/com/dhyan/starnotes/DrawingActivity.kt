@@ -44,6 +44,9 @@ class DrawingActivity : AppCompatActivity() {
             }
             savedInstanceState?.getString("drawing")?.let { canvasView.deserializeDrawing(it) }
             ready = true
+        } catch (error: IllegalArgumentException) {
+            Toast.makeText(this, R.string.drawing_invalid, Toast.LENGTH_LONG).show()
+            ready = true
         } catch (error: SQLiteException) {
             Toast.makeText(this, R.string.load_failed, Toast.LENGTH_LONG).show()
             finish()

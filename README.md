@@ -1,31 +1,34 @@
 # StarNotes
 
-Decompilation, editing, and automated rebuilding pipeline for StarNotes Android App.
+Standalone Android app for offline text notes and drawing. No account, network
+permission, subscription, or imposed note quota. Notes are stored in local SQLite;
+drawings store editable stroke data on the device.
 
-## 🔄 Two-Way Development Workflow
+## Download
 
-```
-[StarNote_v1.3.0.apk]
-       ↓ (1. Decompile Workflow)
-[decompiled/java_sources]      ← For reading & inspecting Java code
-[decompiled/apktool_project]   ← For editing manifest, strings, resources & smali
-       ↓ (Edit locally & git push)
-       ↓ (2. Build & Sign Workflow)
-[StarNotes_rebuilt.apk]        ← Downloadable under Actions Artifacts / Releases!
-```
+Download `StarNotes_v1.0.1_offline.apk` from the
+[native release](https://github.com/Dhyan2404/StarNotes/releases/tag/v1.0.1-native).
+Android may ask you to allow APK installation from your browser or file manager.
 
-### 1. Decompilation
-When the APK is pushed, [.github/workflows/decompile.yml](file:///.github/workflows/decompile.yml) runs automatically:
-- Decompiles DEX into readable `.java` files using **JADX**.
-- Disassembles layout, strings, assets, manifest, and smali bytecode using **Apktool**.
-- Commits the decompiled code back to the repository so you can `git pull` it locally.
+## Compile through GitHub
 
-### 2. Editing & Recompiling
-1. Edit any files in `decompiled/apktool_project/` (e.g. `res/values/strings.xml`, `AndroidManifest.xml`, or `smali/`).
-2. Commit and push:
-   ```bash
-   git add decompiled/apktool_project/
-   git commit -m "Updated app resources / code"
-   git push origin main
-   ```
-3. [.github/workflows/build_apk.yml](file:///.github/workflows/build_apk.yml) triggers automatically, rebuilds the APK, signs it with a debug key, and uploads `StarNotes_rebuilt.apk` under **GitHub Actions -> Artifacts**!
+Push native app changes to `main`, or open **Actions → Build Native StarNotes APK →
+Run workflow**. The workflow uses the checked-in Gradle 8.5 wrapper, JDK 17, and
+Android SDK 34. It compiles debug and release APKs, runs the app tests and Android
+lint, and verifies the APK signature before publishing the release.
+
+APK downloads are also available in the successful run's `StarNotes-Native-APK`
+artifact. Logs and test reports are in `StarNotes-build-reports`.
+
+The shared development signing key is included so clean GitHub runners can sign
+the app and successive builds use the same certificate. It is a public test key;
+see [.github/keystores/README.md](.github/keystores/README.md).
+
+## Source
+
+The standalone app is in `app/`. Text and drawings save when the editor leaves the
+foreground. Screen recreation retains the note ID, preventing duplicate notes.
+Failed saves report an error, and unreadable drawings retain their stored data.
+
+The original APK and `decompiled/` belong to the older inspection workflow.
+The native APK is built entirely from `app/` using the Android Gradle plugin.

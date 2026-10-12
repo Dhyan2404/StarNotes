@@ -40,8 +40,10 @@
                 android:textSize="11sp"
                 android:textColor="#4B5563"
                 android:background="#E5E7EB"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="3dp" />
+                android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+            android:paddingBottom="3dp" />
         </LinearLayout>
 
         <TextView

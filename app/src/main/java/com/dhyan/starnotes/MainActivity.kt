@@ -1,6 +1,7 @@
 package com.dhyan.starnotes
 
 import android.content.Intent
+import android.database.sqlite.SQLiteException
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -85,8 +86,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadNotes(query: String = "") {
+        val loaded = try {
+            dbHelper.getAllNotes(query)
+        } catch (error: SQLiteException) {
+            Toast.makeText(this, R.string.load_failed, Toast.LENGTH_LONG).show()
+            return
+        }
         notesList.clear()
-        val loaded = dbHelper.getAllNotes(query)
         notesList.addAll(loaded)
         adapter.notifyDataSetChanged()
 
@@ -106,12 +112,21 @@ class MainActivity : AppCompatActivity() {
             .setTitle("Delete Note")
             .setMessage("Are you sure you want to delete '${note.title}'?")
             .setPositiveButton("Delete") { _, _ ->
-                dbHelper.deleteNote(note.id)
-                loadNotes(searchInput.text.toString().trim())
-                Toast.makeText(this, "Note deleted", Toast.LENGTH_SHORT).show()
+                try {
+                    dbHelper.deleteNote(note.id)
+                    loadNotes(searchInput.text.toString().trim())
+                    Toast.makeText(this, "Note deleted", Toast.LENGTH_SHORT).show()
+                } catch (error: SQLiteException) {
+                    Toast.makeText(this, R.string.delete_failed, Toast.LENGTH_LONG).show()
+                }
             }
             .setNegativeButton("Cancel", null)
             .show()
+    }
+
+    override fun onDestroy() {
+        if (::dbHelper.isInitialized) dbHelper.close()
+        super.onDestroy()
     }
 
     class NotesAdapter(

@@ -11,7 +11,8 @@
         android:layout_height="56dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingHorizontal="8dp"
+        android:paddingStart="8dp"
+            android:paddingEnd="8dp"
         android:background="#FFFFFF"
         android:elevation="2dp">
 
@@ -33,7 +34,8 @@
             android:textStyle="bold"
             android:textColor="#1F2937"
             android:background="@null"
-            android:paddingHorizontal="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:singleLine="true" />
 
         <ImageButton
@@ -67,7 +69,8 @@
         android:layout_height="48dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingHorizontal="16dp"
+        android:paddingStart="16dp"
+            android:paddingEnd="16dp"
         android:background="#F3F4F6">
 
         <TextView
@@ -81,6 +84,7 @@
         <!-- Black -->
         <ImageButton
             android:id="@+id/btnPenBlack"
+            android:contentDescription="Black pen"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginEnd="8dp"
@@ -90,6 +94,7 @@
         <!-- Blue -->
         <ImageButton
             android:id="@+id/btnPenBlue"
+            android:contentDescription="Blue pen"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginEnd="8dp"
@@ -99,6 +104,7 @@
         <!-- Red -->
         <ImageButton
             android:id="@+id/btnPenRed"
+            android:contentDescription="Red pen"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginEnd="8dp"
@@ -108,6 +114,7 @@
         <!-- Green -->
         <ImageButton
             android:id="@+id/btnPenGreen"
+            android:contentDescription="Green pen"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginEnd="16dp"

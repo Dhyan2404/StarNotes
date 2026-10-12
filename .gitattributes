@@ -1,2 +1,6 @@
 # Track large APK files using Git LFS (needed because StarNote APK is ~208MB and GitHub limit is 100MB)
 *.apk filter=lfs diff=lfs merge=lfs -text
+
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+*.jks binary

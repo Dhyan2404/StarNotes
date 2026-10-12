@@ -2,93 +2,114 @@ name: Build Native StarNotes APK
 
 on:
   push:
+    branches: [main]
     paths:
       - "app/**"
       - "*.gradle"
+      - "gradle.properties"
+      - "gradle/**"
+      - "gradlew*"
+      - ".github/keystores/**"
+      - ".github/workflows/build_native.yml"
+  pull_request:
+    paths:
+      - "app/**"
+      - "*.gradle"
+      - "gradle.properties"
+      - "gradle/**"
+      - "gradlew*"
+      - ".github/keystores/**"
       - ".github/workflows/build_native.yml"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: native-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 25
     steps:
-      - name: Checkout repository
+      - name: Checkout standalone app
         uses: actions/checkout@v4
         with:
           lfs: false
+          sparse-checkout: |
+            .github
+            app
+            gradle
+            build.gradle
+            settings.gradle
+            gradlew
+            gradlew.bat
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: "temurin"
+          distribution: temurin
           java-version: "17"
 
-      - name: Set up Gradle Wrapper
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android 34 build tools
+        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+
+      - name: Set up pinned Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Verify signing configuration
         run: |
-          gradle wrapper --gradle-version 8.5
+          test -f .github/keystores/starnotes-development.jks
+          keytool -list -keystore .github/keystores/starnotes-development.jks -storepass android -alias androiddebugkey
+
+      - name: Compile, test, and check app
+        run: |
           chmod +x gradlew
+          ./gradlew --no-daemon :app:assembleDebug :app:assembleRelease :app:testDebugUnitTest :app:lintDebug --stacktrace 2>&1 | tee build.log
 
-      - name: Build Android APK
-        run: |
-          ./gradlew assembleDebug --stacktrace 2>&1 | tee build.log
-
-      - name: Post Failure Log Comment
-        if: failure()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            try {
-              const log = fs.readFileSync('build.log', 'utf8');
-              const lines = log.split('\n');
-              const lastLines = lines.slice(-60).join('\n');
-              await github.rest.repos.createCommitComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                commit_sha: context.sha,
-                body: "### ❌ Build Failed:\n```\n" + lastLines + "\n```"
-              });
-            } catch (e) {
-              console.log("Could not post comment: " + e);
-            }
-
-      - name: Upload Build Log
+      - name: Upload build log and test reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: gradle-build-log
-          path: build.log
+          name: StarNotes-build-reports
+          path: |
+            build.log
+            app/build/reports/
+            app/build/test-results/
+          retention-days: 14
 
-      - name: Locate Built APK
-        id: locate_apk
+      - name: Verify and package signed APK
         run: |
-          APK_FILE=$(find app/build/outputs/apk -name "*.apk" | head -n 1)
-          if [ -z "$APK_FILE" ]; then
-            echo "Error: No APK file generated!"
-            exit 1
-          fi
-          echo "Found APK: $APK_FILE"
-          cp "$APK_FILE" StarNotes_v1.0_native.apk
-          echo "apk_path=StarNotes_v1.0_native.apk" >> $GITHUB_OUTPUT
+          "$ANDROID_HOME/build-tools/34.0.0/apksigner" verify --verbose app/build/outputs/apk/release/app-release.apk
+          mkdir -p dist
+          cp app/build/outputs/apk/release/app-release.apk dist/StarNotes_v1.0.1_offline.apk
+          sha256sum dist/StarNotes_v1.0.1_offline.apk > dist/StarNotes_v1.0.1_offline.apk.sha256
 
-      - name: Upload APK Artifact
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: StarNotes-Native-APK
-          path: StarNotes_v1.0_native.apk
+          path: dist/*
+          if-no-files-found: error
           retention-days: 30
 
-      - name: Create GitHub Release with APK
+      - name: Publish downloadable APK
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v2
-        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
         with:
-          tag_name: "v1.0.0-native"
-          name: "StarNotes v1.0.0 (Native Offline - No Login)"
-          body: "100% Native, Offline, Free StarNotes Android APK with infinite notes, local SQLite database, and canvas drawing support."
-          files: StarNotes_v1.0_native.apk
+          tag_name: v1.0.1-native
+          name: StarNotes 1.0.1 — Offline
+          body: Offline text notes and drawing. No account or network permission. Signed APK with SHA-256 checksum; build, tests, and Android lint passed.
+          files: dist/*
+          fail_on_unmatched_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
