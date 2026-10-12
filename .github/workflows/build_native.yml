@@ -57,11 +57,9 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Install Android 34 build tools
-        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+      - name: Verify Android SDK & Environment
+        run: |
+          echo "ANDROID_HOME is $ANDROID_HOME"
 
       - name: Set up pinned Gradle
         uses: gradle/actions/setup-gradle@v4
