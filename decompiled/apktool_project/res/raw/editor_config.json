@@ -10,13 +10,7 @@
       "SOFT_PAINT_PEN",
       "WRITE_PEN_GROUP"
     ],
-    "unDisplayShapeToolList": [
-      "INK_PEN",
-      "CALLIGRAPHY_PEN",
-      "BALLPOINT_PEN",
-      "PENCIL",
-      "SOFT_PAINT_PEN"
-    ]
+    "unDisplayShapeToolList": []
   },
   "tapeList": [
     "TAPE_FILL_STYLE_BIAS",
@@ -30,12 +24,12 @@
     "dataRepositoryRedirection": true,
     "dataRepositoryPath": "library/center"
   },
-  "fontBeautifyEnable": false,
-  "inkBeautifyTypesetEnable": false,
-  "aiLabEnable": false,
+  "fontBeautifyEnable": true,
+  "inkBeautifyTypesetEnable": true,
+  "aiLabEnable": true,
   "userManualName": "user_manual_overseas",
-  "inkBeautifyFeatureEnabled": false,
-  "aiSearchFeatureEnabled": false,
+  "inkBeautifyFeatureEnabled": true,
+  "aiSearchFeatureEnabled": true,
   "smartHwrFeatureEnabled": true,
   "languageList": [
     "DEFAULT",

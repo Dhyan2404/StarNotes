@@ -1820,7 +1820,7 @@
 .end method
 
 .method public final p()Lio/reactivex/rxjava3/core/Observable;
-    .locals 8
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1830,81 +1830,14 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->INSTANCE:Lcom/onyx/android/sdk/data/account/utils/QuotaManager;
+    # Continue the actual import pipeline without a notebook-count quota.
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    invoke-static {v0, v1, v2, v3}, Lcom/onyx/android/sdk/data/account/utils/QuotaManager;->getNoteCreateQuota$default(Lcom/onyx/android/sdk/data/account/utils/QuotaManager;ZILjava/lang/Object;)J
-
-    move-result-wide v4
-
-    sget-object v0, Lcom/onyx/galaxy/note/common/data/NoteTreeBundle$FilterManager;->INSTANCE:Lcom/onyx/galaxy/note/common/data/NoteTreeBundle$FilterManager;
-
-    invoke-virtual {v0}, Lcom/onyx/galaxy/note/common/data/NoteTreeBundle$FilterManager;->getQuotaInfo()Lcom/onyx/android/sdk/data/sync/bean/NoteUsageInfo;
+    invoke-static {v0}, Lio/reactivex/rxjava3/core/Observable;->just(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/onyx/android/sdk/data/sync/bean/NoteUsageInfo;->getDocCountIncludeDustbin()I
-
-    move-result v0
-
-    iget-object p0, p0, Lcom/onyx/galaxy/note/category/action/import/ParseIntentAction;->j:Lcom/onyx/android/sdk/universal/editor/data/ImportSelectedContext;
-
-    if-nez p0, :cond_0
-
-    const-string p0, "importSelectedContext"
-
-    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
-
-    move-object p0, v3
-
-    :cond_0
-    invoke-virtual {p0}, Lcom/onyx/android/sdk/universal/editor/data/ImportSelectedContext;->getTotalDocCount()I
-
-    move-result p0
-
-    add-int/2addr v0, p0
-
-    int-to-long v6, v0
-
-    cmp-long p0, v6, v4
-
-    if-lez p0, :cond_1
-
-    sget-object p0, Lcom/onyx/android/sdk/base/utils/ToastUtils;->INSTANCE:Lcom/onyx/android/sdk/base/utils/ToastUtils;
-
-    sget v0, Lcom/onyx/galaxy/note/R$string;->quota_note_cannot_import:I
-
-    const/4 v2, 0x2
-
-    invoke-static {p0, v0, v1, v2, v3}, Lcom/onyx/android/sdk/base/utils/ToastUtils;->show$default(Lcom/onyx/android/sdk/base/utils/ToastUtils;IZILjava/lang/Object;)V
-
-    invoke-static {}, Lio/reactivex/rxjava3/core/Observable;->empty()Lio/reactivex/rxjava3/core/Observable;
-
-    move-result-object p0
-
-    const-string v0, "empty(...)"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object p0
-
-    :cond_1
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    invoke-static {p0}, Lio/reactivex/rxjava3/core/Observable;->just(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
-
-    move-result-object p0
-
-    const-string v0, "just(...)"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object p0
+    return-object v0
 .end method
 
 .method public final q()Lio/reactivex/rxjava3/core/Observable;

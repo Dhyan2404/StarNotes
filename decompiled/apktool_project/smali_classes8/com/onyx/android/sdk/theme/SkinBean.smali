@@ -544,11 +544,11 @@
 .end method
 
 .method public final isFree()Z
-    .locals 0
+    .locals 1
 
-    iget-boolean p0, p0, Lcom/onyx/android/sdk/theme/SkinBean;->e:Z
+    const/4 v0, 0x1
 
-    return p0
+    return v0
 .end method
 
 .method public final setDisplay(Z)V
