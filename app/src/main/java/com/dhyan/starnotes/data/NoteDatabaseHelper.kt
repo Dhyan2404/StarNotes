@@ -37,6 +37,16 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
             )
         """.trimIndent()
         db.execSQL(createTableQuery)
+
+        val welcomeNote = ContentValues().apply {
+            put(COLUMN_TITLE, "Welcome to StarNotes ⭐")
+            put(COLUMN_CONTENT, "Welcome to StarNotes!\n\n• 100% Offline & Private\n• No Login or Accounts Required\n• Infinite Notes & Drawings\n• Local Storage on Your Device\n\nTap '+ Text Note' or '✏️ Draw / Sketch' above to start creating!")
+            put(COLUMN_TYPE, "text")
+            put(COLUMN_COLOR, -1)
+            put(COLUMN_CREATED_AT, System.currentTimeMillis())
+            put(COLUMN_UPDATED_AT, System.currentTimeMillis())
+        }
+        db.insert(TABLE_NOTES, null, welcomeNote)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {

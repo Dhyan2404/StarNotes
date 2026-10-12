@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">StarNotes</string>
+    <string name="note_saved">Saved on this device</string>
+    <string name="note_missing">This note no longer exists.</string>
+    <string name="load_failed">Could not open your notes. Please try again.</string>
+    <string name="save_failed">Could not save your changes. Check device storage and try again.</string>
+    <string name="delete_failed">Could not delete this note. Please try again.</string>
+    <string name="untitled_note">Untitled Note</string>
+    <string name="handwritten_note">Handwritten Note</string>
+    <string name="drawing_invalid">This drawing could not be opened. Its saved data has been preserved.</string>
+    <string name="clear_drawing_confirmation">Clear all strokes? You can save an empty canvas afterward.</string>
+    <string name="clear_drawing">Clear</string>
 </resources>

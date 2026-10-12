@@ -1,100 +1,124 @@
 package com.dhyan.starnotes
 
+import android.database.sqlite.SQLiteException
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.dhyan.starnotes.data.Note
 import com.dhyan.starnotes.data.NoteDatabaseHelper
 import com.dhyan.starnotes.view.DrawingCanvasView
 
 class DrawingActivity : AppCompatActivity() {
-
     private lateinit var dbHelper: NoteDatabaseHelper
     private lateinit var canvasView: DrawingCanvasView
     private lateinit var editTitle: EditText
-    private var noteId: Long = -1
+    private var noteId = -1L
+    private var ready = false
+    private var lastSaved: Pair<String, String>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawing)
-
         dbHelper = NoteDatabaseHelper(this)
         canvasView = findViewById(R.id.drawingCanvasView)
         editTitle = findViewById(R.id.editDrawingTitle)
+        noteId = savedInstanceState?.getLong("note_id") ?: intent.getLongExtra("note_id", -1L)
 
-        val btnBack = findViewById<ImageButton>(R.id.btnDrawingBack)
-        val btnSave = findViewById<ImageButton>(R.id.btnDrawingSave)
-        val btnUndo = findViewById<ImageButton>(R.id.btnDrawingUndo)
-        val btnClear = findViewById<ImageButton>(R.id.btnDrawingClear)
-        val btnEraser = findViewById<ImageButton>(R.id.btnDrawingEraser)
-        val btnPenBlack = findViewById<ImageButton>(R.id.btnPenBlack)
-        val btnPenBlue = findViewById<ImageButton>(R.id.btnPenBlue)
-        val btnPenRed = findViewById<ImageButton>(R.id.btnPenRed)
-        val btnPenGreen = findViewById<ImageButton>(R.id.btnPenGreen)
-
-        noteId = intent.getLongExtra("note_id", -1)
-        if (noteId != -1L) {
-            val note = dbHelper.getNote(noteId)
-            note?.let {
-                editTitle.setText(it.title)
-                it.drawingData?.let { data ->
-                    canvasView.deserializeDrawing(data)
+        try {
+            if (noteId != -1L) {
+                val note = dbHelper.getNote(noteId)
+                if (note == null) {
+                    Toast.makeText(this, R.string.note_missing, Toast.LENGTH_LONG).show()
+                    finish()
+                    return
                 }
+                if (savedInstanceState == null) {
+                    editTitle.setText(note.title)
+                    canvasView.deserializeDrawing(note.drawingData ?: "[]")
+                }
+                lastSaved = note.title to (note.drawingData ?: "[]")
+            }
+            savedInstanceState?.getString("drawing")?.let { canvasView.deserializeDrawing(it) }
+            ready = true
+        } catch (error: SQLiteException) {
+            Toast.makeText(this, R.string.load_failed, Toast.LENGTH_LONG).show()
+            finish()
+            return
+        } catch (error: IllegalArgumentException) {
+            Toast.makeText(this, R.string.drawing_invalid, Toast.LENGTH_LONG).show()
+            finish()
+            return
+        }
+
+        findViewById<ImageButton>(R.id.btnPenBlack).setOnClickListener { canvasView.setPenColor(Color.BLACK) }
+        findViewById<ImageButton>(R.id.btnPenBlue).setOnClickListener { canvasView.setPenColor(Color.rgb(30, 136, 229)) }
+        findViewById<ImageButton>(R.id.btnPenRed).setOnClickListener { canvasView.setPenColor(Color.rgb(229, 57, 53)) }
+        findViewById<ImageButton>(R.id.btnPenGreen).setOnClickListener { canvasView.setPenColor(Color.rgb(67, 160, 71)) }
+        findViewById<ImageButton>(R.id.btnDrawingEraser).setOnClickListener { canvasView.setEraserMode(true) }
+        findViewById<ImageButton>(R.id.btnDrawingUndo).setOnClickListener { canvasView.undo() }
+        findViewById<ImageButton>(R.id.btnDrawingClear).setOnClickListener {
+            androidx.appcompat.app.AlertDialog.Builder(this)
+                .setMessage(R.string.clear_drawing_confirmation)
+                .setPositiveButton(R.string.clear_drawing) { _, _ -> canvasView.clearCanvas() }
+                .setNegativeButton(android.R.string.cancel, null)
+                .show()
+        }
+        findViewById<ImageButton>(R.id.btnDrawingBack).setOnClickListener {
+            if (saveDrawing()) finish()
+        }
+        findViewById<ImageButton>(R.id.btnDrawingSave).setOnClickListener {
+            if (saveDrawing()) {
+                if (noteId != -1L) Toast.makeText(this, R.string.note_saved, Toast.LENGTH_SHORT).show()
+                finish()
             }
         }
-
-        btnPenBlack.setOnClickListener { canvasView.setPenColor(Color.BLACK) }
-        btnPenBlue.setOnClickListener { canvasView.setPenColor(Color.parseColor("#1E88E5")) }
-        btnPenRed.setOnClickListener { canvasView.setPenColor(Color.parseColor("#E53935")) }
-        btnPenGreen.setOnClickListener { canvasView.setPenColor(Color.parseColor("#43A047")) }
-        btnEraser.setOnClickListener { canvasView.setEraserMode(true) }
-        btnUndo.setOnClickListener { canvasView.undo() }
-        btnClear.setOnClickListener { canvasView.clearCanvas() }
-
-        btnBack.setOnClickListener {
-            saveDrawing()
-            finish()
-        }
-
-        btnSave.setOnClickListener {
-            saveDrawing()
-            Toast.makeText(this, "Canvas Saved", Toast.LENGTH_SHORT).show()
-            finish()
+        onBackPressedDispatcher.addCallback(this) {
+            if (saveDrawing()) finish()
         }
     }
 
-    override fun onBackPressed() {
-        saveDrawing()
-        super.onBackPressed()
+    override fun onPause() {
+        if (ready) saveDrawing()
+        super.onPause()
     }
 
-    private fun saveDrawing() {
+    override fun onSaveInstanceState(outState: Bundle) {
+        if (ready) {
+            saveDrawing()
+            outState.putString("drawing", canvasView.serializeDrawing())
+        }
+        outState.putLong("note_id", noteId)
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onDestroy() {
+        if (::dbHelper.isInitialized) dbHelper.close()
+        super.onDestroy()
+    }
+
+    private fun saveDrawing(): Boolean {
+        if (!ready) return false
         val title = editTitle.text.toString().trim()
-        val finalTitle = if (title.isBlank()) "Handwritten Note" else title
-        val drawingJson = canvasView.serializeDrawing()
+        if (noteId == -1L && title.isBlank() && canvasView.isEmpty()) return true
+        val finalTitle = title.ifBlank { getString(R.string.handwritten_note) }
+        val drawing = canvasView.serializeDrawing()
+        val snapshot = finalTitle to drawing
+        if (snapshot == lastSaved) return true
 
-        if (noteId == -1L) {
-            val newNote = Note(
-                title = finalTitle,
-                content = "Drawing Canvas Note",
-                type = Note.TYPE_DRAWING,
-                drawingData = drawingJson
-            )
-            noteId = dbHelper.insertNote(newNote)
-        } else {
-            val existing = dbHelper.getNote(noteId)
-            val updated = Note(
-                id = noteId,
-                title = finalTitle,
-                content = "Drawing Canvas Note",
-                type = Note.TYPE_DRAWING,
-                drawingData = drawingJson,
-                createdAt = existing?.createdAt ?: System.currentTimeMillis()
-            )
-            dbHelper.updateNote(updated)
+        return try {
+            val note = Note(id = noteId, title = finalTitle, content = "",
+                type = Note.TYPE_DRAWING, drawingData = drawing)
+            if (noteId == -1L) noteId = dbHelper.insertNote(note)
+            else dbHelper.updateNote(note)
+            lastSaved = snapshot
+            true
+        } catch (error: SQLiteException) {
+            Toast.makeText(this, R.string.save_failed, Toast.LENGTH_LONG).show()
+            false
         }
     }
 }
