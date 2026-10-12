@@ -4,6 +4,7 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.database.sqlite.SQLiteException
 
 class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
@@ -39,8 +40,8 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-        db.execSQL("DROP TABLE IF EXISTS $TABLE_NOTES")
-        onCreate(db)
+        // Future schema changes must migrate existing notes instead of deleting them.
+        throw SQLiteException("No migration from database version $oldVersion to $newVersion")
     }
 
     fun insertNote(note: Note): Long {
@@ -54,7 +55,7 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
             put(COLUMN_CREATED_AT, note.createdAt)
             put(COLUMN_UPDATED_AT, note.updatedAt)
         }
-        return db.insert(TABLE_NOTES, null, values)
+        return db.insertOrThrow(TABLE_NOTES, null, values)
     }
 
     fun updateNote(note: Note): Int {
@@ -67,7 +68,9 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
             put(COLUMN_COLOR, note.color)
             put(COLUMN_UPDATED_AT, System.currentTimeMillis())
         }
-        return db.update(TABLE_NOTES, values, "$COLUMN_ID = ?", arrayOf(note.id.toString()))
+        val count = db.update(TABLE_NOTES, values, "$COLUMN_ID = ?", arrayOf(note.id.toString()))
+        if (count != 1) throw SQLiteException("Note ${note.id} no longer exists")
+        return count
     }
 
     fun deleteNote(id: Long): Int {
